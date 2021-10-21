@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/ui-reset.css">
+  <link rel="stylesheet" href="css/ui-core.css">
+  <link rel="stylesheet" href="css/frontend--fonts.css">
+  <link rel="stylesheet" href="css/frontend--style.css">
+
+
+  <script src="source/jquery-3.5.0.min.js"></script>
+
+
+  <title>UI Kit </title>
+</head>
+
+<body>
+  <section class="text bg-white">
+    <h1 class="text-h1 mb-10">Типография</h1>
+
+    <!-- <div class="mb-3 -copy-child-"><div class="</div> -->
+    <div class="mb-3 -copy-child-">
+      <div class="text-h1">.text-h1 DemiBold 52px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h2">.text-h2 DemiBold 44px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h3">.text-h3 DemiBold 32px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h4">.text-h4 DemiBold 26px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h5">.text-h5 DemiBold 20px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h6">.text-h6 DemiBold 18px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-subtitle-1">.text-subtitle-1 DemiBold 16px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-subtitle-2">.text-subtitle-2 DemiBold 14px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1">.text-body-1 Regular 16px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-2">.text-body-2 Regular 14px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-small">.text-small Regular 12px</div>
+    </div>
+
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--demibold">.text--demibold DemiBold </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--bold">.text--bold bold </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--uppercase">.text--uppercase uppercase </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--underline">.text--underline underline </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--fade">.text--fade fade </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--center">.text--center center </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--right">.text--right right </div>
+    </div>
+
+  </section>
+
+  <section class="form">
+    <h1 class="text-h1 mb-10">Form</h1>
+
+    <h1 class="text-h4 mb-8">Input</h1>
+    <div class="grid grid-align-center mb-10">
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field ">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" placeholder="Заполните поле">
+          </div>
+        </label>
+      </div>
+
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" disabled placeholder="Заполните поле">
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <h1 class="text-h4 mb-8">Check, Radio, Toggle</h1>
+    <div class="grid grid-align-center mb-5">
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field form-checkbox">
+
+          <input type="checkbox" class="form-input">
+          <div class="form-checkbox-target">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#gal-ochka" />
+            </svg>
+          </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field form-checkbox">
+
+          <input type="checkbox" class="form-input">
+          <div class="form-radio-target"> </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+      <div class="grid-col-4 -copy-child-">
+        <label class="form-field form-checkbox">
+          <input type="checkbox" class="form-input">
+          <div class="form-toggle-target"> </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+        </label>
+      </div>
+      <div class="grid-col-2 -copy-child-">
+        <label class="form-field form-checkbox">
+          <input type="checkbox" class="form-input">
+          <div class="form-tag-target">128 Кб </div>
+        </label>
+      </div>
+    </div>
+    <div class="grid grid-align-center mb-5">
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox">
+
+          <input type="checkbox" class="form-input">
+          <div class="form-checkbox-target">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#gal-ochka" />
+            </svg>
+          </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox">
+
+          <input type="checkbox" class="form-input">
+          <div class="form-radio-target"> </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+      <div class="grid-col-4 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox">
+
+          <input type="checkbox" class="form-input">
+          <div class="form-toggle-target"> </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+    </div>
+    <div class="grid grid-align-center mb-5">
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox">
+
+          <input type="checkbox" class="form-input " disabled>
+          <div class="form-checkbox-target">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#gal-ochka" />
+            </svg>
+          </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+      <div class="grid-col-3 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox ">
+
+          <input type="checkbox" class="form-input" disabled>
+          <div class="form-radio-target"> </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+      <div class="grid-col-4 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox">
+
+          <input type="checkbox" class="form-input" disabled>
+          <div class="form-toggle-target"> </div>
+          <div class="form-label"> Курьерская доставка по Москве </div>
+
+        </label>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="buttons bg-white">
+    <h1 class="text-h1 mb-10">Buttons</h1>
+
+    <h5 class="text-h6 mb-3">Primary</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-3 -copy-child- flex">
+        <button class="btn btn--primary btn--fill w-100">Отправить</button>
+        <button class="btn btn--primary btn--fill btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-3 -copy-child- flex">
+        <button class="btn btn--primary btn--contur w-100">Отправить</button>
+        <button class="btn btn--primary btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-3 -copy-child- flex">
+        <button class="btn btn--primary btn--light w-100">Отправить</button>
+        <button class="btn btn--primary btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+   
+      <div class="grid-col-3 -copy-child-">
+        <button class="btn btn--primary w-100">Отправить</button>
+        <button class="btn btn--primary btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-1 -copy-child-">
+        <button class="btn btn--primary btn--link w-100">Отправить</button>
+      </div>
+
+    </div>
+    <h5 class="text-h6 mb-3">Primary</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-3 -copy-child- flex">
+        <button class="btn btn--color-icon btn--fill w-100">Отправить</button>
+        <button class="btn btn--color-icon btn--fill btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-3 -copy-child- flex">
+        <button class="btn btn--color-icon btn--contur w-100">Отправить</button>
+        <button class="btn btn--color-icon btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-3 -copy-child- flex">
+        <button class="btn btn--color-icon btn--light w-100">Отправить</button>
+        <button class="btn btn--color-icon btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+   
+      <div class="grid-col-3 -copy-child-">
+        <button class="btn btn--color-icon w-100">Отправить</button>
+        <button class="btn btn--color-icon btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-1 -copy-child-">
+        <button class="btn btn--color-icon btn--link w-100">Отправить</button>
+      </div>
+
+    </div>
+    <!-- <div class="grid mb-3">
+      <div class="grid-col-3 -copy-child-">
+        <button class="btn btn--primary btn-lg w-100">Отправить заявку</button>
+      </div>
+      <div class="grid-col-3 -copy-child-">
+        <button class="btn btn--primary btn--contur btn-lg w-100">Отправить заявку</button>
+      </div>
+      <div class="grid-col-3 -copy-child-">
+        <button class="btn btn--primary btn--light btn-lg w-100">Отправить заявку</button>
+      </div>
+      <div class="grid-col-3 -copy-child-">
+        <button class="btn btn--primary btn--link btn-lg w-100">Отправить заявку</button>
+      </div>
+    </div> -->
+    
+    <h5 class="text-h6 mb-3">Disabled</h5>
+    <div class="grid">
+      <div class="grid-col-3 -copy-child- flex">
+        <button disabled class="btn btn--primary btn--fill w-100">Отправить</button>
+        <button disabled class="btn btn--primary btn--fill btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-3 -copy-child- flex">
+        <button disabled class="btn btn--primary btn--contur w-100">Отправить</button>
+        <button disabled class="btn btn--primary btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-3 -copy-child- flex">
+        <button disabled class="btn btn--primary btn--light w-100">Отправить</button>
+        <button disabled class="btn btn--primary btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+   
+      <div class="grid-col-3 -copy-child-">
+        <button disabled class="btn btn--primary w-100">Отправить</button>
+        <button disabled class="btn btn--primary btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-1 -copy-child-">
+        <button disabled class="btn btn--primary btn--link w-100">Отправить</button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <link rel="stylesheet" href="css/jk-row.css">
+  <section class="cards">
+    <div class="jk-row">
+      <div class="jk-row-content card">
+        <div class="jk-row-preview">
+          <div class="jk-row-preview-img">
+            <img src="https://picsum.photos/id/42/600/400" alt="">
+          </div>
+        </div>
+        <div class="jk-row-inner">
+          <div class="jk-row-info">
+            <div class="jk-row-info-data">
+              <div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+              <div class="jk-row-info-map">
+                <span class="text-body-2 text--fade mb-1">ул. Джержинского, ЮМР</span>
+                <button class="btn btn--primary btn--link text-body-2">На карте</button>
+              </div>
+
+              <div class="jk-row-complete flex flex-align-center mt-4">
+                <svg class="icon text-body-2 color-icon mr-2">
+                  <use xlink:href="img/icons.svg#key" />
+                </svg>
+                <span class="text-body-2 text--demibold">Сдача в III кв. 2025</span>
+              </div>
+            </div>
+            <div class="jk-row-info-statistic">
+              <div class="jk-row-info-count mb-1 text-small text--demibold color-red">Осталось: 10 квартир</div>
+              <div class="jk-row-info-count mb-1 text-small text--demibold color-yellow">Осталось: 40 домов</div>
+              <div class="jk-row-info-count mb-1 text-small text--demibold color-green">Продано уже 5% квартир</div>
+
+              <div class="jk-row-info-view flex flex-align-center">
+                <svg class="icon text-body-2 color-icon mr-1">
+                  <use xlink:href="img/icons.svg#eye" />
+                </svg>
+                <div class="text-small text--fade">Интересуются: 10 человек</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="jk-row-plans mt-6">
+            <div class="plan-min">
+              <div class="plan-min-img"></div>
+              <div class="plan-min-content">
+                <div class="plan-min-count text-small">1-комнатные</div>
+                <div class="plan-min-size text-small">от 48,5 м2</div>
+                <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+              </div>
+            </div>
+          </div>
+          <div class="jk-row-control mt-6">
+            <button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+            <button class="btn btn--color-icon btn-icon ml-1">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#chat" />
+              </svg>
+            </button>
+            <button class="btn btn--color-icon btn-icon ml-1">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#chart" />
+              </svg>
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="jk-row-aside card">
+        <div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+        <div class="jk-row-aside-brand">ЮгСтройИнвест</div>
+        <div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
+        <div class="jk-row-aside-prop text-body-2 mt-1"><span class="text--demibold">Всего квартир:</span> 4102</div>
+        <div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span> Монолитно-кирпич.</div>
+        <div class="jk-row-aside-prop text-body-2 mt-1"><span class="text--demibold">Этажность:</span> от 11 до 19</div>
+        <div class="jk-row-aside-prop text-body-2 mt-1"><span class="text--demibold">Отделка:</span> Предчистовая</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- <link rel="stylesheet" href="ui/copy-element.css"> -->
+  <!-- <script src="ui/copy-element.js"></script> -->
+  <!-- <script src="js/ion.rangeSlider.custom.js"></script> -->
+</body>
+
+</html>
