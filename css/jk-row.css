@@ -6,6 +6,7 @@
   padding: 8px;
   display: flex;
   padding-right: 32px;
+  width: calc(100% - 198px - 6px);
 }
 .jk-row-aside {
   min-width: 198px;
@@ -13,10 +14,14 @@
   margin-left: 6px;
   padding: 24px 16px;
 }
+.jk-row-aside-prop {
+  line-height: 1.86;
+}
 .jk-row-preview {
   min-width: 218px;
   width: 218px;
   margin-right: 22px;
+  position: relative;
 }
 .jk-row-preview-img {
   width: 100%;
@@ -29,16 +34,103 @@
   height: 100%;
   object-fit: cover;
 }
+.jk-row-preview-control {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: calc(100% - 16px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.jk-row-preview-messages {
+  display: grid;
+}
+.jk-row-preview-message {
+  min-width: 122px;
+  border-radius: 6px;
+  background: rgba(49, 49, 49, 0.4);
+  padding: 6px 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.jk-row-preview-message + .jk-row-preview-message {
+  margin-top: 5px;
+}
+.jk-row-preview-message-img {
+  font-size: 16px;
+  margin-right: 6px;
+}
+.jk-row-preview-likes {
+  margin-left: auto;
+  display: flex;
+}
+.jk-row-preview-like {
+  font-size: 20px;
+  stroke: #fff;
+  fill: none;
+  padding: 3px;
+  cursor: pointer;
+}
+.jk-row-preview-like.active {
+  stroke: var(--color-red);
+  fill: var(--color-red);
+}
 .jk-row-inner {
   padding-top: 16px;
   padding-bottom: 16px;
   flex-grow: 1;
+  width: calc(100% - 218px - 22px);
 }
 .jk-row-info {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+.jk-row-plans {
+  width: calc(100% + 32px);
+  margin-right: -32px;
+  padding-right: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.jk-row-plans .swiper {
+  overflow: visible;
+  position: static;
+}
+.jk-row-plans .swiper-initialized .swiper-slide:not(.swiper-slide-visible) {
+  opacity: 0.8;
+}
+.jk-row-plans-next {
+  position: absolute;
+  top: calc(50% - 16px);
+  right: 20px;
+  z-index: 3;
+  transition: 0.2s ease;
+}
+.jk-row-plans-next.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
 .jk-row-control {
   display: flex;
+}
+.jk-row-brand {
+  display: flex;
+  align-items: center;
+}
+.jk-row-brand-img {
+  margin-right: 6px;
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #E2E8F0;
+}
+.jk-row-brand-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }

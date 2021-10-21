@@ -6,6 +6,7 @@
     padding      : 8px;
     display      : flex;
     padding-right: 32px;
+    width        : calc(100% - 198px - 6px);
   }
 
   &-aside {
@@ -13,12 +14,17 @@
     width      : 198px;
     margin-left: 6px;
     padding    : 24px 16px;
+
+    &-prop {
+      line-height: 1.86;
+    }
   }
 
   &-preview {
     min-width   : 218px;
     width       : 218px;
     margin-right: 22px;
+    position    : relative;
 
     &-img {
       width        : 100%;
@@ -32,12 +38,66 @@
         object-fit: cover;
       }
     }
+
+    &-control {
+      position       : absolute;
+      left           : 8px;
+      top            : 8px;
+      width          : calc(100% - 16px);
+      display        : flex;
+      align-items    : flex-start;
+      justify-content: space-between;
+    }
+
+    &-messages {
+
+      display: grid;
+    }
+
+    &-message {
+      min-width    : 122px;
+      border-radius: 6px;
+      background   : rgba(49, 49, 49, 0.4);
+      padding      : 6px 10px;
+      color        : #fff;
+      display      : flex;
+      align-items  : center;
+
+      &+& {
+        margin-top: 5px;
+      }
+
+      &-img {
+        font-size   : 16px;
+        margin-right: 6px;
+      }
+    }
+
+    &-likes {
+      margin-left: auto;
+      display    : flex;
+
+    }
+
+    &-like {
+      font-size: 20px;
+      stroke   : #fff;
+      fill     : none;
+      padding  : 3px;
+      cursor   : pointer;
+
+      &.active {
+        stroke: var(--color-red);
+        fill  : var(--color-red);
+      }
+    }
   }
 
   &-inner {
     padding-top   : 16px;
     padding-bottom: 16px;
     flex-grow     : 1;
+    width         : calc(100% - 218px - 22px);
   }
 
   &-info {
@@ -46,7 +106,59 @@
     justify-content: space-between;
   }
 
+  &-plans {
+    width        : calc(100% + 32px);
+    margin-right : -32px;
+    padding-right: 40px;
+    overflow     : hidden;
+    position     : relative;
+
+    .swiper {
+      overflow: visible;
+      position: static;
+    }
+
+    .swiper-initialized .swiper-slide:not(.swiper-slide-visible) {
+      opacity: 0.8;
+    }
+
+    &-next {
+      position  : absolute;
+      top       : calc(50% - 16px);
+      right     : 20px;
+      z-index   : 3;
+      transition: .2s ease;
+
+      &.swiper-button-disabled {
+        opacity       : 0;
+        pointer-events: none;
+      }
+    }
+  }
+
   &-control {
     display: flex;
+  }
+
+  &-brand {
+    display    : flex;
+    align-items: center;
+
+    &-img {
+      margin-right : 6px;
+      min-width    : 30px;
+      width        : 30px;
+      height       : 30px;
+      border-radius: 50%;
+      overflow     : hidden;
+      border       : 1px solid #E2E8F0;
+
+      img {
+        width     : 100%;
+        height    : 100%;
+        object-fit: scale-down;
+      }
+
+    }
   }
 }
