@@ -264,6 +264,86 @@
       </div>
 
     </div>
+    <h5 class="text-h6 mb-3">Red</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-lg-3 -copy-child- flex">
+        <button class="btn btn--red btn--fill w-100">Отправить</button>
+        <button class="btn btn--red btn--fill btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex">
+        <button class="btn btn--red btn--contur w-100">Отправить</button>
+        <button class="btn btn--red btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex">
+        <button class="btn btn--red btn--light w-100">Отправить</button>
+        <button class="btn btn--red btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="grid-col-lg-3 -copy-child-">
+        <button class="btn btn--red w-100">Отправить</button>
+        <button class="btn btn--red btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-1 -copy-child-">
+        <button class="btn btn--red btn--link w-100">Отправить</button>
+      </div>
+
+    </div>
+    <h5 class="text-h6 mb-3">Green</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-lg-3 -copy-child- flex">
+        <button class="btn btn--green btn--fill w-100">Отправить</button>
+        <button class="btn btn--green btn--fill btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex">
+        <button class="btn btn--green btn--contur w-100">Отправить</button>
+        <button class="btn btn--green btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex">
+        <button class="btn btn--green btn--light w-100">Отправить</button>
+        <button class="btn btn--green btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="grid-col-lg-3 -copy-child-">
+        <button class="btn btn--green w-100">Отправить</button>
+        <button class="btn btn--green btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-1 -copy-child-">
+        <button class="btn btn--green btn--link w-100">Отправить</button>
+      </div>
+
+    </div>
     <h5 class="text-h6 mb-3">Color-icon</h5>
     <div class="grid mb-10">
       <div class="grid-col-lg-3 -copy-child- flex">
@@ -366,7 +446,7 @@
   <link rel="stylesheet" href="css/plan-min.css">
 
   <section class="cards">
-    <div class="jk-row">
+    <div class="jk-row mb-4">
       <div class="jk-row-content card">
         <div class="jk-row-preview">
           <div class="jk-row-preview-img">
@@ -381,21 +461,14 @@
                 </div>
                 <div class="text-small text--demibold">Старт продаж</div>
               </div>
-              <div class="jk-row-preview-message">
-                <div class="jk-row-preview-message-img">
-                  <img src="img/sempl/fire.png" alt="" class="icon">
-                </div>
-                <div class="text-small text--demibold">Высокий спрос</div>
-              </div>
-              <div class="jk-row-preview-message">
-                <div class="jk-row-preview-message-img">
-                  <img src="img/sempl/lighting.png" alt="" class="icon">
-                </div>
-                <div class="text-small text--demibold">Успей купить</div>
-              </div>
             </div>
 
             <div class="jk-row-preview-likes">
+              <div class="jk-row-preview-like d-md-none">
+                <svg class="icon">
+                  <use xlink:href="img/utils.svg#chart" />
+                </svg>
+              </div>
               <div class="jk-row-preview-like">
                 <svg class="icon">
                   <use xlink:href="img/utils.svg#heart" />
@@ -406,11 +479,11 @@
         </div>
         <div class="jk-row-inner">
           <div class="jk-row-info">
-            <div class="jk-row-info-data">
+            <div class="jk-row-info-data mb-4 mb-md-0">
               <div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
               <div class="jk-row-info-map">
-                <span class="text-body-2 text--fade mb-1">ул. Джержинского, ЮМР</span>
-                <button class="btn btn--primary btn--link text-body-2">На карте</button>
+                <span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+                <button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
               </div>
 
               <div class="jk-row-complete flex flex-align-center mt-4">
@@ -423,10 +496,8 @@
             </div>
             <div class="jk-row-info-statistic">
               <div class="jk-row-info-count mb-1 text-small text--demibold color-red">Осталось: 10 квартир</div>
-              <div class="jk-row-info-count mb-1 text-small text--demibold color-yellow">Осталось: 40 домов</div>
-              <div class="jk-row-info-count mb-1 text-small text--demibold color-green">Продано уже 5% квартир</div>
 
-              <div class="jk-row-info-view flex flex-align-center">
+              <div class="jk-row-info-view d-none d-md-flex flex-align-center">
                 <svg class="icon text-body-2 color-icon mr-1">
                   <use xlink:href="img/icons.svg#eye" />
                 </svg>
@@ -435,10 +506,10 @@
               </div>
             </div>
           </div>
-          <div class="jk-row-plans mt-6">
+          <div class="jk-row-plans mt-4 mt-mg-6">
             <div class="swiper grid-wrap grid-spacing-2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide grid-col-4">
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
                   <div class="plan-min">
                     <div class="plan-min-img">
                       <img src="img/sempl/plan-min.png" alt="">
@@ -450,7 +521,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide grid-col-4">
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
                   <div class="plan-min">
                     <div class="plan-min-img">
                       <img src="img/sempl/plan-min.png" alt="">
@@ -462,7 +533,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide grid-col-4">
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
                   <div class="plan-min">
                     <div class="plan-min-img">
                       <img src="img/sempl/plan-min.png" alt="">
@@ -474,7 +545,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide grid-col-4">
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
                   <div class="plan-min">
                     <div class="plan-min-img">
                       <img src="img/sempl/plan-min.png" alt="">
@@ -510,6 +581,11 @@
             </button>
 
           </div>
+          <div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+            <svg class="icon text-body-2 fade-40"><use xlink:href="img/icons.svg#to-left-double" /></svg>
+            <div class="text-body-2 text--fade">листайте планировки</div>
+            <svg class="icon text-body-2 fade-40"><use xlink:href="img/icons.svg#to-right-double" /></svg>
+          </div>
         </div>
       </div>
       <div class="jk-row-aside card">
@@ -517,6 +593,323 @@
         <div class="jk-row-brand">
           <div class="jk-row-brand-img">
             <img src="img/sempl/brand-1.png" alt="">
+          </div>
+          <div class="text-body-2">ЮгСтройИнвест</div>
+
+        </div>
+        <div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
+        <div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102</div>
+        <div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span> Монолитно-кирпич.</div>
+        <div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19</div>
+        <div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая</div>
+      </div>
+    </div>
+    <div class="jk-row mb-4">
+      <div class="jk-row-content card">
+        <div class="jk-row-preview">
+          <div class="jk-row-preview-img">
+            <img src="https://picsum.photos/id/42/600/400" alt="">
+          </div>
+          <div class="jk-row-preview-control">
+
+            <div class="jk-row-preview-messages">
+              <div class="jk-row-preview-message">
+                <div class="jk-row-preview-message-img">
+                  <img src="img/sempl/fire.png" alt="" class="icon">
+                </div>
+                <div class="text-small text--demibold">Высокий спрос</div>
+              </div>
+            </div>
+
+            <div class="jk-row-preview-likes">
+              <div class="jk-row-preview-like d-md-none">
+                <svg class="icon">
+                  <use xlink:href="img/utils.svg#chart" />
+                </svg>
+              </div>
+              <div class="jk-row-preview-like">
+                <svg class="icon">
+                  <use xlink:href="img/utils.svg#heart" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jk-row-inner">
+          <div class="jk-row-info">
+            <div class="jk-row-info-data mb-4 mb-md-0">
+              <div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+              <div class="jk-row-info-map">
+                <span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+                <button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
+              </div>
+
+              <div class="jk-row-complete flex flex-align-center mt-4">
+                <svg class="icon text-body-2 color-icon mr-2">
+                  <use xlink:href="img/icons.svg#key" />
+                </svg>
+                <span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+                    class="text--fade text--regular">есть сданные</span></span>
+              </div>
+            </div>
+            <div class="jk-row-info-statistic">
+              <div class="jk-row-info-count mb-1 text-small text--demibold color-yellow">Осталось: 40 домов</div>
+
+              <div class="jk-row-info-view d-none d-md-flex flex-align-center">
+                <svg class="icon text-body-2 color-icon mr-1">
+                  <use xlink:href="img/icons.svg#eye" />
+                </svg>
+                <div class="text-small text--fade">Интересуются: 10 человек</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="jk-row-plans mt-4 mt-mg-6">
+            <div class="swiper grid-wrap grid-spacing-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="slider-btn jk-row-plans-next">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#to-right" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+          <div class="jk-row-control mt-6">
+            <button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+            <button class="btn btn--color-icon btn-icon ml-1">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#chat" />
+              </svg>
+            </button>
+            <button class="btn btn--color-icon btn-icon ml-1">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#chart" />
+              </svg>
+            </button>
+
+          </div>
+          <div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+            <svg class="icon text-body-2 fade-40"><use xlink:href="img/icons.svg#to-left-double" /></svg>
+            <div class="text-body-2 text--fade">листайте планировки</div>
+            <svg class="icon text-body-2 fade-40"><use xlink:href="img/icons.svg#to-right-double" /></svg>
+          </div>
+        </div>
+      </div>
+      <div class="jk-row-aside card">
+        <div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+        <div class="jk-row-brand">
+          <div class="jk-row-brand-img">
+            <img src="img/sempl/brand-2.png" alt="">
+          </div>
+          <div class="text-body-2">Romex Development</div>
+
+        </div>
+        <div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
+        <div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102</div>
+        <div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span> Монолитно-кирпич.</div>
+        <div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19</div>
+        <div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая</div>
+      </div>
+    </div>
+    <div class="jk-row mb-4">
+      <div class="jk-row-content card">
+        <div class="jk-row-preview">
+          <div class="jk-row-preview-img">
+            <img src="https://picsum.photos/id/42/600/400" alt="">
+          </div>
+          <div class="jk-row-preview-control">
+
+            <div class="jk-row-preview-messages">
+              <div class="jk-row-preview-message">
+                <div class="jk-row-preview-message-img">
+                  <img src="img/sempl/lighting.png" alt="" class="icon">
+                </div>
+                <div class="text-small text--demibold">Успей купить</div>
+              </div>
+            </div>
+
+            <div class="jk-row-preview-likes">
+              <div class="jk-row-preview-like d-md-none">
+                <svg class="icon">
+                  <use xlink:href="img/utils.svg#chart" />
+                </svg>
+              </div>
+              <div class="jk-row-preview-like">
+                <svg class="icon">
+                  <use xlink:href="img/utils.svg#heart" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jk-row-inner">
+          <div class="jk-row-info">
+            <div class="jk-row-info-data mb-4 mb-md-0">
+              <div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+              <div class="jk-row-info-map">
+                <span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+                <button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
+              </div>
+
+              <div class="jk-row-complete flex flex-align-center mt-4">
+                <svg class="icon text-body-2 color-icon mr-2">
+                  <use xlink:href="img/icons.svg#key" />
+                </svg>
+                <span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+                    class="text--fade text--regular">есть сданные</span></span>
+              </div>
+            </div>
+            <div class="jk-row-info-statistic">
+
+              <div class="jk-row-info-count mb-1 text-small text--demibold color-green">Продано уже 5% квартир</div>
+
+              <div class="jk-row-info-view d-none d-md-flex flex-align-center">
+                <svg class="icon text-body-2 color-icon mr-1">
+                  <use xlink:href="img/icons.svg#eye" />
+                </svg>
+                <div class="text-small text--fade">Интересуются: 10 человек</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="jk-row-plans mt-4 mt-mg-6">
+            <div class="swiper grid-wrap grid-spacing-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+                  <div class="plan-min">
+                    <div class="plan-min-img">
+                      <img src="img/sempl/plan-min.png" alt="">
+                    </div>
+                    <div class="plan-min-content">
+                      <div class="plan-min-count text-small">1-комнатные</div>
+                      <div class="plan-min-size text-small">от 48,5 м2</div>
+                      <div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="slider-btn jk-row-plans-next">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#to-right" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+          <div class="jk-row-control mt-6">
+            <button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+            <button class="btn btn--color-icon btn-icon ml-1">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#chat" />
+              </svg>
+            </button>
+            <button class="btn btn--color-icon btn-icon ml-1">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#chart" />
+              </svg>
+            </button>
+
+          </div>
+          <div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+            <svg class="icon text-body-2 fade-40"><use xlink:href="img/icons.svg#to-left-double" /></svg>
+            <div class="text-body-2 text--fade">листайте планировки</div>
+            <svg class="icon text-body-2 fade-40"><use xlink:href="img/icons.svg#to-right-double" /></svg>
+          </div>
+        </div>
+      </div>
+      <div class="jk-row-aside card">
+        <div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+        <div class="jk-row-brand">
+          <div class="jk-row-brand-img">
+            <img src="img/sempl/brand-3.png" alt="">
           </div>
           <div class="text-body-2">ЮгСтройИнвест</div>
 

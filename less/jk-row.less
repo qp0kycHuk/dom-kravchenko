@@ -1,5 +1,11 @@
+@import '../ui/_variables.less';
+
 .jk-row {
   display: flex;
+
+  @media(max-width:@lg) {
+    align-items: flex-start;
+  }
 
   &-content {
     flex-grow    : 1;
@@ -7,6 +13,16 @@
     display      : flex;
     padding-right: 32px;
     width        : calc(100% - 198px - 6px);
+
+    @media(max-width:@lg) {
+      flex-direction: column;
+      padding       : 0;
+    }
+
+
+    @media(max-width:@md) {
+      width: 100%;
+    }
   }
 
   &-aside {
@@ -14,6 +30,10 @@
     width      : 198px;
     margin-left: 6px;
     padding    : 24px 16px;
+
+    @media(max-width:@md) {
+      display: none;
+    }
 
     &-prop {
       line-height: 1.86;
@@ -26,11 +46,22 @@
     margin-right: 22px;
     position    : relative;
 
+    @media(max-width:@lg) {
+      width       : 100%;
+      margin-right: 0;
+      min-width   : 0;
+      height      : 236px;
+    }
+
     &-img {
       width        : 100%;
       height       : 100%;
       border-radius: 16px;
       overflow     : hidden;
+
+      @media(max-width:@lg) {
+        border-radius: 16px 16px 0 0;
+      }
 
       img {
         width     : 100%;
@@ -81,10 +112,27 @@
 
     &-like {
       font-size: 20px;
+      color    : #fff;
       stroke   : #fff;
       fill     : none;
       padding  : 3px;
       cursor   : pointer;
+
+      @media(max-width:@md) {
+        font-size      : 18px;
+        width          : 36px;
+        height         : 36px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        border-radius: 50%;
+        background   : rgba(49, 49, 49, 0.3);
+
+        &+& {
+          margin-left: 8px;
+        }
+      }
 
       &.active {
         stroke: var(--color-red);
@@ -98,12 +146,27 @@
     padding-bottom: 16px;
     flex-grow     : 1;
     width         : calc(100% - 218px - 22px);
+
+    @media(max-width:@lg) {
+      width  : 100%;
+      padding: 16px;
+    }
   }
 
   &-info {
     display        : flex;
     align-items    : flex-start;
     justify-content: space-between;
+
+    @media(max-width:@md) {
+      display: block;
+    }
+
+    &-data{
+      @media(max-width:@md){
+        
+      }
+    }
   }
 
   &-plans {
@@ -112,6 +175,13 @@
     padding-right: 40px;
     overflow     : hidden;
     position     : relative;
+
+    @media(max-width:@lg) {
+      width       : calc(100% + 16px + 16px);
+      margin-right: -16px;
+      margin-left : -16px;
+      padding-left: 16px;
+    }
 
     .swiper {
       overflow: visible;
@@ -138,6 +208,10 @@
 
   &-control {
     display: flex;
+
+    @media(max-width:@md) {
+      display: none;
+    }
   }
 
   &-brand {
