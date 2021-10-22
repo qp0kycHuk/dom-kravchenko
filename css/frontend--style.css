@@ -251,6 +251,9 @@ body * {
   right: 20px;
   z-index: 3;
   transition: 0.2s ease;
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
 }
 .jk-row-plans-next.swiper-button-disabled {
   opacity: 0;
