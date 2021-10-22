@@ -1,3 +1,5 @@
+// out:false
+
 @import '../ui/_variables.less';
 
 .jk-row {
@@ -8,11 +10,12 @@
   }
 
   &-content {
-    flex-grow    : 1;
-    padding      : 8px;
-    display      : flex;
-    padding-right: 32px;
-    width        : calc(100% - 198px - 6px);
+    flex-grow     : 1;
+    padding       : 8px;
+    display       : flex;
+    flex-direction: row;
+    padding-right : 32px;
+    width         : calc(100% - 198px - 6px);
 
     @media(max-width:@lg) {
       flex-direction: column;
@@ -105,40 +108,11 @@
     }
 
     &-likes {
-      margin-left: auto;
-      display    : flex;
+      display: flex;
 
     }
 
-    &-like {
-      font-size: 20px;
-      color    : #fff;
-      stroke   : #fff;
-      fill     : none;
-      padding  : 3px;
-      cursor   : pointer;
 
-      @media(max-width:@md) {
-        font-size      : 18px;
-        width          : 36px;
-        height         : 36px;
-        display        : flex;
-        align-items    : center;
-        justify-content: center;
-
-        border-radius: 50%;
-        background   : rgba(49, 49, 49, 0.3);
-
-        &+& {
-          margin-left: 8px;
-        }
-      }
-
-      &.active {
-        stroke: var(--color-red);
-        fill  : var(--color-red);
-      }
-    }
   }
 
   &-inner {
@@ -162,10 +136,8 @@
       display: block;
     }
 
-    &-data{
-      @media(max-width:@md){
-        
-      }
+    &-data {
+      @media(max-width:@md) {}
     }
   }
 
@@ -214,25 +186,5 @@
     }
   }
 
-  &-brand {
-    display    : flex;
-    align-items: center;
-
-    &-img {
-      margin-right : 6px;
-      min-width    : 30px;
-      width        : 30px;
-      height       : 30px;
-      border-radius: 50%;
-      overflow     : hidden;
-      border       : 1px solid #E2E8F0;
-
-      img {
-        width     : 100%;
-        height    : 100%;
-        object-fit: scale-down;
-      }
-
-    }
-  }
+  &-brand {}
 }

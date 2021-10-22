@@ -19,7 +19,7 @@
 	padding      : 0 32px;
 	border-radius: 6px;
 
-	font-size  : 16px;
+	font-size  : 14px;
 	font-family: var(--font-base);
 	font-weight: bold;
 
@@ -110,14 +110,14 @@
 	}
 
 	&--color-icon {
-		--btn-color      : #828A99;
-		--btn-color-light: rgba(130, 138, 153, 0.2);
+		--btn-color      : var(--color-icon);
+		--btn-color-light: var(--color-icon-20);
 		--btn-text       : #fff;
 
 		@media (hover) {
 			&:hover {
-				--btn-color      : darken(#828A99, 5%);
-				--btn-color-light: rgba(130, 138, 153, 0.3);
+				--btn-color      : var(--color-icon--dark);
+				--btn-color-light: var(--color-icon-30);
 			}
 		}
 	}

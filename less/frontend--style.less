@@ -57,12 +57,25 @@
   --color-red--light: lighten(@color-red, 5%);
   --color-red--dark : darken(@color-red, 5%);
 
+  @color-icon        : #828A99;
+  --color-icon       : @color-icon;
+  --color-icon-10    : fade(@color-icon, 10);
+  --color-icon-20    : fade(@color-icon, 20);
+  --color-icon-30    : fade(@color-icon, 30);
+  --color-icon-40    : fade(@color-icon, 40);
+  --color-icon-50    : fade(@color-icon, 50);
+  --color-icon-60    : fade(@color-icon, 50);
+  --color-icon-70    : fade(@color-icon, 70);
+  --color-icon-80    : fade(@color-icon, 80);
+  --color-icon--light: lighten(@color-icon, 5%);
+  --color-icon--dark : darken(@color-icon, 5%);
 
 
 
 
 
-  @color-text       : #333437;
+
+  @color-text       : #313131;
   --color-text      : @color-text;
   --color-text-dark : darken(@color-text, 5%);
   --color-text-light: lighten(@color-text, 5%);
@@ -112,5 +125,90 @@ body {
     @media (max-width:@md) {
       overflow: hidden;
     }
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+
+
+@import './jk-row.less';
+@import './plan-min.less';
+
+.brand-min {
+  display    : flex;
+  align-items: center;
+
+  &-img {
+    margin-right : 8px;
+    min-width    : 30px;
+    width        : 30px;
+    height       : 30px;
+    border-radius: 50%;
+    overflow     : hidden;
+    border       : 1px solid #E2E8F0;
+
+    img {
+      width     : 100%;
+      height    : 100%;
+      object-fit: scale-down;
+    }
+
+  }
+
+}
+
+.news-card {
+  &-info {
+    display    : flex;
+    align-items: center;
+
+  }
+}
+
+.jk-card {
+  &-prop {
+    background   : #F5F7FB;
+    border-radius: 6px;
+    padding      : 8px 10px;
+  }
+}
+
+.plan-card {
+
+
+  &-img {
+    height     : 230px;
+    padding-top: 20px;
+
+    img {
+      width     : 100%;
+      height    : 100%;
+      object-fit: scale-down;
+    }
+  }
+
+  &-props {
+    margin-left  : -16px;
+    margin-right : -16px;
+    padding      : 10px 16px;
+    width        : calc(100% + 32px);
+    background   : #F5F7FB;
+    border-radius: 6px;
+
+    display        : flex;
+    justify-content: space-between;
+  }
+
+
+  &-btn {
+    padding    : 0 16px;
+    margin-left: -16px;
   }
 }
