@@ -269,11 +269,17 @@
 		</section>
 		<script>
 			new Swiper('.groups-slider .swiper', {
-				slidesPerView: 4,
+				slidesPerView: 3,
+				spaceBetween: 40, 
+				watchSlidesProgress: true,
 				grid: {
 					rows: 2,
 				},
-				spaceBetween: 40
+				breakpoints: {
+					[parseInt(getComputedStyle(document.body).getPropertyValue('--media-lg'))]: {
+						slidesPerView: 4,
+					}
+				}
 			})
 		</script>
 
@@ -1176,11 +1182,18 @@
 		</section>
 		<script>
 			new Swiper('.popular-areas-slider .swiper', {
-				slidesPerView: 4,
+				slidesPerView: 3,
+				spaceBetween: 16,
+				watchSlidesProgress: true,
 				grid: {
 					rows: 2,
 				},
-				spaceBetween: 40
+				breakpoints: {
+					[parseInt(getComputedStyle(document.body).getPropertyValue('--media-lg'))]: {
+						slidesPerView: 4,
+						spaceBetween: 40,
+					}
+				}
 			})
 		</script>
 	</div>

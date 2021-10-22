@@ -1,6 +1,4 @@
 :root {
-  --media-md: 680px;
-  --media-lg: 1016px;
   --color-primary: #0092E4;
   --color-primary-10: rgba(0, 146, 228, 0.1);
   --color-primary-15: rgba(0, 146, 228, 0.15);
@@ -69,8 +67,8 @@
   --radius-small: 3px;
   --radius-middle: 5px;
   --radius-large: 8px;
-  --media-lg: 1200px;
-  --media-md: 760px;
+  --media-lg: 1016px;
+  --media-md: 680px;
   --font-base: 'SFProDisplay', Arial, Helvetica, sans-serif;
   --zi-l1: 321;
   --zi-l2: 322;
@@ -510,6 +508,23 @@ body * {
 }
 .groups-slider .swiper-slide {
   height: auto;
+  transition: opacity 0.2s ease;
+}
+@media (max-width: 1016px) {
+  .groups-slider .swiper {
+    overflow: visible;
+  }
+  .groups-slider .swiper-slide:not(.swiper-slide-visible) {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 1016px) {
+  .groups {
+    overflow: hidden;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 @media (min-width: 680px) {
   .news-developers-slider .swiper-wrapper {
@@ -530,12 +545,29 @@ body * {
     overflow: visible;
   }
 }
-.popular-areas .swiper-wrapper {
+.popular-areas-slider .swiper-wrapper {
   display: grid;
   grid-template-rows: auto auto;
   grid-auto-flow: column;
   height: auto;
 }
-.popular-areas .swiper-slide {
+.popular-areas-slider .swiper-slide {
   height: auto;
+  transition: opacity 0.2s ease;
+}
+@media (max-width: 1016px) {
+  .popular-areas-slider .swiper {
+    overflow: visible;
+  }
+  .popular-areas-slider .swiper-slide:not(.swiper-slide-visible) {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 1016px) {
+  .popular-areas {
+    overflow: hidden;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
