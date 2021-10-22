@@ -12,6 +12,10 @@
   &-top {
     padding      : 12px 16px;
     border-bottom: 1px solid #E2E8F0;
+
+    @media(max-width:@md) {
+      padding: 12px 8px;
+    }
   }
 
   &-img {
@@ -19,6 +23,7 @@
     overflow     : hidden;
     position     : relative;
     max-height   : 278px;
+    min-height   : 130px;
     overflow     : hidden;
 
     &:before {
@@ -64,19 +69,21 @@
       margin-left: 8px;
     }
 
-    @media(max-width:@md) {
-      font-size      : 18px;
-      width          : 36px;
-      height         : 36px;
-      display        : flex;
-      align-items    : center;
-      justify-content: center;
+    &-bg {
+      @media(max-width:@md) {
+        font-size      : 18px;
+        width          : 36px;
+        height         : 36px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
 
-      border-radius: 50%;
-      background   : rgba(49, 49, 49, 0.3);
+        border-radius: 50%;
+        background   : rgba(49, 49, 49, 0.3);
 
-      &+& {
-        margin-left: 8px;
+        &+& {
+          margin-left: 8px;
+        }
       }
     }
 
@@ -94,5 +101,29 @@
     width   : calc(100% - 16px);
     display : flex;
     z-index : 2;
+  }
+
+  &-messages {
+
+    display: grid;
+  }
+
+  &-message {
+    min-width    : 122px;
+    border-radius: 6px;
+    background   : rgba(49, 49, 49, 0.4);
+    padding      : 6px 10px;
+    color        : #fff;
+    display      : flex;
+    align-items  : center;
+
+    &+& {
+      margin-top: 5px;
+    }
+
+    &-img {
+      font-size   : 16px;
+      margin-right: 6px;
+    }
   }
 }

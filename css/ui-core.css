@@ -53,6 +53,9 @@ section {
 .btn:focus:not(:active) {
   background: var(--btn-color-light);
 }
+.btn:focus {
+  z-index: 2;
+}
 @media (hover) {
   .btn:hover {
     --btn-color: var(--color-text-dark);
@@ -159,6 +162,14 @@ section {
   background: var(--btn-color-light);
   box-shadow: 0 0 0 5px var(--btn-color-light);
 }
+.btn--white-bg {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+}
+.btn--white-bg:focus:not(:active) {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
+}
 .btn--shadow {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
 }
@@ -166,17 +177,13 @@ section {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08), 0 0 0 5px var(--btn-color-light);
 }
 .btn-fab {
-  width: 60px;
-  height: 60px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.btn-fab:focus:not(:active) {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16), 0 0 0 5px var(--btn-color-light);
 }
 .btn:disabled {
   --btn-color: #777;
@@ -207,10 +214,16 @@ section {
   padding: 12px 16px;
   border-bottom: 1px solid #E2E8F0;
 }
+@media (max-width: 680px) {
+  .card-top {
+    padding: 12px 8px;
+  }
+}
 .card-img {
   border-radius: 16px 16px 0 0;
   position: relative;
   max-height: 278px;
+  min-height: 130px;
   overflow: hidden;
 }
 .card-img:before {
@@ -250,7 +263,7 @@ section {
   margin-left: 8px;
 }
 @media (max-width: 680px) {
-  .card-like {
+  .card-like-bg {
     font-size: 18px;
     width: 36px;
     height: 36px;
@@ -260,7 +273,7 @@ section {
     border-radius: 50%;
     background: rgba(49, 49, 49, 0.3);
   }
-  .card-like + .card-like {
+  .card-like-bg + .card-like-bg {
     margin-left: 8px;
   }
 }
@@ -276,6 +289,25 @@ section {
   width: calc(100% - 16px);
   display: flex;
   z-index: 2;
+}
+.card-messages {
+  display: grid;
+}
+.card-message {
+  min-width: 122px;
+  border-radius: 6px;
+  background: rgba(49, 49, 49, 0.4);
+  padding: 6px 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.card-message + .card-message {
+  margin-top: 5px;
+}
+.card-message-img {
+  font-size: 16px;
+  margin-right: 6px;
 }
 .flex {
   display: flex;

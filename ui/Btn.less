@@ -37,6 +37,10 @@
 
 	}
 
+	&:focus {
+		z-index: 2;
+
+	}
 
 
 	@media (hover) {
@@ -184,6 +188,17 @@
 		}
 	}
 
+	&--white-bg {
+		background: #FFFFFF;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+
+		&:focus:not(:active) {
+			background: #FFFFFF;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
+
+		}
+	}
+
 
 
 	// mod
@@ -202,9 +217,8 @@
 
 
 	&-fab {
-		width        : 60px;
-		height       : 60px;
-		box-shadow   : 0 6px 15px rgba(0, 0, 0, 0.16);
+		width        : 44px;
+		height       : 44px;
 		border-radius: 50%;
 		padding      : 0;
 
@@ -212,11 +226,7 @@
 		align-items    : center;
 		justify-content: center;
 
-		&:focus:not(:active) {
-			box-shadow:
-				0 6px 15px rgba(0, 0, 0, 0.16),
-				0 0 0 5px var(--btn-color-light);
-		}
+
 	}
 
 	&:disabled {

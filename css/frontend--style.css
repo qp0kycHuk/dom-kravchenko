@@ -170,34 +170,6 @@ body * {
   height: 100%;
   object-fit: cover;
 }
-.jk-row-preview-control {
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  width: calc(100% - 16px);
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.jk-row-preview-messages {
-  display: grid;
-}
-.jk-row-preview-message {
-  min-width: 122px;
-  border-radius: 6px;
-  background: rgba(49, 49, 49, 0.4);
-  padding: 6px 10px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-}
-.jk-row-preview-message + .jk-row-preview-message {
-  margin-top: 5px;
-}
-.jk-row-preview-message-img {
-  font-size: 16px;
-  margin-right: 6px;
-}
 .jk-row-preview-likes {
   display: flex;
 }
@@ -291,6 +263,7 @@ body * {
 .brand-min {
   display: flex;
   align-items: center;
+  max-width: 100%;
 }
 .brand-min-img {
   margin-right: 8px;
@@ -301,23 +274,65 @@ body * {
   overflow: hidden;
   border: 1px solid #E2E8F0;
 }
+@media (max-width: 680px) {
+  .brand-min-img {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
 .brand-min-img img {
   width: 100%;
   height: 100%;
   object-fit: scale-down;
 }
+.brand-min-text {
+  width: calc(100% - 24px - 8px);
+}
+.brand-min-text * {
+  white-space: nowrap;
+  /* Отменяем перенос текста */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
 .news-card-info {
   display: flex;
   align-items: center;
 }
-.jk-card-prop {
-  background: #F5F7FB;
-  border-radius: 6px;
-  padding: 8px 10px;
+@media (min-width: 680px) {
+  .jk-card-prop {
+    background: #F5F7FB;
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 680px) {
+  .jk-card-prop {
+    padding-top: 10px;
+    border-top: 1px solid rgba(214, 221, 232, 0.8);
+  }
+}
+@media (max-width: 680px) {
+  .jk-card-btn {
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+@media (max-width: 680px) {
+  .plan-card-brand {
+    max-width: calc(100% - 40px);
+  }
 }
 .plan-card-img {
   height: 230px;
   padding-top: 20px;
+}
+@media (max-width: 680px) {
+  .plan-card-img {
+    height: 130px;
+  }
 }
 .plan-card-img img {
   width: 100%;
@@ -334,7 +349,21 @@ body * {
   display: flex;
   justify-content: space-between;
 }
-.plan-card-btn {
-  padding: 0 16px;
-  margin-left: -16px;
+@media (max-width: 680px) {
+  .plan-card-props {
+    display: none;
+  }
+}
+@media (min-width: 680px) {
+  .plan-card-btn {
+    padding: 0 16px;
+    margin-left: -16px;
+  }
+}
+@media (max-width: 680px) {
+  .plan-card-btn {
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    margin-right: -8px;
+  }
 }
