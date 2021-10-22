@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+	<link rel="stylesheet" href="source/swiper-bundle.min.css">
+	<link rel="stylesheet" href="source/swiper-custom.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
+
+	<script src="source/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/ui-reset.css">
+	<link rel="stylesheet" href="css/ui-core.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
+
+
+
+
+	<title>Главный </title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="header-user ml-auto">
+			<div class="header-user-btn">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="nav">
+		<a href="/" class="nav-item active">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper">
+		<section class="filter filter-index">
+			<div class="container">
+
+				<div class="filter-title text-h6 text--center color-white">Найдите идеальное предложение в Краснодаре</div>
+				<div class="filter-form card">
+					<div class="filter-fields">
+						<div class="form-field">
+							<div class="text-body-2 text--demibold mb-2">Квартира или дом?</div>
+
+							<div class="form-input-cover">
+								<label class="form-input  ">
+									<input type="radio" class="form-input-checkbox" name="test-1" checked>
+									<div class="form-input-target"> Квартира </div>
+								</label>
+								<label class="form-input ">
+									<input type="radio" class="form-input-checkbox" name="test-1">
+									<div class="form-input-target"> Дом </div>
+								</label>
+							</div>
+
+						</div>
+
+
+						<label class="form-field ">
+							<div class="text-body-2 text--demibold mb-2">Площадь</div>
+
+							<div class="form-input-cover">
+								<input type="text" class="form-input" placeholder="От">
+								<input type="text" class="form-input" placeholder="До">
+							</div>
+
+						</label>
+
+
+						<label class="form-field form-select">
+							<div class="text-body-2 text--demibold mb-2">Готовность</div>
+							<div class="form-input-cover">
+								<select class="form-input">
+									<option value="0" selected="">Строится</option>
+									<option value="1">Не Строится</option>
+								</select>
+								<div class="form-select-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#to-right"></use>
+									</svg>
+								</div>
+							</div>
+						</label>
+
+
+						<label class="form-field form-select">
+							<div class="text-body-2 text--demibold mb-2">Комнатность</div>
+							<div class="form-input-cover">
+								<select class="form-input">
+									<option value="0" selected="">1-ком.</option>
+									<option value="1">2-ком.</option>
+								</select>
+								<div class="form-select-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#to-right"></use>
+									</svg>
+								</div>
+							</div>
+						</label>
+
+						<label class="form-field ">
+							<div class="text-body-2 text--demibold mb-2">Цена</div>
+
+							<div class="form-input-cover">
+								<input type="text" class="form-input" placeholder="От">
+								<input type="text" class="form-input" placeholder="До">
+							</div>
+
+						</label>
+
+						<label class="form-field ">
+							<div class="text-body-2 text--demibold mb-2">Поиск по названию ЖК</div>
+							<div class="form-input-cover">
+								<input type="text" class="form-input active" placeholder="Заполните поле">
+							</div>
+						</label>
+
+					</div>
+
+					<div class="filter-btns">
+						<button class="filter-btn btn btn--primary">Расширенный поиск</button>
+						<button class="filter-btn btn btn--primary btn--fill">Найти</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="groups">
+			<div class="slider groups-slider">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+						<div class="swiper-slide groups-item">
+							<div class="groups-item-img">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</div>
+							<div class="groups-item-content">
+								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--fade">12 предложений</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			new Swiper('.groups-slider .swiper', {
+				slidesPerView: 4,
+				grid: {
+					rows: 2,
+				},
+				spaceBetween: 40
+			})
+		</script>
+
+		<section class="content">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Популярные предложения</div>
+			<div class="popular-index">
+				<div class="jk-row mb-4">
+					<div class="jk-row-content card">
+						<div class="jk-row-preview">
+							<div class="jk-row-preview-img">
+								<img src="https://picsum.photos/id/42/600/400" alt="">
+							</div>
+							<div class="card-control">
+
+								<div class="card-messages">
+									<div class="card-message">
+										<div class="card-message-img">
+											<img src="img/sempl/flag.png" alt="" class="icon">
+										</div>
+										<div class="text-small text--demibold">Старт продаж</div>
+									</div>
+								</div>
+
+								<div class="jk-row-preview-likes card-likes ml-auto">
+									<div class="card-like card-like-bg d-md-none">
+										<svg class="icon">
+											<use xlink:href="img/utils.svg#chart" />
+										</svg>
+									</div>
+									<div class="card-like card-like-bg">
+										<svg class="icon">
+											<use xlink:href="img/utils.svg#heart" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="jk-row-inner">
+							<div class="jk-row-info">
+								<div class="jk-row-info-data mb-4 mb-md-0">
+									<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+									<div class="jk-row-info-map">
+										<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+										<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
+									</div>
+
+									<div class="jk-row-complete flex flex-align-center mt-4">
+										<svg class="icon text-body-2 color-icon mr-2">
+											<use xlink:href="img/icons.svg#key" />
+										</svg>
+										<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+												class="text--fade text--regular">есть сданные</span></span>
+									</div>
+								</div>
+								<div class="jk-row-info-statistic">
+									<div class="jk-row-info-count mb-1 text-small text--demibold color-red">Осталось: 10 квартир</div>
+
+									<div class="jk-row-info-view d-none d-md-flex flex-align-center">
+										<svg class="icon text-body-2 color-icon mr-1">
+											<use xlink:href="img/icons.svg#eye" />
+										</svg>
+										<div class="text-small text--fade">Интересуются: 10 человек</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="jk-row-plans mt-4 mt-mg-6">
+								<div class="swiper grid-wrap grid-spacing-2">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<button class="slider-btn jk-row-plans-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right" />
+										</svg>
+									</button>
+								</div>
+
+							</div>
+							<div class="jk-row-control mt-6">
+								<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+								<button class="btn btn--color-icon btn-icon ml-1">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#chat" />
+									</svg>
+								</button>
+								<button class="btn btn--color-icon btn-icon ml-1">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#chart" />
+									</svg>
+								</button>
+
+							</div>
+							<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+								<svg class="icon text-body-2 fade-40">
+									<use xlink:href="img/icons.svg#to-left-double" />
+								</svg>
+								<div class="text-body-2 text--fade">листайте планировки</div>
+								<svg class="icon text-body-2 fade-40">
+									<use xlink:href="img/icons.svg#to-right-double" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="jk-row-aside card">
+						<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+						<div class="jk-row-brand brand-min">
+							<div class="brand-min-img">
+								<img src="img/sempl/brand-1.png" alt="">
+							</div>
+							<div class="text-body-2">ЮгСтройИнвест</div>
+
+						</div>
+						<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102</div>
+						<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span> Монолитно-кирпич.
+						</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая</div>
+					</div>
+				</div>
+				<div class="jk-row mb-4">
+					<div class="jk-row-content card">
+						<div class="jk-row-preview">
+							<div class="jk-row-preview-img">
+								<img src="https://picsum.photos/id/42/600/400" alt="">
+							</div>
+							<div class="card-control">
+
+								<div class="card-messages">
+									<div class="card-message">
+										<div class="card-message-img">
+											<img src="img/sempl/fire.png" alt="" class="icon">
+										</div>
+										<div class="text-small text--demibold">Высокий спрос</div>
+									</div>
+								</div>
+
+								<div class="jk-row-preview-likes card-likes ml-auto">
+									<div class="card-like card-like-bg d-md-none">
+										<svg class="icon">
+											<use xlink:href="img/utils.svg#chart" />
+										</svg>
+									</div>
+									<div class="card-like card-like-bg">
+										<svg class="icon">
+											<use xlink:href="img/utils.svg#heart" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="jk-row-inner">
+							<div class="jk-row-info">
+								<div class="jk-row-info-data mb-4 mb-md-0">
+									<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+									<div class="jk-row-info-map">
+										<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+										<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
+									</div>
+
+									<div class="jk-row-complete flex flex-align-center mt-4">
+										<svg class="icon text-body-2 color-icon mr-2">
+											<use xlink:href="img/icons.svg#key" />
+										</svg>
+										<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+												class="text--fade text--regular">есть сданные</span></span>
+									</div>
+								</div>
+								<div class="jk-row-info-statistic">
+									<div class="jk-row-info-count mb-1 text-small text--demibold color-yellow">Осталось: 40 домов</div>
+
+									<div class="jk-row-info-view d-none d-md-flex flex-align-center">
+										<svg class="icon text-body-2 color-icon mr-1">
+											<use xlink:href="img/icons.svg#eye" />
+										</svg>
+										<div class="text-small text--fade">Интересуются: 10 человек</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="jk-row-plans mt-4 mt-mg-6">
+								<div class="swiper grid-wrap grid-spacing-2">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<button class="slider-btn jk-row-plans-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right" />
+										</svg>
+									</button>
+								</div>
+
+							</div>
+							<div class="jk-row-control mt-6">
+								<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+								<button class="btn btn--color-icon btn-icon ml-1">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#chat" />
+									</svg>
+								</button>
+								<button class="btn btn--color-icon btn-icon ml-1">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#chart" />
+									</svg>
+								</button>
+
+							</div>
+							<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+								<svg class="icon text-body-2 fade-40">
+									<use xlink:href="img/icons.svg#to-left-double" />
+								</svg>
+								<div class="text-body-2 text--fade">листайте планировки</div>
+								<svg class="icon text-body-2 fade-40">
+									<use xlink:href="img/icons.svg#to-right-double" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="jk-row-aside card">
+						<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+						<div class="jk-row-brand brand-min">
+							<div class="brand-min-img">
+								<img src="img/sempl/brand-2.png" alt="">
+							</div>
+							<div class="text-body-2">Romex Development</div>
+
+						</div>
+						<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102</div>
+						<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span> Монолитно-кирпич.
+						</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая</div>
+					</div>
+				</div>
+				<div class="jk-row ">
+					<div class="jk-row-content card">
+						<div class="jk-row-preview">
+							<div class="jk-row-preview-img">
+								<img src="https://picsum.photos/id/42/600/400" alt="">
+							</div>
+							<div class="card-control">
+
+								<div class="card-messages">
+									<div class="card-message">
+										<div class="card-message-img">
+											<img src="img/sempl/lighting.png" alt="" class="icon">
+										</div>
+										<div class="text-small text--demibold">Успей купить</div>
+									</div>
+								</div>
+
+								<div class="jk-row-preview-likes card-likes ml-auto">
+									<div class="card-like card-like-bg d-md-none">
+										<svg class="icon">
+											<use xlink:href="img/utils.svg#chart" />
+										</svg>
+									</div>
+									<div class="card-like card-like-bg active">
+										<svg class="icon">
+											<use xlink:href="img/utils.svg#heart" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="jk-row-inner">
+							<div class="jk-row-info">
+								<div class="jk-row-info-data mb-4 mb-md-0">
+									<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+									<div class="jk-row-info-map">
+										<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+										<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
+									</div>
+
+									<div class="jk-row-complete flex flex-align-center mt-4">
+										<svg class="icon text-body-2 color-icon mr-2">
+											<use xlink:href="img/icons.svg#key" />
+										</svg>
+										<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+												class="text--fade text--regular">есть сданные</span></span>
+									</div>
+								</div>
+								<div class="jk-row-info-statistic">
+
+									<div class="jk-row-info-count mb-1 text-small text--demibold color-green">Продано уже 5% квартир</div>
+
+									<div class="jk-row-info-view d-none d-md-flex flex-align-center">
+										<svg class="icon text-body-2 color-icon mr-1">
+											<use xlink:href="img/icons.svg#eye" />
+										</svg>
+										<div class="text-small text--fade">Интересуются: 10 человек</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="jk-row-plans mt-4 mt-mg-6">
+								<div class="swiper grid-wrap grid-spacing-2">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+											<div class="plan-min">
+												<div class="plan-min-img">
+													<img src="img/sempl/plan-min.png" alt="">
+												</div>
+												<div class="plan-min-content">
+													<div class="plan-min-count text-small">1-комнатные</div>
+													<div class="plan-min-size text-small">от 48,5 м2</div>
+													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<button class="slider-btn jk-row-plans-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right" />
+										</svg>
+									</button>
+								</div>
+
+							</div>
+							<div class="jk-row-control mt-6">
+								<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+								<button class="btn btn--color-icon btn-icon ml-1">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#chat" />
+									</svg>
+								</button>
+								<button class="btn btn--color-icon btn-icon ml-1">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#chart" />
+									</svg>
+								</button>
+
+							</div>
+							<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+								<svg class="icon text-body-2 fade-40">
+									<use xlink:href="img/icons.svg#to-left-double" />
+								</svg>
+								<div class="text-body-2 text--fade">листайте планировки</div>
+								<svg class="icon text-body-2 fade-40">
+									<use xlink:href="img/icons.svg#to-right-double" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="jk-row-aside card">
+						<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+						<div class="jk-row-brand brand-min">
+							<div class="brand-min-img">
+								<img src="img/sempl/brand-3.png" alt="">
+							</div>
+							<div class="text-body-2">ЮгСтройИнвест</div>
+
+						</div>
+						<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102</div>
+						<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span> Монолитно-кирпич.
+						</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19</div>
+						<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn--primary btn--light w-100 mt-6">Показать все предложения</button>
+		</section>
+		<script>
+			new Swiper('.jk-row-plans .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+				navigation: {
+					nextEl: '.jk-row-plans-next'
+				}
+			})
+		</script>
+
+
+		<section class="news-developers">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Новости застройщиков</div>
+			<div class="news-developers-slider">
+				<div class="swiper grid-wrap grid-spacing-2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide grid-col-8 grid-col-md-6">
+							<div class="news-card card">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+								<div class="card-control">
+									<div class="card-messages d-lg-none">
+										<div class="card-message">
+											<div class="text-small fade-80">ЮгСтройИнвест</div>
+										</div>
+									</div>
+
+									<div class="ml-auto card-likes d-lg-flex d-none">
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#share" />
+											</svg>
+										</div>
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/utils.svg#heart" />
+											</svg>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="card-content pt-5">
+									<div class="news-card-info mb-lg-4">
+										<div class="news-card-brand brand-min d-lg-flex d-none">
+											<div class="brand-min-img">
+												<img src="img/sempl/brand-3.png" alt="">
+											</div>
+											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
+
+										</div>
+										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
+											сентября</span>
+									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
+										<button class="btn btn--primary btn--light">Подробнее</button>
+
+										<div class="ml-auto d-lg-flex d-none flex-align-center">
+											<svg class="icon text-body-1 color-icon mr-2">
+												<use xlink:href="img/icons.svg#eye" />
+											</svg>
+											<div class="text-body-2 color-icon">123</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-8 grid-col-md-6">
+							<div class="news-card card">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+								<div class="card-control">
+									<div class="card-messages d-lg-none">
+										<div class="card-message">
+											<div class="text-small fade-80">ЮгСтройИнвест</div>
+										</div>
+									</div>
+
+									<div class="ml-auto card-likes d-lg-flex d-none">
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#share" />
+											</svg>
+										</div>
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/utils.svg#heart" />
+											</svg>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="card-content pt-5">
+									<div class="news-card-info mb-lg-4">
+										<div class="news-card-brand brand-min d-lg-flex d-none">
+											<div class="brand-min-img">
+												<img src="img/sempl/brand-3.png" alt="">
+											</div>
+											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
+
+										</div>
+										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
+											сентября</span>
+									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
+										<button class="btn btn--primary btn--light">Подробнее</button>
+
+										<div class="ml-auto d-lg-flex d-none flex-align-center">
+											<svg class="icon text-body-1 color-icon mr-2">
+												<use xlink:href="img/icons.svg#eye" />
+											</svg>
+											<div class="text-body-2 color-icon">123</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-8 grid-col-md-6">
+							<div class="news-card card">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+								<div class="card-control">
+									<div class="card-messages d-lg-none">
+										<div class="card-message">
+											<div class="text-small fade-80">ЮгСтройИнвест</div>
+										</div>
+									</div>
+
+									<div class="ml-auto card-likes d-lg-flex d-none">
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#share" />
+											</svg>
+										</div>
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/utils.svg#heart" />
+											</svg>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="card-content pt-5">
+									<div class="news-card-info mb-lg-4">
+										<div class="news-card-brand brand-min d-lg-flex d-none">
+											<div class="brand-min-img">
+												<img src="img/sempl/brand-3.png" alt="">
+											</div>
+											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
+
+										</div>
+										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
+											сентября</span>
+									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
+										<button class="btn btn--primary btn--light">Подробнее</button>
+
+										<div class="ml-auto d-lg-flex d-none flex-align-center">
+											<svg class="icon text-body-1 color-icon mr-2">
+												<use xlink:href="img/icons.svg#eye" />
+											</svg>
+											<div class="text-body-2 color-icon">123</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-8 grid-col-md-6">
+							<div class="news-card card">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+								<div class="card-control">
+									<div class="card-messages d-lg-none">
+										<div class="card-message">
+											<div class="text-small fade-80">ЮгСтройИнвест</div>
+										</div>
+									</div>
+
+									<div class="ml-auto card-likes d-lg-flex d-none">
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#share" />
+											</svg>
+										</div>
+										<div class="card-like card-like-bg">
+											<svg class="icon">
+												<use xlink:href="img/utils.svg#heart" />
+											</svg>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="card-content pt-5">
+									<div class="news-card-info mb-lg-4">
+										<div class="news-card-brand brand-min d-lg-flex d-none">
+											<div class="brand-min-img">
+												<img src="img/sempl/brand-3.png" alt="">
+											</div>
+											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
+
+										</div>
+										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
+											сентября</span>
+									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
+										<button class="btn btn--primary btn--light">Подробнее</button>
+
+										<div class="ml-auto d-lg-flex d-none flex-align-center">
+											<svg class="icon text-body-1 color-icon mr-2">
+												<use xlink:href="img/icons.svg#eye" />
+											</svg>
+											<div class="text-body-2 color-icon">123</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			new Swiper('.news-developers-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+
+			})
+		</script>
+
+		<section class="popular-areas">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Популярные районы</div>
+			<div class="popular-areas-slider">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/id/1063/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-3 px-6">
+
+									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			new Swiper('.popular-areas-slider .swiper', {
+				slidesPerView: 4,
+				grid: {
+					rows: 2,
+				},
+				spaceBetween: 40
+			})
+		</script>
+	</div>
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/ion.rangeSlider.custom.js"></script>
+
+</body>
+
+</html>
