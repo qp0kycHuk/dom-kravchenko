@@ -10,6 +10,20 @@
   /* margin-right: 0; */
 }
 
+.swiper {
+  user-select: none;
+}
+
+.swiper-button-disabled {
+  opacity       : .4;
+  pointer-events: none;
+}
+
+.swiper-slide {
+  height    : auto;
+  align-self: stretch;
+}
+
 .slider {
   position: relative;
 }
@@ -27,9 +41,10 @@
   transition     : .2s ease;
 
   @arrowLg1: @lg + (2 * (15px + 60px - 24px));
-  @media(max-width:@arrowLg1){
-    width: 30px;
-    height: 30px;
+
+  @media(max-width:@arrowLg1) {
+    width    : 30px;
+    height   : 30px;
     font-size: 12px;
   }
 }

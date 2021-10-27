@@ -1,0 +1,10 @@
+.tippy-box[data-theme~='flat'] {
+  background-color: #fff;
+  color: var(--color-text);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 16px;
+  padding: 8px;
+}
+.tippy-box[data-theme~='flat'] .tippy-arrow {
+  color: #fff;
+}

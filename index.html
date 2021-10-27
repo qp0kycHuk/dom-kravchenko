@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
+	<link rel="stylesheet" href="source/fancybox.css">
+	<link rel="stylesheet" href="source/fancybox.custom.css">
 	<link rel="stylesheet" href="source/swiper-bundle.min.css">
 	<link rel="stylesheet" href="source/swiper-custom.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
@@ -31,10 +32,20 @@
 
 <body>
 	<header class="header">
+		<div class="header-user mr-auto d-md-none">
+			<div class="header-user-btn-img">
+				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+			</div>
+		</div>
 		<div class="header-logo">
 			<img src="img/logo.png" alt="">
 		</div>
-		<div class="header-user ml-auto">
+		<button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="img/icons.svg#filter" />
+			</svg>
+		</button>
+		<div class="header-user ml-auto d-md-block d-none">
 			<div class="header-user-btn">
 				<div class="header-user-btn-arrow">
 					<svg class="icon">
@@ -97,97 +108,115 @@
 		<section class="filter filter-index">
 			<div class="container">
 
-				<div class="filter-title text-h6 text--center color-white">Найдите идеальное предложение в Краснодаре</div>
-				<div class="filter-form card">
-					<div class="filter-fields">
-						<div class="form-field">
-							<div class="text-body-2 text--demibold mb-2">Квартира или дом?</div>
+				<div class="filter-title text-subtitle-1 text-md-h6 text--center color-white">Найдите идеальное предложение в
+					Краснодаре</div>
+				<div class="filter-form-dialog" id="filter-form">
+					<div class="filter-form  card">
+						<div class="text-subtitle-2 d-md-none mb-7 text--center">Фильтр</div>
 
-							<div class="form-input-cover">
-								<label class="form-input  ">
-									<input type="radio" class="form-input-checkbox" name="test-1" checked>
-									<div class="form-input-target"> Квартира </div>
-								</label>
-								<label class="form-input ">
-									<input type="radio" class="form-input-checkbox" name="test-1">
-									<div class="form-input-target"> Дом </div>
-								</label>
+						<div class="filter-fields">
+							<div class="form-field">
+								<div class="text-body-2 text--demibold mb-2">Квартира или дом?</div>
+
+								<div class="form-input-cover">
+									<label class="form-input-cover  ">
+										<input type="radio" class="form-input-checkbox" name="test-1" checked>
+										<div class="form-input form-input-target">
+											Квартира
+			
+										</div>
+									</label>
+			
+									<label class="form-input-cover">
+										<input type="radio" class="form-input-checkbox" name="test-1">
+										<div class="form-input form-input-target">
+											Дом
+			
+										</div>
+									</label>
+								</div>
+
 							</div>
+
+
+							<label class="form-field ">
+								<div class="text-body-2 text--demibold mb-2">Площадь</div>
+
+								<div class="form-input-cover">
+									<input type="text" class="form-input" placeholder="От">
+									<input type="text" class="form-input" placeholder="До">
+								</div>
+
+							</label>
+
+
+							<label class="form-field form-select">
+								<div class="text-body-2 text--demibold mb-2">Готовность</div>
+								<div class="form-input-cover">
+									<select class="form-input">
+										<option value="0" selected="">Строится</option>
+										<option value="1">Не Строится</option>
+									</select>
+									<div class="form-select-icon">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right"></use>
+										</svg>
+									</div>
+								</div>
+							</label>
+
+
+							<label class="form-field form-select">
+								<div class="text-body-2 text--demibold mb-2">Комнатность</div>
+								<div class="form-input-cover">
+									<select class="form-input">
+										<option value="0" selected="">1-ком.</option>
+										<option value="1">2-ком.</option>
+									</select>
+									<div class="form-select-icon">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right"></use>
+										</svg>
+									</div>
+								</div>
+							</label>
+
+							<label class="form-field ">
+								<div class="text-body-2 text--demibold mb-2">Цена</div>
+
+								<div class="form-input-cover">
+									<input type="text" class="form-input" placeholder="От">
+									<input type="text" class="form-input" placeholder="До">
+								</div>
+
+							</label>
+
+							<label class="form-field ">
+								<div class="text-body-2 text--demibold mb-2">Поиск по названию ЖК</div>
+								<div class="form-input-cover">
+									<input type="text" class="form-input active" placeholder="Заполните поле">
+								</div>
+							</label>
 
 						</div>
 
-
-						<label class="form-field ">
-							<div class="text-body-2 text--demibold mb-2">Площадь</div>
-
-							<div class="form-input-cover">
-								<input type="text" class="form-input" placeholder="От">
-								<input type="text" class="form-input" placeholder="До">
-							</div>
-
-						</label>
-
-
-						<label class="form-field form-select">
-							<div class="text-body-2 text--demibold mb-2">Готовность</div>
-							<div class="form-input-cover">
-								<select class="form-input">
-									<option value="0" selected="">Строится</option>
-									<option value="1">Не Строится</option>
-								</select>
-								<div class="form-select-icon">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#to-right"></use>
-									</svg>
-								</div>
-							</div>
-						</label>
-
-
-						<label class="form-field form-select">
-							<div class="text-body-2 text--demibold mb-2">Комнатность</div>
-							<div class="form-input-cover">
-								<select class="form-input">
-									<option value="0" selected="">1-ком.</option>
-									<option value="1">2-ком.</option>
-								</select>
-								<div class="form-select-icon">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#to-right"></use>
-									</svg>
-								</div>
-							</div>
-						</label>
-
-						<label class="form-field ">
-							<div class="text-body-2 text--demibold mb-2">Цена</div>
-
-							<div class="form-input-cover">
-								<input type="text" class="form-input" placeholder="От">
-								<input type="text" class="form-input" placeholder="До">
-							</div>
-
-						</label>
-
-						<label class="form-field ">
-							<div class="text-body-2 text--demibold mb-2">Поиск по названию ЖК</div>
-							<div class="form-input-cover">
-								<input type="text" class="form-input active" placeholder="Заполните поле">
-							</div>
-						</label>
-
-					</div>
-
-					<div class="filter-btns">
-						<button class="filter-btn btn btn--primary">Расширенный поиск</button>
-						<button class="filter-btn btn btn--primary btn--fill">Найти</button>
+						<div class="filter-form-btns">
+							<button class="filter-form-btn btn btn--primary">Расширенный поиск</button>
+							<button class="filter-form-btn btn btn--primary btn--fill">Найти</button>
+						</div>
 					</div>
 				</div>
+				<button class="filter-btn btn btn--primary btn--white-bg d-md-none" data-fancybox-modal data-src="#filter-form">
+					<svg class="icon mr-2 color-icon">
+						<use xlink:href="img/icons.svg#filter" />
+					</svg>
+					<span class="color-text"> Начать поиск квартиры или дома</span>
+				</button>
 			</div>
 		</section>
 
 
-		<section class="groups">
+		<section class="groups pt-md-10">
 			<div class="slider groups-slider">
 				<div class="swiper">
 					<div class="swiper-wrapper">
@@ -269,15 +298,20 @@
 		</section>
 		<script>
 			new Swiper('.groups-slider .swiper', {
-				slidesPerView: 3,
-				spaceBetween: 40, 
+				slidesPerView: 1.5,
+				spaceBetween: 24,
 				watchSlidesProgress: true,
 				grid: {
 					rows: 2,
 				},
 				breakpoints: {
+					[parseInt(getComputedStyle(document.body).getPropertyValue('--media-md'))]: {
+						slidesPerView: 3,
+						spaceBetween: 40,
+					},
 					[parseInt(getComputedStyle(document.body).getPropertyValue('--media-lg'))]: {
 						slidesPerView: 4,
+						spaceBetween: 40,
 					}
 				}
 			})
@@ -349,7 +383,7 @@
 							<div class="jk-row-plans mt-4 mt-mg-6">
 								<div class="swiper grid-wrap grid-spacing-2">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -361,7 +395,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -373,30 +407,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
-												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
-												</div>
-												<div class="plan-min-content">
-													<div class="plan-min-count text-small">1-комнатные</div>
-													<div class="plan-min-size text-small">от 48,5 м2</div>
-													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
-												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
-												</div>
-												<div class="plan-min-content">
-													<div class="plan-min-count text-small">1-комнатные</div>
-													<div class="plan-min-size text-small">от 48,5 м2</div>
-													<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-												</div>
-											</div>
-										</div>
+
 									</div>
 
 									<button class="slider-btn jk-row-plans-next">
@@ -512,7 +523,7 @@
 							<div class="jk-row-plans mt-4 mt-mg-6">
 								<div class="swiper grid-wrap grid-spacing-2">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -524,7 +535,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -536,7 +547,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -548,7 +559,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -676,7 +687,7 @@
 							<div class="jk-row-plans mt-4 mt-mg-6">
 								<div class="swiper grid-wrap grid-spacing-2">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -688,7 +699,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -700,7 +711,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -712,7 +723,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-4">
+										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 											<div class="plan-min">
 												<div class="plan-min-img">
 													<img src="img/sempl/plan-min.png" alt="">
@@ -793,9 +804,9 @@
 		<section class="news-developers">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Новости застройщиков</div>
 			<div class="news-developers-slider">
-				<div class="swiper grid-wrap grid-spacing-2">
+				<div class="swiper grid-wrap grid-spacing-4 grid-spacing-md-6">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide grid-col-8 grid-col-md-6">
+						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
 									<img src="https://picsum.photos/id/1063/600/400" alt="">
@@ -854,7 +865,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-8 grid-col-md-6">
+						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
 									<img src="https://picsum.photos/id/1063/600/400" alt="">
@@ -913,7 +924,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-8 grid-col-md-6">
+						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
 									<img src="https://picsum.photos/id/1063/600/400" alt="">
@@ -972,7 +983,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-8 grid-col-md-6">
+						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
 									<img src="https://picsum.photos/id/1063/600/400" alt="">
@@ -1182,13 +1193,16 @@
 		</section>
 		<script>
 			new Swiper('.popular-areas-slider .swiper', {
-				slidesPerView: 3,
+				slidesPerView: 1.5,
 				spaceBetween: 16,
 				watchSlidesProgress: true,
 				grid: {
 					rows: 2,
 				},
 				breakpoints: {
+					[parseInt(getComputedStyle(document.body).getPropertyValue('--media-md'))]: {
+						slidesPerView: 3,
+					},
 					[parseInt(getComputedStyle(document.body).getPropertyValue('--media-lg'))]: {
 						slidesPerView: 4,
 						spaceBetween: 40,
@@ -1196,12 +1210,100 @@
 				}
 			})
 		</script>
+
+
+
+		<section class="index-about">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Босс просил вас посмотреть</div>
+			<div class="index-about-inner">
+				<div class="index-about-video">
+					<a href="https://www.youtube.com/watch?v=jO_jGcLTYKw&t=1957s" data-fancybox class="index-about-video-preview">
+						<img src="img/sempl/index-video.png" alt="">
+						<button class="index-about-video-btn">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#play" />
+							</svg>
+						</button>
+					</a>
+					<div class="text-body-2 text-md-body-1 text--demibold mt-3 mt-md-4">Как мы поможем вам найти идеальное жилье
+					</div>
+				</div>
+				<div class="index-about-news">
+					<div class="index-about-item">
+						<div class="index-about-item-img">
+							<img src="https://picsum.photos/id/743/600/400" alt="">
+						</div>
+						<div class="index-about-content">
+							<div class="text-body-2 text--demibold mb-1 mb-md-2">Главное в доме - это земля под ним</div>
+							<div class="text-small text--fade mb-1 d-none d-md-block">
+								Участок определяет не только геометрические
+								параметры сооружений, но и собственно...
+							</div>
+							<button class="index-about-item-btn btn btn--primary">Подробнее</button>
+						</div>
+					</div>
+					<div class="index-about-item">
+						<div class="index-about-item-img">
+							<img src="https://picsum.photos/id/743/600/400" alt="">
+						</div>
+						<div class="index-about-content">
+							<div class="text-body-2 text--demibold mb-1 mb-md-2">Главное в доме - это земля под ним</div>
+							<div class="text-small text--fade mb-1 d-none d-md-block">
+								Участок определяет не только геометрические
+								параметры сооружений, но и собственно...
+							</div>
+							<button class="index-about-item-btn btn btn--primary">Подробнее</button>
+						</div>
+					</div>
+					<div class="index-about-item">
+						<div class="index-about-item-img">
+							<img src="https://picsum.photos/id/743/600/400" alt="">
+						</div>
+						<div class="index-about-content">
+							<div class="text-body-2 text--demibold mb-1 mb-md-2">Главное в доме - это земля под ним</div>
+							<div class="text-small text--fade mb-1 d-none d-md-block">
+								Участок определяет не только геометрические
+								параметры сооружений, но и собственно...
+							</div>
+							<button class="index-about-item-btn btn btn--primary">Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="footer-divider mb-6"></div>
+
+			<div class="text-body-2 text--fade">
+				KK.ru — база данных о недвижимости. Использование сайта означает согласие с Пользовательским соглашением и
+				Политикой конфиденциальности KK.ru.
+				Оплачивая лицензионный платеж, вы принимаете Лицензионное соглашение.
+			</div>
+
+			<div class="footer-divider mb-4 mt-6"></div>
+
+			<div class="footer-nav text-body-2 text--fade">
+				<a href="/" class="footer-nav-item">О сервисе</a>
+				<a href="/" class="footer-nav-item">Справочный центр</a>
+				<a href="/" class="footer-nav-item">Юридические документы</a>
+				<a href="/" class="footer-nav-item">Реклама на сайте</a>
+				<div class="footer-copy ml-auto">©2021</div>
+			</div>
+		</footer>
+
+
+
 	</div>
 
 
 	<script src="source/jquery-3.5.0.min.js"></script>
 	<script src="source/ion.rangeSlider.min.js"></script>
 	<script src="source/ion.rangeSlider.custom.js"></script>
+
+	<script src="source/fancybox.umd.js"></script>
+	<script src="source/fancybox.custom.js"></script>
 
 </body>
 

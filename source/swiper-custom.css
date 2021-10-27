@@ -5,6 +5,18 @@
   /* margin-left : 0; */
   /* margin-right: 0; */
 }
+.swiper {
+  -webkit-user-select: none;
+          user-select: none;
+}
+.swiper-button-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.swiper-slide {
+  height: auto;
+  align-self: stretch;
+}
 .slider {
   position: relative;
 }

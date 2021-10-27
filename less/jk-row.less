@@ -77,9 +77,7 @@
     &-likes {
       display: flex;
 
-      .card-like {
-        
-      }
+      .card-like {}
     }
 
 
@@ -125,6 +123,10 @@
       padding-left: 16px;
     }
 
+    @media(max-width:@md) {
+      padding-right: 16px;
+    }
+
     .swiper {
       overflow: visible;
       position: static;
@@ -143,6 +145,10 @@
       width     : 32px;
       height    : 32px;
       font-size : 12px;
+
+      @media(max-width:@md) {
+        display: none;
+      }
 
       &.swiper-button-disabled {
         opacity       : 0;

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="source/fancybox.css">
+	<link rel="stylesheet" href="source/fancybox.custom.css">
+	<link rel="stylesheet" href="source/swiper-bundle.min.css">
+	<link rel="stylesheet" href="source/swiper-custom.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
+
+	<script src="source/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/ui-reset.css">
+	<link rel="stylesheet" href="css/ui-core.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/developer-detail.css">
+
+
+	<title>Карточка застройщика </title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-user mr-auto d-md-none">
+			<div class="header-user-btn-img">
+				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+			</div>
+		</div>
+		<div class="header-logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="img/icons.svg#filter" />
+			</svg>
+		</button>
+		<div class="header-user ml-auto d-md-block d-none">
+			<div class="header-user-btn">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="nav">
+		<a href="/" class="nav-item active">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper">
+		<section class="developer-detail">
+			<div class="developer-detail-top card mb-4">
+				<div class="card-img developer-detail-top-img">
+					<img src="https://images6.alphacoders.com/656/thumb-1920-656029.png" alt="">
+				</div>
+				<div class="card-content developer-detail-top-content">
+					<div class="developer-detail-top-avatar">
+						<img src="img/sempl/developer-detail-avatar.png" alt="">
+					</div>
+
+					<div class="developer-detail-info">
+						<div class="text-h6 mb-1">ЮгСтройИмпериал</div>
+						<div class="text-body-2 text--fade">г. Краснодар, ул. им. Мачуги В.Н., 108</div>
+					</div>
+					<div class="developer-detail-manager mt-6 mt-lg-0">
+						<div class="developer-detail-manager-user">
+							<div class="developer-detail-manager-user-img">
+								<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+							</div>
+							<div class="developer-detail-manager-user-content">
+								<div class="text-body-2 text--demibold">Константинов Александр</div>
+								<div class="text-small text--fade">Старший менеджер</div>
+							</div>
+						</div>
+						<button class="btn developer-detail-manager-btn btn--primary btn--fill">
+							<svg class="icon mr-2 text-body-1">
+								<use xlink:href="img/icons.svg#chat" />
+							</svg>
+							Написать менеджеру
+						</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="developer-detail-about card">
+				<div class="card-content px-8 py-6 pb-10">
+					<div class="text-h6 mb-5">О компании</div>
+					<div class="text-body-2 lh-1-5">
+						«Жилье со знаком качества» — таков слоган компании, которая за 8 лет успешной работы стала лидером
+						Краснодарского края <br>
+						по объемам строительства.
+						<br>
+						<br>
+						«ЮгСтройИмпериал» является одним из ведущих игроков на инвестиционно-строительном рынке Краснодара:
+						<br>
+						<br>
+						• 300 проверенных подрядных организаций; <br>
+						• более 200 единиц строительной техники; <br>
+						• 2500 квалифицированных специалистов.
+					</div>
+				</div>
+				<div class="grid grid-spacing-3 px-6 pb-6">
+					<div class="grid-col-6 grid-col-lg-3">
+						<div class="developer-detail-about-prop card h-100">
+							<div class="card-top developer-detail-about-prop-top">
+								<div class="text-body-1 text--demibold">1 место</div>
+								<div class="developer-detail-about-prop-logo">
+									<img src="img/sempl/developer-detail-avatar.png" alt="">
+								</div>
+							</div>
+							<div class="card-content pt-3 pb-5">
+								<div class="text-body-2 lh-1-5">
+									По объемам строительства
+									среди застройщиков
+									Краснодарского края
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-6 grid-col-lg-3">
+						<div class="developer-detail-about-prop card h-100">
+							<div class="card-top developer-detail-about-prop-top">
+								<div class="text-body-1 text--demibold">Более 6000</div>
+								<div class="developer-detail-about-prop-logo">
+									<img src="img/sempl/developer-detail-avatar.png" alt="">
+								</div>
+							</div>
+							<div class="card-content pt-3 pb-5">
+								<div class="text-body-2 lh-1-5">
+									ключей от квартир мы уже
+									вручили
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-6 grid-col-lg-3">
+						<div class="developer-detail-about-prop card h-100">
+							<div class="card-top developer-detail-about-prop-top">
+								<div class="text-body-1 text--demibold">27 домов</div>
+								<div class="developer-detail-about-prop-logo">
+									<img src="img/sempl/developer-detail-avatar.png" alt="">
+								</div>
+							</div>
+							<div class="card-content pt-3 pb-5">
+								<div class="text-body-2 lh-1-5">
+									введены в эксплуатации
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-6 grid-col-lg-3">
+						<div class="developer-detail-about-prop card h-100">
+							<div class="card-top developer-detail-about-prop-top">
+								<div class="text-body-1 text--demibold">1,5 млн м2</div>
+								<div class="developer-detail-about-prop-logo">
+									<img src="img/sempl/developer-detail-avatar.png" alt="">
+								</div>
+							</div>
+							<div class="card-content pt-3 pb-5">
+								<div class="text-body-2 lh-1-5">
+									жилья - общая площадь
+									проектов компании
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="buner">
+			<a class="buner-link">
+				<img src="img/sempl/buner.png" alt="">
+			</a>
+		</section>
+
+		<section class="content">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Строящиеся объекты</div>
+			<div class="grid grid-spacing-5 mb-5">
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card">
+						<div class="card-img">
+							<img src="https://picsum.photos/id/1063/600/400" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card">
+						<div class="card-img">
+							<img src="https://picsum.photos/id/1063/600/400" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card">
+						<div class="card-img">
+							<img src="https://picsum.photos/id/1063/600/400" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card">
+						<div class="card-img">
+							<img src="https://picsum.photos/id/1063/600/400" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="content">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Готовые объекты</div>
+			<div class="grid grid-spacing-5 mb-5">
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card">
+						<div class="card-img">
+							<img src="https://picsum.photos/id/1063/600/400" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card">
+						<div class="card-img">
+							<img src="https://picsum.photos/id/1063/600/400" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card">
+						<div class="card-img">
+							<img src="https://picsum.photos/id/1063/600/400" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="jk-map">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Готовые и строящиеся объекты на карте</div>
+			<div class="jk-map-inner">
+				<div class="jk-map-frame">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+			</div>
+			<div class="pb-10"></div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="footer-divider mb-6"></div>
+
+			<div class="text-body-2 text--fade">
+				KK.ru — база данных о недвижимости. Использование сайта означает согласие с Пользовательским соглашением и
+				Политикой конфиденциальности KK.ru.
+				Оплачивая лицензионный платеж, вы принимаете Лицензионное соглашение.
+			</div>
+
+			<div class="footer-divider mb-4 mt-6"></div>
+
+			<div class="footer-nav text-body-2 text--fade">
+				<a href="/" class="footer-nav-item">О сервисе</a>
+				<a href="/" class="footer-nav-item">Справочный центр</a>
+				<a href="/" class="footer-nav-item">Юридические документы</a>
+				<a href="/" class="footer-nav-item">Реклама на сайте</a>
+				<div class="footer-copy ml-auto">©2021</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/ion.rangeSlider.custom.js"></script>
+
+	<script src="source/fancybox.umd.js"></script>
+	<script src="source/fancybox.custom.js"></script>
+
+</body>
+
+</html>

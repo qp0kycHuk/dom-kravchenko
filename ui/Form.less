@@ -35,12 +35,35 @@
 
 	}
 
+	&-input-cover &-input-cover {
+		flex-grow: 1;
+
+	}
+
+	&-input-cover &-input-cover+&-input-cover {
+		margin-left: -1px;
+	}
+
+	&-input-cover &-input-cover &-input {
+		border-radius: 0;
+	}
+
+	&-input-cover &-input-cover:first-of-type &-input {
+		border-start-start-radius: 6px;
+		border-end-start-radius  : 6px;
+	}
+
+	&-input-cover &-input-cover:last-of-type &-input {
+		border-end-end-radius  : 6px;
+		border-start-end-radius: 6px;
+	}
+
 	&-field--error &-input-cover {
 		border-color: var(--error-color);
 	}
 
 	&-input {
-		width   : 100px;
+
 		height  : 40px;
 		position: relative;
 
@@ -127,7 +150,9 @@
 
 	}
 
-
+	input&-input {
+		width: 100px;
+	}
 
 
 	&-field--lg &-input {
@@ -224,22 +249,22 @@
 
 
 	&-input-target {
-		text-align: center;
-		position  : absolute;
-		left      : 0;
-		top       : 0;
-		width     : 100%;
-		height    : 100%;
-
+		text-align      : center;
+		// position  : absolute;
+		left            : 0;
+		top             : 0;
+		// width     : 100%;
+		// height    : 100%;
+		display         : block;
 		padding         : inherit;
 		// border       : inherit;
 		border-radius   : inherit;
 	}
 
 	&-input-checkbox:checked~&-input-target {
-		background: var(--color-primary-20);
-		box-shadow: 0 0 0 1px var(--color-primary);
-		z-index   : 2;
+		background  : var(--color-primary-20);
+		border-color: var(--color-primary);
+		z-index     : 2;
 
 	}
 
@@ -367,12 +392,12 @@
 
 	&-select {
 		&-icon {
-			position : absolute;
-			font-size: 10px;
-			right    : 10px;
-			top      : calc(50% - 5px);
-			color: var(--color-icon);
-			z-index: 3;
+			position      : absolute;
+			font-size     : 10px;
+			right         : 10px;
+			top           : calc(50% - 5px);
+			color         : var(--color-icon);
+			z-index       : 3;
 			pointer-events: none;
 		}
 	}

@@ -21,6 +21,9 @@
 		<symbol id="chat-contur" width="100%" height="100%" viewBox="0 0 20 18">
 			<path d="M6 9H6.01M10 9H10.01M14 9H14.01M19 9C19 13.4183 14.9706 17 10 17C8.46073 17 7.01172 16.6565 5.74467 16.0511L1 17L2.39499 13.28C1.51156 12.0423 1 10.5743 1 9C1 4.58172 5.02944 1 10 1C14.9706 1 19 4.58172 19 9Z" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 		</symbol>
+		<symbol id="check" width="100%" height="100%" viewBox="0 0 14 14">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM10.2437 5.86872C10.5854 5.52701 10.5854 4.97299 10.2437 4.63128C9.90201 4.28957 9.34799 4.28957 9.00628 4.63128L6.125 7.51256L4.99372 6.38128C4.65201 6.03957 4.09799 6.03957 3.75628 6.38128C3.41457 6.72299 3.41457 7.27701 3.75628 7.61872L5.50628 9.36872C5.84799 9.71043 6.40201 9.71043 6.74372 9.36872L10.2437 5.86872Z" fill="currentColor" />
+		</symbol>
 		<symbol id="heart" width="100%" height="100%" viewBox="0 0 20 18">
 			<path d="M2.31802 2.31802C0.56066 4.07538 0.56066 6.92462 2.31802 8.68198L10.0001 16.364L17.682 8.68198C19.4393 6.92462 19.4393 4.07538 17.682 2.31802C15.9246 0.56066 13.0754 0.56066 11.318 2.31802L10.0001 3.63609L8.68198 2.31802C6.92462 0.56066 4.07538 0.56066 2.31802 2.31802Z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 		</symbol>
@@ -36,11 +39,25 @@
 		<symbol id="gal-ochka" width="100%" height="100%" viewBox="0 0 12 10">
 			<path d="M6.23497 8.79934C5.9649 9.16589 5.54433 9.39118 5.0896 9.41357C4.63487 9.43619 4.19445 9.25292 3.88975 8.91452L1.15929 5.88444C0.725328 5.40316 0.763876 4.66128 1.24515 4.22732C1.72689 3.79336 2.46831 3.83214 2.90227 4.31365L4.83407 6.45758C4.8627 6.48944 4.90425 6.50652 4.94695 6.50444C4.98988 6.50236 5.02912 6.4809 5.05475 6.44673L9.02546 1.06128C9.40979 0.539605 10.1443 0.428577 10.6662 0.813137C11.1876 1.1977 11.2984 1.93219 10.9139 2.45363L6.23497 8.79934Z" fill="currentColor" />
 		</symbol>
+		<symbol id="filter" width="100%" height="100%" viewBox="0 0 17 18">
+			<path d="M8.76354 4.64583C8.76354 6.27277 7.44465 7.59167 5.81771 7.59167C4.19077 7.59167 2.87187 6.27277 2.87187 4.64583C2.87187 3.01889 4.19077 1.7 5.81771 1.7C7.44465 1.7 8.76354 3.01889 8.76354 4.64583Z" stroke="currentColor" stroke-width="1.9" fill="none" />
+			<rect x="0.516504" y="3.67861" width="3.05735" height="1.93445" rx="0.967225" fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+			<circle cx="11.0031" cy="13.2155" r="2.94583" transform="rotate(-180 11.0031 13.2155)" stroke="currentColor" stroke-width="1.9" fill="none" />
+			<rect x="8.71328" y="3.67861" width="7.20821" height="1.93445" rx="0.967225" fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+			<rect x="8.10801" y="14.1827" width="7.21167" height="1.93445" rx="0.967225" transform="rotate(-180 8.10801 14.1827)" fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+			<rect x="16.2188" y="14.1827" width="2.62969" height="1.93445" rx="0.967224" transform="rotate(-180 16.2188 14.1827)" fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+		</symbol>
+		<symbol id="play" width="100%" height="100%" viewBox="0 0 47 52">
+			<path d="M44.2443 21.5775L8.19476 0.660181C5.26574 -1.03853 0.780029 0.609923 0.780029 4.81147V46.636C0.780029 50.4053 4.94826 52.677 8.19476 50.7873L44.2443 29.8801C47.4601 28.0205 47.4703 23.437 44.2443 21.5775Z" fill="currentColor" />
+		</symbol>
 		<symbol id="share" width="100%" height="100%" viewBox="0 0 20 16">
 			<path d="M11.1637 4.89684V1L15.5129 5.23809L19 8.63612L15.451 11.5182L11.1637 15V11.1869C3.63703 10.6341 1 14.8784 1 14.8784C1 12.234 1.2236 9.48968 3.35706 7.4116C5.83702 4.99408 9.42852 4.82301 11.1637 4.89684Z" stroke="currentColor" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 		</symbol>
 		<symbol id="search" width="100%" height="100%" viewBox="0 0 20 20">
 			<path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+		</symbol>
+		<symbol id="star" width="100%" height="100%" viewBox="0 0 13 12">
+			<path d="M6.30946 9.94987L2.41073 12L3.15536 7.65851L0 4.58336L4.35915 3.94989L6.30946 0L8.25914 3.94989L12.6183 4.58336L9.46356 7.65851L10.2088 12L6.30946 9.94987Z" fill="currentColor" />
 		</symbol>
 		<symbol id="to-right" width="100%" height="100%" viewBox="0 0 6 10">
 			<path d="M4.09404 5L0.231231 1.29326C-0.0770772 0.997411 -0.0770772 0.517741 0.231231 0.221889C0.53954 -0.0739629 1.03941 -0.0739629 1.34772 0.221889L5.76877 4.46431C6.07708 4.76016 6.07708 5.23984 5.76877 5.53569L1.34772 9.77811C1.03941 10.074 0.53954 10.074 0.231231 9.77811C-0.0770772 9.48226 -0.0770772 9.00259 0.231231 8.70674L4.09404 5Z" fill="currentColor" />

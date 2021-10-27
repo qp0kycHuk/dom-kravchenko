@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="source/fancybox.css">
+	<link rel="stylesheet" href="source/fancybox.custom.css">
+	<link rel="stylesheet" href="source/swiper-bundle.min.css">
+	<link rel="stylesheet" href="source/swiper-custom.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
+	<link rel="stylesheet" href="source/tippy.custom.css">
+
+	<script src="source/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/ui-reset.css">
+	<link rel="stylesheet" href="css/ui-core.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+
+	<link rel="stylesheet" href="css/jk-detail.css">
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+
+	<!-- input range -->
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/ion.rangeSlider.custom.js"></script>
+
+	<!-- fancybox modals -->
+	<script src="source/fancybox.umd.js"></script>
+	<script src="source/fancybox.custom.js"></script>
+
+	<!-- tooltips -->
+	<script src="source/popper.min.js"></script>
+	<script src="source/tippy-bundle.umd.js"></script>
+
+
+
+	<title>Карточка ЖК </title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-user mr-auto d-md-none">
+			<div class="header-user-btn-img">
+				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+			</div>
+		</div>
+		<div class="header-logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="img/icons.svg#filter" />
+			</svg>
+		</button>
+		<div class="header-user ml-auto d-md-block d-none">
+			<div class="header-user-btn">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="nav">
+		<a href="/" class="nav-item active">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper">
+		<section class="jk-detail-top">
+			<div class="jk-detail-top-background">
+				<img src="img/sempl/jk-detail-background.png" alt="">
+			</div>
+			<div class="jk-detail-top-inner">
+				<div class="jk-detail-top-logo">
+					<img src="img/sempl/jk-detail-avatar.png" alt="">
+				</div>
+				<div class="jk-detail-top-title text-h1 color-white">«NEO-квартал «Красная площадь»»</div>
+				<div class="jk-detail-top-address text-body-2 color-white">ул. Джержинского, ЭНКА </div>
+				<div class="jk-detail-top-tag color-yellow mt-8 mb-10">
+					<img src="img/sempl/fire.png" alt="" class="icon mr-1">
+					Высокий спрос
+				</div>
+				<div class="jk-detail-top-props color-white text--center">
+					<div class="jk-detail-top-prop">
+						<div class="text-body-2">Тип дома</div>
+						<div class="text-h6 mt-1">Комфорт +</div>
+					</div>
+					<div class="jk-detail-top-prop">
+						<div class="text-body-2">Квартиры</div>
+						<div class="text-h6 mt-1">от 2,75 млн ₽</div>
+						<div class="text-body-2 color-yellow mt-2">Осталось 231</div>
+					</div>
+					<div class="jk-detail-top-prop">
+						<div class="text-body-2">Ком.помещения</div>
+						<div class="text-h6 mt-1">от 4,25 млн ₽</div>
+						<div class="text-body-2 color-yellow mt-2">Осталось 41</div>
+					</div>
+					<div class="jk-detail-top-prop">
+						<div class="text-body-2">Сдача</div>
+						<div class="text-h6 mt-1">3-4 кв. 2022</div>
+					</div>
+				</div>
+				<div class="jk-detail-top-btns">
+					<button class="jk-detail-top-btn btn btn--primary btn--fill">
+						<svg class="icon mr-2">
+							<use xlink:href="img/icons.svg#chat" />
+						</svg>
+						Написать менеджеру
+					</button>
+					<button class="jk-detail-top-btn btn btn--primary btn--white-bg">Перезвоните мне</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="jk-detail-info">
+			<div class="jk-detail-info-slider">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide jk-detail-info-item">
+							<div class="jk-detail-info-item-background">
+								<img
+									src="https://phonoteka.org/uploads/posts/2021-05/1622168789_23-phonoteka_org-p-kiberpank-kontsept-art-krasivo-23.jpg"
+									alt="">
+							</div>
+							<div class="jk-detail-info-item-content card">
+								<div class="card-content">
+									<div class="jk-detail-info-item-sign text-body-2">«NEO-квартал «Красная площадь»» - это:</div>
+									<div class="text-h6 mb-6 jk-detail-info-item-title">
+										Город в городе
+										в экологичном районе
+									</div>
+									<div class="text-body-2 jk-detail-info-item-text">
+										Строительство NEO-квартала «Красная площадь» в Прикубанском округе Краснодара - один из самых
+										амбициозных проектов компании. На огромной территории площадью более 52 гектаров земли растет
+										современный, красивый, с продуманной инфраструктурой новый микрорайон.
+										<br><br>
+										Планируется возвести более 50 многоэтажных домов, 3 детских сада, самую большую в Южном Федеральном
+										округе школу на 1875 мест, воркаут зоны, паркинг, роллердром, скейтпарк, а так же храм в честь
+										преподобного Алексия, человека Божия.
+									</div>
+
+									<div class="jk-detail-info-slider-btns">
+										<button
+											class="jk-detail-info-slider-btn jk-detail-info-slider-prev btn btn--primary btn-fab btn--contur">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-left" />
+											</svg>
+										</button>
+										<button
+											class="jk-detail-info-slider-btn jk-detail-info-slider-next btn btn--primary btn-fab btn--contur">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-right" />
+											</svg>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide jk-detail-info-item">
+							<div class="jk-detail-info-item-background">
+								<img src="https://i.pinimg.com/originals/c9/7f/c8/c97fc851b2a2fbddfa0f23890a7a9e0a.jpg" alt="">
+							</div>
+							<div class="jk-detail-info-item-content card">
+								<div class="card-content">
+									<div class="jk-detail-info-item-sign text-body-2">«NEO-квартал «Красная площадь»» - это:</div>
+									<div class="text-h6 mb-6 jk-detail-info-item-title">
+										Город в городе
+										в экологичном районе
+									</div>
+									<div class="text-body-2 jk-detail-info-item-text">
+										Строительство NEO-квартала «Красная площадь» в Прикубанском округе Краснодара - один из самых
+										амбициозных проектов компании. На огромной территории площадью более 52 гектаров земли растет
+										современный, красивый, с продуманной инфраструктурой новый микрорайон.
+
+									</div>
+
+									<div class="jk-detail-info-slider-btns">
+										<button
+											class="jk-detail-info-slider-btn jk-detail-info-slider-prev btn btn--primary btn-fab btn--contur">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-left" />
+											</svg>
+										</button>
+										<button
+											class="jk-detail-info-slider-btn jk-detail-info-slider-next btn btn--primary btn-fab btn--contur">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-right" />
+											</svg>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide jk-detail-info-item">
+							<div class="jk-detail-info-item-background">
+								<img src="http://images.gamersyde.com/image_killzone_shadow_fall-23826-2660_0001.jpg" alt="">
+							</div>
+							<div class="jk-detail-info-item-content card">
+								<div class="card-content">
+									<div class="jk-detail-info-item-sign text-body-2">«NEO-квартал «Красная площадь»» - это:</div>
+									<div class="text-h6 mb-6 jk-detail-info-item-title">
+										Город в городе
+										в экологичном районе
+									</div>
+									<div class="text-body-2 jk-detail-info-item-text">
+										Строительство NEO-квартала «Красная площадь» в Прикубанском округе Краснодара - один из самых
+										амбициозных проектов компании. На огромной территории площадью более 52 гектаров земли растет
+										современный, красивый, с продуманной инфраструктурой новый микрорайон.
+										<br><br>
+										современный, красивый, с продуманной инфраструктурой новый микрорайон.
+
+									</div>
+
+									<div class="jk-detail-info-slider-btns">
+										<button
+											class="jk-detail-info-slider-btn jk-detail-info-slider-prev btn btn--primary btn-fab btn--contur">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-left" />
+											</svg>
+										</button>
+										<button
+											class="jk-detail-info-slider-btn jk-detail-info-slider-next btn btn--primary btn-fab btn--contur">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-right" />
+											</svg>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			new Swiper('.jk-detail-info-slider .swiper', {
+				slidesPerView: 1,
+				effect: 'fade',
+				navigation: {
+					prevEl: '.jk-detail-info-slider-prev',
+					nextEl: '.jk-detail-info-slider-next'
+				}
+			})
+		</script>
+
+
+		<section class="jk-detail-tech">
+			<div class="jk-detail-tech-inner card">
+				<div class="jk-detail-tech-img">
+					<img src="img/sempl/jk-tech.png" alt="">
+				</div>
+				<div class="jk-detail-tech-content">
+					<div class="text-h6 mb-5">Технология строительства</div>
+					<div class="jk-detail-tech-item card">
+						<div class="card-content pt-3">
+							<div class="text-body-2 text--demibold">Тип дома</div>
+							<div class="text-body-2 fade-80">Кирпичный</div>
+							<div class="jk-detail-tech-stars w-100 d-flex mt-3">
+								<svg class="icon color-yellow">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+
+								<div class="text-small text--fade ml-auto">10/10</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="jk-detail-tech-item card">
+						<div class="card-content pt-3">
+							<div class="text-body-2 text--demibold">Перегородки и заполнение</div>
+							<div class="text-body-2 fade-80">Отсев</div>
+							<div class="jk-detail-tech-stars w-100 d-flex mt-3">
+								<svg class="icon color-yellow">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-yellow ">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+								<svg class="icon color-light">
+									<use xlink:href="img/icons.svg#star" />
+								</svg>
+
+								<div class="text-small text--fade ml-auto">5/10</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="jk-detail-tech-result">
+						<div class="text-body-1 text--demibold mb-2">
+							Итоговая оценка: <span class="color-green text-body-0 text--demibold"> 8,7</span><span
+								class="text--fade text-body-0 text--demibold"> / 10</span>
+						</div>
+						<div class="text-body-2 fade-80">
+							Небольшое описание того, что значит <br>
+							эта оценка, хорошо это или плохо
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="content">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Особенности дома</div>
+			<div class="slider features-slider">
+				<div class="swiper grid-wrap grid-spacing-4">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img pb-5">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+								<div class="card-content pt-6 pb-7 ">
+									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
+									<div class="text-body-2 fade-80">
+										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
+										каток,
+										церковь, концертный зал.
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img pb-5">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+								<div class="card-content pt-6 pb-7 ">
+									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
+									<div class="text-body-2 fade-80">
+										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
+										каток,
+										церковь, концертный зал.
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img pb-5">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+								<div class="card-content pt-6 pb-7 ">
+									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
+									<div class="text-body-2 fade-80">
+										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
+										каток,
+										церковь, концертный зал.
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img pb-5">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+								<div class="card-content pt-6 pb-7 ">
+									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
+									<div class="text-body-2 fade-80">
+										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
+										каток,
+										церковь, концертный зал.
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img pb-5">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+								<div class="card-content pt-6 pb-7 ">
+									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
+									<div class="text-body-2 fade-80">
+										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
+										каток,
+										церковь, концертный зал.
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button class="slider-btn slider-prev">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-left" />
+					</svg>
+				</button>
+				<button class="slider-btn slider-next">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-right" />
+					</svg>
+				</button>
+
+
+			</div>
+		</section>
+		<script>
+			new Swiper('.features-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+
+				navigation: {
+					nextEl: '.features-slider .slider-next',
+					prevEl: '.features-slider .slider-prev'
+				}
+			})
+		</script>
+
+
+		<section class="object-map">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Объекты инфраструктуры</div>
+			<div class="object-map-inner card">
+				<div class="object-map-frame">
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+
+				<div class="object-map-btns">
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Медицина</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--fill">
+						<div class="text--regular">Образование</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Городской транспорт</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Междугородный трансп...</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Парки</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Торговые центры</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Бизнес-центры</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Рынки</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Спорт</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Выезд из города</div>
+					</button>
+					<button class="object-map-btn btn btn--primary btn--light">
+						<div class="text--regular color-text">Доступность до побере...</div>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="line-buner">
+			<div class="container">
+				<div class="line-buner-inner">
+					<div class="line-buner-img">
+						<img src="img/sempl/line-buner.png" alt="">
+					</div>
+					<div class="line-buner-content color-white">
+						<div class="text-h6 mb-1">Хотите посмотреть дом? Запишитесь на просмотр!</div>
+						<div class="text-body-2">Нажмите кнопку, заполните данные и наш менеджер свяжется с вами</div>
+						<button class="btn btn--primary btn--white-bg mt-4">Записаться</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="selection">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Подбор квартиры</div>
+
+			<div class="selection-block card">
+				<div class="selection-aside selection-left">
+					<div class="text-body-2 text--demibold fade-80 mb-6">№ литера</div>
+
+					<button class="selection-tab-link btn btn--primary btn--light">Литер 1</button>
+					<button class="selection-tab-link btn btn--primary btn--fill">Литер 2</button>
+					<button class="selection-tab-link btn btn--primary btn--light">Литер 3</button>
+					<div class="mt-6"></div>
+					<div class="selection-legend">
+						<div class="selection-item-flat selection-item-flat-free mr-2"></div>
+						<div class="text-body-2">Свободна</div>
+					</div>
+					<div class="selection-legend">
+						<div class="selection-item-flat selection-item-flat-sold mr-2"></div>
+						<div class="text-body-2">Продана</div>
+					</div>
+					<div class="selection-legend">
+						<div class="selection-item-flat selection-item-flat-reserv mr-2"></div>
+						<div class="text-body-2">Бронь</div>
+					</div>
+					<div class="selection-legend">
+						<div class="selection-item-flat selection-item-flat-individual mr-2"></div>
+						<div class="text-body-2">От физ.лица</div>
+					</div>
+				</div>
+				<div class="selection-content">
+					<div class="selection-header d-flex flex-align-center">
+						<div class="text-body-1 text--demibold mr-8">Литер 2</div>
+						<div class="text-body-2 text--fade">Сдача: 4 квартал 2022</div>
+						<div class="text-body-2 text--demibold color-green ml-auto d-flex flex-align-center">
+							<svg class="icon mr-1">
+								<use xlink:href="img/icons.svg#check" />
+							</svg>
+							Свободно: 108 квартир
+						</div>
+					</div>
+
+					<div class="selection-inner">
+						<div class="selection-slider">
+							<div class="selection-slider-nav">
+								<button class="selection-slider-prev">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#to-left" />
+									</svg>
+								</button>
+								<button class="selection-slider-next">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#to-right" />
+									</svg>
+								</button>
+							</div>
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="selection-item">
+											<div class="selection-item-header">
+												<div class="text-body-2 text--fade">Этаж</div>
+												<div class="text-body-2 text--demibold">Подъезд №1</div>
+											</div>
+
+											<div class="selection-item-grid">
+												<div class="selection-item-floors">
+													<div class="selection-item-floor">12</div>
+													<div class="selection-item-floor">11</div>
+													<div class="selection-item-floor">10</div>
+													<div class="selection-item-floor">9</div>
+													<div class="selection-item-floor">8</div>
+													<div class="selection-item-floor">7</div>
+													<div class="selection-item-floor">6</div>
+													<div class="selection-item-floor">5</div>
+													<div class="selection-item-floor">4</div>
+													<div class="selection-item-floor">3</div>
+													<div class="selection-item-floor">2</div>
+													<div class="selection-item-floor">1</div>
+												</div>
+												<div class="selection-item-flats">
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="selection-item">
+											<div class="selection-item-header">
+												<div class="text-body-2 text--fade">Этаж</div>
+												<div class="text-body-2 text--demibold">Подъезд №1</div>
+											</div>
+
+											<div class="selection-item-grid">
+												<div class="selection-item-floors">
+													<div class="selection-item-floor">12</div>
+													<div class="selection-item-floor">11</div>
+													<div class="selection-item-floor">10</div>
+													<div class="selection-item-floor">9</div>
+													<div class="selection-item-floor">8</div>
+													<div class="selection-item-floor">7</div>
+													<div class="selection-item-floor">6</div>
+													<div class="selection-item-floor">5</div>
+													<div class="selection-item-floor">4</div>
+													<div class="selection-item-floor">3</div>
+													<div class="selection-item-floor">2</div>
+													<div class="selection-item-floor">1</div>
+												</div>
+												<div class="selection-item-flats">
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="selection-item">
+											<div class="selection-item-header">
+												<div class="text-body-2 text--fade">Этаж</div>
+												<div class="text-body-2 text--demibold">Подъезд №1</div>
+											</div>
+
+											<div class="selection-item-grid">
+												<div class="selection-item-floors">
+													<div class="selection-item-floor">12</div>
+													<div class="selection-item-floor">11</div>
+													<div class="selection-item-floor">10</div>
+													<div class="selection-item-floor">9</div>
+													<div class="selection-item-floor">8</div>
+													<div class="selection-item-floor">7</div>
+													<div class="selection-item-floor">6</div>
+													<div class="selection-item-floor">5</div>
+													<div class="selection-item-floor">4</div>
+													<div class="selection-item-floor">3</div>
+													<div class="selection-item-floor">2</div>
+													<div class="selection-item-floor">1</div>
+												</div>
+												<div class="selection-item-flats">
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="selection-item">
+											<div class="selection-item-header">
+												<div class="text-body-2 text--fade">Этаж</div>
+												<div class="text-body-2 text--demibold">Подъезд №1</div>
+											</div>
+
+											<div class="selection-item-grid">
+												<div class="selection-item-floors">
+													<div class="selection-item-floor">12</div>
+													<div class="selection-item-floor">11</div>
+													<div class="selection-item-floor">10</div>
+													<div class="selection-item-floor">9</div>
+													<div class="selection-item-floor">8</div>
+													<div class="selection-item-floor">7</div>
+													<div class="selection-item-floor">6</div>
+													<div class="selection-item-floor">5</div>
+													<div class="selection-item-floor">4</div>
+													<div class="selection-item-floor">3</div>
+													<div class="selection-item-floor">2</div>
+													<div class="selection-item-floor">1</div>
+												</div>
+												<div class="selection-item-flats">
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">5</button>
+													</div>
+													<div class="selection-item-flats-row">
+														<button data-id="id" class="selection-item-flat selection-item-flat-reserv">1</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">2</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-placeholder"></button>
+														<button data-id="id" class="selection-item-flat selection-item-flat-sold">4</button>
+														<button data-id="id" class="selection-item-flat selection-item-flat">5</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+				<div class="selection-aside selection-right">
+					<div class="text-body-2 text--demibold text--fade mb-6">Квартиры</div>
+
+					<button class="selection-tab-link btn btn--primary btn--light">Все</button>
+					<button class="selection-tab-link btn btn--primary btn--fill">Студии</button>
+					<button class="selection-tab-link btn btn--primary btn--light">1-комн.</button>
+					<button class="selection-tab-link btn btn--primary btn--light">2-комн.</button>
+					<button class="selection-tab-link btn btn--primary btn--light">3-комн.</button>
+				</div>
+			</div>
+		</section>
+		<script>
+			new Swiper('.selection-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+				spaceBetween: 20,
+				preventClicks: false,
+				preventClicksPropagation:false,
+				touchStartPreventDefault:false,
+				navigation: {
+					prevEl: '.selection-slider-prev',
+					nextEl: '.selection-slider-next',
+				}
+			})
+		</script>
+		<script>
+			tippy('.selection-item-flat[data-id]', {
+				content: 'loading',
+				theme: 'flat',
+				allowHTML: true,
+				interactive: true,
+				trigger: 'click',
+				appendTo: () => document.body,
+
+				onCreate(instance) {
+					instance._isFetching = false;
+					instance._isLoad = false;
+					instance._error = null;
+				},
+				onShow(instance) {
+					if (instance._isFetching || instance._isLoad) return;
+
+					instance._isFetching = true;
+
+					fetch('selection-flat-tooltip.html')
+						.then((response) => response.text())
+						.then((result) => {
+							instance._isLoad = true
+							instance._error = null
+							instance.setContent(result)
+						})
+						.catch((error) => {
+							instance._error = error;
+							instance.setContent(`Request failed. ${error}`);
+						})
+						.finally(() => instance._isFetching = false);
+				}
+
+			})
+		</script>
+
+
+
+
+		<section class="content">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Акции и новости</div>
+			<div class="slider sales-slider">
+				<div class="swiper grid-wrap grid-spacing-4">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-5 pb-7 px-7">
+
+									<div class="text-body-2 text--fade mb-3">7 сентября</div>
+									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
+										взноса</div>
+									<div class="text-body-2 fade-80 mb-7">
+										Осень время перемен – начните жить по-новому в своей квартире мечты! Ипотека без первоначального
+										взноса от
+										банка-партнера «Промсвязьбанк»
+									</div>
+
+									<button class="btn btn--primary btn--light mt-auto">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-5 pb-7 px-7">
+
+									<div class="text-body-2 text--fade mb-3">7 сентября</div>
+									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
+										взноса</div>
+									<div class="text-body-2 fade-80 mb-7">
+										Осень время перемен – начните жить по-новому в своей квартире мечты! Ипотека без первоначального
+										взноса от
+										банка-партнера «Промсвязьбанк» с 1 сентября действует на все жилые комплексы компании.
+									</div>
+
+									<button class="btn btn--primary btn--light mt-auto">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-5 pb-7 px-7">
+
+									<div class="text-body-2 text--fade mb-3">7 сентября</div>
+									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
+										взноса</div>
+									<div class="text-body-2 fade-80 mb-7">
+										Осень время перемен – начните жить по-новому в своей квартире мечты! Ипотека без первоначального
+										взноса от
+										банка-партнера «Промсвязьбанк» с 1 сентября действует на все жилые комплексы компании.
+									</div>
+
+									<button class="btn btn--primary btn--light mt-auto">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-5 pb-7 px-7">
+
+									<div class="text-body-2 text--fade mb-3">7 сентября</div>
+									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
+										взноса</div>
+									<div class="text-body-2 fade-80 mb-7">
+										Осень время перемен – начните жить по-новому в своей квартире мечты! Ипотека без первоначального
+										взноса от
+										банка-партнера «Промсвязьбанк» с 1 сентября действует на все жилые комплексы компании.
+									</div>
+
+									<button class="btn btn--primary btn--light mt-auto">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-4">
+							<div class="card h-100">
+								<div class="card-img">
+									<img src="https://picsum.photos/600/400" alt="">
+								</div>
+
+
+								<div class="card-content pt-5 pb-7 px-7">
+
+									<div class="text-body-2 text--fade mb-3">7 сентября</div>
+									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
+										взноса</div>
+									<div class="text-body-2 fade-80 mb-7">
+										Осень время перемен – начните жить по-новому в своей квартире мечты! Ипотека без первоначального
+										взноса от
+										банка-партнера «Промсвязьбанк» с 1 сентября действует на все жилые комплексы компании.
+									</div>
+
+									<button class="btn btn--primary btn--light mt-auto">Подробнее</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="slider-btn slider-prev">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-left" />
+					</svg>
+				</button>
+				<button class="slider-btn slider-next">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-right" />
+					</svg>
+				</button>
+
+
+			</div>
+		</section>
+		<script>
+			new Swiper('.sales-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+				navigation: {
+					nextEl: '.sales-slider .slider-next',
+					prevEl: '.sales-slider .slider-prev'
+				}
+			})
+		</script>
+
+
+
+		<section class="content" data-tab-cover>
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Предложения для вас</div>
+			<div class="tab-links">
+				<button class="tab-link" data-tab-link="1">Подходящие вам</button>
+				<button class="tab-link" data-tab-link="2">Популярные</button>
+				<div class="tab-plate" data-tab-plate></div>
+			</div>
+
+			<div class="tab-content-cover">
+				<div class="tab-content" data-tab-content="1">
+					<div class="tab-content-inner">
+						<div class="grid grid-spacing-4 ">
+							<div class="grid-col-6 grid-col-lg-4">
+								<div class="plan-card card h-100">
+									<div class="plan-card-img">
+										<img src="img/sempl/plan.png" alt="">
+									</div>
+
+									<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+										<div class="text-body-2 text--fade">3-комнатная квартира</div>
+										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+										<div class="plan-card-props mt-3">
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Площадь</div>
+												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Этажи</div>
+												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Сдача</div>
+												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											</div>
+										</div>
+
+
+
+										<div class="d-md-block d-none">
+											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+										</div>
+										<div class="d-md-none w-100 mt-3">
+											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="grid-col-6 grid-col-lg-4">
+								<div class="plan-card card h-100">
+									<div class="plan-card-img">
+										<img src="img/sempl/plan.png" alt="">
+									</div>
+
+									<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+										<div class="text-body-2 text--fade">3-комнатная квартира</div>
+										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+										<div class="plan-card-props mt-3">
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Площадь</div>
+												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Этажи</div>
+												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Сдача</div>
+												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											</div>
+										</div>
+
+
+
+										<div class="d-md-block d-none">
+											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+										</div>
+										<div class="d-md-none w-100 mt-3">
+											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="grid-col-6 grid-col-lg-4">
+								<div class="plan-card card h-100">
+									<div class="plan-card-img">
+										<img src="img/sempl/plan.png" alt="">
+									</div>
+
+									<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+										<div class="text-body-2 text--fade">3-комнатная квартира</div>
+										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+										<div class="plan-card-props mt-3">
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Площадь</div>
+												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Этажи</div>
+												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Сдача</div>
+												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											</div>
+										</div>
+
+
+
+										<div class="d-md-block d-none">
+											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+										</div>
+										<div class="d-md-none w-100 mt-3">
+											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="grid-col-6 grid-col-lg-4">
+								<div class="plan-card card h-100">
+									<div class="plan-card-img">
+										<img src="img/sempl/plan.png" alt="">
+									</div>
+
+									<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+										<div class="text-body-2 text--fade">3-комнатная квартира</div>
+										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+										<div class="plan-card-props mt-3">
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Площадь</div>
+												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Этажи</div>
+												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Сдача</div>
+												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											</div>
+										</div>
+
+
+
+										<div class="d-md-block d-none">
+											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+										</div>
+										<div class="d-md-none w-100 mt-3">
+											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="grid-col-6 grid-col-lg-4">
+								<div class="plan-card card h-100">
+									<div class="plan-card-img">
+										<img src="img/sempl/plan.png" alt="">
+									</div>
+
+									<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+										<div class="text-body-2 text--fade">3-комнатная квартира</div>
+										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+										<div class="plan-card-props mt-3">
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Площадь</div>
+												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Этажи</div>
+												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Сдача</div>
+												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											</div>
+										</div>
+
+
+
+										<div class="d-md-block d-none">
+											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+										</div>
+										<div class="d-md-none w-100 mt-3">
+											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" data-tab-content="2">
+					<div class="tab-content-inner">
+						<div class="grid grid-spacing-4 ">
+							<div class="grid-col-6 grid-col-lg-4">
+								<div class="plan-card card h-100">
+									<div class="plan-card-img">
+										<img src="img/sempl/plan.png" alt="">
+									</div>
+
+									<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+										<div class="text-body-2 text--fade">3-комнатная квартира</div>
+										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+										<div class="plan-card-props mt-3">
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Площадь</div>
+												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Этажи</div>
+												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Сдача</div>
+												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											</div>
+										</div>
+
+
+
+										<div class="d-md-block d-none">
+											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+										</div>
+										<div class="d-md-none w-100 mt-3">
+											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="grid-col-6 grid-col-lg-4">
+								<div class="plan-card card h-100">
+									<div class="plan-card-img">
+										<img src="img/sempl/plan.png" alt="">
+									</div>
+
+									<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+										<div class="text-body-2 text--fade">3-комнатная квартира</div>
+										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+										<div class="plan-card-props mt-3">
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Площадь</div>
+												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Этажи</div>
+												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+											</div>
+											<div class="plan-card-prop">
+												<div class="text-small text--fade">Сдача</div>
+												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											</div>
+										</div>
+
+
+
+										<div class="d-md-block d-none">
+											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+										</div>
+										<div class="d-md-none w-100 mt-3">
+											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="content">
+			<div class="container">
+				<div class="feature mb-5">
+					<div class="feature-img">
+						<img src="https://picsum.photos/id/250/1920/1080" alt="">
+					</div>
+					<div class="feature-content card ml-auto">
+						<div class="card-content">
+							<div class="text-h6 mb-4">Паркинг</div>
+							<div class="text-body-2 fade-80 lh-1-5 mb-3">
+								Открытй гостевой паркинг на всей территории комплекса и закрытые подземные паркинги с выходом
+								в лифт для жильцов дома.
+								<br><br>
+								В современном мире – это одна из важнейших частей инфраструктуры жилого района, благодаря которой
+								появилась возможность освободить территорию возле дома
+							</div>
+							<button class="btn btn--primary btn--light w-100 mt-auto">Посмотреть план</button>
+							<button class="btn btn--primary btn--fill w-100 mt-3">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="feature mb-5">
+					<div class="feature-img">
+						<img src="https://picsum.photos/id/251/1920/1080" alt="">
+					</div>
+					<div class="feature-content card ">
+						<div class="card-content">
+							<div class="text-h6 mb-4">Коммерческие
+								помещения</div>
+							<div class="text-body-2 fade-80 lh-1-5 mb-3">
+								Инвестировать в коммерческую недвижимость в одном из самых перспективных регионов Европы. Объекты только
+								с высокой доходностью!
+								<br><br>
+								Мы специально отобрали их для вас. Только реальные объекты. стрит ритэйл. С высокой доходностью.
+							</div>
+							<button class="btn btn--primary btn--light w-100 mt-auto">Посмотреть план</button>
+							<button class="btn btn--primary btn--fill w-100 mt-3">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="feature">
+					<div class="feature-img">
+						<img src="https://picsum.photos/id/253/1920/1080" alt="">
+					</div>
+					<div class="feature-content card ml-auto">
+						<div class="card-content">
+							<div class="text-h6 mb-4">Паркинг</div>
+							<div class="text-body-2 fade-80 lh-1-5 mb-3">
+								Открытй гостевой паркинг на всей территории комплекса и закрытые подземные паркинги с выходом
+								в лифт для жильцов дома.
+								<br><br>
+								В современном мире – это одна из важнейших частей инфраструктуры жилого района, благодаря которой
+								появилась возможность освободить территорию возле дома
+							</div>
+							<button class="btn btn--primary btn--fill w-100 mt-auto">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+		<footer class="footer">
+			<div class="footer-divider mb-6"></div>
+
+			<div class="text-body-2 text--fade">
+				KK.ru — база данных о недвижимости. Использование сайта означает согласие с Пользовательским соглашением и
+				Политикой конфиденциальности KK.ru.
+				Оплачивая лицензионный платеж, вы принимаете Лицензионное соглашение.
+			</div>
+
+			<div class="footer-divider mb-4 mt-6"></div>
+
+			<div class="footer-nav text-body-2 text--fade">
+				<a href="/" class="footer-nav-item">О сервисе</a>
+				<a href="/" class="footer-nav-item">Справочный центр</a>
+				<a href="/" class="footer-nav-item">Юридические документы</a>
+				<a href="/" class="footer-nav-item">Реклама на сайте</a>
+				<div class="footer-copy ml-auto">©2021</div>
+			</div>
+		</footer>
+
+
+
+	</div>
+
+
+
+
+	<script src="source/ui--tab.js"></script>
+
+</body>
+
+</html>

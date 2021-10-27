@@ -1,0 +1,70 @@
+.developer-detail-top-img {
+  height: 254px;
+}
+.developer-detail-top-content {
+  position: relative;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1016px) {
+  .developer-detail-top-content {
+    display: block;
+    padding-top: 32px;
+  }
+}
+.developer-detail-top-avatar {
+  width: 120px;
+  height: 120px;
+  background: #F5F7FB;
+  border: 1px solid #E2E8F0;
+  border-radius: 50%;
+  position: absolute;
+  left: 32px;
+  top: -100px;
+}
+.developer-detail-top-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.developer-detail-manager {
+  background: #F5F7FB;
+  border-radius: 6px;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+}
+.developer-detail-manager-user {
+  display: flex;
+  align-items: center;
+}
+.developer-detail-manager-user-img {
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.developer-detail-manager-user-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.developer-detail-manager-btn {
+  padding: 0 24px;
+  margin-left: 36px;
+}
+.developer-detail-about-prop-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(270deg, rgba(250, 202, 138, 0.2) 0%, rgba(250, 202, 138, 0) 69.44%), #253A7C;
+  color: #fff;
+}
+.developer-detail-about-prop-logo img {
+  height: 32px;
+  object-fit: scale-down;
+}
