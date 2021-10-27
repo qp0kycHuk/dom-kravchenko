@@ -854,17 +854,22 @@ body * {
 .line-buner {
   padding-top: 0;
   padding-bottom: 0;
-  background: linear-gradient(270deg, #295BB0 0%, #499BEA 65.19%), #0092E4;
   width: calc(100% + 30px);
   margin-left: -15px;
   margin-right: -15px;
+}
+.line-buner-bg {
+  background: linear-gradient(270deg, #295BB0 0%, #499BEA 65.19%), #0092E4;
+}
+.line-buner-card {
+  border-radius: 16px;
 }
 .line-buner-inner {
   display: flex;
   align-items: center;
 }
 .line-buner-img {
-  margin-right: 60px;
+  margin-right: 40px;
 }
 .line-buner-content {
   padding-top: 16px;
@@ -1018,22 +1023,35 @@ body * {
   justify-content: center;
   cursor: pointer;
 }
+@media (hover) {
+  .selection-item-flat-free:hover {
+    border: 1px solid #828A99;
+  }
+}
 .selection-item-flat-sold {
   background: #E2E8F0;
   border-color: #E2E8F0;
+  cursor: default;
 }
 .selection-item-flat-reserv {
   background: var(--color-yellow-20);
   border-color: var(--color-yellow);
+  cursor: default;
 }
 .selection-item-flat-individual {
   background: var(--color-green-20);
   border-color: var(--color-green);
 }
+@media (hover) {
+  .selection-item-flat-individual:hover {
+    background: var(--color-green-30);
+  }
+}
 .selection-item-flat-placeholder {
   background: #828A99;
   border-color: #828A99;
   color: #828A99;
+  cursor: default;
 }
 .selection-item-flat + .selection-item-flat {
   margin-left: 1px;
@@ -1109,6 +1127,68 @@ body * {
   padding: 10px;
 }
 .flat-tooltip-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.partner-item {
+  position: relative;
+  overflow: hidden;
+}
+.partner-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.partner-item-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.partner-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.calc-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px 42px;
+}
+.calc-result {
+  background: #F5F7FB;
+  border-radius: 6px;
+  padding: 24px 24px 24px 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calc-brands {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calc-brand {
+  position: relative;
+  overflow: hidden;
+  width: 90px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.calc-brand:before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.calc-brand img {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: scale-down;
