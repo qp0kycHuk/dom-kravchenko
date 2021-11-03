@@ -15,11 +15,18 @@ function showRangeData(data) {
   const fromInput = field.querySelector('.form-range-from-input')
   const toInput = field.querySelector('.form-range-to-input')
   const from = data.from;
+  let formatFrom = from;
   const to = data.to;
+  let formatTo = to;
+
+  if (input.getAttribute('data-format') === 'money') {
+    formatFrom = Intl.NumberFormat('ru-RU').format(from)
+    formatTo = Intl.NumberFormat('ru-RU').format(to)
+  }
 
 
-  fromNode && (fromNode.innerHTML = from)
-  toNode && (toNode.innerHTML = to)
+  fromNode && (fromNode.innerHTML = formatFrom)
+  toNode && (toNode.innerHTML = formatTo)
 
   fromInput && (fromInput.value = from)
   toInput && (toInput.value = to)

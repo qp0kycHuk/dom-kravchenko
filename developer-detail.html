@@ -31,7 +31,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header header--detail">
 		<div class="header-user mr-auto d-md-none">
 			<div class="header-user-btn-img">
 				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
@@ -105,10 +105,21 @@
 	</div>
 
 	<div class="content-wrapper">
-		<section class="developer-detail">
-			<div class="developer-detail-top card mb-4">
+
+		<section class="developer-detail-top pb-2">
+			<div class="developer-detail-top-inner  card">
 				<div class="card-img developer-detail-top-img">
 					<img src="https://images6.alphacoders.com/656/thumb-1920-656029.png" alt="">
+				</div>
+				<div class="card-control d-md-none">
+					<div class=" card-likes">
+						<div class="card-like card-like-bg">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#arrow-left" />
+							</svg>
+						</div>
+					</div>
+
 				</div>
 				<div class="card-content developer-detail-top-content">
 					<div class="developer-detail-top-avatar">
@@ -137,10 +148,12 @@
 						</button>
 					</div>
 				</div>
-
 			</div>
-			<div class="developer-detail-about card">
-				<div class="card-content px-8 py-6 pb-10">
+		</section>
+
+		<section class="developer-detail-about pt-2">
+			<div class="developer-detail-about-inner card-md">
+				<div class="card-content developer-detail-about-content mb-4 mb-md-0 px-md-8 py-md-6 pb-md-10">
 					<div class="text-h6 mb-5">О компании</div>
 					<div class="text-body-2 lh-1-5">
 						«Жилье со знаком качества» — таков слоган компании, которая за 8 лет успешной работы стала лидером
@@ -156,7 +169,7 @@
 						• 2500 квалифицированных специалистов.
 					</div>
 				</div>
-				<div class="grid grid-spacing-3 px-6 pb-6">
+				<div class="grid grid-spacing-3 p-0 px-md-6 pb-md-6">
 					<div class="grid-col-6 grid-col-lg-3">
 						<div class="developer-detail-about-prop card h-100">
 							<div class="card-top developer-detail-about-prop-top">
@@ -223,7 +236,9 @@
 					</div>
 				</div>
 			</div>
+
 		</section>
+
 
 		<section class="buner">
 			<a class="buner-link">
@@ -233,7 +248,7 @@
 
 		<section class="content">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Строящиеся объекты</div>
-			<div class="grid grid-spacing-5 mb-5">
+			<div class="grid grid-spacing-2 grid-spacing-md-5">
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
 						<div class="card-img">
@@ -250,7 +265,7 @@
 
 						</div>
 
-						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+						<div class="card-content pb-2 pt-4 pt-lg-4 pb-lg-3 px-4 px-lg-3">
 
 							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
 							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
@@ -303,7 +318,7 @@
 
 						</div>
 
-						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+						<div class="card-content pb-2 pt-4 pt-lg-4 pb-lg-3 px-4 px-lg-3">
 
 							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
 							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
@@ -356,7 +371,7 @@
 
 						</div>
 
-						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+						<div class="card-content pb-2 pt-4 pt-lg-4 pb-lg-3 px-4 px-lg-3">
 
 							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
 							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
@@ -409,7 +424,7 @@
 
 						</div>
 
-						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+						<div class="card-content pb-2 pt-4 pt-lg-4 pb-lg-3 px-4 px-lg-3">
 
 							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
 							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
@@ -451,7 +466,7 @@
 
 		<section class="content">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Готовые объекты</div>
-			<div class="grid grid-spacing-5 mb-5">
+			<div class="grid grid-spacing-2 grid-spacing-md-5">
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
 						<div class="card-img">
@@ -468,7 +483,7 @@
 
 						</div>
 
-						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+						<div class="card-content pb-2 pt-4 pt-lg-4 pb-lg-3 px-4 px-lg-3">
 
 							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
 							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
@@ -521,7 +536,7 @@
 
 						</div>
 
-						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+						<div class="card-content pb-2 pt-4 pt-lg-4 pb-lg-3 px-4 px-lg-3">
 
 							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
 							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
@@ -574,7 +589,7 @@
 
 						</div>
 
-						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+						<div class="card-content pb-2 pt-4 pt-lg-4 pb-lg-3 px-4 px-lg-3">
 
 							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
 							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
@@ -618,7 +633,8 @@
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Готовые и строящиеся объекты на карте</div>
 			<div class="jk-map-inner">
 				<div class="jk-map-frame">
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
 			</div>
 			<div class="pb-10"></div>

@@ -38,7 +38,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header header--detail">
 		<div class="header-user mr-auto d-md-none">
 			<div class="header-user-btn-img">
 				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
@@ -116,45 +116,163 @@
 			<div class="jk-detail-top-background">
 				<img src="img/sempl/jk-detail-background.png" alt="">
 			</div>
-			<div class="jk-detail-top-inner">
-				<div class="jk-detail-top-logo">
-					<img src="img/sempl/jk-detail-avatar.png" alt="">
-				</div>
-				<div class="jk-detail-top-title text-h1 color-white">«NEO-квартал «Красная площадь»»</div>
-				<div class="jk-detail-top-address text-body-2 color-white">ул. Джержинского, ЭНКА </div>
-				<div class="jk-detail-top-tag color-yellow mt-8 mb-10">
-					<img src="img/sempl/fire.png" alt="" class="icon mr-1">
-					Высокий спрос
-				</div>
-				<div class="jk-detail-top-props color-white text--center">
-					<div class="jk-detail-top-prop">
-						<div class="text-body-2">Тип дома</div>
-						<div class="text-h6 mt-1">Комфорт +</div>
-					</div>
-					<div class="jk-detail-top-prop">
-						<div class="text-body-2">Квартиры</div>
-						<div class="text-h6 mt-1">от 2,75 млн ₽</div>
-						<div class="text-body-2 color-yellow mt-2">Осталось 231</div>
-					</div>
-					<div class="jk-detail-top-prop">
-						<div class="text-body-2">Ком.помещения</div>
-						<div class="text-h6 mt-1">от 4,25 млн ₽</div>
-						<div class="text-body-2 color-yellow mt-2">Осталось 41</div>
-					</div>
-					<div class="jk-detail-top-prop">
-						<div class="text-body-2">Сдача</div>
-						<div class="text-h6 mt-1">3-4 кв. 2022</div>
-					</div>
-				</div>
-				<div class="jk-detail-top-btns">
-					<button class="jk-detail-top-btn btn btn--primary btn--fill">
-						<svg class="icon mr-2">
-							<use xlink:href="img/icons.svg#chat" />
+			<div class="card-control d-lg-none">
+				<div class="card-likes w-100">
+					<div class="card-like card-like-bg mr-auto">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#arrow-left" />
 						</svg>
-						Написать менеджеру
-					</button>
-					<button class="jk-detail-top-btn btn btn--primary btn--white-bg">Перезвоните мне</button>
+					</div>
+					<div class="card-like card-like-bg">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#chart-contur" />
+						</svg>
+					</div>
+					<div class="card-like card-like-bg">
+						<svg class="icon">
+							<use xlink:href="img/utils.svg#heart" />
+						</svg>
+					</div>
 				</div>
+
+			</div>
+			<div class="container">
+
+				<div class="jk-detail-top-inner">
+					<div class="jk-detail-top-logo">
+						<img src="img/sempl/jk-detail-avatar.png" alt="">
+					</div>
+					<div class="jk-detail-top-title text-body-1 text--demibold text-md-h4 text-lg-h1 ">«NEO-квартал «Красная
+						площадь»»</div>
+					<div class="jk-detail-top-address text-body-2 ">ул. Джержинского, ЭНКА </div>
+					<div class="jk-detail-top-tag color-yellow mt-lg-8 mb-4 mb-lg-10">
+						<img src="img/sempl/fire.png" alt="" class="icon mr-1">
+						Высокий спрос
+					</div>
+
+					<div class="d-lg-none brand-min mt-3">
+						<div class="brand-min-img">
+							<img src="img/sempl/brand-1.png" alt="">
+						</div>
+						<div class="text-body-2 fade-80">Romex Group</div>
+
+					</div>
+
+					<div class="d-lg-none d-flex mt-3">
+						<svg class="icon color-icon mr-2">
+							<use xlink:href="img/icons.svg#key" />
+						</svg>
+						<div class="text-body-2">
+							<span class="text--demibold">Сдача в 2022 - 2025,</span> <span class="fade-80"> есть сданные</span>
+
+						</div>
+					</div>
+
+
+					<div class="jk-detail-top-props  text--center">
+						<div class="jk-detail-top-prop">
+							<div class="text-body-2">Тип дома</div>
+							<div class="text-h6 mt-1">Комфорт +</div>
+						</div>
+						<div class="jk-detail-top-prop">
+							<div class="text-body-2">Квартиры</div>
+							<div class="text-h6 mt-1">от 2,75 млн ₽</div>
+							<div class="text-body-2 color-yellow mt-2">Осталось 231</div>
+						</div>
+						<div class="jk-detail-top-prop">
+							<div class="text-body-2">Ком.помещения</div>
+							<div class="text-h6 mt-1">от 4,25 млн ₽</div>
+							<div class="text-body-2 color-yellow mt-2">Осталось 41</div>
+						</div>
+						<div class="jk-detail-top-prop">
+							<div class="text-body-2">Сдача</div>
+							<div class="text-h6 mt-1">3-4 кв. 2022</div>
+						</div>
+					</div>
+					<div class="jk-detail-top-btns">
+						<button class="jk-detail-top-btn btn btn--primary btn--fill">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#chat" />
+							</svg>
+							Написать <span class="d-none d-md-inline">менеджеру</span>
+						</button>
+						<button class="jk-detail-top-btn btn btn--primary btn--white-bg d-lg-flex d-none">Перезвоните мне</button>
+						<button class="jk-detail-top-btn btn btn--primary btn--light d-lg-none">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#settings" />
+							</svg>
+							Позвонить
+						</button>
+					</div>
+
+
+					<div class="jk-detail-top-mobile-info w-100 d-lg-none py-4 mt-4 mb-4">
+						<div class="text-body-2 text--demibold color-yellow">Осталось: 108 квартир</div>
+						<div class="d-flex mt-1">
+							<svg class="icon color-icon mr-2">
+								<use xlink:href="img/icons.svg#eye" />
+							</svg>
+							<div class="text-body-2 text--fade">Интересуются: 40 человек</div>
+						</div>
+					</div>
+					<div class="jk-detail-top-mobile-features  d-lg-none w-100">
+						<div class="grid grid-spacing-3">
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-feature">
+									<div class="text-body-2">Квартиры</div>
+									<div class="text-body-1 text--demibold">от 2,75 млн ₽</div>
+								</div>
+
+							</div>
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-feature">
+									<div class="text-body-2">Ком.помещения</div>
+									<div class="text-body-1 text--demibold">от 4,25 млн ₽</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="jk-detail-top-mobile-props card px-4 mt-4 w-100  d-lg-none">
+						<div class="grid grid-spacing-0">
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-prop py-3 text-body-2 text--demibold bd-bottom">Класс</div>
+							</div>
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-prop py-3 text-body-2 bd-bottom">Комфорт</div>
+							</div>
+
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-prop py-3 text-body-2 text--demibold bd-bottom">Всего квартир</div>
+							</div>
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-prop py-3 text-body-2 bd-bottom">4102</div>
+							</div>
+
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-prop py-3 text-body-2 text--demibold">Тип</div>
+							</div>
+							<div class="grid-col-6">
+								<div class="jk-detail-top-mobile-prop py-3 text-body-2">Монолитно-кирпич.</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+
+			<div class="jk-detail-top-likes d-lg-flex d-none">
+				<button class="btn btn-fab btn--primary btn--white-bg jk-detail-top-like jk-detail-top-like-favorite">
+					<svg class="icon color-icon"><use xlink:href="img/icons.svg#heart" /></svg>
+				</button>
+				<button class="btn btn-fab btn--primary btn--white-bg jk-detail-top-like ml-3 jk-detail-top-like-compare">
+					<svg class="icon color-icon"><use xlink:href="img/icons.svg#chart" /></svg>
+				</button>
+				<button class="btn btn-fab btn--primary btn--white-bg jk-detail-top-like ml-3 jk-detail-top-like-chat">
+					<svg class="icon color-icon"><use xlink:href="img/icons.svg#chat" /></svg>
+				</button>
 			</div>
 		</section>
 
@@ -383,7 +501,7 @@
 
 					</div>
 
-					<div class="jk-detail-tech-result">
+					<div class="jk-detail-tech-result ">
 						<div class="text-body-1 text--demibold mb-2">
 							Итоговая оценка: <span class="color-green text-body-0 text--demibold"> 8,7</span><span
 								class="text--fade text-body-0 text--demibold"> / 10</span>
@@ -399,18 +517,18 @@
 		</section>
 
 
-		<section class="content">
-			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Особенности дома</div>
+		<section class="content py-4 py-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Особенности дома</div>
 			<div class="slider features-slider">
 				<div class="swiper grid-wrap grid-spacing-4">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
-								<div class="card-img pb-5">
+								<div class="card-img pb-md-5">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
-								<div class="card-content pt-6 pb-7 ">
+								<div class="card-content pt-4 pt-md-6 pb-7 ">
 									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
 									<div class="text-body-2 fade-80">
 										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
@@ -421,13 +539,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
-								<div class="card-img pb-5">
+								<div class="card-img pb-md-5">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
-								<div class="card-content pt-6 pb-7 ">
+								<div class="card-content pt-4 pt-md-6 pb-7 ">
 									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
 									<div class="text-body-2 fade-80">
 										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
@@ -438,13 +556,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
-								<div class="card-img pb-5">
+								<div class="card-img pb-md-5">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
-								<div class="card-content pt-6 pb-7 ">
+								<div class="card-content pt-4 pt-md-6 pb-7 ">
 									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
 									<div class="text-body-2 fade-80">
 										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
@@ -455,13 +573,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
-								<div class="card-img pb-5">
+								<div class="card-img pb-md-5">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
-								<div class="card-content pt-6 pb-7 ">
+								<div class="card-content pt-4 pt-md-6 pb-7 ">
 									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
 									<div class="text-body-2 fade-80">
 										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
@@ -472,13 +590,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
-								<div class="card-img pb-5">
+								<div class="card-img pb-md-5">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
-								<div class="card-content pt-6 pb-7 ">
+								<div class="card-content pt-4 pt-md-6 pb-7 ">
 									<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
 									<div class="text-body-2 fade-80">
 										Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества, ледовый
@@ -519,8 +637,8 @@
 		</script>
 
 
-		<section class="object-map">
-			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Объекты инфраструктуры</div>
+		<section class="object-map py-4 py-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Объекты инфраструктуры</div>
 			<div class="object-map-inner card">
 				<div class="object-map-frame">
 					<script type="text/javascript" charset="utf-8" async
@@ -565,7 +683,7 @@
 			</div>
 		</section>
 
-		<section class="line-buner line-buner-bg">
+		<section class="line-buner line-buner-bg  py-4 py-lg-0">
 			<div class="container">
 				<div class="line-buner-inner">
 					<div class="line-buner-img">
@@ -581,10 +699,49 @@
 		</section>
 
 
-		<section class="selection">
-			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Подбор квартиры</div>
+		<section class="selection  py-4 py-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Подбор квартиры</div>
 
 			<div class="selection-block card">
+				<div class="selection-mobile-control d-lg-none">
+					<div class="grid grid-spacing-3 mb-5">
+						<div class="grid-col-6">
+							<label class="form-field form-select">
+								<div class="form-label text-body-2 text--demibold">№ литера</div>
+								<div class="form-input-cover">
+									<select class="form-input">
+										<option value="" disabled hidden selected>Выберите вариант</option>
+										<option value="1">Вариант 1</option>
+										<option value="2">Вариант 2</option>
+									</select>
+									<div class="form-select-icon">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right" />
+										</svg>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-6">
+							<label class="form-field form-select">
+								<div class="form-label text-body-2 text--demibold">Квартиры</div>
+								<div class="form-input-cover">
+									<select class="form-input">
+										<option value="" disabled hidden selected>Выберите вариант</option>
+										<option value="1">Вариант 1</option>
+										<option value="2">Вариант 2</option>
+									</select>
+									<div class="form-select-icon">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right" />
+										</svg>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+
+				</div>
 				<div class="selection-aside selection-left pt-2">
 					<div class="text-body-2 text--demibold fade-80 mb-6">№ литера</div>
 
@@ -612,12 +769,46 @@
 				<div class="selection-content">
 					<div class="selection-header d-flex flex-align-center">
 						<div class="text-body-1 text--demibold mr-8">Литер 2</div>
-						<div class="text-body-2 text--fade">Сдача: 4 квартал 2022</div>
-						<div class="text-body-2 text--demibold color-green ml-auto d-flex flex-align-center">
+						<div class="text-body-2 text--fade ml-auto ml-lg-0">Сдача: 4 квартал 2022</div>
+						<div class="text-body-2 text--demibold color-green ml-auto d-none d-lg-flex flex-align-center">
 							<svg class="icon mr-1">
 								<use xlink:href="img/icons.svg#check" />
 							</svg>
 							Свободно: 108 квартир
+						</div>
+					</div>
+					<div class="text-body-2 text--demibold color-green d-flex d-lg-none flex-align-center">
+						<svg class="icon mr-1">
+							<use xlink:href="img/icons.svg#check" />
+						</svg>
+						Свободно: 108 квартир
+					</div>
+
+					<div class="grid grid-spacing-3 mb-6 mt-4">
+						<div class="grid-col-6">
+							<div class="selection-legend">
+								<div class="selection-item-flat selection-item-flat-free mr-2"></div>
+								<div class="text-body-2">Свободна</div>
+							</div>
+						</div>
+						<div class="grid-col-6">
+							<div class="selection-legend">
+								<div class="selection-item-flat selection-item-flat-sold mr-2"></div>
+								<div class="text-body-2">Продана</div>
+							</div>
+						</div>
+						<div class="grid-col-6">
+							<div class="selection-legend">
+								<div class="selection-item-flat selection-item-flat-reserv mr-2"></div>
+								<div class="text-body-2">Бронь</div>
+							</div>
+
+						</div>
+						<div class="grid-col-6">
+							<div class="selection-legend">
+								<div class="selection-item-flat selection-item-flat-individual mr-2"></div>
+								<div class="text-body-2">От физ.лица</div>
+							</div>
 						</div>
 					</div>
 
@@ -1156,7 +1347,7 @@
 
 					instance._isFetching = true;
 
-					fetch('selection-flat-tooltip.html')
+					fetch('tooltip-selection-flat.html')
 						.then((response) => response.text())
 						.then((result) => {
 							instance._isLoad = true
@@ -1176,19 +1367,19 @@
 
 
 
-		<section class="content">
-			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Акции и новости</div>
+		<section class="content py-4 py-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Акции и новости</div>
 			<div class="slider sales-slider">
 				<div class="swiper grid-wrap grid-spacing-4">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
 
-								<div class="card-content pt-5 pb-7 px-7">
+								<div class="card-content py-4 pt-md-5 pb-md-7 px-4 px-md-7">
 
 									<div class="text-body-2 text--fade mb-3">7 сентября</div>
 									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
@@ -1203,14 +1394,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
 
-								<div class="card-content pt-5 pb-7 px-7">
+								<div class="card-content py-4 pt-md-5 pb-md-7 px-4 px-md-7">
 
 									<div class="text-body-2 text--fade mb-3">7 сентября</div>
 									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
@@ -1225,14 +1416,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
 
-								<div class="card-content pt-5 pb-7 px-7">
+								<div class="card-content py-4 pt-md-5 pb-md-7 px-4 px-md-7">
 
 									<div class="text-body-2 text--fade mb-3">7 сентября</div>
 									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
@@ -1247,14 +1438,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
 
-								<div class="card-content pt-5 pb-7 px-7">
+								<div class="card-content py-4 pt-md-5 pb-md-7 px-4 px-md-7">
 
 									<div class="text-body-2 text--fade mb-3">7 сентября</div>
 									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
@@ -1269,14 +1460,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide grid-col-4">
+						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
 									<img src="https://picsum.photos/600/400" alt="">
 								</div>
 
 
-								<div class="card-content pt-5 pb-7 px-7">
+								<div class="card-content py-4 pt-md-5 pb-md-7 px-4 px-md-7">
 
 									<div class="text-body-2 text--fade mb-3">7 сентября</div>
 									<div class="text-body-1 text--demibold mb-3">Ипотека без первоначального
@@ -1322,8 +1513,8 @@
 
 
 
-		<section class="content" data-tab-cover>
-			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Предложения для вас</div>
+		<section class="content py-4 py-lg-5" data-tab-cover>
+			<div class="text-subtitle-2 text-md-h6 mb-4 mb-lg-8">Предложения для вас</div>
 			<div class="tab-links">
 				<button class="tab-link" data-tab-link="1">Подходящие вам</button>
 				<button class="tab-link" data-tab-link="2">Популярные</button>
@@ -1332,304 +1523,314 @@
 
 			<div class="tab-content-cover">
 				<div class="tab-content" data-tab-content="1">
-					<div class="tab-content-inner">
-						<div class="grid grid-spacing-4 ">
-							<div class="grid-col-6 grid-col-lg-4">
-								<div class="plan-card card h-100">
-									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
-									</div>
-
-									<div class="card-content pb-2 pt-5 px-4 px-md-9">
-
-										<div class="text-body-2 text--fade">3-комнатная квартира</div>
-										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
-
-										<div class="plan-card-props mt-3">
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Площадь</div>
-												<div class="text-body-2 text--demibold">53, 2 м2</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Этажи</div>
-												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Сдача</div>
-												<div class="text-body-2 text--demibold">4 кв. 2022</div>
-											</div>
+					<div class="tab-content-inner offers-slider">
+						<div class="swiper grid-wrap grid-spacing-4">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+									<div class="plan-card card h-100">
+										<div class="plan-card-img">
+											<img src="img/sempl/plan.png" alt="">
 										</div>
 
+										<div class="card-content pb-2 pt-5 px-4 px-md-9">
 
+											<div class="text-body-2 text--fade">3-комнатная квартира</div>
+											<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
-										<div class="d-md-block d-none">
-											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
-										</div>
-										<div class="d-md-none w-100 mt-3">
-											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="grid-col-6 grid-col-lg-4">
-								<div class="plan-card card h-100">
-									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
-									</div>
-
-									<div class="card-content pb-2 pt-5 px-4 px-md-9">
-
-										<div class="text-body-2 text--fade">3-комнатная квартира</div>
-										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
-
-										<div class="plan-card-props mt-3">
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Площадь</div>
-												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											<div class="plan-card-props mt-3">
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Площадь</div>
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Этажи</div>
+													<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Сдача</div>
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
 											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Этажи</div>
-												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+
+
+
+											<div class="d-md-block d-none">
+												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
 											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Сдача</div>
-												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											<div class="d-md-none w-100 mt-1">
+												<button class="btn btn--primary  plan-card-btn">Выбрать из 21 объекта</button>
+
 											</div>
-										</div>
-
-
-
-										<div class="d-md-block d-none">
-											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
-										</div>
-										<div class="d-md-none w-100 mt-3">
-											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
 
 										</div>
-
 									</div>
 								</div>
-							</div>
 
-							<div class="grid-col-6 grid-col-lg-4">
-								<div class="plan-card card h-100">
-									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
-									</div>
-
-									<div class="card-content pb-2 pt-5 px-4 px-md-9">
-
-										<div class="text-body-2 text--fade">3-комнатная квартира</div>
-										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
-
-										<div class="plan-card-props mt-3">
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Площадь</div>
-												<div class="text-body-2 text--demibold">53, 2 м2</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Этажи</div>
-												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Сдача</div>
-												<div class="text-body-2 text--demibold">4 кв. 2022</div>
-											</div>
+								<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+									<div class="plan-card card h-100">
+										<div class="plan-card-img">
+											<img src="img/sempl/plan.png" alt="">
 										</div>
 
+										<div class="card-content pb-2 pt-5 px-4 px-md-9">
 
+											<div class="text-body-2 text--fade">3-комнатная квартира</div>
+											<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
-										<div class="d-md-block d-none">
-											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
-										</div>
-										<div class="d-md-none w-100 mt-3">
-											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="grid-col-6 grid-col-lg-4">
-								<div class="plan-card card h-100">
-									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
-									</div>
-
-									<div class="card-content pb-2 pt-5 px-4 px-md-9">
-
-										<div class="text-body-2 text--fade">3-комнатная квартира</div>
-										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
-
-										<div class="plan-card-props mt-3">
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Площадь</div>
-												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											<div class="plan-card-props mt-3">
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Площадь</div>
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Этажи</div>
+													<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Сдача</div>
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
 											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Этажи</div>
-												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+
+
+
+											<div class="d-md-block d-none">
+												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
 											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Сдача</div>
-												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											<div class="d-md-none w-100 mt-1">
+												<button class="btn btn--primary  plan-card-btn">Выбрать из 21 объекта</button>
+
 											</div>
-										</div>
-
-
-
-										<div class="d-md-block d-none">
-											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
-										</div>
-										<div class="d-md-none w-100 mt-3">
-											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
 
 										</div>
-
 									</div>
 								</div>
-							</div>
 
-							<div class="grid-col-6 grid-col-lg-4">
-								<div class="plan-card card h-100">
-									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
-									</div>
-
-									<div class="card-content pb-2 pt-5 px-4 px-md-9">
-
-										<div class="text-body-2 text--fade">3-комнатная квартира</div>
-										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
-
-										<div class="plan-card-props mt-3">
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Площадь</div>
-												<div class="text-body-2 text--demibold">53, 2 м2</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Этажи</div>
-												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Сдача</div>
-												<div class="text-body-2 text--demibold">4 кв. 2022</div>
-											</div>
+								<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+									<div class="plan-card card h-100">
+										<div class="plan-card-img">
+											<img src="img/sempl/plan.png" alt="">
 										</div>
 
+										<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+											<div class="text-body-2 text--fade">3-комнатная квартира</div>
+											<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+											<div class="plan-card-props mt-3">
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Площадь</div>
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Этажи</div>
+													<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Сдача</div>
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
 
 
-										<div class="d-md-block d-none">
-											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+
+											<div class="d-md-block d-none">
+												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+											</div>
+											<div class="d-md-none w-100 mt-1">
+												<button class="btn btn--primary  plan-card-btn">Выбрать из 21 объекта</button>
+
+											</div>
+
 										</div>
-										<div class="d-md-none w-100 mt-3">
-											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
-
-										</div>
-
 									</div>
 								</div>
-							</div>
 
+								<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+									<div class="plan-card card h-100">
+										<div class="plan-card-img">
+											<img src="img/sempl/plan.png" alt="">
+										</div>
+
+										<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+											<div class="text-body-2 text--fade">3-комнатная квартира</div>
+											<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+											<div class="plan-card-props mt-3">
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Площадь</div>
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Этажи</div>
+													<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Сдача</div>
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+
+
+
+											<div class="d-md-block d-none">
+												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+											</div>
+											<div class="d-md-none w-100 mt-1">
+												<button class="btn btn--primary  plan-card-btn">Выбрать из 21 объекта</button>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+									<div class="plan-card card h-100">
+										<div class="plan-card-img">
+											<img src="img/sempl/plan.png" alt="">
+										</div>
+
+										<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+											<div class="text-body-2 text--fade">3-комнатная квартира</div>
+											<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+											<div class="plan-card-props mt-3">
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Площадь</div>
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Этажи</div>
+													<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Сдача</div>
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+
+
+
+											<div class="d-md-block d-none">
+												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+											</div>
+											<div class="d-md-none w-100 mt-1">
+												<button class="btn btn--primary  plan-card-btn">Выбрать из 21 объекта</button>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="tab-content" data-tab-content="2">
-					<div class="tab-content-inner">
-						<div class="grid grid-spacing-4 ">
-							<div class="grid-col-6 grid-col-lg-4">
-								<div class="plan-card card h-100">
-									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
-									</div>
-
-									<div class="card-content pb-2 pt-5 px-4 px-md-9">
-
-										<div class="text-body-2 text--fade">3-комнатная квартира</div>
-										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
-
-										<div class="plan-card-props mt-3">
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Площадь</div>
-												<div class="text-body-2 text--demibold">53, 2 м2</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Этажи</div>
-												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
-											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Сдача</div>
-												<div class="text-body-2 text--demibold">4 кв. 2022</div>
-											</div>
+					<div class="tab-content-inner offers-slider">
+						<div class="swiper grid-wrap grid-spacing-4">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+									<div class="plan-card card h-100">
+										<div class="plan-card-img">
+											<img src="img/sempl/plan.png" alt="">
 										</div>
 
+										<div class="card-content pb-2 pt-5 px-4 px-md-9">
 
+											<div class="text-body-2 text--fade">3-комнатная квартира</div>
+											<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
-										<div class="d-md-block d-none">
-											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
-										</div>
-										<div class="d-md-none w-100 mt-3">
-											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
-
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="grid-col-6 grid-col-lg-4">
-								<div class="plan-card card h-100">
-									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
-									</div>
-
-									<div class="card-content pb-2 pt-5 px-4 px-md-9">
-
-										<div class="text-body-2 text--fade">3-комнатная квартира</div>
-										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
-
-										<div class="plan-card-props mt-3">
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Площадь</div>
-												<div class="text-body-2 text--demibold">53, 2 м2</div>
+											<div class="plan-card-props mt-3">
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Площадь</div>
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Этажи</div>
+													<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Сдача</div>
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
 											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Этажи</div>
-												<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+
+
+
+											<div class="d-md-block d-none">
+												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
 											</div>
-											<div class="plan-card-prop">
-												<div class="text-small text--fade">Сдача</div>
-												<div class="text-body-2 text--demibold">4 кв. 2022</div>
+											<div class="d-md-none w-100 mt-1">
+												<button class="btn btn--primary  plan-card-btn">Выбрать из 21 объекта</button>
+
 											</div>
-										</div>
-
-
-
-										<div class="d-md-block d-none">
-											<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
-										</div>
-										<div class="d-md-none w-100 mt-3">
-											<button class="btn btn--primary btn--light  plan-card-btn">Смотреть</button>
 
 										</div>
-
 									</div>
 								</div>
+
+								<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+									<div class="plan-card card h-100">
+										<div class="plan-card-img">
+											<img src="img/sempl/plan.png" alt="">
+										</div>
+
+										<div class="card-content pb-2 pt-5 px-4 px-md-9">
+
+											<div class="text-body-2 text--fade">3-комнатная квартира</div>
+											<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
+
+											<div class="plan-card-props mt-3">
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Площадь</div>
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Этажи</div>
+													<div class="text-body-2 text--demibold">1, 3, 5...14</div>
+												</div>
+												<div class="plan-card-prop">
+													<div class="text-small text--fade">Сдача</div>
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+
+
+
+											<div class="d-md-block d-none">
+												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+											</div>
+											<div class="d-md-none w-100 mt-1">
+												<button class="btn btn--primary  plan-card-btn">Выбрать из 21 объекта</button>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+
+
 							</div>
-
-
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<script>
+			new Swiper('.offers-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+			})
+		</script>
 
 
-		<section class="content">
+		<section class="content py-4 py-lg-5">
 			<div class="container">
 				<div class="feature mb-5">
 					<div class="feature-img">
@@ -1693,13 +1894,13 @@
 		</section>
 
 
-		<section class="content">
+		<section class="content  py-4 py-lg-0">
 			<div class="container">
 				<div class="line-buner-inner line-buner-bg line-buner-card">
 					<div class="line-buner-img">
 						<img src="img/sempl/line-buner-1.png" alt="">
 					</div>
-					<div class="line-buner-content color-white">
+					<div class="line-buner-content color-white mb-4 mb-lg-none">
 						<div class="text-h6 mb-1">Презентация «NEO-квартал «Красная площадь»»</div>
 						<div class="text-body-2">Мы подготовили для вас презентацию, в которой открыто как есть расскажем
 							чего ожидать при покупке квартиры</div>
@@ -1710,45 +1911,45 @@
 		</section>
 
 
-		<section class="content">
-			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Аккредитация банков</div>
-			<div class="grid grid-spacing-5">
-				<div class="grid-col-2">
+		<section class="content py-4 py-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Аккредитация банков</div>
+			<div class="grid grid-spacing-3 grid-spacing-md-5">
+				<div class="grid-col-4 grid-col-lg-2">
 					<div class="partner-item card">
 						<div class="partner-item-img">
 							<img src="img/sempl/partner-1.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="grid-col-2">
+				<div class="grid-col-4 grid-col-lg-2">
 					<div class="partner-item card">
 						<div class="partner-item-img">
 							<img src="img/sempl/partner-1.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="grid-col-2">
+				<div class="grid-col-4 grid-col-lg-2">
 					<div class="partner-item card">
 						<div class="partner-item-img">
 							<img src="img/sempl/partner-1.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="grid-col-2">
+				<div class="grid-col-4 grid-col-lg-2">
 					<div class="partner-item card">
 						<div class="partner-item-img">
 							<img src="img/sempl/partner-1.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="grid-col-2">
+				<div class="grid-col-4 grid-col-lg-2">
 					<div class="partner-item card">
 						<div class="partner-item-img">
 							<img src="img/sempl/partner-1.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="grid-col-2">
+				<div class="grid-col-4 grid-col-lg-2">
 					<div class="partner-item card">
 						<div class="partner-item-img">
 							<img src="img/sempl/partner-1.png" alt="">
@@ -1759,9 +1960,9 @@
 		</section>
 
 
-		<section class="content">
-			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Аккредитация банков</div>
-			<div class="calc card py-10 px-6">
+		<section class="content pt-4 pt-lg-5  pb-10">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Калькулятор ипотеки</div>
+			<div class="calc card-md py-md-10 px-md-6">
 				<div class="calc-fields">
 					<label class="form-field form-range form-range-single">
 						<div class="text-body-1 text--demibold mb-3">Стоимость недвижимости</div>
@@ -1772,7 +1973,7 @@
 								<input type="text" class="form-range-from-input" hidden>
 								<input type="text" class="form-range-to-input" hidden>
 								<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="10000000"
-									data-from="3900000">
+									data-format="money" data-from="3900000">
 							</div>
 						</div>
 					</label>
@@ -1784,8 +1985,7 @@
 								<span class="text-body-2 text--fade ml-auto ">%</span>
 								<input type="text" class="form-range-from-input" hidden>
 								<input type="text" class="form-range-to-input" hidden>
-								<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="10000000"
-									data-from="3900000">
+								<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="100" data-from="11">
 							</div>
 						</div>
 					</label>
@@ -1798,7 +1998,7 @@
 								<input type="text" class="form-range-from-input" hidden>
 								<input type="text" class="form-range-to-input" hidden>
 								<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="10000000"
-									data-from="3900000">
+									data-format="money" data-from="3900000">
 							</div>
 						</div>
 					</label>
@@ -1816,23 +2016,26 @@
 					</label>
 				</div>
 				<div class="calc-result">
-					<div class="calc-result-item">
-						<div class="text-body-1 text--fade">Сумма кредита</div>
-						<div class="text-h6">3 000 000 ₽</div>
-					</div>
-					<div class="calc-result-item">
-						<div class="text-body-1 text--fade">Ежемесячный платеж</div>
-						<div class="text-h6">26 938 ₽</div>
-					</div>
-					<div class="calc-result-item">
-						<div class="text-body-1 text--fade">Необходимый доход</div>
-						<div class="text-h6">56 121 ₽</div>
+					<div class="calc-result-items">
+
+						<div class="calc-result-item mr-lg-auto">
+							<div class="text-body-2 text-body-lg-1 text-lg--fade">Сумма кредита</div>
+							<div class="text-body-1 text--demibold text-lg-h6">3 000 000 ₽</div>
+						</div>
+						<div class="calc-result-item mr-lg-auto">
+							<div class="text-body-2 text-body-lg-1 text-lg--fade">Ежемесячный платеж</div>
+							<div class="text-body-1 text--demibold text-lg-h6">26 938 ₽</div>
+						</div>
+						<div class="calc-result-item mr-lg-auto">
+							<div class="text-body-2 text-body-lg-1 text-lg--fade">Необходимый доход</div>
+							<div class="text-body-1 text--demibold text-lg-h6">56 121 ₽</div>
+						</div>
 					</div>
 					<button class="calc-result-btn btn btn--primary btn--fill">Отправить запрос</button>
 				</div>
 
 				<div class="text-body-1 text--demibold mb-3">Один запрос в 6 банков</div>
-				<div class="calc-brands">
+				<div class="calc-brands d-none d-md-flex">
 					<div class="calc-brand">
 						<img src="img/sempl/partner-1.png" alt="">
 					</div>
@@ -1852,7 +2055,693 @@
 						<img src="img/sempl/partner-1.png" alt="">
 					</div>
 				</div>
+				<div class="grid grid-spacing-3 grid-spacing-md-5 d-md-none">
+					<div class="grid-col-4 grid-col-lg-2">
+						<div class="partner-item card">
+							<div class="partner-item-img">
+								<img src="img/sempl/partner-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-4 grid-col-lg-2">
+						<div class="partner-item card">
+							<div class="partner-item-img">
+								<img src="img/sempl/partner-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-4 grid-col-lg-2">
+						<div class="partner-item card">
+							<div class="partner-item-img">
+								<img src="img/sempl/partner-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-4 grid-col-lg-2">
+						<div class="partner-item card">
+							<div class="partner-item-img">
+								<img src="img/sempl/partner-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-4 grid-col-lg-2">
+						<div class="partner-item card">
+							<div class="partner-item-img">
+								<img src="img/sempl/partner-1.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="grid-col-4 grid-col-lg-2">
+						<div class="partner-item card">
+							<div class="partner-item-img">
+								<img src="img/sempl/partner-1.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+		</section>
+
+
+		<section class="question">
+			<div class="question-background">
+				<img src="img/sempl/question.png" alt="">
+			</div>
+			<div class="question-inner">
+				<form class="question-form card">
+					<div class="text-h6 mb-2">Задать вопрос застройщику</div>
+					<div class="text-body-2 lh-1-5">
+						Напишите вопрос и наш менеджер ответит вам
+						в течение 20 минут
+					</div>
+
+					<label class="form-field mt-7 mb-4">
+						<div class="form-input-cover">
+							<textarea class="form-input" placeholder="Напишите здесь свой вопрос..."></textarea>
+						</div>
+					</label>
+					<button class="btn btn--primary btn--fill">Отправить</button>
+				</form>
+			</div>
+		</section>
+
+
+
+		<section class="content pt-10 pb-4 pb-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-2">Как это выглядит сейчас</div>
+			<div class="text-body-2 color-primary mb-6 mb-lg-8">Обновлено 1 августа 2021</div>
+			<div class="slider gallery-slider">
+				<div class="swiper grid-wrap grid-spacing-4">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+							<a href="https://picsum.photos/1920/1080?random=1" data-fancybox="gallery-111" class="image image--box">
+								<img src="https://picsum.photos/400/400?random=1" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+							<a href="https://picsum.photos/1920/1080?random=2" data-fancybox="gallery-111" class="image image--box">
+								<img src="https://picsum.photos/400/400?random=2" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+							<a href="https://picsum.photos/1920/1080?random=3" data-fancybox="gallery-111" class="image image--box">
+								<img src="https://picsum.photos/400/400?random=3" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+							<a href="https://picsum.photos/1920/1080?random=4" data-fancybox="gallery-111" class="image image--box">
+								<img src="https://picsum.photos/400/400?random=4" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+							<a href="https://picsum.photos/1920/1080?random=5" data-fancybox="gallery-111" class="image image--box">
+								<img src="https://picsum.photos/400/400?random=5" alt="">
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="slider-btn slider-prev">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-left" />
+					</svg>
+				</button>
+				<button class="slider-btn slider-next">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-right" />
+					</svg>
+				</button>
+
+
+			</div>
+
+		</section>
+		<script>
+			new Swiper('.gallery-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+				navigation: {
+					nextEl: '.gallery-slider .slider-next',
+					prevEl: '.gallery-slider .slider-prev'
+				}
+			})
+		</script>
+
+
+		<!-- 
+$min = 10000
+$max = 80000
+ -->
+
+		<section class="chart py-4 py-lg-5" data-tab-cover>
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-6">Динамика цены</div>
+			<div class="chart-block card ">
+				<div class="tab-links chart-block-tabs">
+					<button class="tab-link" data-tab-link="chart-cost-2021">2021</button>
+					<button class="tab-link" data-tab-link="chart-cost-2020">2020</button>
+					<button class="tab-link" data-tab-link="chart-cost-2019">2019</button>
+					<div class="tab-plate" data-tab-plate></div>
+				</div>
+				<div class="chart-block-content">
+					<div class="tab-content-cover">
+						<div class="tab-content" data-tab-link="chart-cost-2021">
+							<div class="chart-content">
+								<div class="chart-back">
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">80 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">70 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">60 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">50 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">40 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">30 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">20 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade"></div>
+										<div class="chart-line-line"></div>
+									</div>
+								</div>
+								<div class="chart-data">
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Янв</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (45000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Фев</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Мар</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Апр</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Май</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Июн</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Июл</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Авг</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (62000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Сен</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (71000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Окт</div>
+									</div>
+									<div class="chart-col">
+										<div class="chart-col-sign">Ноя</div>
+									</div>
+									<div class="chart-col">
+										<div class="chart-col-sign">Дек</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-content" data-tab-link="chart-cost-2020">
+							<div class="chart-content">
+								<div class="chart-back">
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">80 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">70 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">60 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">50 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">40 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">30 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">20 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade"></div>
+										<div class="chart-line-line"></div>
+									</div>
+								</div>
+								<div class="chart-data">
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (33000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Янв</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (40000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Фев</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (56000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Мар</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (25000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Апр</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Май</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Июн</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Июл</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Авг</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (62000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Сен</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (71000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Окт</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (73000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Ноя</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (76000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Дек</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-content" data-tab-link="chart-cost-2019">
+							<div class="chart-content">
+								<div class="chart-back">
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">80 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">70 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">60 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">50 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">40 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">30 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade">20 тыс</div>
+										<div class="chart-line-line"></div>
+									</div>
+									<div class="chart-line">
+										<div class="chart-line-sign text-body-2 text--fade"></div>
+										<div class="chart-line-line"></div>
+									</div>
+								</div>
+								<div class="chart-data">
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (31000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Янв</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (35000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Фев</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (38000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Мар</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (33000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Апр</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Май</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (42000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Июн</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (28000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Июл</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Авг</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (32000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Сен</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (71000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Окт</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (31000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Ноя</div>
+									</div>
+									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
+										<div class="chart-col-col"></div>
+										<div class="chart-col-sign">Дек</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<script>
+			tippy('.chart-col[data-tooltip]', {
+				content: 'loading',
+				theme: 'chart-col',
+				allowHTML: true,
+				placement: 'right-start',
+				arrow: false,
+				appendTo: () => document.body,
+
+				onCreate(instance) {
+					instance._isFetching = false;
+					instance._isLoad = false;
+					instance._error = null;
+				},
+				onShow(instance) {
+					if (instance._isFetching || instance._isLoad) return;
+
+					instance._isFetching = true;
+
+					fetch('tooltip-chart-col.html')
+						.then((response) => response.text())
+						.then((result) => {
+							instance._isLoad = true
+							instance._error = null
+							instance.setContent(result)
+						})
+						.catch((error) => {
+							instance._error = error;
+							instance.setContent(`Request failed. ${error}`);
+						})
+						.finally(() => instance._isFetching = false);
+				}
+
+			})
+		</script>
+
+
+
+		<section class="content py-4 py-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Жилые комплексы от застройщика</div>
+			<div class="grid grid-spacing-3 grid-spacing-md-5">
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card h-100">
+						<div class="card-img">
+							<img src="https://picsum.photos/600/400?random=11" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3">
+					<div class="jk-card card h-100">
+						<div class="card-img">
+							<img src="https://picsum.photos/600/400?random=12" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3 d-none d-md-block">
+					<div class="jk-card card h-100">
+						<div class="card-img">
+							<img src="https://picsum.photos/600/400?random=13" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-3 d-none d-md-block">
+					<div class="jk-card card h-100">
+						<div class="card-img">
+							<img src="https://picsum.photos/600/400?random=14" alt="">
+						</div>
+						<div class="card-control">
+							<div class="ml-auto card-likes">
+								<div class="card-like card-like-bg">
+									<svg class="icon">
+										<use xlink:href="img/utils.svg#heart" />
+									</svg>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card-content pb-2 pt-2 pt-lg-4 pb-lg-3 px-4 px-lg-3">
+
+							<div class="text-body-2 text-lg-body-1 text--demibold ">ЖК «Арена»</div>
+							<div class="text-small text--fade mb-3 mb-md-4">г.Новороссийск, пр. Дзержинского, д...</div>
+
+							<div class="grid grid-spacing-1">
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Срок сдачи</div>
+										<div class="text-body-2 text--demibold">2021-2022</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Класс</div>
+										<div class="text-body-2 text--demibold">Бизнес</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6">
+									<div class="jk-card-prop h-100">
+										<div class="text-small text--fade">Квартиры от</div>
+										<div class="text-body-2 text--demibold">6 466 000 Р</div>
+									</div>
+								</div>
+								<div class="grid-col-12 grid-col-md-6 d-none d-md-block">
+									<div class="jk-card-prop h-100 ">
+										<div class="text-small text--fade">Этажность</div>
+										<div class="text-body-2 text--demibold">24</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="btn jk-card-btn btn--primary btn--light w-100 mt-4">Смотреть</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn btn--primary btn--fill w-100 mt-4 d-md-none">Показать все объекты</button>
+		</section>
+
+		<section class="jk-map py-4 py-lg-5">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Готовые и строящиеся объекты на карте</div>
+			<div class="jk-map-inner">
+				<div class="jk-map-frame">
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+			</div>
+			<div class="pb-10"></div>
 		</section>
 
 		<footer class="footer">

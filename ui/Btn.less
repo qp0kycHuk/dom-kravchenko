@@ -63,7 +63,7 @@
 	// color
 	&--primary {
 		--btn-color      : var(--color-primary);
-		--btn-color-light: var(--color-primary-20);
+		--btn-color-light: var(--color-primary-10);
 		--btn-text       : #fff;
 
 		@media (hover) {
@@ -76,7 +76,7 @@
 
 	&--red {
 		--btn-color      : var(--color-red);
-		--btn-color-light: var(--color-red-30);
+		--btn-color-light: var(--color-red-10);
 		--btn-text       : #fff;
 
 		@media (hover) {
@@ -89,7 +89,7 @@
 
 	&--green {
 		--btn-color      : var(--color-green);
-		--btn-color-light: var(--color-green-30);
+		--btn-color-light: var(--color-green-10);
 		--btn-text       : #fff;
 
 		@media (hover) {
@@ -178,7 +178,7 @@
 		background: transparent;
 		color     : var(--btn-color);
 
-		border-bottom: 1px solid var(--btn-color);
+		// border-bottom: 1px solid var(--btn-color);
 		border-radius: 0;
 
 
@@ -189,6 +189,80 @@
 	}
 
 	&--white-bg {
+		background: #FFFFFF;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+
+		&:focus:not(:active) {
+			background: #FFFFFF;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
+
+		}
+	}
+
+
+	&.active&-active--fill,
+	&.tab-active&-active--fill,
+	&.toggle-active&-active--fill {
+		background: var(--btn-color);
+		color     : var(--btn-text);
+		border    : transparent;
+
+		&:focus:not(:active) {
+			background: var(--btn-color);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+
+		}
+
+	}
+
+	&.active&-active--light,
+	&.tab-active&-active--light,
+	&.toggle-active&-active--light {
+		background: var(--btn-color-light);
+		color     : var(--btn-color);
+
+		&:focus:not(:active) {
+			box-shadow: 0 0 0 2px var(--btn-color);
+
+		}
+	}
+
+	&.active&-active--contur,
+	&.tab-active&-active--contur,
+	&.toggle-active&-active--contur {
+		background: transparent;
+		border    : 1px solid var(--btn-color);
+		color     : var(--btn-color);
+
+		&:focus:not(:active) {
+			background: var(--btn-color-light);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+		}
+	}
+
+	&.active&-active--link,
+	&.tab-active&-active--link,
+	&.toggle-active&-active--link {
+		padding: 0;
+		width  : auto;
+		height : auto;
+
+		background: transparent;
+		color     : var(--btn-color);
+
+		border-bottom: 1px solid var(--btn-color);
+		border-radius: 0;
+
+
+		&:focus:not(:active) {
+			background: var(--btn-color-light);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+		}
+	}
+
+	&.active&-active--white-bg,
+	&.tab-active&-active--white-bg,
+	&.toggle-active&-active--white-bg {
 		background: #FFFFFF;
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 

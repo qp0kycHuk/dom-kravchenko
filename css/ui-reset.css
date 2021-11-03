@@ -89,7 +89,7 @@ img[src="/"] {
 }
 img {
   max-width: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
   display: block;
   -webkit-user-select: none;
           user-select: none;
