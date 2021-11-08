@@ -272,7 +272,7 @@ body {
 
   &-prop {
 
-    @media (max-width:@md) {
+    @media (max-width:@lg) {
       display              : grid;
       grid-template-columns: 1fr 1fr;
       padding-top          : 5px;
@@ -282,25 +282,36 @@ body {
 
     &+& {
 
-      @media (max-width:@md) {
+      @media (max-width:@lg) {
         border-top: 1px solid #E2E8F0;
       }
     }
   }
 
-
-  &-btn {
-    @media (min-width:@md) {
-      padding    : 0 16px;
-      margin-left: -16px;
-    }
+  &-link {
+    padding    : 0 16px;
+    margin-left: -16px;
 
     @media (max-width:@md) {
-      width          : calc(100% + 16px);
-      margin-left    : -8px;
-      margin-right   : -8px;
-      padding-left   : 8px;
-      justify-content: flex-start;
+      padding    : 0 8px;
+      margin-left: -8px;
+    }
+  }
+
+  &-btn {
+    // @media (min-width:@md) {
+    padding    : 0 16px;
+    margin-left: -16px;
+    // }
+
+    @media (max-width:@md) {
+      width               : calc(100% + 16px);
+      //   margin-left    : -8px;
+      //   margin-right   : -8px;
+      //   padding-left   : 8px;
+      //   justify-content: flex-start;
+      padding             : 0 8px;
+      margin-left         : -8px;
     }
 
   }
@@ -991,15 +1002,19 @@ body {
 .tab {
   &-links {
     border-bottom: 1px solid #E2E8F0;
-    margin-bottom: 24px;
-    position     : relative;
-    display      : flex;
+
+    position: relative;
+    display : flex;
+
+    overflow: auto;
   }
 
   &-link {
     font-size     : 14px;
     padding-bottom: 12px;
     padding-top   : 12px;
+
+    white-space: nowrap;
 
     &.tab-active {
       font-weight: 600;
@@ -1777,5 +1792,15 @@ body {
       padding-left : 8px;
       padding-right: 8px;
     }
+  }
+}
+
+.favorites {
+  &-tab-links {
+    border-radius : 6px;
+    padding-left  : 24px;
+    padding-right : 24px;
+    display       : flex;
+    flex-direction: row;
   }
 }

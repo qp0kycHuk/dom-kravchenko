@@ -374,7 +374,7 @@ body * {
     padding-bottom: 5px;
   }
 }
-@media (max-width: 679.98px) {
+@media (max-width: 1015.98px) {
   .plan-card-prop {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -382,24 +382,30 @@ body * {
     padding-bottom: 5px;
   }
 }
-@media (max-width: 679.98px) {
+@media (max-width: 1015.98px) {
   .plan-card-prop + .plan-card-prop {
     border-top: 1px solid #E2E8F0;
   }
 }
-@media (min-width: 679.98px) {
-  .plan-card-btn {
-    padding: 0 16px;
-    margin-left: -16px;
+.plan-card-link {
+  padding: 0 16px;
+  margin-left: -16px;
+}
+@media (max-width: 679.98px) {
+  .plan-card-link {
+    padding: 0 8px;
+    margin-left: -8px;
   }
+}
+.plan-card-btn {
+  padding: 0 16px;
+  margin-left: -16px;
 }
 @media (max-width: 679.98px) {
   .plan-card-btn {
     width: calc(100% + 16px);
+    padding: 0 8px;
     margin-left: -8px;
-    margin-right: -8px;
-    padding-left: 8px;
-    justify-content: flex-start;
   }
 }
 .header {
@@ -974,14 +980,15 @@ body * {
 }
 .tab-links {
   border-bottom: 1px solid #E2E8F0;
-  margin-bottom: 24px;
   position: relative;
   display: flex;
+  overflow: auto;
 }
 .tab-link {
   font-size: 14px;
   padding-bottom: 12px;
   padding-top: 12px;
+  white-space: nowrap;
 }
 .tab-link.tab-active {
   font-weight: 600;
@@ -1638,4 +1645,11 @@ body * {
     padding-left: 8px;
     padding-right: 8px;
   }
+}
+.favorites-tab-links {
+  border-radius: 6px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: row;
 }
