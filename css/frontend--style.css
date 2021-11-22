@@ -1707,6 +1707,9 @@ body * {
     width: 920px;
   }
 }
+.favorites-chart-wrapper {
+  border: none;
+}
 @media (max-width: 1015.98px) {
   .favorites-chart-wrapper {
     overflow: auto;
@@ -1716,9 +1719,7 @@ body * {
   .favorites-chart-wrapper {
     width: calc(100% + 30px);
     margin-left: -15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
+    padding: 0 15px 10px;
     background: none;
     border-radius: 0;
   }

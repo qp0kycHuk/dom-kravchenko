@@ -1878,7 +1878,7 @@ body {
 		}
 
 		&-wrapper {
-
+			border: none;
 
 			@media(max-width:@lg) {
 				overflow         : auto;
@@ -1893,13 +1893,11 @@ body {
 			}
 
 			@media(max-width:@md) {
-				width         : calc(100% + 30px);
-				margin-left   : -15px;
-				padding-left  : 15px;
-				padding-right : 15px;
-				padding-bottom: 10px;
-				background    : none;
-				border-radius : 0;
+				width        : calc(100% + 30px);
+				margin-left  : -15px;
+				padding      : 0 15px 10px;
+				background   : none;
+				border-radius: 0;
 			}
 		}
 

@@ -308,6 +308,9 @@ section {
   max-height: 278px;
   min-height: 130px;
   overflow: hidden;
+  width: calc(100% + 2px);
+  margin-left: -1px;
+  margin-top: -1px;
 }
 .card-img:before {
   content: '';
@@ -985,6 +988,15 @@ section {
 }
 .form-field--error .form-input-cover {
   border-color: var(--error-color);
+}
+.form-input-group {
+  display: flex;
+}
+.form-input-group .form-input-cover {
+  flex-grow: 1;
+}
+.form-input-group .form-input-cover + .form-input-cover {
+  margin-left: 3px;
 }
 .form-input {
   height: 40px;

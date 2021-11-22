@@ -1874,6 +1874,7 @@
 					if (instance._isFetching || instance._isLoad) return;
 
 					instance._isFetching = true;
+					console.log(instance);
 
 					fetch('tooltip-chart-col.html')
 						.then((response) => response.text())

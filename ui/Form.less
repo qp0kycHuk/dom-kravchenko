@@ -62,6 +62,19 @@
 		border-color: var(--error-color);
 	}
 
+	&-input-group {
+		display: flex;
+	}
+
+	&-input-group &-input-cover {
+		flex-grow: 1;
+
+	}
+
+	&-input-group &-input-cover+&-input-cover {
+		margin-left: 3px;
+	}
+
 	&-input {
 
 		height  : 40px;
