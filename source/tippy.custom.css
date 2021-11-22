@@ -25,6 +25,19 @@
 .tippy-box[data-theme~='custom-default'] .tippy-arrow {
   color: #fff;
 }
+.tippy-box[data-theme~='header-user'] {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 16px;
+  color: var(--color-text);
+  padding: 16px;
+}
+.tippy-box[data-theme~='header-user'] .tippy-content {
+  padding: 0;
+}
+.tippy-box[data-theme~='header-user'] .tippy-arrow {
+  color: #fff;
+}
 .tippy-box[data-theme~='chart-col'] {
   background-color: #fff;
   color: var(--color-text);

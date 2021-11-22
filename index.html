@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="source/swiper-custom.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
+	<link rel="stylesheet" href="source/tippy.custom.css">
+
 
 	<script src="source/swiper-bundle.min.js"></script>
 
@@ -24,7 +26,9 @@
 
 	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
 
-
+	<!-- tooltips -->
+	<script src="source/popper.min.js"></script>
+	<script src="source/tippy-bundle.umd.js"></script>
 
 
 	<title>Главный </title>
@@ -32,7 +36,7 @@
 
 <body>
 	<header class="header">
-		<div class="header-user mr-auto d-md-none">
+		<div class="header-user  d-md-none">
 			<div class="header-user-btn-img">
 				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
 			</div>
@@ -45,7 +49,7 @@
 				<use xlink:href="img/icons.svg#filter" />
 			</svg>
 		</button>
-		<div class="header-user ml-auto d-md-block d-none">
+		<div class="header-user ml-auto d-md-block d-none -header-user-tooltiped-">
 			<div class="header-user-btn">
 				<div class="header-user-btn-arrow">
 					<svg class="icon">
@@ -58,6 +62,26 @@
 			</div>
 		</div>
 	</header>
+	<div class="header-user-toltip" id="header-user-toltip" style="display: none;">
+		<div class="text-body-1 text--demibold px-2">Кравченко Александр</div>
+		<div class="text-body-1 mt-1 px-2">8 918 000 00 00</div>
+		<button class="btn btn--primary btn--light w-100 mt-5">Редактировать</button>
+		<button class="btn btn--red btn--fill w-100 mt-2">Выйти</button>
+	</div>
+	<script>
+		(() => {
+			const tmp = document.querySelector('#header-user-toltip')
+			tmp.style.display = ''
+			tippy('.-header-user-tooltiped-', {
+				content: tmp,
+				trigger: 'click',
+				theme: 'header-user',
+				arrow: false,
+				interactive: true,
+				placement: 'bottom-end'
+			})
+		})();
+	</script>
 
 	<div class="nav">
 		<a href="/" class="nav-item active">
@@ -123,15 +147,15 @@
 										<input type="radio" class="form-input-checkbox" name="test-1" checked>
 										<div class="form-input form-input-target">
 											Квартира
-			
+
 										</div>
 									</label>
-			
+
 									<label class="form-input-cover">
 										<input type="radio" class="form-input-checkbox" name="test-1">
 										<div class="form-input form-input-target">
 											Дом
-			
+
 										</div>
 									</label>
 								</div>
@@ -809,7 +833,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=1" alt="">
 								</div>
 								<div class="card-control">
 									<div class="card-messages d-lg-none">
@@ -819,7 +843,7 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg">
+										<div class="card-like card-like-bg" data-share="url">
 											<svg class="icon">
 												<use xlink:href="img/icons.svg#share" />
 											</svg>
@@ -868,7 +892,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=2" alt="">
 								</div>
 								<div class="card-control">
 									<div class="card-messages d-lg-none">
@@ -878,7 +902,7 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg">
+										<div class="card-like card-like-bg" data-share="url">
 											<svg class="icon">
 												<use xlink:href="img/icons.svg#share" />
 											</svg>
@@ -927,7 +951,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=3" alt="">
 								</div>
 								<div class="card-control">
 									<div class="card-messages d-lg-none">
@@ -937,7 +961,7 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg">
+										<div class="card-like card-like-bg" data-share="url">
 											<svg class="icon">
 												<use xlink:href="img/icons.svg#share" />
 											</svg>
@@ -986,7 +1010,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=4" alt="">
 								</div>
 								<div class="card-control">
 									<div class="card-messages d-lg-none">
@@ -996,7 +1020,7 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg">
+										<div class="card-like card-like-bg" data-share="url">
 											<svg class="icon">
 												<use xlink:href="img/icons.svg#share" />
 											</svg>
@@ -1050,9 +1074,50 @@
 			new Swiper('.news-developers-slider .swiper', {
 				slidesPerView: 'auto',
 				watchSlidesProgress: true,
-
+				touchStartPreventDefault: false,
 			})
 		</script>
+		<div class="share-tooltip" style="display:none">
+			<div class="d-flex flex-justify-between mb-5">
+				<a href="" target="_blank">
+					<img src="img/sempl/vk.png" alt="">
+				</a>
+				<a href="" target="_blank">
+					<img src="img/sempl/facebook.png" alt="">
+				</a>
+				<a href="" target="_blank">
+					<img src="img/sempl/ok.png" alt="">
+				</a>
+				<a href="" target="_blank">
+					<img src="img/sempl/twitter.png" alt="">
+				</a>
+			</div>
+			<label class="form-field">
+				<div class="form-input-cover">
+					<input type="text" class="form-input" placeholder="https://www.figma.com/fil...">
+				</div>
+			</label>
+			<button class="btn btn--primary mt-1">Скопировать ссылку</button>
+		</div>
+
+		<script>
+			(function () {
+				const tmp = document.querySelector('.share-tooltip')
+				tippy('[data-share]', {
+					content: () => {
+						const clone = tmp.cloneNode(true)
+						clone.style.display = ''
+						return clone
+					},
+					trigger: 'click',
+					theme: 'custom-default',
+					allowHTML: true,
+					interactive: true,
+					placement: 'bottom'
+				})
+			})();
+		</script>
+
 
 		<section class="popular-areas">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Популярные районы</div>
@@ -1062,7 +1127,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=11" alt="">
 								</div>
 
 
@@ -1078,7 +1143,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=12" alt="">
 								</div>
 
 
@@ -1094,7 +1159,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=13" alt="">
 								</div>
 
 
@@ -1110,7 +1175,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=14" alt="">
 								</div>
 
 
@@ -1126,7 +1191,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=15" alt="">
 								</div>
 
 
@@ -1142,7 +1207,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=16" alt="">
 								</div>
 
 
@@ -1158,7 +1223,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=17" alt="">
 								</div>
 
 
@@ -1174,7 +1239,7 @@
 						<div class="swiper-slide">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=18" alt="">
 								</div>
 
 

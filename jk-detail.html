@@ -39,7 +39,7 @@
 
 <body>
 	<header class="header header--detail">
-		<div class="header-user mr-auto d-md-none">
+		<div class="header-user  d-md-none">
 			<div class="header-user-btn-img">
 				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
 			</div>
@@ -265,13 +265,19 @@
 
 			<div class="jk-detail-top-likes d-lg-flex d-none">
 				<button class="btn btn-fab btn--primary btn--white-bg jk-detail-top-like jk-detail-top-like-favorite">
-					<svg class="icon color-icon"><use xlink:href="img/icons.svg#heart" /></svg>
+					<svg class="icon color-icon">
+						<use xlink:href="img/icons.svg#heart" />
+					</svg>
 				</button>
 				<button class="btn btn-fab btn--primary btn--white-bg jk-detail-top-like ml-3 jk-detail-top-like-compare">
-					<svg class="icon color-icon"><use xlink:href="img/icons.svg#chart" /></svg>
+					<svg class="icon color-icon">
+						<use xlink:href="img/icons.svg#chart" />
+					</svg>
 				</button>
 				<button class="btn btn-fab btn--primary btn--white-bg jk-detail-top-like ml-3 jk-detail-top-like-chat">
-					<svg class="icon color-icon"><use xlink:href="img/icons.svg#chat" /></svg>
+					<svg class="icon color-icon">
+						<use xlink:href="img/icons.svg#chat" />
+					</svg>
 				</button>
 			</div>
 		</section>
@@ -525,7 +531,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img pb-md-5">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=41" alt="">
 								</div>
 
 								<div class="card-content pt-4 pt-md-6 pb-7 ">
@@ -542,7 +548,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img pb-md-5">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=42" alt="">
 								</div>
 
 								<div class="card-content pt-4 pt-md-6 pb-7 ">
@@ -559,7 +565,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img pb-md-5">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=43" alt="">
 								</div>
 
 								<div class="card-content pt-4 pt-md-6 pb-7 ">
@@ -576,7 +582,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img pb-md-5">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=44" alt="">
 								</div>
 
 								<div class="card-content pt-4 pt-md-6 pb-7 ">
@@ -593,7 +599,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img pb-md-5">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=45" alt="">
 								</div>
 
 								<div class="card-content pt-4 pt-md-6 pb-7 ">
@@ -637,7 +643,7 @@
 		</script>
 
 
-		<section class="object-map py-4 py-lg-5">
+		<section class="object-map py-4 py-lg-5 pb-lg-10">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Объекты инфраструктуры</div>
 			<div class="object-map-inner card">
 				<div class="object-map-frame">
@@ -699,618 +705,627 @@
 		</section>
 
 
-		<section class="selection  py-4 py-lg-5">
+		<section class="selection  py-4 py-lg-5 pt-lg-10">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Подбор квартиры</div>
 
 			<div class="selection-block card">
-				<div class="selection-mobile-control d-lg-none">
-					<div class="grid grid-spacing-3 mb-5">
-						<div class="grid-col-6">
-							<label class="form-field form-select">
-								<div class="form-label text-body-2 text--demibold">№ литера</div>
-								<div class="form-input-cover">
-									<select class="form-input">
-										<option value="" disabled hidden selected>Выберите вариант</option>
-										<option value="1">Вариант 1</option>
-										<option value="2">Вариант 2</option>
-									</select>
-									<div class="form-select-icon">
-										<svg class="icon">
-											<use xlink:href="img/icons.svg#to-right" />
-										</svg>
-									</div>
-								</div>
-							</label>
-						</div>
-						<div class="grid-col-6">
-							<label class="form-field form-select">
-								<div class="form-label text-body-2 text--demibold">Квартиры</div>
-								<div class="form-input-cover">
-									<select class="form-input">
-										<option value="" disabled hidden selected>Выберите вариант</option>
-										<option value="1">Вариант 1</option>
-										<option value="2">Вариант 2</option>
-									</select>
-									<div class="form-select-icon">
-										<svg class="icon">
-											<use xlink:href="img/icons.svg#to-right" />
-										</svg>
-									</div>
-								</div>
-							</label>
-						</div>
-					</div>
+				<div class="selection-block-inner">
 
-				</div>
-				<div class="selection-aside selection-left pt-2">
-					<div class="text-body-2 text--demibold fade-80 mb-6">№ литера</div>
+					<div class="selection-mobile-control d-lg-none">
+						<div class="grid grid-spacing-3 mb-5">
+							<div class="grid-col-6">
+								<label class="form-field form-select">
+									<div class="form-label text-body-2 text--demibold">№ литера</div>
+									<div class="form-input-cover">
+										<select class="form-input">
+											<option value="" disabled hidden selected>Выберите вариант</option>
+											<option value="1">Вариант 1</option>
+											<option value="2">Вариант 2</option>
+										</select>
+										<div class="form-select-icon">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-right" />
+											</svg>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div class="grid-col-6">
+								<label class="form-field form-select">
+									<div class="form-label text-body-2 text--demibold">Квартиры</div>
+									<div class="form-input-cover">
+										<select class="form-input">
+											<option value="" disabled hidden selected>Выберите вариант</option>
+											<option value="1">Вариант 1</option>
+											<option value="2">Вариант 2</option>
+										</select>
+										<div class="form-select-icon">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#to-right" />
+											</svg>
+										</div>
+									</div>
+								</label>
+							</div>
+						</div>
 
-					<button class="selection-tab-link btn btn--primary btn--light">Литер 1</button>
-					<button class="selection-tab-link btn btn--primary btn--fill">Литер 2</button>
-					<button class="selection-tab-link btn btn--primary btn--light">Литер 3</button>
-					<div class="mt-6"></div>
-					<div class="selection-legend">
-						<div class="selection-item-flat selection-item-flat-free mr-2"></div>
-						<div class="text-body-2">Свободна</div>
 					</div>
-					<div class="selection-legend">
-						<div class="selection-item-flat selection-item-flat-sold mr-2"></div>
-						<div class="text-body-2">Продана</div>
+					<div class="selection-aside selection-left pt-2">
+						<div class="text-body-2 text--demibold fade-80 mb-6">№ литера</div>
+
+						<button class="selection-tab-link btn btn--primary btn--light">Литер 1</button>
+						<button class="selection-tab-link btn btn--primary btn--fill">Литер 2</button>
+						<button class="selection-tab-link btn btn--primary btn--light">Литер 3</button>
+						<div class="mt-6"></div>
+						<div class="selection-legend">
+							<div class="selection-item-flat selection-item-flat-free mr-2"></div>
+							<div class="text-body-2">Свободна</div>
+						</div>
+						<div class="selection-legend">
+							<div class="selection-item-flat selection-item-flat-sold mr-2"></div>
+							<div class="text-body-2">Продана</div>
+						</div>
+						<div class="selection-legend">
+							<div class="selection-item-flat selection-item-flat-reserv mr-2"></div>
+							<div class="text-body-2">Бронь</div>
+						</div>
+						<div class="selection-legend">
+							<div class="selection-item-flat selection-item-flat-individual mr-2"></div>
+							<div class="text-body-2">От физ.лица</div>
+						</div>
 					</div>
-					<div class="selection-legend">
-						<div class="selection-item-flat selection-item-flat-reserv mr-2"></div>
-						<div class="text-body-2">Бронь</div>
-					</div>
-					<div class="selection-legend">
-						<div class="selection-item-flat selection-item-flat-individual mr-2"></div>
-						<div class="text-body-2">От физ.лица</div>
-					</div>
-				</div>
-				<div class="selection-content">
-					<div class="selection-header d-flex flex-align-center">
-						<div class="text-body-1 text--demibold mr-8">Литер 2</div>
-						<div class="text-body-2 text--fade ml-auto ml-lg-0">Сдача: 4 квартал 2022</div>
-						<div class="text-body-2 text--demibold color-green ml-auto d-none d-lg-flex flex-align-center">
+					<div class="selection-content">
+						<div class="selection-header d-flex flex-align-center">
+							<div class="text-body-1 text--demibold mr-8">Литер 2</div>
+							<div class="text-body-2 text--fade ml-auto ml-lg-0">Сдача: 4 квартал 2022</div>
+							<div class="text-body-2 text--demibold color-green ml-auto d-none d-lg-flex flex-align-center">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#check" />
+								</svg>
+								Свободно: 108 квартир
+							</div>
+						</div>
+						<div class="text-body-2 text--demibold color-green d-flex d-lg-none flex-align-center">
 							<svg class="icon mr-1">
 								<use xlink:href="img/icons.svg#check" />
 							</svg>
 							Свободно: 108 квартир
 						</div>
-					</div>
-					<div class="text-body-2 text--demibold color-green d-flex d-lg-none flex-align-center">
-						<svg class="icon mr-1">
-							<use xlink:href="img/icons.svg#check" />
-						</svg>
-						Свободно: 108 квартир
-					</div>
 
-					<div class="grid grid-spacing-3 mb-6 mt-4">
-						<div class="grid-col-6">
-							<div class="selection-legend">
-								<div class="selection-item-flat selection-item-flat-free mr-2"></div>
-								<div class="text-body-2">Свободна</div>
+						<div class="grid grid-spacing-3 mb-6 mt-4 d-lg-none">
+							<div class="grid-col-6">
+								<div class="selection-legend">
+									<div class="selection-item-flat selection-item-flat-free mr-2"></div>
+									<div class="text-body-2">Свободна</div>
+								</div>
 							</div>
-						</div>
-						<div class="grid-col-6">
-							<div class="selection-legend">
-								<div class="selection-item-flat selection-item-flat-sold mr-2"></div>
-								<div class="text-body-2">Продана</div>
+							<div class="grid-col-6">
+								<div class="selection-legend">
+									<div class="selection-item-flat selection-item-flat-sold mr-2"></div>
+									<div class="text-body-2">Продана</div>
+								</div>
 							</div>
-						</div>
-						<div class="grid-col-6">
-							<div class="selection-legend">
-								<div class="selection-item-flat selection-item-flat-reserv mr-2"></div>
-								<div class="text-body-2">Бронь</div>
-							</div>
-
-						</div>
-						<div class="grid-col-6">
-							<div class="selection-legend">
-								<div class="selection-item-flat selection-item-flat-individual mr-2"></div>
-								<div class="text-body-2">От физ.лица</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="selection-inner">
-						<div class="selection-slider">
-							<div class="selection-slider-nav">
-								<button class="selection-slider-prev">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#to-left" />
-									</svg>
-								</button>
-
-								<div class="d-flex flex-align-center">
-									<svg class="icon fade-40">
-										<use xlink:href="img/icons.svg#to-left-double" />
-									</svg>
-									<div class="text-body-2 text--fade mx-6">листайте или тяните чтобы увидеть другие подъезды</div>
-									<svg class="icon fade-40">
-										<use xlink:href="img/icons.svg#to-right-double" />
-									</svg>
+							<div class="grid-col-6">
+								<div class="selection-legend">
+									<div class="selection-item-flat selection-item-flat-reserv mr-2"></div>
+									<div class="text-body-2">Бронь</div>
 								</div>
 
-								<button class="selection-slider-next">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#to-right" />
-									</svg>
-								</button>
 							</div>
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="selection-item">
-											<div class="selection-item-header">
-												<div class="text-body-2 text--fade">Этаж</div>
-												<div class="text-body-2 text--demibold">Подъезд №1</div>
-											</div>
+							<div class="grid-col-6">
+								<div class="selection-legend">
+									<div class="selection-item-flat selection-item-flat-individual mr-2"></div>
+									<div class="text-body-2">От физ.лица</div>
+								</div>
+							</div>
+						</div>
 
-											<div class="selection-item-grid">
-												<div class="selection-item-floors">
-													<div class="selection-item-floor">12</div>
-													<div class="selection-item-floor">11</div>
-													<div class="selection-item-floor">10</div>
-													<div class="selection-item-floor">9</div>
-													<div class="selection-item-floor">8</div>
-													<div class="selection-item-floor">7</div>
-													<div class="selection-item-floor">6</div>
-													<div class="selection-item-floor">5</div>
-													<div class="selection-item-floor">4</div>
-													<div class="selection-item-floor">3</div>
-													<div class="selection-item-floor">2</div>
-													<div class="selection-item-floor">1</div>
+						<div class="selection-inner">
+							<div class="selection-slider">
+								<div class="selection-slider-nav">
+									<button class="selection-slider-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-left" />
+										</svg>
+									</button>
+
+									<div class="d-flex flex-align-center">
+										<svg class="icon fade-40">
+											<use xlink:href="img/icons.svg#to-left-double" />
+										</svg>
+										<div class="text-body-2 text--fade mx-6">листайте или тяните чтобы увидеть другие подъезды</div>
+										<svg class="icon fade-40">
+											<use xlink:href="img/icons.svg#to-right-double" />
+										</svg>
+									</div>
+
+									<button class="selection-slider-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#to-right" />
+										</svg>
+									</button>
+								</div>
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="selection-item">
+												<div class="selection-item-header">
+													<div class="text-body-2 text--fade">Этаж</div>
+													<div class="text-body-2 text--demibold">Подъезд №1</div>
 												</div>
-												<div class="selection-item-flats">
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+
+												<div class="selection-item-grid">
+													<div class="selection-item-floors">
+														<div class="selection-item-floor">12</div>
+														<div class="selection-item-floor">11</div>
+														<div class="selection-item-floor">10</div>
+														<div class="selection-item-floor">9</div>
+														<div class="selection-item-floor">8</div>
+														<div class="selection-item-floor">7</div>
+														<div class="selection-item-floor">6</div>
+														<div class="selection-item-floor">5</div>
+														<div class="selection-item-floor">4</div>
+														<div class="selection-item-floor">3</div>
+														<div class="selection-item-floor">2</div>
+														<div class="selection-item-floor">1</div>
 													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button class="selection-item-flat selection-item-flat-sold">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-reserv">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+													<div class="selection-item-flats">
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button class="selection-item-flat selection-item-flat-sold">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-reserv">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="selection-item">
-											<div class="selection-item-header">
-												<div class="text-body-2 text--fade">Этаж</div>
-												<div class="text-body-2 text--demibold">Подъезд №1</div>
-											</div>
-
-											<div class="selection-item-grid">
-												<div class="selection-item-floors">
-													<div class="selection-item-floor">12</div>
-													<div class="selection-item-floor">11</div>
-													<div class="selection-item-floor">10</div>
-													<div class="selection-item-floor">9</div>
-													<div class="selection-item-floor">8</div>
-													<div class="selection-item-floor">7</div>
-													<div class="selection-item-floor">6</div>
-													<div class="selection-item-floor">5</div>
-													<div class="selection-item-floor">4</div>
-													<div class="selection-item-floor">3</div>
-													<div class="selection-item-floor">2</div>
-													<div class="selection-item-floor">1</div>
+										<div class="swiper-slide">
+											<div class="selection-item">
+												<div class="selection-item-header">
+													<div class="text-body-2 text--fade">Этаж</div>
+													<div class="text-body-2 text--demibold">Подъезд №1</div>
 												</div>
-												<div class="selection-item-flats">
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+
+												<div class="selection-item-grid">
+													<div class="selection-item-floors">
+														<div class="selection-item-floor">12</div>
+														<div class="selection-item-floor">11</div>
+														<div class="selection-item-floor">10</div>
+														<div class="selection-item-floor">9</div>
+														<div class="selection-item-floor">8</div>
+														<div class="selection-item-floor">7</div>
+														<div class="selection-item-floor">6</div>
+														<div class="selection-item-floor">5</div>
+														<div class="selection-item-floor">4</div>
+														<div class="selection-item-floor">3</div>
+														<div class="selection-item-floor">2</div>
+														<div class="selection-item-floor">1</div>
 													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button class="selection-item-flat selection-item-flat-sold">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-reserv">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+													<div class="selection-item-flats">
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button class="selection-item-flat selection-item-flat-sold">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-reserv">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="selection-item">
-											<div class="selection-item-header">
-												<div class="text-body-2 text--fade">Этаж</div>
-												<div class="text-body-2 text--demibold">Подъезд №1</div>
-											</div>
-
-											<div class="selection-item-grid">
-												<div class="selection-item-floors">
-													<div class="selection-item-floor">12</div>
-													<div class="selection-item-floor">11</div>
-													<div class="selection-item-floor">10</div>
-													<div class="selection-item-floor">9</div>
-													<div class="selection-item-floor">8</div>
-													<div class="selection-item-floor">7</div>
-													<div class="selection-item-floor">6</div>
-													<div class="selection-item-floor">5</div>
-													<div class="selection-item-floor">4</div>
-													<div class="selection-item-floor">3</div>
-													<div class="selection-item-floor">2</div>
-													<div class="selection-item-floor">1</div>
+										<div class="swiper-slide">
+											<div class="selection-item">
+												<div class="selection-item-header">
+													<div class="text-body-2 text--fade">Этаж</div>
+													<div class="text-body-2 text--demibold">Подъезд №1</div>
 												</div>
-												<div class="selection-item-flats">
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+
+												<div class="selection-item-grid">
+													<div class="selection-item-floors">
+														<div class="selection-item-floor">12</div>
+														<div class="selection-item-floor">11</div>
+														<div class="selection-item-floor">10</div>
+														<div class="selection-item-floor">9</div>
+														<div class="selection-item-floor">8</div>
+														<div class="selection-item-floor">7</div>
+														<div class="selection-item-floor">6</div>
+														<div class="selection-item-floor">5</div>
+														<div class="selection-item-floor">4</div>
+														<div class="selection-item-floor">3</div>
+														<div class="selection-item-floor">2</div>
+														<div class="selection-item-floor">1</div>
 													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button class="selection-item-flat selection-item-flat-sold">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-reserv">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+													<div class="selection-item-flats">
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button class="selection-item-flat selection-item-flat-sold">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-reserv">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="selection-item">
-											<div class="selection-item-header">
-												<div class="text-body-2 text--fade">Этаж</div>
-												<div class="text-body-2 text--demibold">Подъезд №1</div>
-											</div>
-
-											<div class="selection-item-grid">
-												<div class="selection-item-floors">
-													<div class="selection-item-floor">12</div>
-													<div class="selection-item-floor">11</div>
-													<div class="selection-item-floor">10</div>
-													<div class="selection-item-floor">9</div>
-													<div class="selection-item-floor">8</div>
-													<div class="selection-item-floor">7</div>
-													<div class="selection-item-floor">6</div>
-													<div class="selection-item-floor">5</div>
-													<div class="selection-item-floor">4</div>
-													<div class="selection-item-floor">3</div>
-													<div class="selection-item-floor">2</div>
-													<div class="selection-item-floor">1</div>
+										<div class="swiper-slide">
+											<div class="selection-item">
+												<div class="selection-item-header">
+													<div class="text-body-2 text--fade">Этаж</div>
+													<div class="text-body-2 text--demibold">Подъезд №1</div>
 												</div>
-												<div class="selection-item-flats">
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+
+												<div class="selection-item-grid">
+													<div class="selection-item-floors">
+														<div class="selection-item-floor">12</div>
+														<div class="selection-item-floor">11</div>
+														<div class="selection-item-floor">10</div>
+														<div class="selection-item-floor">9</div>
+														<div class="selection-item-floor">8</div>
+														<div class="selection-item-floor">7</div>
+														<div class="selection-item-floor">6</div>
+														<div class="selection-item-floor">5</div>
+														<div class="selection-item-floor">4</div>
+														<div class="selection-item-floor">3</div>
+														<div class="selection-item-floor">2</div>
+														<div class="selection-item-floor">1</div>
 													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button class="selection-item-flat selection-item-flat-sold">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button class="selection-item-flat selection-item-flat-sold">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-sold">1</button>
-														<button class="selection-item-flat selection-item-flat-reserv">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
-														<button class="selection-item-flat selection-item-flat-reserv">5</button>
-													</div>
-													<div class="selection-item-flats-row">
-														<button class="selection-item-flat selection-item-flat-reserv">1</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
-														<button class="selection-item-flat selection-item-flat-placeholder"></button>
-														<button class="selection-item-flat selection-item-flat-sold">4</button>
-														<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+													<div class="selection-item-flats">
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button class="selection-item-flat selection-item-flat-sold">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button class="selection-item-flat selection-item-flat-sold">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-sold">1</button>
+															<button class="selection-item-flat selection-item-flat-reserv">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-individual">4</button>
+															<button class="selection-item-flat selection-item-flat-reserv">5</button>
+														</div>
+														<div class="selection-item-flats-row">
+															<button class="selection-item-flat selection-item-flat-reserv">1</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">2</button>
+															<button class="selection-item-flat selection-item-flat-placeholder"></button>
+															<button class="selection-item-flat selection-item-flat-sold">4</button>
+															<button data-id="id" class="selection-item-flat selection-item-flat-free">5</button>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+
 							</div>
 
 						</div>
+					</div>
+					<div class="selection-aside selection-right pt-2">
+						<div class="text-body-2 text--demibold text--fade mb-6">Квартиры</div>
 
+						<button class="selection-tab-link btn btn--primary btn--light">Все</button>
+						<button class="selection-tab-link btn btn--primary btn--fill">Студии</button>
+						<button class="selection-tab-link btn btn--primary btn--light">1-комн.</button>
+						<button class="selection-tab-link btn btn--primary btn--light">2-комн.</button>
+						<button class="selection-tab-link btn btn--primary btn--light">3-комн.</button>
 					</div>
 				</div>
-				<div class="selection-aside selection-right pt-2">
-					<div class="text-body-2 text--demibold text--fade mb-6">Квартиры</div>
 
-					<button class="selection-tab-link btn btn--primary btn--light">Все</button>
-					<button class="selection-tab-link btn btn--primary btn--fill">Студии</button>
-					<button class="selection-tab-link btn btn--primary btn--light">1-комн.</button>
-					<button class="selection-tab-link btn btn--primary btn--light">2-комн.</button>
-					<button class="selection-tab-link btn btn--primary btn--light">3-комн.</button>
+				<div class="selection-buner mt-10">
+					<div class="text-body-1 text--demibold mb-4 color-white">Не можете выбрать? Наш менеджер сделает для вас идеальную подборку!</div>
+					<button class="btn btn--primary btn--white-bg">Запросить предложение</button>
 				</div>
+
 			</div>
 		</section>
 		<script>
@@ -1335,7 +1350,7 @@
 				interactive: true,
 				trigger: 'click',
 
-				appendTo: () => document.body,
+				// appendTo: () => document.body,
 
 				onCreate(instance) {
 					instance._isFetching = false;
@@ -2243,43 +2258,43 @@ $max = 80000
 								</div>
 								<div class="chart-data">
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Янв</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (45000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Фев</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Мар</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Апр</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Май</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Июн</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Июл</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Авг</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (62000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Сен</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (71000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Окт</div>
 									</div>
 									<div class="chart-col">
@@ -2291,6 +2306,7 @@ $max = 80000
 
 								</div>
 							</div>
+							
 						</div>
 						<div class="tab-content" data-tab-link="chart-cost-2020">
 							<div class="chart-content">
@@ -2330,51 +2346,51 @@ $max = 80000
 								</div>
 								<div class="chart-data">
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (33000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Янв</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (40000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Фев</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (56000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Мар</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (25000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Апр</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Май</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Июн</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Июл</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Авг</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (62000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Сен</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (71000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Окт</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (73000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Ноя</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (76000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Дек</div>
 									</div>
 
@@ -2419,51 +2435,51 @@ $max = 80000
 								</div>
 								<div class="chart-data">
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (31000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Янв</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (35000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Фев</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (38000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Мар</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (33000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Апр</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (43000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Май</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (42000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Июн</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (28000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Июл</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (48000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Авг</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (32000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Сен</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (71000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Окт</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (31000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Ноя</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (41000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col"></div>
+										<div class="chart-col-col bg-primary"></div>
 										<div class="chart-col-sign">Дек</div>
 									</div>
 
