@@ -276,7 +276,7 @@
 				Мы найдем для вас идеальное жильё!
 			</div>
 		</div>
-		<form class="auth-page-form">
+		<div class="auth-page-form">
 			<button class="auth-page-back btn btn--primary btn--light d-md-none btn-fab mb-4" type="button">
 				<svg class="icon color-text">
 					<use xlink:href="img/icons.svg#arrow-left" />
@@ -291,16 +291,22 @@
 					<input type="tel" class="form-input" placeholder="Номер телефона" required>
 				</div>
 			</label>
-			<div class="text-small-1 text-md--center mt-5 mb-8">
-				На ваш номер телефона будет выслано СМС
-				с кодом для смены пароля.
+
+			<label class="form-field mb-5">
+				<div class="text-body-2 text--demibold mb-2 d-md-none">Введите код</div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" placeholder="Введите код" required>
+				</div>
+			</label>
+			<button class="btn btn--primary btn--fill w-100">Сменить пароль</button>
+			<div class="text-small-1 text-md--center mt-4 mb-3">
+				Не получили код подтверждения?
 			</div>
+			<button class="btn btn--primary btn--link w-100" type="button">Попробовать снова</button>
 
 
-			<button class="btn btn--primary btn--fill w-100">Выслать</button>
 
-
-		</form>
+		</div>
 	</section>
 
 

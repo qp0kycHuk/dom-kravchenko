@@ -1063,6 +1063,15 @@ input.form-input {
 textarea.form-input {
   min-height: 136px;
 }
+.form-input-end {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
 .form-field--lg .form-input {
   height: 60px;
   border-radius: 8px;

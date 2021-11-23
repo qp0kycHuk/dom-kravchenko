@@ -35,7 +35,7 @@
 	<link rel="stylesheet" href="css/auth.css">
 
 
-	<title>Восстановление пароля</title>
+	<title>Регистрация</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
 
 		<div class="header-logo">
 			<img src="img/logo.png" alt="" class="d-none d-md-block">
-			<div class="text-h6 d-md-none">Восстановление пароля</div>
+			<div class="text-h6 d-md-none">Регистрация</div>
 		</div>
 
 	</header>
@@ -276,6 +276,7 @@
 				Мы найдем для вас идеальное жильё!
 			</div>
 		</div>
+
 		<form class="auth-page-form">
 			<button class="auth-page-back btn btn--primary btn--light d-md-none btn-fab mb-4" type="button">
 				<svg class="icon color-text">
@@ -283,22 +284,51 @@
 				</svg>
 			</button>
 
-			<div class="text-subtitle-1 text-md--center mb-6">Восстановление пароля</div>
+			<div class="text-h6 text-md--center mb-6">Регистрация</div>
+
+			<label class="form-field mb-5">
+				<div class="text-body-2 text--demibold mb-2 d-md-none">Ваше имя и фамилия</div>
+				<div class="form-input-cover">
+					<input type="tel" class="form-input" placeholder="Ваше имя и фамилия" required value="Анатолий петрович">
+				</div>
+			</label>
 
 			<label class="form-field mb-5">
 				<div class="text-body-2 text--demibold mb-2 d-md-none">Ваш телефон</div>
 				<div class="form-input-cover">
-					<input type="tel" class="form-input" placeholder="Номер телефона" required>
+					<input type="tel" class="form-input" placeholder="Номер телефона" required readonly value="+7 (911) 111 11 11">
 				</div>
 			</label>
-			<div class="text-small-1 text-md--center mt-5 mb-8">
-				На ваш номер телефона будет выслано СМС
-				с кодом для смены пароля.
+
+			<label class="form-field mb-5">
+				<div class="text-body-2 text--demibold mb-2 d-md-none">Пароль</div>
+				<div class="form-input-cover">
+					<input type="password" class="form-input" placeholder="Пароль" id="unique-id-for-pass-input" required value="SuperSecretPassw0rd">
+
+					<div class="form-input-end pr-3">
+						<button type="button" class="btn btn--primary btn--link show-password-btn" data-show-pass="unique-id-for-pass-input">
+							<span class="active-disabled">Показать</span>
+							<span class="active-enabled">Скрыть</span>
+						</button>
+					</div>
+				</div>
+			</label>
+
+			<label class="form-field mb-5">
+				<div class="text-body-2 text--demibold mb-2 d-md-none">Введите код</div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" placeholder="Введите код" required>
+				</div>
+			</label>
+
+			<button class="btn btn--primary btn--fill w-100">Зарегистрироваться</button>
+			<div class="bd-top mb-5 mt-6"></div>
+			<div class="text-body-1 text--demibold mb-4 text--center">Есть аккаунт?</div>
+			<button class="btn btn--primary btn--light w-100" type="button">Войти</button>
+			<div class="text-small-1 text--fade text--center mt-6">
+				Отправляя форму Вы даете согласие на обработку
+				Ваших персональных данных
 			</div>
-
-
-			<button class="btn btn--primary btn--fill w-100">Выслать</button>
-
 
 		</form>
 	</section>
@@ -317,6 +347,9 @@
 	<script src="source/fancybox.custom.js"></script>
 
 	<script src="source/ui--tab.js"></script>
+
+
+	<script src="js/show-pass.js"></script>
 
 </body>
 

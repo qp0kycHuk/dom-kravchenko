@@ -31,6 +31,7 @@
 	<!-- tooltips -->
 	<script src="source/popper.min.js"></script>
 	<script src="source/tippy-bundle.umd.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
 
 
 
@@ -282,6 +283,7 @@
 			</div>
 		</section>
 
+		<!--  -->
 		<section class="jk-detail-info">
 			<div class="jk-detail-info-slider">
 				<div class="swiper">
@@ -416,7 +418,7 @@
 			})
 		</script>
 
-
+		<!-- Технология строительства -->
 		<section class="jk-detail-tech">
 			<div class="jk-detail-tech-inner card">
 				<div class="jk-detail-tech-img">
@@ -523,6 +525,7 @@
 		</section>
 
 
+		<!-- Особенности дома -->
 		<section class="content py-4 py-lg-5">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Особенности дома</div>
 			<div class="slider features-slider">
@@ -642,7 +645,7 @@
 			})
 		</script>
 
-
+		<!-- Объекты инфраструктуры -->
 		<section class="object-map py-4 py-lg-5 pb-lg-10">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Объекты инфраструктуры</div>
 			<div class="object-map-inner card">
@@ -689,6 +692,7 @@
 			</div>
 		</section>
 
+		<!--  -->
 		<section class="line-buner line-buner-bg  py-4 py-lg-0">
 			<div class="container">
 				<div class="line-buner-inner">
@@ -698,13 +702,22 @@
 					<div class="line-buner-content color-white">
 						<div class="text-h6 mb-1">Хотите посмотреть дом? Запишитесь на просмотр!</div>
 						<div class="text-body-2">Нажмите кнопку, заполните данные и наш менеджер свяжется с вами</div>
-						<button class="btn btn--primary btn--white-bg mt-4">Записаться</button>
+						<div class="d-md-flex mt-4 ">
+							<button class="btn btn--primary btn--white-bg mx-auto mx-md-0">Записаться</button>
+							<button class="btn btn--primary btn--white-bg mx-auto mx-md-0 ml-md-4 mt-3 mt-md-0">
+								<svg class="icon mr-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+								Написать застройщику
+							</button>
+
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-
+		<!-- Подбор квартиры -->
 		<section class="selection  py-4 py-lg-5 pt-lg-10">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Подбор квартиры</div>
 
@@ -1322,8 +1335,15 @@
 				</div>
 
 				<div class="selection-buner mt-10">
-					<div class="text-body-1 text--demibold mb-4 color-white">Не можете выбрать? Наш менеджер сделает для вас идеальную подборку!</div>
+					<div class="text-body-1 text--demibold mb-4 color-white">Не можете выбрать? Наш менеджер сделает для вас
+						идеальную подборку!</div>
 					<button class="btn btn--primary btn--white-bg">Запросить предложение</button>
+				</div>
+
+				<div class="selection-pray d-md-flex mt-10">
+					<div class="text-body-1 text--demibold">Не можете выбрать? <br> Наш менеджер сделает для вас идеальную
+						подборку!</div>
+					<button class="btn btn--primary btn--fill mt-3 mt-md-0  ml-md-auto">Запросить предложение</button>
 				</div>
 
 			</div>
@@ -1333,8 +1353,6 @@
 				slidesPerView: 'auto',
 				watchSlidesProgress: true,
 				spaceBetween: 20,
-				// preventClicks: false,
-				// preventClicksPropagation:false,
 				touchStartPreventDefault: false,
 				navigation: {
 					prevEl: '.selection-slider-prev',
@@ -1349,8 +1367,9 @@
 				allowHTML: true,
 				interactive: true,
 				trigger: 'click',
+				animation: 'shift-toward',
 
-				// appendTo: () => document.body,
+				
 
 				onCreate(instance) {
 					instance._isFetching = false;
@@ -1381,7 +1400,7 @@
 
 
 
-
+		<!-- Акции и новости -->
 		<section class="content py-4 py-lg-5">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Акции и новости</div>
 			<div class="slider sales-slider">
@@ -1390,7 +1409,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=91" alt="">
 								</div>
 
 
@@ -1412,7 +1431,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=92" alt="">
 								</div>
 
 
@@ -1434,7 +1453,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=93" alt="">
 								</div>
 
 
@@ -1456,7 +1475,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=94" alt="">
 								</div>
 
 
@@ -1478,7 +1497,7 @@
 						<div class="swiper-slide grid-col-9 grid-col-md-6 grid-col-lg-4">
 							<div class="card h-100">
 								<div class="card-img">
-									<img src="https://picsum.photos/600/400" alt="">
+									<img src="https://picsum.photos/600/400?random=95" alt="">
 								</div>
 
 
@@ -1527,7 +1546,7 @@
 		</script>
 
 
-
+		<!-- Предложения для вас -->
 		<section class="content py-4 py-lg-5" data-tab-cover>
 			<div class="text-subtitle-2 text-md-h6 mb-4 mb-lg-8">Предложения для вас</div>
 			<div class="tab-links mb-7">
@@ -1537,7 +1556,7 @@
 			</div>
 
 			<div class="tab-content-cover">
-				<div class="tab-content" data-tab-content="1">
+				<div class="tab-content tab-active" data-tab-content="1">
 					<div class="tab-content-inner offers-slider">
 						<div class="swiper grid-wrap grid-spacing-4">
 							<div class="swiper-wrapper">
@@ -1570,10 +1589,10 @@
 
 
 											<div class="d-md-block d-none">
-												<button class="btn btn--primary mt-1 plan-card-btn ">Выбрать из 21 объекта</button>
+												<button class="btn btn--primary mt-1 plan-card-btn " data-fancybox-modal data-type="ajax" data-src="dialog-select-flat.html">Выбрать из 21 объекта</button>
 											</div>
 											<div class="d-md-none w-100 mt-1">
-												<button class="btn btn--primary  plan-card-link">Выбрать из 21 объекта</button>
+												<button class="btn btn--primary  plan-card-link" data-fancybox-modal data-type="ajax" data-src="dialog-select-flat.html">Выбрать из 21 объекта</button>
 
 											</div>
 
@@ -1844,7 +1863,7 @@
 			})
 		</script>
 
-
+		<!--  -->
 		<section class="content py-4 py-lg-5">
 			<div class="container">
 				<div class="feature mb-5">
@@ -1908,7 +1927,7 @@
 			</div>
 		</section>
 
-
+		<!--  -->
 		<section class="content  py-4 py-lg-0">
 			<div class="container">
 				<div class="line-buner-inner line-buner-bg line-buner-card">
@@ -1925,7 +1944,7 @@
 			</div>
 		</section>
 
-
+		<!-- Аккредитация банков -->
 		<section class="content py-4 py-lg-5">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Аккредитация банков</div>
 			<div class="grid grid-spacing-3 grid-spacing-md-5">
@@ -1974,7 +1993,7 @@
 			</div>
 		</section>
 
-
+		<!-- Калькулятор ипотеки -->
 		<section class="content pt-4 pt-lg-5  pb-10">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Калькулятор ипотеки</div>
 			<div class="calc card-md py-md-10 px-md-6">
@@ -2117,7 +2136,7 @@
 			</div>
 		</section>
 
-
+		<!-- Задать вопрос застройщику -->
 		<section class="question">
 			<div class="question-background">
 				<img src="img/sempl/question.png" alt="">
@@ -2141,7 +2160,7 @@
 		</section>
 
 
-
+		<!-- Как это выглядит сейчас -->
 		<section class="content pt-10 pb-4 pb-lg-5">
 			<div class="text-subtitle-2 text-md-h6 mb-2">Как это выглядит сейчас</div>
 			<div class="text-body-2 color-primary mb-6 mb-lg-8">Обновлено 1 августа 2021</div>
@@ -2205,10 +2224,10 @@
 
 
 		<!-- 
-$min = 10000
-$max = 80000
- -->
-
+		$min = 10000
+		$max = 80000
+		-->
+		<!-- Динамика цены -->
 		<section class="chart py-4 py-lg-5" data-tab-cover>
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-6">Динамика цены</div>
 			<div class="chart-block card ">
@@ -2294,7 +2313,7 @@ $max = 80000
 										<div class="chart-col-sign">Сен</div>
 									</div>
 									<div class="chart-col" data-tooltip style="--percent:calc(100% * (71000 - 10000) / (80000 - 10000))">
-										<div class="chart-col-col bg-primary"></div>
+										<div class="chart-col-col bg-red"></div>
 										<div class="chart-col-sign">Окт</div>
 									</div>
 									<div class="chart-col">
@@ -2306,7 +2325,7 @@ $max = 80000
 
 								</div>
 							</div>
-							
+
 						</div>
 						<div class="tab-content" data-tab-link="chart-cost-2020">
 							<div class="chart-content">
@@ -2497,8 +2516,9 @@ $max = 80000
 				theme: 'chart-col',
 				allowHTML: true,
 				placement: 'right-start',
+				animation: 'shift-toward',
 				arrow: false,
-				appendTo: () => document.body,
+				
 
 				onCreate(instance) {
 					instance._isFetching = false;
@@ -2528,7 +2548,7 @@ $max = 80000
 		</script>
 
 
-
+		<!-- Жилые комплексы от застройщика -->
 		<section class="content py-4 py-lg-5">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Жилые комплексы от застройщика</div>
 			<div class="grid grid-spacing-3 grid-spacing-md-5">
@@ -2749,6 +2769,7 @@ $max = 80000
 			<button class="btn btn--primary btn--fill w-100 mt-4 d-md-none">Показать все объекты</button>
 		</section>
 
+		<!-- Готовые и строящиеся объекты на карте -->
 		<section class="jk-map py-4 py-lg-5">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Готовые и строящиеся объекты на карте</div>
 			<div class="jk-map-inner">

@@ -168,7 +168,15 @@
 		}
 	}
 
-
+	&-input-end {
+		position   : absolute;
+		right      : 0;
+		top        : 0;
+		height     : 100%;
+		display    : flex;
+		align-items: center;
+		z-index    : 3;
+	}
 
 	&-field--lg &-input {
 		height       : 60px;
@@ -416,6 +424,11 @@
 			pointer-events: none;
 		}
 	}
+
+
+
+
+	
 }
 
 @keyframes check {

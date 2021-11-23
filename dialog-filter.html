@@ -6,13 +6,14 @@
         <div class="text-body-2 text--demibold mb-2">Квартира или дом?</div>
 
         <div class="form-input-cover">
-          <label class="form-input  ">
+          <label class="form-input-cover  ">
             <input type="radio" class="form-input-checkbox" name="test-1" checked>
-            <div class="form-input-target"> Квартира </div>
+            <div class="form-input form-input-target"> Квартира </div>
           </label>
-          <label class="form-input ">
+
+          <label class="form-input-cover">
             <input type="radio" class="form-input-checkbox" name="test-1">
-            <div class="form-input-target"> Дом </div>
+            <div class="form-input form-input-target"> Дом </div>
           </label>
         </div>
 
@@ -48,27 +49,33 @@
 
       <label class="form-field form-select">
         <div class="text-body-2 text--demibold mb-2">Комнатность</div>
-        <div class="form-input-cover">
-          <select class="form-input">
-            <option value="0" selected="">1-ком.</option>
-            <option value="1">2-ком.</option>
-          </select>
-          <div class="form-select-icon">
-            <svg class="icon">
-              <use xlink:href="img/icons.svg#to-right"></use>
-            </svg>
-          </div>
+        <div class="form-input-group">
+          <label class="form-input-cover  ">
+            <input type="radio" class="form-input-checkbox" name="test-2">
+            <div class="form-input form-input-target"> Студия </div>
+          </label>
+          <label class="form-input-cover  ">
+            <input type="radio" class="form-input-checkbox" name="test-2" checked>
+            <div class="form-input form-input-target"> 1 </div>
+          </label>
+          <label class="form-input-cover  ">
+            <input type="radio" class="form-input-checkbox" name="test-2">
+            <div class="form-input form-input-target"> 2 </div>
+          </label>
+          <label class="form-input-cover  ">
+            <input type="radio" class="form-input-checkbox" name="test-2">
+            <div class="form-input form-input-target"> 3 </div>
+          </label>
+
         </div>
       </label>
 
       <label class="form-field ">
         <div class="text-body-2 text--demibold mb-2">Цена</div>
-
         <div class="form-input-cover">
           <input type="text" class="form-input" placeholder="От">
           <input type="text" class="form-input" placeholder="До">
         </div>
-
       </label>
 
       <label class="form-field ">
@@ -80,9 +87,9 @@
 
     </div>
 
-    <div class="filter-btns">
-      <button class="filter-btn btn btn--primary">Расширенный поиск</button>
-      <button class="filter-btn btn btn--primary btn--fill">Найти</button>
+    <div class="filter-form-btns">
+      <button class="filter-form-btn btn btn--primary">Расширенный поиск</button>
+      <button class="filter-form-btn btn btn--primary btn--fill">Найти</button>
     </div>
   </div>
 
