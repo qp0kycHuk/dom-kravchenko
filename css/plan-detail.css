@@ -124,7 +124,7 @@
   flex-basis: calc(100% / 7);
 }
 .plan-detail-help {
-  padding: 18px 16px;
+  padding: 18px 12px;
   border: 1px solid #E2E8F0;
   border-radius: 6px;
 }

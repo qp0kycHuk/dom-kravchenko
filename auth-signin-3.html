@@ -35,7 +35,7 @@
 	<link rel="stylesheet" href="css/auth.css">
 
 
-	<title>Восстановление пароля</title>
+	<title>Регистрация</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
 
 		<div class="header-logo">
 			<img src="img/logo.png" alt="" class="d-none d-md-block">
-			<div class="text-h6 d-md-none">Восстановление пароля</div>
+			<div class="text-h6 d-md-none">Регистрация</div>
 		</div>
 
 	</header>
@@ -276,6 +276,7 @@
 				Мы найдем для вас идеальное жильё!
 			</div>
 		</div>
+
 		<form class="auth-page-form">
 			<button class="auth-page-back btn btn--primary btn--light d-md-none btn-fab mb-4" type="button">
 				<svg class="icon color-text">
@@ -283,22 +284,25 @@
 				</svg>
 			</button>
 
-			<div class="text-subtitle-1 text-md--center mb-6">Восстановление пароля</div>
+			<div class="text-h6 text-md--center mb-10">Добавить фото в профиль</div>
 
-			<label class="form-field mb-5">
-				<div class="text-body-2 text--demibold mb-2 d-md-none">Ваш телефон</div>
-				<div class="form-input-cover">
-					<input type="tel" class="form-input" placeholder="Номер телефона" required>
+
+			<label class="form-avatar-loader mb-10 mx-auto">
+				<div class="form-avatar-loader-placeholder">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#user" />
+					</svg>
 				</div>
+				<div class="form-avatar-loader-target">
+					<img src="" alt="" id="form-avatar-loader-target-img">
+				</div>
+				<input required type="file" class="form-avatar-loader-input" data-load-file data-load-type="image"
+					data-load-target="form-avatar-loader-target-img">
 			</label>
-			<div class="text-small-1 text-md--center mt-5 mb-8">
-				На ваш номер телефона будет выслано СМС
-				с кодом для смены пароля.
-			</div>
 
 
-			<button class="btn btn--primary btn--fill w-100">Выслать</button>
-
+			<button class="btn btn--primary btn--fill w-100">Загрузить фото</button>
+			<button class="btn btn--primary  w-100 mt-2" type="button">Не сейчас</button>
 
 		</form>
 	</section>
@@ -317,6 +321,9 @@
 	<script src="source/fancybox.custom.js"></script>
 
 	<script src="source/ui--tab.js"></script>
+
+
+	<script src="js/load-file.js"></script>
 
 </body>
 

@@ -29,7 +29,7 @@
 	<!-- tooltips -->
 	<script src="source/popper.min.js"></script>
 	<script src="source/tippy-bundle.umd.js"></script>
-
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
 
 	<title>Главный </title>
 </head>
@@ -44,7 +44,24 @@
 		<div class="header-logo">
 			<img src="img/logo.png" alt="">
 		</div>
-		<button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="img/icons.svg#filter" />
+			</svg>
+		</button>
+		<button class="btn btn--primary btn--fill ml-auto">Войти</button>
+
+	</header>
+	<header class="header">
+		<div class="header-user  d-md-none">
+			<div class="header-user-btn-img">
+				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+			</div>
+		</div>
+		<div class="header-logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form">
 			<svg class="icon color-icon">
 				<use xlink:href="img/icons.svg#filter" />
 			</svg>
@@ -76,6 +93,7 @@
 				content: tmp,
 				trigger: 'click',
 				theme: 'header-user',
+				animation: 'shift-toward',
 				arrow: false,
 				interactive: true,
 				placement: 'bottom-end'
@@ -131,9 +149,9 @@
 	<div class="content-wrapper">
 		<section class="filter filter-index">
 			<div class="container">
-
-				<div class="filter-title text-subtitle-1 text-md-h6 text--center color-white">Найдите идеальное предложение в
-					Краснодаре</div>
+				<div class="filter-title text-subtitle-1 text-md-h6 text--center color-white">
+					Найдите идеальное предложение в Краснодаре
+				</div>
 				<div class="filter-form-dialog" id="filter-form">
 					<div class="filter-form  card">
 						<div class="text-subtitle-2 d-md-none mb-7 text--center">Фильтр</div>
@@ -145,18 +163,12 @@
 								<div class="form-input-cover">
 									<label class="form-input-cover  ">
 										<input type="radio" class="form-input-checkbox" name="test-1" checked>
-										<div class="form-input form-input-target">
-											Квартира
-
-										</div>
+										<div class="form-input form-input-target"> Квартира </div>
 									</label>
 
 									<label class="form-input-cover">
 										<input type="radio" class="form-input-checkbox" name="test-1">
-										<div class="form-input form-input-target">
-											Дом
-
-										</div>
+										<div class="form-input form-input-target"> Дом </div>
 									</label>
 								</div>
 
@@ -195,31 +207,19 @@
 								<div class="form-input-group">
 									<label class="form-input-cover  ">
 										<input type="radio" class="form-input-checkbox" name="test-2">
-										<div class="form-input form-input-target">
-											Студия
-
-										</div>
+										<div class="form-input form-input-target"> Студия </div>
 									</label>
 									<label class="form-input-cover  ">
 										<input type="radio" class="form-input-checkbox" name="test-2" checked>
-										<div class="form-input form-input-target">
-											1
-
-										</div>
+										<div class="form-input form-input-target"> 1 </div>
 									</label>
 									<label class="form-input-cover  ">
 										<input type="radio" class="form-input-checkbox" name="test-2">
-										<div class="form-input form-input-target">
-											2
-
-										</div>
+										<div class="form-input form-input-target"> 2 </div>
 									</label>
 									<label class="form-input-cover  ">
 										<input type="radio" class="form-input-checkbox" name="test-2">
-										<div class="form-input form-input-target">
-											3
-
-										</div>
+										<div class="form-input form-input-target"> 3 </div>
 									</label>
 
 								</div>
@@ -227,12 +227,10 @@
 
 							<label class="form-field ">
 								<div class="text-body-2 text--demibold mb-2">Цена</div>
-
 								<div class="form-input-cover">
 									<input type="text" class="form-input" placeholder="От">
 									<input type="text" class="form-input" placeholder="До">
 								</div>
-
 							</label>
 
 							<label class="form-field ">
@@ -257,6 +255,15 @@
 					<span class="color-text"> Начать поиск квартиры или дома</span>
 				</button>
 			</div>
+		</section>
+
+		<!-- modal test -->
+		<section>
+			<button class="btn btn--red btn--fill btn-fab" data-fancybox-modal data-type="ajax" data-src="dialog-profile.html">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#star" />
+				</svg>
+			</button>
 		</section>
 
 
@@ -361,6 +368,7 @@
 			})
 		</script>
 
+		<!-- Популярные предложения -->
 		<section class="content">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Популярные предложения</div>
 			<div class="popular-index">
@@ -368,7 +376,7 @@
 					<div class="jk-row-content card">
 						<div class="jk-row-preview">
 							<div class="jk-row-preview-img">
-								<img src="https://picsum.photos/id/42/600/400" alt="">
+								<img src="https://picsum.photos/600/400?random=61" alt="">
 							</div>
 							<div class="card-control">
 
@@ -382,7 +390,7 @@
 								</div>
 
 								<div class="jk-row-preview-likes card-likes ml-auto">
-									<div class="card-like card-like-bg d-md-none">
+									<div class="card-like card-like-bg ">
 										<svg class="icon">
 											<use xlink:href="img/utils.svg#chart" />
 										</svg>
@@ -463,16 +471,11 @@
 
 							</div>
 							<div class="jk-row-control mt-6">
-								<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
-								<button class="btn btn--color-icon btn-icon ml-1">
-									<svg class="icon">
+								<button class="jk-row-btn btn btn--primary btn--light">
+									<svg class="icon mr-2">
 										<use xlink:href="img/icons.svg#chat" />
 									</svg>
-								</button>
-								<button class="btn btn--color-icon btn-icon ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chart" />
-									</svg>
+									Написать застройщику
 								</button>
 
 							</div>
@@ -508,7 +511,7 @@
 					<div class="jk-row-content card">
 						<div class="jk-row-preview">
 							<div class="jk-row-preview-img">
-								<img src="https://picsum.photos/id/42/600/400" alt="">
+								<img src="https://picsum.photos/600/400?random=62" alt="">
 							</div>
 							<div class="card-control">
 
@@ -522,7 +525,7 @@
 								</div>
 
 								<div class="jk-row-preview-likes card-likes ml-auto">
-									<div class="card-like card-like-bg d-md-none">
+									<div class="card-like card-like-bg">
 										<svg class="icon">
 											<use xlink:href="img/utils.svg#chart" />
 										</svg>
@@ -626,16 +629,11 @@
 
 							</div>
 							<div class="jk-row-control mt-6">
-								<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
-								<button class="btn btn--color-icon btn-icon ml-1">
-									<svg class="icon">
+								<button class="jk-row-btn btn btn--primary btn--light">
+									<svg class="icon mr-2">
 										<use xlink:href="img/icons.svg#chat" />
 									</svg>
-								</button>
-								<button class="btn btn--color-icon btn-icon ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chart" />
-									</svg>
+									Написать застройщику
 								</button>
 
 							</div>
@@ -671,7 +669,7 @@
 					<div class="jk-row-content card">
 						<div class="jk-row-preview">
 							<div class="jk-row-preview-img">
-								<img src="https://picsum.photos/id/42/600/400" alt="">
+								<img src="https://picsum.photos/600/400?random=63" alt="">
 							</div>
 							<div class="card-control">
 
@@ -685,7 +683,7 @@
 								</div>
 
 								<div class="jk-row-preview-likes card-likes ml-auto">
-									<div class="card-like card-like-bg d-md-none">
+									<div class="card-like card-like-bg active">
 										<svg class="icon">
 											<use xlink:href="img/utils.svg#chart" />
 										</svg>
@@ -790,16 +788,11 @@
 
 							</div>
 							<div class="jk-row-control mt-6">
-								<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
-								<button class="btn btn--color-icon btn-icon ml-1">
-									<svg class="icon">
+								<button class="jk-row-btn btn btn--primary btn--light">
+									<svg class="icon mr-2">
 										<use xlink:href="img/icons.svg#chat" />
 									</svg>
-								</button>
-								<button class="btn btn--color-icon btn-icon ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chart" />
-									</svg>
+									Написать застройщику
 								</button>
 
 							</div>
@@ -844,14 +837,14 @@
 			})
 		</script>
 
-
+		<!-- Новости застройщиков -->
 		<section class="news-developers">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Новости застройщиков</div>
 			<div class="news-developers-slider">
 				<div class="swiper grid-wrap grid-spacing-4 grid-spacing-md-6">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
-							<div class="news-card card">
+							<div class="news-card card h-100">
 								<div class="card-img">
 									<img src="https://picsum.photos/600/400?random=1" alt="">
 								</div>
@@ -878,7 +871,7 @@
 								</div>
 
 								<div class="card-content pt-5">
-									<div class="news-card-info mb-lg-4">
+									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
 												<img src="img/sempl/brand-3.png" alt="">
@@ -888,16 +881,6 @@
 										</div>
 										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
 											сентября</span>
-									</div>
-									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
-									</div>
-									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
-										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
-										панорамного вида на город, ясного неба и белоснежных облаков.
-									</div>
-
-									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
-										<button class="btn btn--primary btn--light">Подробнее</button>
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
@@ -906,6 +889,14 @@
 											<div class="text-body-2 color-icon">123</div>
 										</div>
 									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -937,7 +928,7 @@
 								</div>
 
 								<div class="card-content pt-5">
-									<div class="news-card-info mb-lg-4">
+									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
 												<img src="img/sempl/brand-3.png" alt="">
@@ -947,16 +938,6 @@
 										</div>
 										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
 											сентября</span>
-									</div>
-									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
-									</div>
-									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
-										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
-										панорамного вида на город, ясного неба и белоснежных облаков.
-									</div>
-
-									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
-										<button class="btn btn--primary btn--light">Подробнее</button>
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
@@ -965,6 +946,14 @@
 											<div class="text-body-2 color-icon">123</div>
 										</div>
 									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -996,7 +985,7 @@
 								</div>
 
 								<div class="card-content pt-5">
-									<div class="news-card-info mb-lg-4">
+									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
 												<img src="img/sempl/brand-3.png" alt="">
@@ -1006,16 +995,6 @@
 										</div>
 										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
 											сентября</span>
-									</div>
-									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
-									</div>
-									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
-										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
-										панорамного вида на город, ясного неба и белоснежных облаков.
-									</div>
-
-									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
-										<button class="btn btn--primary btn--light">Подробнее</button>
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
@@ -1024,6 +1003,14 @@
 											<div class="text-body-2 color-icon">123</div>
 										</div>
 									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -1055,7 +1042,7 @@
 								</div>
 
 								<div class="card-content pt-5">
-									<div class="news-card-info mb-lg-4">
+									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
 												<img src="img/sempl/brand-3.png" alt="">
@@ -1065,16 +1052,6 @@
 										</div>
 										<span class="text-body-2 text--fade ml-lg-1"> <span class="d-lg-inline d-none">•</span> 7
 											сентября</span>
-									</div>
-									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
-									</div>
-									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
-										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
-										панорамного вида на город, ясного неба и белоснежных облаков.
-									</div>
-
-									<div class="d-flex flex-align-center mt-3 mt-lg-5 w-100">
-										<button class="btn btn--primary btn--light">Подробнее</button>
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
@@ -1083,6 +1060,14 @@
 											<div class="text-body-2 color-icon">123</div>
 										</div>
 									</div>
+									<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+									</div>
+									<div class="text-body-2 text--fade lh-1-5 d-lg-block d-none">
+										ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
+										панорамного вида на город, ясного неба и белоснежных облаков.
+									</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -1119,26 +1104,252 @@
 			</label>
 			<button class="btn btn--primary mt-1">Скопировать ссылку</button>
 		</div>
-
 		<script>
-			(function () {
-				const tmp = document.querySelector('.share-tooltip')
-				tippy('[data-share]', {
-					content: () => {
-						const clone = tmp.cloneNode(true)
-						clone.style.display = ''
-						return clone
-					},
-					trigger: 'click',
-					theme: 'custom-default',
-					allowHTML: true,
-					interactive: true,
-					placement: 'bottom'
-				})
-			})();
+				(function () {
+					const tmp = document.querySelector('.share-tooltip')
+					tippy('[data-share]', {
+						content: () => {
+							const clone = tmp.cloneNode(true)
+							clone.style.display = ''
+							return clone
+						},
+						trigger: 'click',
+						theme: 'custom-default',
+						animation: 'shift-toward',
+						allowHTML: true,
+						interactive: true,
+						placement: 'bottom'
+					})
+				})();
+		</script>
+
+		<!-- Отзывы о сервисе -->
+		<section class="index-reviews">
+			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Отзывы о сервисе</div>
+			<div class="index-reviews-slider slider slider--overwrap">
+				<div class="swiper  grid-wrap grid-spacing-4">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide grid-col-9 grid-col-md-12">
+							<div class="card h-100">
+								<div class="card-content">
+									<div class="flex flex-align-center w-100">
+										<div class="brand-min">
+											<div class="brand-min-img">
+												<img src="img/sempl/brand-3.png" alt="">
+											</div>
+											<div class="">
+												<div class="text-body-1 text--demibold">Александр Кравченко</div>
+												<div class="flex flex-align-center mt-1 d-md-none">
+													<div class="text-body-2 fade-60 mr-1 lh-1">7 сентября</div>
+													<div class="d-flex">
+														<svg class="icon color-yellow text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-yellow  ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-yellow  ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+
+														<svg class="icon color-light ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-light ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="ml-auto d-none d-md-flex flex-align-end">
+											<div class="text-body-2 fade-60 mr-5 lh-1">7 сентября</div>
+											<div class="d-flex">
+												<svg class="icon color-yellow">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-yellow  ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-yellow  ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+
+												<svg class="icon color-light ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-light ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="text-body-2 lh-1-5 mt-3">
+										Мы с мужем поняли такую вещь, нам сильно повезло, что мы обратились в это агенство и очень всем
+										благодарны, за оперативную и профессиональную работу!Грамотные специалисты, видно что любят свою
+										работу💯Мы так волновались заключать сделку удаленно (так уж вышло), но все прошло более чем
+										хорошо👌🏻 Спасибо огромное Александру, за такую крутую команду! Спасибо Всем, кто учавствовал в
+										поиске и покупке жилья!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-9 grid-col-md-12">
+							<div class="card h-100">
+								<div class="card-content">
+									<div class="flex flex-align-center w-100">
+										<div class="brand-min">
+											<div class="brand-min-img">
+												<img src="img/sempl/brand-3.png" alt="">
+											</div>
+											<div class="">
+												<div class="text-body-1 text--demibold">Александр Кравченко</div>
+												<div class="flex flex-align-center mt-1 d-md-none">
+													<div class="text-body-2 fade-60 mr-1 lh-1">7 сентября</div>
+													<div class="d-flex">
+														<svg class="icon color-yellow text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-yellow  ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-yellow  ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+
+														<svg class="icon color-light ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-light ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="ml-auto d-none d-md-flex flex-align-end">
+											<div class="text-body-2 fade-60 mr-5 lh-1">7 сентября</div>
+											<div class="d-flex">
+												<svg class="icon color-yellow">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-yellow  ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-yellow  ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+
+												<svg class="icon color-light ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-light ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="text-body-2 lh-1-5 mt-3">
+										Мы с мужем поняли такую вещь, нам сильно повезло, что мы обратились в это агенство и очень всем
+										благодарны, за оперативную и профессиональную работу!Грамотные специалисты, видно что любят свою
+										работу💯Мы так волновались заключать сделку удаленно (так уж вышло), но все прошло более чем
+										хорошо👌🏻 Спасибо огромное Александру, за такую крутую команду! Спасибо Всем, кто учавствовал в
+										поиске и покупке жилья!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide grid-col-9 grid-col-md-12">
+							<div class="card h-100">
+								<div class="card-content">
+									<div class="flex flex-align-center w-100">
+										<div class="brand-min">
+											<div class="brand-min-img">
+												<img src="img/sempl/brand-3.png" alt="">
+											</div>
+											<div class="">
+												<div class="text-body-1 text--demibold">Александр Кравченко</div>
+												<div class="flex flex-align-center mt-1 d-md-none">
+													<div class="text-body-2 fade-60 mr-1 lh-1">7 сентября</div>
+													<div class="d-flex">
+														<svg class="icon color-yellow text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-yellow  ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-yellow  ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+
+														<svg class="icon color-light ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+														<svg class="icon color-light ml-1 text-small">
+															<use xlink:href="img/icons.svg#star" />
+														</svg>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="ml-auto d-none d-md-flex flex-align-end">
+											<div class="text-body-2 fade-60 mr-5 lh-1">7 сентября</div>
+											<div class="d-flex">
+												<svg class="icon color-yellow">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-yellow  ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-yellow  ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+
+												<svg class="icon color-light ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+												<svg class="icon color-light ml-1">
+													<use xlink:href="img/icons.svg#star" />
+												</svg>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="text-body-2 lh-1-5 mt-3">
+										Мы с мужем поняли такую вещь, нам сильно повезло, что мы обратились в это агенство и очень всем
+										благодарны, за оперативную и профессиональную работу!Грамотные специалисты, видно что любят свою
+										работу💯Мы так волновались заключать сделку удаленно (так уж вышло), но все прошло более чем
+										хорошо👌🏻 Спасибо огромное Александру, за такую крутую команду! Спасибо Всем, кто учавствовал в
+										поиске и покупке жилья!
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<button class="btn btn--primary btn--light w-100 mt-6">Еще отзывы</button>
+		</section>
+		<script>
+			new Swiper('.index-reviews-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+				touchStartPreventDefault: false,
+			})
 		</script>
 
 
+		<!-- Популярные районы -->
 		<section class="popular-areas">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Популярные районы</div>
 			<div class="popular-areas-slider">
@@ -1298,7 +1509,7 @@
 
 
 
-		<section class="index-about">
+		<section class="index-about" style="display: none;">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Босс просил вас посмотреть</div>
 			<div class="index-about-inner">
 				<div class="index-about-video">

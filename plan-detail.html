@@ -31,6 +31,7 @@
 	<!-- tooltips -->
 	<script src="source/popper.min.js"></script>
 	<script src="source/tippy-bundle.umd.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
 
 	<link rel="stylesheet" href="css/plan-detail.css">
 
@@ -292,7 +293,7 @@
 				</div>
 
 				<div class="plan-detail-help d-none d-md-flex flex-align-center">
-					<svg class="icon text-body-1 color-icon mr-3">
+					<svg class="icon text-body-1 color-icon mr-2">
 						<use xlink:href="img/icons.svg#badge-contur" />
 					</svg>
 					<div class="">
@@ -450,6 +451,7 @@
 				content: (reference) => reference.getAttribute('data-tooltip'),
 				theme: 'custom-default',
 
+				animation: 'shift-toward',
 				placement: 'bottom',
 				// arrow: false,
 				appendTo: () => document.body,

@@ -91,7 +91,10 @@
     left: calc(100% - 24px);
   }
 
-
+  @media(max-width:@md) {
+    left: auto;
+    right: 2px;
+  }
 }
 .slider-btn--min.slider-prev{
   left: 5px;
@@ -109,4 +112,26 @@
   @media(max-width:@arrowLg) {
     right: calc(100% - 24px);
   }
+  @media(max-width:@md) {
+    right: auto;
+    left: 2px;
+  }
+}
+
+
+.slider--overwrap {
+	@media(max-width:@md) {
+		width        : calc(100% + 30px);
+		margin-left  : -15px;
+		margin-right : -15px;
+		padding-right: 15px;
+		padding-left : 15px;
+		overflow     : hidden;
+	}
+
+	.swiper {
+		@media(max-width:@md) {
+			overflow: visible;
+		}
+	}
 }
