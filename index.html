@@ -35,32 +35,16 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="header-user  d-md-none">
-			<div class="header-user-btn-img">
-				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
-			</div>
-		</div>
-		<div class="header-logo">
-			<img src="img/logo.png" alt="">
-		</div>
-		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form">
-			<svg class="icon color-icon">
-				<use xlink:href="img/icons.svg#filter" />
-			</svg>
-		</button>
-		<button class="btn btn--primary btn--fill ml-auto">Войти</button>
 
-	</header>
 	<header class="header">
 		<div class="header-user  d-md-none">
 			<div class="header-user-btn-img">
 				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
 			</div>
 		</div>
-		<div class="header-logo">
+		<a href="/" class="header-logo btn btn--link btn--primary">
 			<img src="img/logo.png" alt="">
-		</div>
+		</a>
 		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form">
 			<svg class="icon color-icon">
 				<use xlink:href="img/icons.svg#filter" />
@@ -161,12 +145,12 @@
 								<div class="text-body-2 text--demibold mb-2">Квартира или дом?</div>
 
 								<div class="form-input-cover">
-									<label class="form-input-cover  ">
+									<label class="form-input-cover w-50">
 										<input type="radio" class="form-input-checkbox" name="test-1" checked>
 										<div class="form-input form-input-target"> Квартира </div>
 									</label>
 
-									<label class="form-input-cover">
+									<label class="form-input-cover w-50">
 										<input type="radio" class="form-input-checkbox" name="test-1">
 										<div class="form-input form-input-target"> Дом </div>
 									</label>
@@ -202,7 +186,7 @@
 							</label>
 
 
-							<label class="form-field form-select">
+							<div class="form-field form-select">
 								<div class="text-body-2 text--demibold mb-2">Комнатность</div>
 								<div class="form-input-group">
 									<label class="form-input-cover  ">
@@ -223,7 +207,7 @@
 									</label>
 
 								</div>
-							</label>
+							</div>
 
 							<label class="form-field ">
 								<div class="text-body-2 text--demibold mb-2">Цена</div>
@@ -259,8 +243,12 @@
 
 		<!-- modal test -->
 		<section>
-			<button class="btn btn--red btn--fill btn-fab" data-fancybox-modal data-type="ajax" data-src="dialog-profile.html">
-				<svg class="icon">
+			<button class="btn btn--red btn--fill " data-fancybox-modal data-type="ajax" data-src="dialog-profile.html">
+				<svg class="icon mr-2">
+					<use xlink:href="img/icons.svg#star" />
+				</svg>
+				Открыть модалку
+				<svg class="icon ml-2">
 					<use xlink:href="img/icons.svg#star" />
 				</svg>
 			</button>
