@@ -1606,6 +1606,12 @@ textarea.form-input {
 .bg-yellow {
   background: var(--color-yellow);
 }
+.bg-text {
+  background: var(--color-text);
+}
+.bg-icon {
+  background: var(--color-icon);
+}
 .m-0 {
   margin: 0;
 }

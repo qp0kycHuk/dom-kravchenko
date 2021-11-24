@@ -33,6 +33,7 @@
 	<div class="example-cover" data-tab-cover>
 		<div class="example-btns">
 			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="1">Типография</button>
+			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="colors">Цвета</button>
 			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="2">Form</button>
 			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="3">Buttons</button>
 			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="4">Cards</button>
@@ -46,7 +47,7 @@
 
 			<div class="tab-content-cover">
 				<!-- Типография -->
-				<div class="tab-content" data-tab-content="1">
+				<div class="tab-content tab-active" data-tab-content="1">
 					<section class="text">
 						<h1 class="text-h1 mb-10">Типография</h1>
 
@@ -116,6 +117,95 @@
 							<div class="text-body-1 text--right">.text--right right </div>
 						</div>
 
+
+
+					</section>
+				</div>
+				<!-- Colors -->
+				<div class="tab-content" data-tab-content="colors">
+					<section>
+
+						<h1 class="text-h1 mb-10">Цвета</h1>
+
+
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 p-8 color-white bg-primary">.bg-primary</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 p-8 color-white bg-red">.bg-red</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 p-8 color-white bg-yellow">.bg-yellow</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 p-8 color-white bg-green">.bg-green</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 p-8 color-white bg-icon">.bg-icon</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 p-8 color-white bg-text">.bg-text</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 p-8 color-text bg-white">.bg-white</div>
+						</div>
+
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 color-primary flex">
+								.color-primary
+								<svg class="icon ml-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+							</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 color-red flex">
+								.color-red
+								<svg class="icon ml-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+							</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 color-yellow flex">
+								.color-yellow
+								<svg class="icon ml-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+							</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 color-green flex">
+								.color-green
+								<svg class="icon ml-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+							</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 color-icon flex">
+								.color-icon
+								<svg class="icon ml-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+							</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 color-text flex">
+								.color-text
+								<svg class="icon ml-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+							</div>
+						</div>
+						<div class="mb-3 -copy-child-">
+							<div class="text-h6 color-white flex">
+								.color-white
+								<svg class="icon ml-2">
+									<use xlink:href="img/icons.svg#chat" />
+								</svg>
+							</div>
+						</div>
 					</section>
 				</div>
 				<!-- Form -->
@@ -124,6 +214,23 @@
 						<h1 class="text-h1 mb-10">Form</h1>
 
 						<h1 class="text-h4 mb-8">Input</h1>
+
+						<div class="text-body-0 mb-10 mt-10 code">
+							<!-- &nbsp;&nbsp; -->
+							&lt;<span class="color-primary">label</span> class=<span class="color-red">"form-field "</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-label"</span>&gt;Обычное поле&lt;<span class="color-primary">/div</span>&gt;
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-input-cover"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">input</span> type=<span
+								class="color-red">"text"</span> class=<span class="color-red">"form-input"</span> placeholder=<span
+								class="color-red">"Заполните поле"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/div</span>&gt; <br>
+							&lt;<span class="color-primary">/label</span>&gt;
+
+						</div>
+
 						<div class="grid grid-align-center mb-10">
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
@@ -136,7 +243,7 @@
 
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
-									<div class="form-label">Обычное поле</div>
+									<div class="form-label">Выделенное поле</div>
 									<div class="form-input-cover">
 										<input type="text" class="form-input active" placeholder="Заполните поле">
 									</div>
@@ -144,7 +251,7 @@
 							</div>
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
-									<div class="form-label">Обычное поле</div>
+									<div class="form-label">Поле с ошибкой</div>
 									<div class="form-input-cover">
 										<input type="text" class="form-input error" placeholder="Заполните поле">
 									</div>
@@ -152,7 +259,7 @@
 							</div>
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field">
-									<div class="form-label">Обычное поле</div>
+									<div class="form-label">Не активное</div>
 									<div class="form-input-cover">
 										<input type="text" class="form-input" disabled placeholder="Заполните поле">
 									</div>
@@ -2109,6 +2216,7 @@
 							&lt;<span class="color-primary">/svg</span>&gt;
 						</div>
 						<div class="grid grid-spacing-10">
+							<!-- arrow-left -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2117,6 +2225,7 @@
 									arrow-left
 								</div>
 							</div>
+							<!-- badge-contur -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2125,6 +2234,7 @@
 									badge-contur
 								</div>
 							</div>
+							<!-- balcony-glazing -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2133,6 +2243,7 @@
 									balcony-glazing
 								</div>
 							</div>
+							<!-- chart -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2141,6 +2252,7 @@
 									chart
 								</div>
 							</div>
+							<!-- chart-contur -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2149,6 +2261,7 @@
 									chart-contur
 								</div>
 							</div>
+							<!-- chat -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2157,6 +2270,7 @@
 									chat
 								</div>
 							</div>
+							<!-- chat-contur -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2165,6 +2279,7 @@
 									chat-contur
 								</div>
 							</div>
+							<!-- check -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2173,6 +2288,7 @@
 									check
 								</div>
 							</div>
+							<!-- compas -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2181,6 +2297,7 @@
 									compas
 								</div>
 							</div>
+							<!-- concierge -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2189,6 +2306,16 @@
 									concierge
 								</div>
 							</div>
+							<!-- cross -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#cross" />
+									</svg>
+									cross
+								</div>
+							</div>
+							<!-- doc -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2197,6 +2324,7 @@
 									doc
 								</div>
 							</div>
+							<!-- doc-contur -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2205,6 +2333,7 @@
 									doc-contur
 								</div>
 							</div>
+							<!-- door -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2213,6 +2342,16 @@
 									door
 								</div>
 							</div>
+							<!-- emoji-smile -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#emoji-smile" />
+									</svg>
+									emoji-smile
+								</div>
+							</div>
+							<!-- eye -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2221,6 +2360,7 @@
 									eye
 								</div>
 							</div>
+							<!-- eye-contur -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2229,6 +2369,7 @@
 									eye-contur
 								</div>
 							</div>
+							<!-- filter -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2237,6 +2378,7 @@
 									filter
 								</div>
 							</div>
+							<!-- gal-ochka -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2245,6 +2387,7 @@
 									gal-ochka
 								</div>
 							</div>
+							<!-- glazing -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2253,6 +2396,7 @@
 									glazing
 								</div>
 							</div>
+							<!-- heart -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2261,6 +2405,7 @@
 									heart
 								</div>
 							</div>
+							<!-- heart-contur -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2269,6 +2414,7 @@
 									heart-contur
 								</div>
 							</div>
+							<!-- house-1 -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2277,6 +2423,7 @@
 									house-1
 								</div>
 							</div>
+							<!-- key -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2285,6 +2432,7 @@
 									key
 								</div>
 							</div>
+							<!-- lift -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2293,6 +2441,7 @@
 									lift
 								</div>
 							</div>
+							<!-- lift-1 -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2301,6 +2450,16 @@
 									lift-1
 								</div>
 							</div>
+							<!-- no-stonks -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#no-stonks" />
+									</svg>
+									no-stonks
+								</div>
+							</div>
+							<!-- note -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2309,6 +2468,7 @@
 									note
 								</div>
 							</div>
+							<!-- note-contur -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2317,6 +2477,16 @@
 									note-contur
 								</div>
 							</div>
+							<!-- paperclip -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#paperclip" />
+									</svg>
+									paperclip
+								</div>
+							</div>
+							<!-- parking -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2325,6 +2495,7 @@
 									parking
 								</div>
 							</div>
+							<!-- play -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2333,6 +2504,7 @@
 									play
 								</div>
 							</div>
+							<!-- search -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2341,6 +2513,7 @@
 									search
 								</div>
 							</div>
+							<!-- search-1 -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2349,6 +2522,7 @@
 									search-1
 								</div>
 							</div>
+							<!-- settings -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2357,6 +2531,16 @@
 									settings
 								</div>
 							</div>
+							<!-- send -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#send" />
+									</svg>
+									send
+								</div>
+							</div>
+							<!-- share -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2365,6 +2549,7 @@
 									share
 								</div>
 							</div>
+							<!-- star -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2373,6 +2558,16 @@
 									star
 								</div>
 							</div>
+							<!-- status-read -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+									status-read
+								</div>
+							</div>
+							<!-- to-right -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2381,6 +2576,7 @@
 									to-right
 								</div>
 							</div>
+							<!-- to-right-double -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2389,6 +2585,7 @@
 									to-right-double
 								</div>
 							</div>
+							<!-- to-left -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2397,6 +2594,7 @@
 									to-left
 								</div>
 							</div>
+							<!-- to-left-double -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2405,6 +2603,7 @@
 									to-left-double
 								</div>
 							</div>
+							<!-- to-down -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2413,6 +2612,34 @@
 									to-down
 								</div>
 							</div>
+							<!-- triangle-left -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#triangle-left" />
+									</svg>
+									triangle-left
+								</div>
+							</div>
+							<!-- triangle-right -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#triangle-right" />
+									</svg>
+									triangle-right
+								</div>
+							</div>
+							<!-- user -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="img/icons.svg#user" />
+									</svg>
+									user
+								</div>
+							</div>
+							<!-- wheelchair -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
@@ -2421,6 +2648,7 @@
 									wheelchair
 								</div>
 							</div>
+							<!-- window -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
