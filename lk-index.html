@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="source/fancybox.css">
+	<link rel="stylesheet" href="source/fancybox.custom.css">
+	<link rel="stylesheet" href="source/swiper-bundle.min.css">
+	<link rel="stylesheet" href="source/swiper-custom.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
+
+	<script src="source/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/ui-reset.css">
+	<link rel="stylesheet" href="css/ui-core.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/developer-detail.css">
+
+
+	<title>Главная </title>
+</head>
+
+<body>
+	<header class="header header--detail">
+		<div class="header-user  d-md-none">
+			<div class="header-user-btn-img">
+				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+			</div>
+		</div>
+		<div class="header-logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="img/icons.svg#filter" />
+			</svg>
+		</button>
+		<div class="header-user ml-auto d-md-block d-none">
+			<div class="header-user-btn">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="nav">
+		<a href="/" class="nav-item active">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper">
+
+		<section class="developer-detail-top pb-2">
+			<div class="developer-detail-top-inner  card">
+				<div class="card-img developer-detail-top-img">
+					<img src="https://images6.alphacoders.com/656/thumb-1920-656029.png" alt="">
+				</div>
+
+				<div class="card-content developer-detail-top-content pt-8 pb-8">
+					<div class="developer-detail-top-avatar">
+						<img src="img/sempl/developer-detail-avatar.png" alt="">
+					</div>
+
+					<div class="developer-detail-info">
+						<div class="text-h6 mb-1">Константин Москалевский</div>
+						<div class="text-body-2 text--fade">Менеджер, Romex Group</div>
+					</div>
+					<button class="btn btn--primary btn--light ml-auto">
+						<svg class="icon mr-2">
+							<use xlink:href="img/icons.svg#chat" />
+						</svg>
+						Редактировать
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="content">
+			<div class=" lk-index-notification flex flex-align-center p-4 pl-7">
+				<svg class="icon mr-2" style="color: #88FF50;">
+					<use xlink:href="img/icons.svg#gal-ochka-1" />
+				</svg>
+				<div class="text-body-1 text--demibold mr-5">26 заявок ожидают обработки</div>
+				<div class="text-body-2 fade-60 mr-5">Обновлено 05.10.2021</div>
+				<button class="btn btn--primary btn--white-bg ml-auto">Получить заказ</button>
+			</div>
+
+		</section>
+
+		<section class="lk-index-info">
+			<div class="lk-index-info-chart card p-2 pt-5">
+				<div class="flex flex-align-center w-100 px-4">
+					<div class="text-body-1 text--demibold">Эффективность</div>
+					<div class="text-body-2 fade-60 ml-auto">октябрь 2021</div>
+
+				</div>
+				<div class="lk-index-info-chart-slider mt-10">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide lk-index-info-chart-slide">
+								<div class="lk-index-info-chart-img">
+									<img src="img/sempl/lk-index-info-chart.png" alt="">
+								</div>
+								<div class="lk-index-info-chart-props">
+									<div class="text-body-2 text--demibold">Всего: 21 </div>
+									<div class="text-body-2">Успешно: 16 </div>
+									<div class="text-body-2">В работе: 4 </div>
+									<div class="text-body-2">Проиграно: 1</div>
+								</div>
+							</div>
+							<div class="swiper-slide lk-index-info-chart-slide">
+								<div class="lk-index-info-chart-img">
+									<img src="img/sempl/lk-index-info-chart.png" alt="">
+								</div>
+								<div class="lk-index-info-chart-props">
+									<div class="text-body-2 text--demibold">Всего: 21 </div>
+									<div class="text-body-2">Успешно: 16 </div>
+									<div class="text-body-2">В работе: 4 </div>
+									<div class="text-body-2">Проиграно: 1</div>
+								</div>
+							</div>
+							<div class="swiper-slide lk-index-info-chart-slide">
+								<div class="lk-index-info-chart-img">
+									<img src="img/sempl/lk-index-info-chart.png" alt="">
+								</div>
+								<div class="lk-index-info-chart-props">
+									<div class="text-body-2 text--demibold">Всего: 21 </div>
+									<div class="text-body-2">Успешно: 16 </div>
+									<div class="text-body-2">В работе: 4 </div>
+									<div class="text-body-2">Проиграно: 1</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button class="slider-btn slider-prev">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#to-left" />
+						</svg>
+					</button>
+					<button class="slider-btn slider-next">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#to-right" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="lk-index-info-rating card px-2 py-5">
+				<div class="flex flex-align-center w-100 px-4 mb-5">
+					<div class="text-body-1 text--demibold">Рейтинг отдела</div>
+					<div class="text-body-2 fade-60 ml-auto">окт</div>
+
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item active flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2 text--demibold color-green">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+				<div class="lk-index-info-rating-item flex flex-align-center">
+					<div class="lk-index-info-rating-item-title">
+						<div class="lk-index-info-rating-item-title-inner text-body-2"><b>1.</b> Константин Москалевский</div>
+					</div>
+					<div class="lk-index-info-rating-item-value ml-3 text-body-2">1253</div>
+				</div>
+
+			</div>
+			<div class="lk-index-info-tasks card px-3 py-5">
+				<div class="text-body-1 text--demibold px-3">Актуальные задачи</div>
+			</div>
+		</section>
+		
+
+		<script>
+			new Swiper('.lk-index-info-chart-slider .swiper', {
+				slidesPerView: 1,
+				watchSlidesProgress: true,
+				spaceBetween: 10,
+				navigation: {
+					nextEl: '.lk-index-info-chart-slider .slider-next',
+					prevEl: '.lk-index-info-chart-slider .slider-prev'
+				}
+			})
+		</script>
+
+		<footer class="footer">
+			<div class="footer-divider mb-6"></div>
+
+			<div class="text-body-2 text--fade">
+				KK.ru — база данных о недвижимости. Использование сайта означает согласие с Пользовательским соглашением и
+				Политикой конфиденциальности KK.ru.
+				Оплачивая лицензионный платеж, вы принимаете Лицензионное соглашение.
+			</div>
+
+			<div class="footer-divider mb-4 mt-6"></div>
+
+			<div class="footer-nav text-body-2 text--fade">
+				<a href="/" class="footer-nav-item">О сервисе</a>
+				<a href="/" class="footer-nav-item">Справочный центр</a>
+				<a href="/" class="footer-nav-item">Юридические документы</a>
+				<a href="/" class="footer-nav-item">Реклама на сайте</a>
+				<div class="footer-copy ml-auto">©2021</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/ion.rangeSlider.custom.js"></script>
+
+	<script src="source/fancybox.umd.js"></script>
+	<script src="source/fancybox.custom.js"></script>
+
+</body>
+
+</html>

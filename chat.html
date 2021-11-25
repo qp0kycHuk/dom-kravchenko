@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="source/fancybox.css">
+	<link rel="stylesheet" href="source/fancybox.custom.css">
+	<link rel="stylesheet" href="source/swiper-bundle.min.css">
+	<link rel="stylesheet" href="source/swiper-custom.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
+	<link rel="stylesheet" href="source/tippy.custom.css">
+
+
+	<script src="source/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/ui-reset.css">
+	<link rel="stylesheet" href="css/ui-core.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
+
+	<!-- tooltips -->
+	<script src="source/popper.min.js"></script>
+	<script src="source/tippy-bundle.umd.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
+
+	<title>Пользователь (предложения) </title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header-user  d-md-none">
+			<div class="header-user-btn-img">
+				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+			</div>
+		</div>
+		<a href="/" class="header-logo btn btn--link btn--primary">
+			<img src="img/logo.png" alt="">
+		</a>
+
+		<div class="header-user ml-auto d-md-block d-none -header-user-tooltiped-">
+			<div class="header-user-btn">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-user-toltip" id="header-user-toltip" style="display: none;">
+		<div class="text-body-1 text--demibold px-2">Кравченко Александр</div>
+		<div class="text-body-1 mt-1 px-2">8 918 000 00 00</div>
+		<button class="btn btn--primary btn--light w-100 mt-5">Редактировать</button>
+		<button class="btn btn--red btn--fill w-100 mt-2">Выйти</button>
+	</div>
+	<script>
+		(() => {
+			const tmp = document.querySelector('#header-user-toltip')
+			tmp.style.display = ''
+			tippy('.-header-user-tooltiped-', {
+				content: tmp,
+				trigger: 'click',
+				theme: 'header-user',
+				animation: 'shift-toward',
+				arrow: false,
+				interactive: true,
+				placement: 'bottom-end'
+			})
+		})();
+	</script>
+
+	<div class="nav">
+		<a href="/" class="nav-item active">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper im-wrapper im-page">
+		<div class="im-wrapper-content">
+			<div class="im-wrapper-inner">
+				<div class="im-dialogs">
+					<div class="im-search d-none d-md-block">
+
+						<label class="form-field ">
+							<div class="form-input-cover">
+								<input type="text" class="form-input" placeholder="Поиск по чатам">
+
+								<div class="form-input-end">
+									<button class="btn btn-icon btn--primary">
+										<svg class="icon color-icon">
+											<use xlink:href="img/icons.svg#search" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</label>
+
+					</div>
+					<div class="im-dialog active color-white bg-primary">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-2.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">Вы: мы подобрали для вас Другими словами, нам
+										всё
+										п...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="im-dialog">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-1.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">мы подобрали </div>
+								</div>
+								<div class="im-dialog-badge">12</div>
+							</div>
+						</div>
+					</div>
+					<div class="im-dialog">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-3.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma </div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">Вы: мы подобрали для вас Другими словами, нам
+										всё
+										п...</div>
+								</div>
+								<div class="im-dialog-badge">12</div>
+							</div>
+						</div>
+					</div>
+					<div class="im-dialog">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-2.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">
+										Вы: мы подобрали для вас Другими словами, нам всё пох
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="im-chat d-none d-lg-block">
+					<div class="im-chat-header">
+						<button class="btn btn--primary btn-icon d-md-none mr-1">
+							<svg class="icon color-text">
+								<use xlink:href="img/icons.svg#arrow-left" />
+							</svg>
+						</button>
+						<div class="im-chat-header-user">
+							<div class="im-chat-header-user-img">
+								<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+							</div>
+							<div class="im-chat-header-user-content">
+								<div class="text-body-1 text--demibold">Менеджер Василиса</div>
+								<div class="text-small color-primary">Онлайн</div>
+							</div>
+						</div>
+						<div class="im-chat-header-search ml-auto d-none d-md-block">
+							<button class="btn btn--primary btn-icon">
+								<svg class="icon color-icon">
+									<use xlink:href="img/icons.svg#search" />
+								</svg>
+							</button>
+						</div>
+						<button class="btn btn--primary btn-icon d-md-none ml-auto">
+							<svg class="icon color-icon">
+								<use xlink:href="img/icons.svg#i" />
+							</svg>
+						</button>
+					</div>
+					<div class="im-chat-messages">
+						<div class="im-chat-message im-chat-message--incoming im-chat-message--large">
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку» с подписью сколько доступно
+								заявок (при нажатии на нее менеджер получает заявкуи
+								отрабатывает ее. Сделано для того, чтобы видеть сколько
+								заявок взял застройщик и кто из менеджеров отработал
+								клиента) 🔥
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--outgoing im-chat-message--small">
+							<div class="im-chat-message-text">
+								Привет 🤤
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-status mr-1">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+
+						<div class="im-chat-message im-chat-message--outgoing">
+							<div class="im-chat-message-text">
+								Да, я слышал о Dom.Kravchenko. Хороший,
+								просторный дом.
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-status mr-1">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+
+
+
+						<div class="im-chat-jk im-chat-message im-chat-message--incoming">
+							<div class="im-chat-jk-header bg-primary color-white">
+								<div class="im-chat-jk-header-img mr-2">
+									<img src="img/sempl/brand-3.png" alt="">
+								</div>
+								<div class="im-chat-jk-header-text">
+									<div class="text-small text--demibold">ЖК «Микрорайон Красная площадь»</div>
+									<div class="text-small-1">ул. Конгрессная, 13</div>
+								</div>
+							</div>
+							<div class="im-chat-jk-content">
+								<div class="im-chat-jk-img">
+									<img src="img/sempl/plan.png" alt="">
+								</div>
+								<div class="im-chat-jk-info">
+									<div class="text-body-2">3-комнатная квартира</div>
+									<div class="text-body-1 text--demibold">4 800 000 ₽</div>
+									<div class="mb-3"></div>
+									<table class="im-chat-jk-table">
+										<tr>
+											<td class="bd-bottom pb-1 pr-2">
+												<div class="text-small fade-60">Площадь</div>
+											</td>
+											<td class="bd-bottom pb-1 w-100">
+												<div class="text-small text--demibold">53, 2 м2</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="bd-bottom py-1 pr-2">
+												<div class="text-small fade-60">Этаж</div>
+											</td>
+											<td class="bd-bottom py-1 w-100">
+												<div class="text-small text--demibold">7</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="pt-1 pr-2">
+												<div class="text-small fade-60">Сдача</div>
+											</td>
+											<td class="pt-1 w-100">
+												<div class="text-small text--demibold">4 кв.2022</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--outgoing im-chat-message--large">
+							<div class="im-chat-message-image">
+								<a href="https://picsum.photos/600/400?random=1" data-fancybox class="image image--cover">
+									<img src="https://picsum.photos/600/400?random=1" alt="">
+								</a>
+
+							</div>
+							<div class="mb-2"></div>
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку» с подписью сколько доступно
+								заявок (при нажатии на нее менеджер получает заявкуи
+								отрабатывает ее. Сделано для того, чтобы видеть сколько
+								заявок взял застройщик и кто из менеджеров отработал
+								клиента) 🔥
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--incoming im-chat-message--small">
+							<div class="im-chat-message-image">
+								<a href="https://picsum.photos/600/400?random=2" data-fancybox class="image image--cover">
+									<img src="https://picsum.photos/600/400?random=2" alt="">
+								</a>
+
+							</div>
+							<div class="mb-2"></div>
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку»
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--outgoing im-chat-message--large">
+							<div class="im-chat-message-image">
+								<div class="grid grid-spacing-2">
+									<div class="grid-col-6">
+										<a href="https://picsum.photos/600/400?random=3" data-fancybox="message-id-1"
+											class="image image--box image--cover">
+											<img src="https://picsum.photos/600/400?random=3" alt="">
+										</a>
+									</div>
+									<div class="grid-col-6">
+										<a href="https://picsum.photos/600/400?random=4" data-fancybox="message-id-1"
+											class="image image--box image--cover">
+											<img src="https://picsum.photos/600/400?random=4" alt="">
+										</a>
+									</div>
+								</div>
+
+							</div>
+							<div class="mb-2"></div>
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку» с подписью сколько доступно
+								заявок (при нажатии на нее менеджер получает заявкуи
+								отрабатывает ее. Сделано для того, чтобы видеть сколько
+								заявок взял застройщик и кто из менеджеров отработал
+								клиента) 🔥
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="im-chat-form-wrapper">
+						<label class="im-chat-form" for="im-chat-form-input">
+							<button class="btn btn--primary btn-icon mr-1">
+								<svg class="icon color-icon text-body-0">
+									<use xlink:href="img/icons.svg#paperclip" />
+								</svg>
+							</button>
+							<textarea class="im-chat-form-input" id="im-chat-form-input"
+								placeholder="Написать сообщение..."></textarea>
+
+							<button class="btn btn--primary btn-icon ml-1">
+								<svg class="icon color-icon text-body-0">
+									<use xlink:href="img/icons.svg#emoji-smile" />
+								</svg>
+							</button>
+							<button class="btn btn--primary btn-icon btn--fill ml-1">
+								<svg class="icon text-body-0">
+									<use xlink:href="img/icons.svg#send" />
+								</svg>
+							</button>
+						</label>
+					</form>
+				</div>
+				<div class="im-jk" data-tab-cover>
+					<div class="container">
+						<div class="im-jk-top mb-6 d-none d-md-flex">
+							<div class="im-jk-top-background">
+								<img src="img/sempl/im-jk-top.png" alt="">
+							</div>
+							<div class="im-jk-top-brand flex flex-align-center">
+								<div class="im-jk-top-brand-img image image--box image--round mr-4">
+									<img src="img/sempl/brand-2.png" alt="">
+								</div>
+								<div class="im-jk-top-brand-content">
+									<div class="text-body-1 text--demibold color-white">Dogma</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="brand-min mb-4 d-md-none">
+							<div class="brand-min-img">
+								<img src="img/sempl/brand-1.png" alt="">
+							</div>
+							<div class="brand-min-content">
+								<div class="text-body-1 text--demibold">Dogma</div>
+							</div>
+						</div>
+
+
+
+						<div class="tab-links im-jk-tab-links mb-8">
+							<button class="tab-link" data-tab-link="unique-1">Предложения</button>
+							<button class="tab-link" data-tab-link="unique-3">Инфо</button>
+							<button class="tab-link" data-tab-link="unique-4">Акции застройщика</button>
+							<div class="tab-plate" data-tab-plate></div>
+						</div>
+
+						<div class="tab-content-cover">
+							<div class="tab-content" data-tab-content="unique-1">
+								<div class="im-jk-placeholder mb-4">
+									<div class="text-body-1 text--demibold mb-2">На данный момент у вас нет предложений от данного
+										застройщика</div>
+									<div class="text-body-2 fade-80">Вы можете запросить предложения у менеджера</div>
+									<button class="btn btn--primary btn--fill mt-6">Запросить предложение</button>
+								</div>
+								<div class="favorites-plan-block im-jk-plan-block card p-lg-4 mb-4">
+									<div class="favorites-plan-top d-lg-none">
+										<div class="card-img" style="height: 240px;">
+											<img src="https://picsum.photos/600/400" alt="">
+										</div>
+
+										<div class="card-control">
+
+											<div class="card-messages">
+												<div class="card-message">
+													<div class="card-message-img">
+														<img src="img/sempl/flag.png" alt="" class="icon">
+													</div>
+													<div class="text-small text--demibold">Старт продаж</div>
+												</div>
+											</div>
+
+											<div class="card-likes ml-auto">
+												<div class="card-like card-like-bg">
+													<svg class="icon">
+														<use xlink:href="img/utils.svg#heart"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+										<div class="card-content px-3 pb-1">
+											<div class="text-body-1 text--demibold">ЖК «Арена»</div>
+											<div class="text-body-2 fade-60">ул. Джержинского, ЭНКА</div>
+											<div class="flex flex-align-center mt-4 mb-4">
+												<svg class="icon text-body-2 color-icon mr-2">
+													<use xlink:href="img/icons.svg#key" />
+												</svg>
+												<div class="text-body-2 text--demibold">Сдача в III кв. 2025</div>
+
+											</div>
+											<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
+											<div class="flex flex-align-center mt-1">
+												<svg class="icon text-body-2 color-icon mr-1">
+													<use xlink:href="img/icons.svg#eye" />
+												</svg>
+												<div class="text-small text--fade">Интересуются: 10 человек</div>
+
+											</div>
+											<div class="text-body-1 text--demibold mt-5">Понравившиеся планировки</div>
+										</div>
+									</div>
+									<div class="favorites-plan-slider im-jk-plan-slider">
+										<div class="swiper p-lg-0 p-4">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide d-none d-lg-block ">
+													<div class="card h-100">
+														<div class="card-img" style="height: 240px;">
+															<img src="https://picsum.photos/600/400" alt="">
+														</div>
+
+														<div class="card-control">
+
+															<div class="card-messages">
+																<div class="card-message">
+																	<div class="card-message-img">
+																		<img src="img/sempl/flag.png" alt="" class="icon">
+																	</div>
+																	<div class="text-small text--demibold">Старт продаж</div>
+																</div>
+															</div>
+
+															<div class="card-likes ml-auto">
+																<div class="card-like card-like-bg">
+																	<svg class="icon">
+																		<use xlink:href="img/utils.svg#heart"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+
+														<div class="card-content px-3 pb-3">
+															<div class="text-body-1 text--demibold mb-2">ЖК «Арена»</div>
+															<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
+															<div class="flex flex-align-center mt-1">
+																<svg class="icon text-body-2 color-icon mr-1">
+																	<use xlink:href="img/icons.svg#eye" />
+																</svg>
+																<div class="text-small text--fade">Интересуются: 10 человек</div>
+															</div>
+															<div class="mt-auto"></div>
+															<button class="w-100 btn btn--primary btn--light mt-3">Смотреть</button>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="plan-card card h-100">
+
+														<div class="plan-card-img " style="height: 150px;">
+															<img src="img/sempl/plan.png" alt="">
+														</div>
+														<div class="card-control">
+															<div class="card-likes ml-auto">
+																<div class="card-like  active">
+																	<svg class="icon">
+																		<use xlink:href="img/utils.svg#heart" />
+																	</svg>
+																</div>
+															</div>
+														</div>
+
+														<div class="card-content pb-2 pb-md-3 pt-5 px-3 px-md-3">
+
+															<div class="text-md-body-1 text-body-2 text--demibold">От 4 800 000 ₽</div>
+															<div class="text-body-2 text--fade">3-комнатная квартира</div>
+
+															<div class="plan-card-info d-md-flex d-block mt-2">
+																<div class="d-flex mb-2 mb-md-0">
+																	<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+																	<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
+																</div>
+																<button class="btn btn--link btn--primary">Отслеживать</button>
+															</div>
+															<table class="w-100 mt-3 plan-card-table">
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Площадь</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">47, 2 м2</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Этаж</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">4</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="py-1">
+																		<div class="text-small fade-60 mr-2">Сдача</div>
+																	</td>
+																	<td class="py-1 w-100">
+																		<div class="text-small text--demibold">3 кв.2022</div>
+																	</td>
+																</tr>
+															</table>
+
+															<div class="mt-auto"></div>
+															<button class="w-100 btn btn--primary btn--light mt-3">Смотреть</button>
+
+
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="plan-card card h-100">
+
+														<div class="plan-card-img " style="height: 150px;">
+															<img src="img/sempl/plan.png" alt="">
+														</div>
+														<div class="card-control">
+															<div class="card-likes ml-auto">
+																<div class="card-like  active">
+																	<svg class="icon">
+																		<use xlink:href="img/utils.svg#heart" />
+																	</svg>
+																</div>
+															</div>
+														</div>
+
+														<div class="card-content pb-2 pb-md-3 pt-5 px-3 px-md-3">
+
+															<div class="text-md-body-1 text-body-2 text--demibold">От 4 800 000 ₽</div>
+															<div class="text-body-2 text--fade">3-комнатная квартира</div>
+
+															<div class="plan-card-info d-md-flex d-block mt-2">
+																<div class="d-flex mb-2 mb-md-0">
+																	<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+																	<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
+																</div>
+																<button class="btn btn--link btn--primary">Отслеживать</button>
+															</div>
+															<table class="w-100 mt-3 plan-card-table">
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Площадь</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">47, 2 м2</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Этаж</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">4</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="py-1">
+																		<div class="text-small fade-60 mr-2">Сдача</div>
+																	</td>
+																	<td class="py-1 w-100">
+																		<div class="text-small text--demibold">3 кв.2022</div>
+																	</td>
+																</tr>
+															</table>
+
+															<div class="mt-auto"></div>
+															<button class="w-100 btn btn--primary btn--light mt-3">Смотреть</button>
+
+
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="plan-card card h-100">
+
+														<div class="plan-card-img " style="height: 150px;">
+															<img src="img/sempl/plan.png" alt="">
+														</div>
+														<div class="card-control">
+															<div class="card-likes ml-auto">
+																<div class="card-like  active">
+																	<svg class="icon">
+																		<use xlink:href="img/utils.svg#heart" />
+																	</svg>
+																</div>
+															</div>
+														</div>
+
+														<div class="card-content pb-2 pb-md-3 pt-5 px-3 px-md-3">
+
+															<div class="text-md-body-1 text-body-2 text--demibold">От 4 800 000 ₽</div>
+															<div class="text-body-2 text--fade">3-комнатная квартира</div>
+
+															<div class="plan-card-info d-md-flex d-block mt-2">
+																<div class="d-flex mb-2 mb-md-0">
+																	<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+																	<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
+																</div>
+																<button class="btn btn--link btn--primary">Отслеживать</button>
+															</div>
+															<table class="w-100 mt-3 plan-card-table">
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Площадь</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">47, 2 м2</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Этаж</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">4</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="py-1">
+																		<div class="text-small fade-60 mr-2">Сдача</div>
+																	</td>
+																	<td class="py-1 w-100">
+																		<div class="text-small text--demibold">3 кв.2022</div>
+																	</td>
+																</tr>
+															</table>
+
+															<div class="mt-auto"></div>
+															<button class="w-100 btn btn--primary btn--light mt-3">Смотреть</button>
+
+
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="plan-card card h-100">
+
+														<div class="plan-card-img " style="height: 150px;">
+															<img src="img/sempl/plan.png" alt="">
+														</div>
+														<div class="card-control">
+															<div class="card-likes ml-auto">
+																<div class="card-like  active">
+																	<svg class="icon">
+																		<use xlink:href="img/utils.svg#heart" />
+																	</svg>
+																</div>
+															</div>
+														</div>
+
+														<div class="card-content pb-2 pb-md-3 pt-5 px-3 px-md-3">
+
+															<div class="text-md-body-1 text-body-2 text--demibold">От 4 800 000 ₽</div>
+															<div class="text-body-2 text--fade">3-комнатная квартира</div>
+
+															<div class="plan-card-info d-md-flex d-block mt-2">
+																<div class="d-flex mb-2 mb-md-0">
+																	<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+																	<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
+																</div>
+																<button class="btn btn--link btn--primary">Отслеживать</button>
+															</div>
+															<table class="w-100 mt-3 plan-card-table">
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Площадь</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">47, 2 м2</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Этаж</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">4</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="py-1">
+																		<div class="text-small fade-60 mr-2">Сдача</div>
+																	</td>
+																	<td class="py-1 w-100">
+																		<div class="text-small text--demibold">3 кв.2022</div>
+																	</td>
+																</tr>
+															</table>
+
+															<div class="mt-auto"></div>
+															<button class="w-100 btn btn--primary btn--light mt-3">Смотреть</button>
+
+
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="plan-card card h-100">
+
+														<div class="plan-card-img " style="height: 150px;">
+															<img src="img/sempl/plan.png" alt="">
+														</div>
+														<div class="card-control">
+															<div class="card-likes ml-auto">
+																<div class="card-like  active">
+																	<svg class="icon">
+																		<use xlink:href="img/utils.svg#heart" />
+																	</svg>
+																</div>
+															</div>
+														</div>
+
+														<div class="card-content pb-2 pb-md-3 pt-5 px-3 px-md-3">
+
+															<div class="text-md-body-1 text-body-2 text--demibold">От 4 800 000 ₽</div>
+															<div class="text-body-2 text--fade">3-комнатная квартира</div>
+
+															<div class="plan-card-info d-md-flex d-block mt-2">
+																<div class="d-flex mb-2 mb-md-0">
+																	<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+																	<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
+																</div>
+																<button class="btn btn--link btn--primary">Отслеживать</button>
+															</div>
+															<table class="w-100 mt-3 plan-card-table">
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Площадь</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">47, 2 м2</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Этаж</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">4</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="py-1">
+																		<div class="text-small fade-60 mr-2">Сдача</div>
+																	</td>
+																	<td class="py-1 w-100">
+																		<div class="text-small text--demibold">3 кв.2022</div>
+																	</td>
+																</tr>
+															</table>
+
+															<div class="mt-auto"></div>
+															<button class="w-100 btn btn--primary btn--light mt-3">Смотреть</button>
+
+
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="plan-card card h-100">
+
+														<div class="plan-card-img " style="height: 150px;">
+															<img src="img/sempl/plan.png" alt="">
+														</div>
+														<div class="card-control">
+															<div class="card-likes ml-auto">
+																<div class="card-like  active">
+																	<svg class="icon">
+																		<use xlink:href="img/utils.svg#heart" />
+																	</svg>
+																</div>
+															</div>
+														</div>
+
+														<div class="card-content pb-2 pb-md-3 pt-5 px-3 px-md-3">
+
+															<div class="text-md-body-1 text-body-2 text--demibold">От 4 800 000 ₽</div>
+															<div class="text-body-2 text--fade">3-комнатная квартира</div>
+
+															<div class="plan-card-info d-md-flex d-block mt-2">
+																<div class="d-flex mb-2 mb-md-0">
+																	<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+																	<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
+																</div>
+																<button class="btn btn--link btn--primary">Отслеживать</button>
+															</div>
+															<table class="w-100 mt-3 plan-card-table">
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Площадь</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">47, 2 м2</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="bd-bottom py-1">
+																		<div class="text-small fade-60 mr-2">Этаж</div>
+																	</td>
+																	<td class="bd-bottom py-1 w-100">
+																		<div class="text-small text--demibold">4</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="py-1">
+																		<div class="text-small fade-60 mr-2">Сдача</div>
+																	</td>
+																	<td class="py-1 w-100">
+																		<div class="text-small text--demibold">3 кв.2022</div>
+																	</td>
+																</tr>
+															</table>
+
+															<div class="mt-auto"></div>
+															<button class="w-100 btn btn--primary btn--light mt-3">Смотреть</button>
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<button class="slider-btn  slider-prev d-none d-lg-flex">
+												<svg class="icon text-body-0">
+													<use xlink:href="img/icons.svg#to-left" />
+												</svg>
+											</button>
+											<button class="slider-btn  slider-next d-none d-lg-flex">
+												<svg class="icon text-body-0">
+													<use xlink:href="img/icons.svg#to-right" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-content" data-tab-content="unique-3">
+								<div class="im-jk-info">
+									<div class="d-md-flex im-jk-info-top mb-7">
+										<div class="im-jk-info-img image image--cover">
+											<img src="https://picsum.photos/id/945/600/400" alt="">
+										</div>
+										<div class="im-jk-info-content card-content p-0">
+											<div class="text-body-1 text--demibold">Контакты застройщика</div>
+											<div class="text-body-2 text--demibold mt-5">Адрес:</div>
+											<div class="text-body-2">Краснодар, ул. Фадеева, д. 214</div>
+											<div class="text-body-2 text--demibold mt-5">Телефон застройщика:</div>
+											<div class="text-body-2">8 800 222 35 50</div>
+
+											<div class="brand-min mt-5">
+												<div class="brand-min-img image--cover">
+													<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+												</div>
+												<div class="brand-min-content">
+													<div class="text-body-2 text--demibold">Ваш менеджер:</div>
+													<button class="btn btn--primary btn--link">Показать номер</button>
+												</div>
+											</div>
+
+											<div class="text-body-2 text--demibold mt-5">Почта:</div>
+											<div class="text-body-2">info@sskuban.ru</div>
+
+
+											<a href="#" target="_blank" class="btn btn--primary btn--link mt-5">cck-kuban.ru</a>
+										</div>
+									</div>
+
+									<div class="text-body-1 text--demibold mb-5">О компании</div>
+									<div class="text-body-2 lh-1-5 fade-80">
+										Собственные ресурсы и внушительный опыт работы в строительной сфере позволяют компании
+										«СпецСтройКубань» возводить дома строго в заявленные сроки. «ССК» применяет только современные
+										системы
+										и материалы, использует при строительстве жилых комплексов лучшую на сегодня монолитно-кирпичную
+										технологию.
+									</div>
+									<div class="im-jk-info-gallery">
+
+										<div class="grid grid-md-spacing-10 mt-5 mb-5">
+											<div class="grid-col-3">
+												<div class="image image--box image--cover">
+													<img src="https://picsum.photos/id/211/600/400" alt="">
+												</div>
+											</div>
+											<div class="grid-col-3">
+												<div class="image image--box image--cover">
+													<img src="https://picsum.photos/id/211/600/400" alt="">
+												</div>
+											</div>
+											<div class="grid-col-3">
+												<div class="image image--box image--cover">
+													<img src="https://picsum.photos/id/211/600/400" alt="">
+												</div>
+											</div>
+											<div class="grid-col-3">
+												<div class="image image--box image--cover">
+													<img src="https://picsum.photos/id/211/600/400" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="text-body-1 text--demibold mb-5 mt-10">Банки-партнеры</div>
+								</div>
+							</div>
+							<div class="tab-content" data-tab-content="unique-4">
+								<div class="im-jk-sales">
+									<div class="im-jk-sale mb-4">
+										<div class="im-jk-sale-img">
+											<img src="img/sempl/im-jk-sale-1.png" alt="">
+										</div>
+										<div class="im-jk-sale-content card-content">
+											<div class="flex flex-align-center w-100">
+												<div class="text-body-1 text--demibold">Квартиры в Краснодаре от застройщика</div>
+												<div class="text-body-2 fade-60 ml-auto">30.08.21</div>
+											</div>
+											<a href="#" class="btn btn--primary btn--link btn mt-2">Подробнее</a>
+										</div>
+									</div>
+									<div class="im-jk-sale">
+										<div class="im-jk-sale-img">
+											<img src="img/sempl/im-jk-sale-2.png" alt="">
+										</div>
+										<div class="im-jk-sale-content card-content">
+											<div class="flex flex-align-center w-100">
+												<div class="text-body-1 text--demibold">Квартиры в Краснодаре от застройщика</div>
+												<div class="text-body-2 fade-60 ml-auto">30.08.21</div>
+											</div>
+											<a href="#" class="btn btn--primary btn--link btn mt-2">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		new Swiper('.favorites-plan-slider .swiper', {
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.slider-next',
+				prevEl: '.slider-prev'
+			}
+		})
+	</script>
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/ion.rangeSlider.custom.js"></script>
+
+	<script src="source/fancybox.umd.js"></script>
+	<script src="source/fancybox.custom.js"></script>
+
+	<script src="source/ui--tab.js"></script>
+
+
+</body>
+
+</html>
