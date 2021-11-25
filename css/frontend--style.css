@@ -2167,11 +2167,15 @@ body * {
 }
 .im-wrapper-inner {
   display: flex;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+}
+@media (min-width: 1015.98px) {
+  .im-wrapper-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .im-dialogs {
   min-width: 314px;
@@ -2275,10 +2279,14 @@ body * {
   min-width: 520px;
   width: 520px;
   background: linear-gradient(calc(214deg + 180deg), rgba(255, 255, 255, 0.18) 5.57%, rgba(255, 255, 255, 0) 57.59%), linear-gradient(calc(157deg + 180deg), rgba(0, 146, 228, 0.18) 0%, rgba(0, 146, 228, 0) 47.22%), rgba(202, 226, 241, 0.6);
-  height: 100%;
-  overflow: auto;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1015.98px) {
+  .im-chat {
+    height: 100%;
+    overflow: auto;
+  }
 }
 .im-chat-header {
   display: flex;
@@ -2288,6 +2296,12 @@ body * {
   position: sticky;
   top: 0;
   z-index: 2;
+}
+@media (max-width: 1015.98px) {
+  .im-chat-header {
+    padding: 4px;
+    background: #fff;
+  }
 }
 .im-chat-header-user {
   display: flex;
@@ -2301,6 +2315,13 @@ body * {
   overflow: hidden;
   margin-right: 12px;
   background: #fff;
+}
+@media (max-width: 679.98px) {
+  .im-chat-header-user-img {
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+  }
 }
 .im-chat-header-user-img img {
   width: 100%;
@@ -2340,6 +2361,11 @@ body * {
   width: max-content;
   max-width: 360px;
 }
+@media (max-width: 679.98px) {
+  .im-chat-message {
+    max-width: 290px;
+  }
+}
 .im-chat-message-text {
   font-size: 14px;
   line-height: 1.4;
@@ -2364,10 +2390,16 @@ body * {
 .im-chat-message--large {
   max-width: 448px;
 }
+@media (max-width: 679.98px) {
+  .im-chat-message--large {
+    max-width: 100%;
+  }
+}
 .im-chat-jk {
   width: 360px;
   padding: 0;
   overflow: hidden;
+  max-width: 100%;
 }
 .im-chat-jk-header {
   display: flex;
@@ -2421,6 +2453,11 @@ body * {
   height: 100%;
   overflow: auto;
 }
+@media (max-width: 679.98px) {
+  .im-jk {
+    padding-top: 0;
+  }
+}
 .im-jk-top {
   position: relative;
   border-radius: 16px;
@@ -2453,8 +2490,12 @@ body * {
   width: 38px;
 }
 .im-jk-plan-block {
-  background: #F5F7FB;
   overflow: hidden;
+}
+@media (min-width: 1015.98px) {
+  .im-jk-plan-block {
+    background: #F5F7FB;
+  }
 }
 .im-jk-plan-slider .swiper {
   overflow: visible;
@@ -2475,6 +2516,12 @@ body * {
   height: 282px;
   border-radius: 6px;
   margin-right: 32px;
+}
+@media (max-width: 679.98px) {
+  .im-jk-info-img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 .im-jk-info-gallery {
   width: 100%;
@@ -2500,4 +2547,86 @@ body * {
 }
 .im-jk-sale-content {
   padding: 20px 32px;
+}
+@media (max-width: 679.98px) {
+  .im-jk-sale-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.im-jk-placeholder {
+  background: #E4EEFB url("../img/sempl/im-jk-placeholder.png") no-repeat right / auto 100%;
+  border-radius: 16px;
+  padding: 24px;
+}
+@media (max-width: 679.98px) {
+  .im-jk-placeholder {
+    background: #E4EEFB;
+    padding: 24px 15px;
+  }
+}
+@media (max-width: 1600px) {
+  .im-page .im-jk {
+    display: none;
+  }
+}
+@media (max-width: 1600px) {
+  .im-page .im-dialogs {
+    border-left: 1px solid #E2E8F0;
+    border-right: 1px solid #E2E8F0;
+    background: #fff;
+  }
+}
+@media (max-width: 1015.98px) {
+  .im-page .im-dialogs {
+    flex-grow: 1;
+    min-width: 0;
+  }
+}
+@media (max-width: 679.98px) {
+  .im-page .im-dialogs {
+    border: none;
+  }
+}
+@media (max-width: 1600px) {
+  .im-page .im-chat {
+    flex-grow: 1;
+    min-width: 0;
+    border-right: 1px solid #E2E8F0;
+  }
+}
+@media (max-width: 1015.98px) {
+  .im-page .im-chat {
+    border-left: 1px solid #E2E8F0;
+  }
+}
+@media (max-width: 1600px) {
+  .im-page .im-wrapper-inner {
+    padding-right: calc(50% - var(--section-width) / 2);
+    padding-left: calc(50% - var(--section-width) / 2);
+  }
+}
+@media (max-width: 679.98px) {
+  .im-page .im-wrapper-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.im-jk-page .im-wrapper-inner {
+  padding-right: calc(50% - var(--section-width) / 2);
+  padding-left: calc(50% - var(--section-width) / 2);
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+.im-jk-page .im-jk {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+}
+@media (max-width: 679.98px) {
+  .im-jk-page {
+    padding: 0;
+  }
 }

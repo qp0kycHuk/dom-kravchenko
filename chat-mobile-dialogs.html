@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="source/fancybox.css">
+	<link rel="stylesheet" href="source/fancybox.custom.css">
+	<link rel="stylesheet" href="source/swiper-bundle.min.css">
+	<link rel="stylesheet" href="source/swiper-custom.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
+	<link rel="stylesheet" href="source/tippy.custom.css">
+
+
+	<script src="source/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="css/ui-reset.css">
+	<link rel="stylesheet" href="css/ui-core.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
+
+	<!-- tooltips -->
+	<script src="source/popper.min.js"></script>
+	<script src="source/tippy-bundle.umd.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
+
+	<title>Пользователь (предложения) </title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header-user  d-md-none">
+			<div class="header-user-btn-img">
+				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+			</div>
+		</div>
+		<a href="/" class="header-logo btn btn--link btn--primary">
+			<img src="img/logo.png" alt="">
+		</a>
+
+		<div class="header-user ml-auto d-md-block d-none -header-user-tooltiped-">
+			<div class="header-user-btn">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-user-toltip" id="header-user-toltip" style="display: none;">
+		<div class="text-body-1 text--demibold px-2">Кравченко Александр</div>
+		<div class="text-body-1 mt-1 px-2">8 918 000 00 00</div>
+		<button class="btn btn--primary btn--light w-100 mt-5">Редактировать</button>
+		<button class="btn btn--red btn--fill w-100 mt-2">Выйти</button>
+	</div>
+	<script>
+		(() => {
+			const tmp = document.querySelector('#header-user-toltip')
+			tmp.style.display = ''
+			tippy('.-header-user-tooltiped-', {
+				content: tmp,
+				trigger: 'click',
+				theme: 'header-user',
+				animation: 'shift-toward',
+				arrow: false,
+				interactive: true,
+				placement: 'bottom-end'
+			})
+		})();
+	</script>
+
+	<div class="nav">
+		<a href="/" class="nav-item active">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="/" class="nav-item">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper im-wrapper im-page">
+		<div class="im-wrapper-content">
+			<div class="im-wrapper-inner">
+				<div class="im-dialogs">
+					<div class="im-search d-none d-md-block">
+
+						<label class="form-field ">
+							<div class="form-input-cover">
+								<input type="text" class="form-input" placeholder="Поиск по чатам">
+
+								<div class="form-input-end">
+									<button class="btn btn-icon btn--primary">
+										<svg class="icon color-icon">
+											<use xlink:href="img/icons.svg#search" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</label>
+
+					</div>
+					<div class="im-dialog active color-white bg-primary">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-2.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">Вы: мы подобрали для вас Другими словами, нам
+										всё
+										п...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="im-dialog">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-1.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">мы подобрали </div>
+								</div>
+								<div class="im-dialog-badge">12</div>
+							</div>
+						</div>
+					</div>
+					<div class="im-dialog">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-3.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma </div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">Вы: мы подобрали для вас Другими словами, нам
+										всё
+										п...</div>
+								</div>
+								<div class="im-dialog-badge">12</div>
+							</div>
+						</div>
+					</div>
+					<div class="im-dialog">
+						<div class="im-dialog-img">
+							<img src="img/sempl/brand-2.png" alt="">
+						</div>
+						<div class="im-dialog-content">
+							<div class="im-dialog-control">
+								<div class="im-dialog-title">
+									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
+								</div>
+								<div class="im-dialog-status">
+									<svg class="icon color-primary">
+										<use xlink:href="img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-dialog-time text-small fade-60">09.08</div>
+							</div>
+							<div class="im-dialog-bottom mt-1">
+								<div class="im-dialog-text">
+									<div class="im-dialog-text-inner text-body-2 fade-60">
+										Вы: мы подобрали для вас Другими словами, нам всё пох
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		new Swiper('.favorites-plan-slider .swiper', {
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.slider-next',
+				prevEl: '.slider-prev'
+			}
+		})
+	</script>
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/ion.rangeSlider.custom.js"></script>
+
+	<script src="source/fancybox.umd.js"></script>
+	<script src="source/fancybox.custom.js"></script>
+
+	<script src="source/ui--tab.js"></script>
+</body>
+
+</html>

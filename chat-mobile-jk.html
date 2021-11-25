@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="css/frontend--style.css">
 
 
+	<link rel="stylesheet" href="css/jk-detail.css">
+
 	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
 
 	<!-- tooltips -->
@@ -36,7 +38,7 @@
 
 <body>
 
-	<header class="header">
+	<header class="header header--detail">
 		<div class="header-user  d-md-none">
 			<div class="header-user-btn-img">
 				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
@@ -45,7 +47,11 @@
 		<a href="/" class="header-logo btn btn--link btn--primary">
 			<img src="img/logo.png" alt="">
 		</a>
-
+		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="img/icons.svg#filter" />
+			</svg>
+		</button>
 		<div class="header-user ml-auto d-md-block d-none -header-user-tooltiped-">
 			<div class="header-user-btn">
 				<div class="header-user-btn-arrow">
@@ -126,346 +132,35 @@
 		</a>
 	</div>
 
-	<div class="content-wrapper im-wrapper im-page">
+	<div class="content-wrapper im-wrapper im-jk-page">
+
 		<div class="im-wrapper-content">
-			<div class="im-wrapper-inner">
-				<div class="im-dialogs">
-					<div class="im-search d-none d-md-block">
-
-						<label class="form-field ">
-							<div class="form-input-cover">
-								<input type="text" class="form-input" placeholder="Поиск по чатам">
-
-								<div class="form-input-end">
-									<button class="btn btn-icon btn--primary">
-										<svg class="icon color-icon">
-											<use xlink:href="img/icons.svg#search" />
-										</svg>
-									</button>
-								</div>
-							</div>
-						</label>
-
-					</div>
-					<div class="im-dialog active color-white bg-primary">
-						<div class="im-dialog-img">
-							<img src="img/sempl/brand-2.png" alt="">
-						</div>
-						<div class="im-dialog-content">
-							<div class="im-dialog-control">
-								<div class="im-dialog-title">
-									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
-								</div>
-								<div class="im-dialog-status">
-									<svg class="icon color-primary">
-										<use xlink:href="img/icons.svg#status-read" />
-									</svg>
-								</div>
-								<div class="im-dialog-time text-small fade-60">09.08</div>
-							</div>
-							<div class="im-dialog-bottom mt-1">
-								<div class="im-dialog-text">
-									<div class="im-dialog-text-inner text-body-2 fade-60">Вы: мы подобрали для вас Другими словами, нам
-										всё
-										п...</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="im-dialog">
-						<div class="im-dialog-img">
-							<img src="img/sempl/brand-1.png" alt="">
-						</div>
-						<div class="im-dialog-content">
-							<div class="im-dialog-control">
-								<div class="im-dialog-title">
-									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
-								</div>
-								<div class="im-dialog-status">
-									<svg class="icon color-primary">
-										<use xlink:href="img/icons.svg#status-read" />
-									</svg>
-								</div>
-								<div class="im-dialog-time text-small fade-60">09.08</div>
-							</div>
-							<div class="im-dialog-bottom mt-1">
-								<div class="im-dialog-text">
-									<div class="im-dialog-text-inner text-body-2 fade-60">мы подобрали </div>
-								</div>
-								<div class="im-dialog-badge">12</div>
-							</div>
-						</div>
-					</div>
-					<div class="im-dialog">
-						<div class="im-dialog-img">
-							<img src="img/sempl/brand-3.png" alt="">
-						</div>
-						<div class="im-dialog-content">
-							<div class="im-dialog-control">
-								<div class="im-dialog-title">
-									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma </div>
-								</div>
-								<div class="im-dialog-status">
-									<svg class="icon color-primary">
-										<use xlink:href="img/icons.svg#status-read" />
-									</svg>
-								</div>
-								<div class="im-dialog-time text-small fade-60">09.08</div>
-							</div>
-							<div class="im-dialog-bottom mt-1">
-								<div class="im-dialog-text">
-									<div class="im-dialog-text-inner text-body-2 fade-60">Вы: мы подобрали для вас Другими словами, нам
-										всё
-										п...</div>
-								</div>
-								<div class="im-dialog-badge">12</div>
-							</div>
-						</div>
-					</div>
-					<div class="im-dialog">
-						<div class="im-dialog-img">
-							<img src="img/sempl/brand-2.png" alt="">
-						</div>
-						<div class="im-dialog-content">
-							<div class="im-dialog-control">
-								<div class="im-dialog-title">
-									<div class="im-dialog-title-inner text-body-2 text--demibold">Dogma Romex Group ССК Group</div>
-								</div>
-								<div class="im-dialog-status">
-									<svg class="icon color-primary">
-										<use xlink:href="img/icons.svg#status-read" />
-									</svg>
-								</div>
-								<div class="im-dialog-time text-small fade-60">09.08</div>
-							</div>
-							<div class="im-dialog-bottom mt-1">
-								<div class="im-dialog-text">
-									<div class="im-dialog-text-inner text-body-2 fade-60">
-										Вы: мы подобрали для вас Другими словами, нам всё пох
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+			<section class="jk-detail-top d-md-none">
+				<div class="jk-detail-top-background">
+					<img src="img/sempl/jk-detail-background.png" alt="">
 				</div>
-				<div class="im-chat d-none d-lg-block">
-					<div class="im-chat-header">
-						<button class="btn btn--primary btn-icon d-md-none mr-1">
-							<svg class="icon color-text">
+				<div class="card-control d-lg-none">
+					<div class="card-likes w-100">
+						<div class="card-like card-like-bg mr-auto">
+							<svg class="icon">
 								<use xlink:href="img/icons.svg#arrow-left" />
 							</svg>
-						</button>
-						<div class="im-chat-header-user">
-							<div class="im-chat-header-user-img">
-								<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
-							</div>
-							<div class="im-chat-header-user-content">
-								<div class="text-body-1 text--demibold">Менеджер Василиса</div>
-								<div class="text-small color-primary">Онлайн</div>
-							</div>
 						</div>
-						<div class="im-chat-header-search ml-auto d-none d-md-block">
-							<button class="btn btn--primary btn-icon">
-								<svg class="icon color-icon">
-									<use xlink:href="img/icons.svg#search" />
-								</svg>
-							</button>
-						</div>
-						<button class="btn btn--primary btn-icon d-md-none ml-auto">
-							<svg class="icon color-icon">
-								<use xlink:href="img/icons.svg#i" />
+						<div class="card-like card-like-bg">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#chart-contur" />
 							</svg>
-						</button>
-					</div>
-					<div class="im-chat-messages">
-						<div class="im-chat-message im-chat-message--incoming im-chat-message--large">
-							<div class="im-chat-message-text">
-								Кнопка «получить заявку» с подписью сколько доступно
-								заявок (при нажатии на нее менеджер получает заявкуи
-								отрабатывает ее. Сделано для того, чтобы видеть сколько
-								заявок взял застройщик и кто из менеджеров отработал
-								клиента) 🔥
-
-							</div>
-							<div class="im-chat-message-control flex flex-align-center">
-								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
-							</div>
 						</div>
-						<div class="im-chat-message im-chat-message--outgoing im-chat-message--small">
-							<div class="im-chat-message-text">
-								Привет 🤤
-
-							</div>
-							<div class="im-chat-message-control flex flex-align-center">
-								<div class="im-chat-message-status mr-1">
-									<svg class="icon color-primary">
-										<use xlink:href="img/icons.svg#status-read" />
-									</svg>
-								</div>
-								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
-							</div>
-						</div>
-
-						<div class="im-chat-message im-chat-message--outgoing">
-							<div class="im-chat-message-text">
-								Да, я слышал о Dom.Kravchenko. Хороший,
-								просторный дом.
-
-							</div>
-							<div class="im-chat-message-control flex flex-align-center">
-								<div class="im-chat-message-status mr-1">
-									<svg class="icon color-primary">
-										<use xlink:href="img/icons.svg#status-read" />
-									</svg>
-								</div>
-								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
-							</div>
-						</div>
-
-
-
-						<div class="im-chat-jk im-chat-message im-chat-message--incoming">
-							<div class="im-chat-jk-header bg-primary color-white">
-								<div class="im-chat-jk-header-img mr-2">
-									<img src="img/sempl/brand-3.png" alt="">
-								</div>
-								<div class="im-chat-jk-header-text">
-									<div class="text-small text--demibold">ЖК «Микрорайон Красная площадь»</div>
-									<div class="text-small-1">ул. Конгрессная, 13</div>
-								</div>
-							</div>
-							<div class="im-chat-jk-content">
-								<div class="im-chat-jk-img">
-									<img src="img/sempl/plan.png" alt="">
-								</div>
-								<div class="im-chat-jk-info">
-									<div class="text-body-2">3-комнатная квартира</div>
-									<div class="text-body-1 text--demibold">4 800 000 ₽</div>
-									<div class="mb-3"></div>
-									<table class="im-chat-jk-table">
-										<tr>
-											<td class="bd-bottom pb-1 pr-2">
-												<div class="text-small fade-60">Площадь</div>
-											</td>
-											<td class="bd-bottom pb-1 w-100">
-												<div class="text-small text--demibold">53, 2 м2</div>
-											</td>
-										</tr>
-										<tr>
-											<td class="bd-bottom py-1 pr-2">
-												<div class="text-small fade-60">Этаж</div>
-											</td>
-											<td class="bd-bottom py-1 w-100">
-												<div class="text-small text--demibold">7</div>
-											</td>
-										</tr>
-										<tr>
-											<td class="pt-1 pr-2">
-												<div class="text-small fade-60">Сдача</div>
-											</td>
-											<td class="pt-1 w-100">
-												<div class="text-small text--demibold">4 кв.2022</div>
-											</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-							<div class="im-chat-message-control flex flex-align-center">
-								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
-							</div>
-						</div>
-						<div class="im-chat-message im-chat-message--outgoing im-chat-message--large">
-							<div class="im-chat-message-image">
-								<a href="https://picsum.photos/600/400?random=1" data-fancybox class="image image--cover">
-									<img src="https://picsum.photos/600/400?random=1" alt="">
-								</a>
-
-							</div>
-							<div class="mb-2"></div>
-							<div class="im-chat-message-text">
-								Кнопка «получить заявку» с подписью сколько доступно
-								заявок (при нажатии на нее менеджер получает заявкуи
-								отрабатывает ее. Сделано для того, чтобы видеть сколько
-								заявок взял застройщик и кто из менеджеров отработал
-								клиента) 🔥
-
-							</div>
-							<div class="im-chat-message-control flex flex-align-center">
-								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
-							</div>
-						</div>
-						<div class="im-chat-message im-chat-message--incoming im-chat-message--small">
-							<div class="im-chat-message-image">
-								<a href="https://picsum.photos/600/400?random=2" data-fancybox class="image image--cover">
-									<img src="https://picsum.photos/600/400?random=2" alt="">
-								</a>
-
-							</div>
-							<div class="mb-2"></div>
-							<div class="im-chat-message-text">
-								Кнопка «получить заявку»
-
-							</div>
-							<div class="im-chat-message-control flex flex-align-center">
-								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
-							</div>
-						</div>
-						<div class="im-chat-message im-chat-message--outgoing im-chat-message--large">
-							<div class="im-chat-message-image">
-								<div class="grid grid-spacing-2">
-									<div class="grid-col-6">
-										<a href="https://picsum.photos/600/400?random=3" data-fancybox="message-id-1"
-											class="image image--box image--cover">
-											<img src="https://picsum.photos/600/400?random=3" alt="">
-										</a>
-									</div>
-									<div class="grid-col-6">
-										<a href="https://picsum.photos/600/400?random=4" data-fancybox="message-id-1"
-											class="image image--box image--cover">
-											<img src="https://picsum.photos/600/400?random=4" alt="">
-										</a>
-									</div>
-								</div>
-
-							</div>
-							<div class="mb-2"></div>
-							<div class="im-chat-message-text">
-								Кнопка «получить заявку» с подписью сколько доступно
-								заявок (при нажатии на нее менеджер получает заявкуи
-								отрабатывает ее. Сделано для того, чтобы видеть сколько
-								заявок взял застройщик и кто из менеджеров отработал
-								клиента) 🔥
-
-							</div>
-							<div class="im-chat-message-control flex flex-align-center">
-								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
-							</div>
+						<div class="card-like card-like-bg">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#heart" />
+							</svg>
 						</div>
 					</div>
-					<form action="" class="im-chat-form-wrapper">
-						<label class="im-chat-form" for="im-chat-form-input">
-							<button class="btn btn--primary btn-icon mr-1">
-								<svg class="icon color-icon text-body-0">
-									<use xlink:href="img/icons.svg#paperclip" />
-								</svg>
-							</button>
-							<textarea class="im-chat-form-input" id="im-chat-form-input"
-								placeholder="Написать сообщение..."></textarea>
 
-							<button class="btn btn--primary btn-icon ml-1">
-								<svg class="icon color-icon text-body-0">
-									<use xlink:href="img/icons.svg#emoji-smile" />
-								</svg>
-							</button>
-							<button class="btn btn--primary btn-icon btn--fill ml-1">
-								<svg class="icon text-body-0">
-									<use xlink:href="img/icons.svg#send" />
-								</svg>
-							</button>
-						</label>
-					</form>
 				</div>
+			</section>
+			<div class="im-wrapper-inner">
 				<div class="im-jk" data-tab-cover>
 					<div class="container">
 						<div class="im-jk-top mb-6 d-none d-md-flex">
