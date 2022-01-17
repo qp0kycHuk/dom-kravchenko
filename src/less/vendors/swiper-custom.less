@@ -1,0 +1,144 @@
+// out:./
+
+.grid.swiper .swiper-wrapper {
+  flex-wrap      : nowrap;
+  /* width       : 100%; */
+  /* min-width   : 0; */
+  /* margin-left : 0; */
+  /* margin-right: 0; */
+}
+
+.swiper {
+  user-select: none;
+}
+
+.swiper-button-disabled {
+  opacity       : .4;
+  pointer-events: none;
+}
+
+.swiper-slide {
+  height    : auto;
+  align-self: stretch;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-btn {
+  width          : 60px;
+  height         : 60px;
+  background     : #FFFFFF;
+  box-shadow     : 0px 2px 8px rgba(0, 0, 0, 0.14);
+  border-radius  : 50%;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  font-size      : 16px;
+  transition     : .2s ease;
+
+  @arrowLg1: @lg + (2 * (15px + 60px - 24px));
+
+  &--min{
+    width: 24px;
+    height: 24px;
+
+  }
+
+  @media(max-width:@arrowLg1) {
+    width    : 30px;
+    height   : 30px;
+    font-size: 12px;
+  }
+}
+
+.slider-btn:active {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  transform : translateY(2px);
+}
+
+.slider-btn:focus {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  // transform : translateY(-2px);
+}
+
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top     : calc(50% - 30px);
+  z-index : 3;
+  @arrowLg1: @lg + (2 * (15px + 60px - 24px));
+
+  @media(max-width:@arrowLg1) {
+   top: calc(50% - 15px);
+  }
+}
+.slider-btn--min.slider-prev,
+.slider-btn--min.slider-next{
+  top     : calc(50% - 12px);
+}
+
+.slider-next {
+  left    : calc(100% + 24px);
+  @arrowLg: @lg + (2 * (24px + 60px + 24px));
+
+  &--inner{
+   left: auto;
+   right: 5px; 
+  }
+
+  @media(max-width:@arrowLg) {
+    left: calc(100% - 24px);
+  }
+
+  @media(max-width:@md) {
+    left: auto;
+    right: 2px;
+  }
+}
+
+.slider-btn--min.slider-next{
+  right: 5px;
+  left: auto;
+}
+
+.slider-prev {
+  right   : calc(100% + 24px);
+  @arrowLg: @lg + (2 * (24px + 60px + 24px));
+
+  &--inner{
+    right: auto;
+    left: 5px; 
+  }
+
+  @media(max-width:@arrowLg) {
+    right: calc(100% - 24px);
+  }
+  @media(max-width:@md) {
+    right: auto;
+    left: 2px;
+  }
+}
+.slider-btn--min.slider-prev{
+  left: 5px;
+  right: auto;
+}
+
+
+.slider--overwrap {
+	@media(max-width:@md) {
+		width        : calc(100% + 30px);
+		margin-left  : -15px;
+		margin-right : -15px;
+		padding-right: 15px;
+		padding-left : 15px;
+		overflow     : hidden;
+	}
+
+	.swiper {
+		@media(max-width:@md) {
+			overflow: visible;
+		}
+	}
+}
