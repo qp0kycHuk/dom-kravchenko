@@ -1,4 +1,4 @@
-import customSelect from '@src/vendors/custom-select/';
+import customSelect from '/vendors/custom-select/';
 
 
 const init = () => {

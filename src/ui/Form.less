@@ -441,65 +441,81 @@
 	}
 }
 
-// .range {
-//   cursor  : pointer;
-//   position: relative;
+.range {
+	cursor  : pointer;
+	position: relative;
 
 
-//   &-inner {
-//     // padding: 20px;
-//     // margin : -20px;
-//     padding-top   : 12px;
-//     padding-bottom: 12px;
-//     position      : relative;
-//   }
+	&-inner {
+		// padding: 20px;
+		// margin : -20px;
+		padding-top   : 12px;
+		padding-bottom: 12px;
+		position      : relative;
 
-//   &-btn {
-//     display      : flex;
-//     background   : #FFFFFF;
-//     border       : 2px solid #686E29;
-//     position     : absolute;
-//     height       : 24px;
-//     width        : 24px;
-//     border-radius: 50%;
+		position: absolute;
+		left    : 0;
+		width   : 100%;
+		top     : -12px;
+	}
 
-//     left          : 0;
-//     top           : calc(50% - 12px);
-//     transform     : translateX(-50%);
-//     pointer-events: none;
-//     transition    : .1s;
-//   }
+	&-btn {
+		display      : flex;
+		background   : var(--color-primary);
+		border       : 3px solid #fff;
+		box-shadow   : 0px 1px 1px rgba(0, 0, 0, 0.24);
+		position     : absolute;
+		width        : 22px;
+		height       : 22px;
+		border-radius: 50%;
 
-//   &-line {
-//     height    : 3px;
-//     background: #B6CF70;
-//   }
+		left          : 0;
+		top           : calc(50% - 11px);
+		transform     : translateX(-50%);
+		pointer-events: none;
+		transition    : .1s;
+	}
 
-//   &-progress {
-//     position      : absolute;
-//     left          : 0;
-//     height        : 8px;
-//     background    : #C8D24E;
-//     top           : calc(50% - 4px);
-//     pointer-events: none;
-//     transition    : .1s;
-//   }
+	&-line {
+		height    : 5px;
+		background: #CFCFCF;
 
-//   &-value {
-//     font-family: Arial, Helvetica, sans-serif;
-//   }
+		border-radius: 0px 0px 6px 6px;
+	}
 
-//   &-sign {
-//     position   : relative;
-//     width      : max-content;
-//     max-width  : 100%;
-//     display    : inline-block;
-//     user-select: none;
-//     font-size  : 12px;
-//     margin-top : 5px;
-//     font-weight: 700;
-//     transition : .1s;
-//   }
-// }
+	&-progress {
+		position      : absolute;
+		left          : 0;
+		top           : 12px;
+		height        : 5px;
+		background    : var(--color-primary);
+		border-radius : 0px 0px 6px 6px;
+		pointer-events: none;
+		transition    : .1s;
+	}
+
+	&-value {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	&-sign {
+		position   : relative;
+		width      : max-content;
+		max-width  : 100%;
+		display    : inline-block;
+		user-select: none;
+		font-size  : 12px;
+		margin-top : 5px;
+		font-weight: 700;
+		transition : .1s;
+	}
+}
+
+.form-range {
+	position: absolute;
+	left    : -1px;
+	bottom  : 5px;
+	width   : calc(100% + 2px);
+}
 
 // @import './ion.rangeSlider.custom.less';

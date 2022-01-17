@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="dist/css/ui-core.css">
 	<link rel="stylesheet" href="dist/css/frontend--fonts.css">
 	<link rel="stylesheet" href="dist/css/frontend--style.css">
-	
+
 	<script src="dist/js/index.js"></script>
 
 
@@ -1352,7 +1352,7 @@
 				trigger: 'click',
 				animation: 'shift-toward',
 
-				
+
 
 				onCreate(instance) {
 					instance._isFetching = false;
@@ -1572,10 +1572,12 @@
 
 
 											<div class="d-md-block d-none">
-												<button class="btn btn--primary mt-1 plan-card-btn " data-fancybox-modal data-type="ajax" data-src="dialog-select-flat.html">Выбрать из 21 объекта</button>
+												<button class="btn btn--primary mt-1 plan-card-btn " data-fancybox-modal data-type="ajax"
+													data-src="dialog-select-flat.html">Выбрать из 21 объекта</button>
 											</div>
 											<div class="d-md-none w-100 mt-1">
-												<button class="btn btn--primary  plan-card-link" data-fancybox-modal data-type="ajax" data-src="dialog-select-flat.html">Выбрать из 21 объекта</button>
+												<button class="btn btn--primary  plan-card-link" data-fancybox-modal data-type="ajax"
+													data-src="dialog-select-flat.html">Выбрать из 21 объекта</button>
 
 											</div>
 
@@ -1981,53 +1983,64 @@
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-lg-8">Калькулятор ипотеки</div>
 			<div class="calc card-md py-md-10 px-md-6">
 				<div class="calc-fields">
-					<label class="form-field form-range form-range-single">
+					<label class="form-field">
 						<div class="text-body-1 text--demibold mb-3">Стоимость недвижимости</div>
 						<div class="form-input-cover">
 							<div class="form-input d-flex">
-								<span class="form-range-from"></span>
+								<span class="form-range-to"></span>
 								<span class="text-body-2 text--fade ml-auto ">₽</span>
-								<input type="text" class="form-range-from-input" hidden>
-								<input type="text" class="form-range-to-input" hidden>
-								<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="10000000"
-									data-format="money" data-from="3900000">
+
+								<div class="form-range range" data-type="single" data-max="10000000" data-min="0" data-to="3900000"
+									data-round="0">
+									<input type="text" class="range-input-from" hidden>
+									<input type="text" class="range-input-to" hidden>
+									<div class="range-inner"></div>
+								</div>
 							</div>
 						</div>
 					</label>
-					<label class="form-field form-range form-range-single">
+					<label class="form-field">
 						<div class="text-body-1 text--demibold mb-3">Ставка</div>
 						<div class="form-input-cover">
 							<div class="form-input d-flex">
-								<span class="form-range-from"></span>
+								<span class="form-range-to"></span>
 								<span class="text-body-2 text--fade ml-auto ">%</span>
-								<input type="text" class="form-range-from-input" hidden>
-								<input type="text" class="form-range-to-input" hidden>
-								<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="100" data-from="11">
+								<div class="form-range range" data-type="single" data-max="100" data-min="0" data-to="11"
+									data-round="1">
+									<input type="text" class="range-input-from" hidden>
+									<input type="text" class="range-input-to" hidden>
+									<div class="range-inner"></div>
+								</div>
+
 							</div>
 						</div>
 					</label>
-					<label class="form-field form-range form-range-single">
+					<label class="form-field">
 						<div class="text-body-1 text--demibold mb-3">Первоначальный взнос</div>
 						<div class="form-input-cover">
 							<div class="form-input d-flex">
-								<span class="form-range-from"></span>
+								<span class="form-range-to"></span>
 								<span class="text-body-2 text--fade ml-auto ">₽</span>
-								<input type="text" class="form-range-from-input" hidden>
-								<input type="text" class="form-range-to-input" hidden>
-								<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="10000000"
-									data-format="money" data-from="3900000">
+								<div class="form-range range" data-type="single" data-max="10000000" data-min="0" data-to="3900000"
+									data-round="0">
+									<input type="text" class="range-input-from" hidden>
+									<input type="text" class="range-input-to" hidden>
+									<div class="range-inner"></div>
+								</div>
 							</div>
 						</div>
 					</label>
-					<label class="form-field form-range form-range-single">
+					<label class="form-field">
 						<div class="text-body-1 text--demibold mb-3">Срок</div>
 						<div class="form-input-cover">
 							<div class="form-input d-flex">
-								<span class="form-range-from"></span>
+								<span class="form-range-to"></span>
 								<span class="text-body-2 text--fade ml-auto ">лет</span>
-								<input type="text" class="form-range-from-input" hidden>
-								<input type="text" class="form-range-to-input" hidden>
-								<input type="text" class="-range-slider-" data-type="single" data-min="5" data-max="100" data-from="15">
+								<div class="form-range range" data-type="single" data-max="50" data-min="0" data-to="15" data-round="0">
+									<input type="text" class="range-input-from" hidden>
+									<input type="text" class="range-input-to" hidden>
+									<div class="range-inner"></div>
+								</div>
 							</div>
 						</div>
 					</label>
@@ -2501,7 +2514,7 @@
 				placement: 'right-start',
 				animation: 'shift-toward',
 				arrow: false,
-				
+
 
 				onCreate(instance) {
 					instance._isFetching = false;
@@ -2787,9 +2800,6 @@
 
 
 	</div>
-
-
-
 
 
 </body>

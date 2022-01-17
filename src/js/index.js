@@ -6,6 +6,7 @@ import tippy from 'tippy.js';
 import customSelect from "./custom-select";
 import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade } from 'swiper';
 import tab from './ui--tab';
+import rangeSlider from './range-slider';
 import toggle from './ui--toggle';
 
 window.dragula = dragula
@@ -22,4 +23,5 @@ loadFile.init();
 
 window.addEventListener('DOMContentLoaded', () => {
   customSelect.init()
+  rangeSlider.init()
 })

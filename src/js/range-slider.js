@@ -1,7 +1,39 @@
-function range(selector) {
-  const covers = document.querySelectorAll(selector)
+function Range(selector, params) {
+  const covers = document.querySelectorAll(selector);
+
+  const support = {
+    pointer: !!("PointerEvent" in window || ("msPointerEnabled" in window.navigator)),
+    touch: !!(typeof window.orientation !== "undefined" || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || "ontouchstart" in window || navigator.msMaxTouchPoints || "maxTouchPoints" in window.navigator > 1 || "msMaxTouchPoints" in window.navigator > 1)
+  };
+  const getSupportedEvents = function () {
+    let events
+    switch (true) {
+
+      case support.touch:
+        events = {
+          type: "touch",
+          start: "touchstart",
+          move: "touchmove",
+          end: "touchend",
+          cancel: "touchcancel"
+        };
+        break;
+      default:
+        events = {
+          type: "mouse",
+          start: "mousedown",
+          move: "mousemove",
+          end: "mouseup",
+          leave: "mouseleave"
+        };
+        break;
+    }
+    return events;
+  };
+
   Array.from(covers).map((cover) => {
     const options = {}
+    options.$el = cover
     options.min = +cover.getAttribute('data-min') || 0
     options.max = +cover.getAttribute('data-max') || 100
     options.from = +cover.getAttribute('data-from') || options.min
@@ -12,6 +44,9 @@ function range(selector) {
     options.renderSign = cover.querySelector('.range-sign')
     options.inputFrom = cover.querySelector('.range-input-from')
     options.inputTo = cover.querySelector('.range-input-to')
+    if (!!params.onChange && typeof params.onChange == 'function') {
+      options.onChange = params.onChange
+    }
 
     if (options.type == 'single') options.from = options.min
     if (options.from < options.min) options.from = options.min
@@ -23,18 +58,18 @@ function range(selector) {
     addListeners(options)
     render(options)
 
-
+    if (options.onChange) {
+      options.onChange({
+        target: options.$el,
+        from: options.from,
+        to: options.to
+      })
+    }
 
 
 
 
   })
-
-
-
-
-
-
 
   function addElements(options) {
     const line = document.createElement('div')
@@ -60,17 +95,28 @@ function range(selector) {
     }
   }
 
+  var eventsUnify = function (e) {
+    return e.changedTouches ? e.changedTouches[0] : e;
+  };
+
   function addListeners(options) {
-    options.inner.addEventListener('mousedown', (event) => {
-      if (event.button !== 0) return
-      const currentValue = (event.offsetX / options.inner.getBoundingClientRect().width) * (options.max - options.min) + options.min
+    options.inner.addEventListener(getSupportedEvents().start, (e) => {
+      const event = eventsUnify(e)
+      if (getSupportedEvents().type == 'mouse' && event.button !== 0) return
+
+      const left = options.inner.getBoundingClientRect().left
+      const currentValue = ((event.clientX - left) / options.inner.getBoundingClientRect().width) * (options.max - options.min) + options.min
       const key = setFromTo(options, currentValue)
       render(options)
+
       document.body.style.userSelect = 'none'
 
-      const moveHandler = (event) => {
+      const moveHandler = (e) => {
+        const event = eventsUnify(e)
+
         const left = options.inner.getBoundingClientRect().left
         const moveValue = ((event.clientX - left) / options.inner.getBoundingClientRect().width) * (options.max - options.min) + options.min
+
         setFromTo(options, moveValue, key)
         render(options)
 
@@ -81,8 +127,8 @@ function range(selector) {
         options.renderSign && (options.renderSign.style.transition = '0s')
 
       }
-      document.addEventListener('mousemove', moveHandler)
-      document.addEventListener('mouseup', () => {
+      document.addEventListener(getSupportedEvents().move, moveHandler)
+      document.addEventListener(getSupportedEvents().end, () => {
         document.body.style.userSelect = ''
 
         options.progress && (options.progress.style.transition = '')
@@ -90,16 +136,13 @@ function range(selector) {
         options.prevBtn && (options.prevBtn.style.transition = '')
         options.renderSign && (options.renderSign.style.transition = '')
 
-        document.removeEventListener('mousemove', moveHandler)
+        document.removeEventListener(getSupportedEvents().move, moveHandler)
       })
 
 
 
     })
   }
-
-
-
 
   function setFromTo(options, value, key) {
     let result = ''
@@ -129,12 +172,34 @@ function range(selector) {
     if (options.from < options.min) options.from = options.min
     if (options.from > options.max) options.from = options.max
 
+    let fromValue = options.from
+    let toValue = options.to
+
+    fromValue = parseFloat(fromValue)
+    toValue = parseFloat(toValue)
+
+    if (options.$el.getAttribute('data-round')) {
+      fromValue = +fromValue.toFixed(options.$el.getAttribute('data-round'))
+      toValue = +toValue.toFixed(options.$el.getAttribute('data-round'))
+    }
+    options.from = fromValue
+    options.to = toValue
+
     options.inputFrom.value = options.from
     options.inputTo.value = options.to
 
+
+
+
+    if (options.onChange) {
+      options.onChange({
+        target: options.$el,
+        from: options.from,
+        to: options.to
+      })
+    }
     return result
   }
-
 
   function render(options) {
     const innerWidth = options.inner.getBoundingClientRect().width
@@ -143,6 +208,7 @@ function range(selector) {
     options.nextBtn.style.left = right + 'px'
     options.progress.style.left = left + 'px'
     options.progress.style.width = right - left + 'px'
+
     if (options.type == 'double') {
       options.prevBtn.style.left = left + 'px'
     }
@@ -171,9 +237,40 @@ function range(selector) {
 
   }
 
+
+
+
 }
 
 
-export default{
-  init:range
+const init = () => {
+  const range = Range('.form-range', {
+    onChange: (options) => {
+      const field = options.target.closest('.form-field')
+      const from = field.querySelector('.form-range-from')
+      const to = field.querySelector('.form-range-to')
+      const formatter = new Intl.NumberFormat('ru-RU')
+
+      let fromValue = options.from
+      let toValue = options.to
+
+      // fromValue = parseFloat(fromValue)
+      // toValue = parseFloat(toValue)
+
+      // if (options.target.getAttribute('data-round')) {
+      //   fromValue = +fromValue.toFixed(options.target.getAttribute('data-round'))
+      //   toValue = +toValue.toFixed(options.target.getAttribute('data-round'))
+      // }
+
+
+      if (from) from.innerHTML = formatter.format(fromValue)
+      if (to) to.innerHTML = formatter.format(toValue)
+    }
+  })
+
+
+}
+
+export default {
+  init
 }

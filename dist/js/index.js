@@ -3174,11 +3174,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _src_vendors_custom_select___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @src/vendors/custom-select/ */ "./src/vendors/custom-select/build/index.js");
+/* harmony import */ var _vendors_custom_select___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! /vendors/custom-select/ */ "./vendors/custom-select/build/index.js");
 
 
 var init = function init() {
-  (0,_src_vendors_custom_select___WEBPACK_IMPORTED_MODULE_0__["default"])('[data-custom-select]', {
+  (0,_vendors_custom_select___WEBPACK_IMPORTED_MODULE_0__["default"])('[data-custom-select]', {
     prefix: function prefix(select) {
       return select.getAttribute('data-prefix');
     },
@@ -3277,6 +3277,260 @@ var changeHandler = function changeHandler(event) {
   destroy: function destroy() {
     return document.removeEventListener('change', changeHandler);
   }
+});
+
+/***/ }),
+
+/***/ "./src/js/range-slider.js":
+/*!********************************!*\
+  !*** ./src/js/range-slider.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function Range(selector, params) {
+  var covers = document.querySelectorAll(selector);
+  var support = {
+    pointer: !!("PointerEvent" in window || "msPointerEnabled" in window.navigator),
+    touch: !!(typeof window.orientation !== "undefined" || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || "ontouchstart" in window || navigator.msMaxTouchPoints || "maxTouchPoints" in window.navigator > 1 || "msMaxTouchPoints" in window.navigator > 1)
+  };
+
+  var getSupportedEvents = function getSupportedEvents() {
+    var events;
+
+    switch (true) {
+      case support.touch:
+        events = {
+          type: "touch",
+          start: "touchstart",
+          move: "touchmove",
+          end: "touchend",
+          cancel: "touchcancel"
+        };
+        break;
+
+      default:
+        events = {
+          type: "mouse",
+          start: "mousedown",
+          move: "mousemove",
+          end: "mouseup",
+          leave: "mouseleave"
+        };
+        break;
+    }
+
+    return events;
+  };
+
+  Array.from(covers).map(function (cover) {
+    var options = {};
+    options.$el = cover;
+    options.min = +cover.getAttribute('data-min') || 0;
+    options.max = +cover.getAttribute('data-max') || 100;
+    options.from = +cover.getAttribute('data-from') || options.min;
+    options.to = +cover.getAttribute('data-to') || options.max;
+    options.type = cover.getAttribute('data-type') || 'single';
+    options.inner = cover.querySelector('.range-inner') || cover;
+    options.renderValue = cover.querySelector('.range-value');
+    options.renderSign = cover.querySelector('.range-sign');
+    options.inputFrom = cover.querySelector('.range-input-from');
+    options.inputTo = cover.querySelector('.range-input-to');
+
+    if (!!params.onChange && typeof params.onChange == 'function') {
+      options.onChange = params.onChange;
+    }
+
+    if (options.type == 'single') options.from = options.min;
+    if (options.from < options.min) options.from = options.min;
+    if (options.to > options.max) options.to = options.max;
+    addElements(options);
+    addListeners(options);
+    render(options);
+
+    if (options.onChange) {
+      options.onChange({
+        target: options.$el,
+        from: options.from,
+        to: options.to
+      });
+    }
+  });
+
+  function addElements(options) {
+    var line = document.createElement('div');
+    line.classList.add('range-line');
+    options.inner.appendChild(line);
+    options.line = line;
+    var progress = document.createElement('div');
+    progress.classList.add('range-progress');
+    options.inner.appendChild(progress);
+    options.progress = progress;
+    var nextBtn = document.createElement('button');
+    nextBtn.classList.add('range-btn');
+    options.inner.appendChild(nextBtn);
+    options.nextBtn = nextBtn;
+
+    if (options.type == 'double') {
+      var prevBtn = document.createElement('button');
+      prevBtn.classList.add('range-btn');
+      options.inner.appendChild(prevBtn);
+      options.prevBtn = prevBtn;
+    }
+  }
+
+  var eventsUnify = function eventsUnify(e) {
+    return e.changedTouches ? e.changedTouches[0] : e;
+  };
+
+  function addListeners(options) {
+    options.inner.addEventListener(getSupportedEvents().start, function (e) {
+      var event = eventsUnify(e);
+      if (getSupportedEvents().type == 'mouse' && event.button !== 0) return;
+      var left = options.inner.getBoundingClientRect().left;
+      var currentValue = (event.clientX - left) / options.inner.getBoundingClientRect().width * (options.max - options.min) + options.min;
+      var key = setFromTo(options, currentValue);
+      render(options);
+      document.body.style.userSelect = 'none';
+
+      var moveHandler = function moveHandler(e) {
+        var event = eventsUnify(e);
+        var left = options.inner.getBoundingClientRect().left;
+        var moveValue = (event.clientX - left) / options.inner.getBoundingClientRect().width * (options.max - options.min) + options.min;
+        setFromTo(options, moveValue, key);
+        render(options);
+        options.progress && (options.progress.style.transition = '0s');
+        options.nextBtn && (options.nextBtn.style.transition = '0s');
+        options.prevBtn && (options.prevBtn.style.transition = '0s');
+        options.renderSign && (options.renderSign.style.transition = '0s');
+      };
+
+      document.addEventListener(getSupportedEvents().move, moveHandler);
+      document.addEventListener(getSupportedEvents().end, function () {
+        document.body.style.userSelect = '';
+        options.progress && (options.progress.style.transition = '');
+        options.nextBtn && (options.nextBtn.style.transition = '');
+        options.prevBtn && (options.prevBtn.style.transition = '');
+        options.renderSign && (options.renderSign.style.transition = '');
+        document.removeEventListener(getSupportedEvents().move, moveHandler);
+      });
+    });
+  }
+
+  function setFromTo(options, value, key) {
+    var result = '';
+
+    if (key) {
+      options[key] = value;
+      result = key;
+    } else if (value >= options.to || options.type == 'single') {
+      options.to = value;
+      result = 'to';
+    } else if (value <= options.from) {
+      options.from = value;
+      result = 'from';
+    } else {
+      if (options.to - value < -(options.from - value)) {
+        options.to = value;
+        result = 'to';
+      } else {
+        options.from = value;
+        result = 'from';
+      }
+    }
+
+    if (options.to <= options.from && result == 'from') options.to = options.from;
+    if (options.to <= options.from && result == 'to') options.from = options.to;
+    if (options.to > options.max) options.to = options.max;
+    if (options.to < options.min) options.to = options.min;
+    if (options.from < options.min) options.from = options.min;
+    if (options.from > options.max) options.from = options.max;
+    var fromValue = options.from;
+    var toValue = options.to;
+    fromValue = parseFloat(fromValue);
+    toValue = parseFloat(toValue);
+
+    if (options.$el.getAttribute('data-round')) {
+      fromValue = +fromValue.toFixed(options.$el.getAttribute('data-round'));
+      toValue = +toValue.toFixed(options.$el.getAttribute('data-round'));
+    }
+
+    options.from = fromValue;
+    options.to = toValue;
+    options.inputFrom.value = options.from;
+    options.inputTo.value = options.to;
+
+    if (options.onChange) {
+      options.onChange({
+        target: options.$el,
+        from: options.from,
+        to: options.to
+      });
+    }
+
+    return result;
+  }
+
+  function render(options) {
+    var innerWidth = options.inner.getBoundingClientRect().width;
+    var left = (options.from - options.min) / (options.max - options.min) * innerWidth;
+    var right = (options.to - options.min) / (options.max - options.min) * innerWidth;
+    options.nextBtn.style.left = right + 'px';
+    options.progress.style.left = left + 'px';
+    options.progress.style.width = right - left + 'px';
+
+    if (options.type == 'double') {
+      options.prevBtn.style.left = left + 'px';
+    }
+
+    if (options.type == 'double' && options.renderValue) options.renderValue.innerHTML = Math.floor(options.from) + ' — ' + Math.floor(options.to);
+    if (options.type == 'single' && options.renderValue) options.renderValue.innerHTML = Math.floor(options.to);
+
+    if (options.renderSign) {
+      var sign = options.renderSign;
+      var signWidth = sign.getBoundingClientRect().width;
+      var signLeft = 0;
+
+      if (options.type == 'single') {
+        signLeft = right - signWidth / 2;
+      } else if (options.type == 'double') {
+        signLeft = left + (right - left) / 2 - signWidth / 2;
+      }
+
+      if (signLeft < 0) signLeft = 0;
+      if (signLeft + signWidth > innerWidth) signLeft = innerWidth - signWidth;
+      sign.style.left = signLeft + 'px';
+    }
+  }
+}
+
+var init = function init() {
+  var range = Range('.form-range', {
+    onChange: function onChange(options) {
+      var field = options.target.closest('.form-field');
+      var from = field.querySelector('.form-range-from');
+      var to = field.querySelector('.form-range-to');
+      var formatter = new Intl.NumberFormat('ru-RU');
+      var fromValue = options.from;
+      var toValue = options.to; // fromValue = parseFloat(fromValue)
+      // toValue = parseFloat(toValue)
+      // if (options.target.getAttribute('data-round')) {
+      //   fromValue = +fromValue.toFixed(options.target.getAttribute('data-round'))
+      //   toValue = +toValue.toFixed(options.target.getAttribute('data-round'))
+      // }
+
+      if (from) from.innerHTML = formatter.format(fromValue);
+      if (to) to.innerHTML = formatter.format(toValue);
+    }
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  init: init
 });
 
 /***/ }),
@@ -3670,10 +3924,10 @@ var destroy = function destroy() {
 
 /***/ }),
 
-/***/ "./src/vendors/custom-select/build/index.js":
-/*!**************************************************!*\
-  !*** ./src/vendors/custom-select/build/index.js ***!
-  \**************************************************/
+/***/ "./vendors/custom-select/build/index.js":
+/*!**********************************************!*\
+  !*** ./vendors/custom-select/build/index.js ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -3749,7 +4003,7 @@ var _slicedToArray = function () {
 
 exports["default"] = customSelect;
 
-__webpack_require__(/*! custom-event-polyfill */ "./src/vendors/custom-select/node_modules/custom-event-polyfill/custom-event-polyfill.js");
+__webpack_require__(/*! custom-event-polyfill */ "./vendors/custom-select/node_modules/custom-event-polyfill/custom-event-polyfill.js");
 
 function _toConsumableArray(arr) {
   if (Array.isArray(arr)) {
@@ -7846,10 +8100,10 @@ tippy.setDefaultProps({
 
 /***/ }),
 
-/***/ "./src/vendors/custom-select/node_modules/custom-event-polyfill/custom-event-polyfill.js":
-/*!***********************************************************************************************!*\
-  !*** ./src/vendors/custom-select/node_modules/custom-event-polyfill/custom-event-polyfill.js ***!
-  \***********************************************************************************************/
+/***/ "./vendors/custom-select/node_modules/custom-event-polyfill/custom-event-polyfill.js":
+/*!*******************************************************************************************!*\
+  !*** ./vendors/custom-select/node_modules/custom-event-polyfill/custom-event-polyfill.js ***!
+  \*******************************************************************************************/
 /***/ (() => {
 
 // Polyfill for creating CustomEvents on IE9/10/11
@@ -20568,11 +20822,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fancybox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fancybox */ "./src/js/fancybox.js");
 /* harmony import */ var dragula__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dragula */ "./node_modules/dragula/dragula.js");
 /* harmony import */ var dragula__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(dragula__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tippy.js */ "./node_modules/tippy.js/dist/tippy.esm.js");
+/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tippy.js */ "./node_modules/tippy.js/dist/tippy.esm.js");
 /* harmony import */ var _custom_select__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./custom-select */ "./src/js/custom-select.js");
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 /* harmony import */ var _ui_tab__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui--tab */ "./src/js/ui--tab.js");
-/* harmony import */ var _ui_toggle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui--toggle */ "./src/js/ui--toggle.js");
+/* harmony import */ var _range_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./range-slider */ "./src/js/range-slider.js");
+/* harmony import */ var _ui_toggle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui--toggle */ "./src/js/ui--toggle.js");
+
 
 
 
@@ -20583,16 +20839,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.dragula = (dragula__WEBPACK_IMPORTED_MODULE_3___default());
-window.tippy = tippy_js__WEBPACK_IMPORTED_MODULE_8__["default"];
+window.tippy = tippy_js__WEBPACK_IMPORTED_MODULE_9__["default"];
 swiper__WEBPACK_IMPORTED_MODULE_5__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_5__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_5__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_5__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_5__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_5__.Grid, swiper__WEBPACK_IMPORTED_MODULE_5__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_5__.EffectFade]);
 window.Swiper = swiper__WEBPACK_IMPORTED_MODULE_5__["default"];
 _ui_tab__WEBPACK_IMPORTED_MODULE_6__["default"].init();
-_ui_toggle__WEBPACK_IMPORTED_MODULE_7__["default"].init();
+_ui_toggle__WEBPACK_IMPORTED_MODULE_8__["default"].init();
 _fancybox__WEBPACK_IMPORTED_MODULE_2__["default"].init();
 _show_pass__WEBPACK_IMPORTED_MODULE_1__["default"].init();
 _load_file__WEBPACK_IMPORTED_MODULE_0__["default"].init();
 window.addEventListener('DOMContentLoaded', function () {
   _custom_select__WEBPACK_IMPORTED_MODULE_4__["default"].init();
+  _range_slider__WEBPACK_IMPORTED_MODULE_7__["default"].init();
 });
 })();
 
