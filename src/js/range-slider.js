@@ -111,7 +111,15 @@ function Range(selector, params) {
 
       document.body.style.userSelect = 'none'
 
+
+      let timerFlag = true
+
       const moveHandler = (e) => {
+        if (!timerFlag) return
+        timerFlag = false
+
+        setTimeout(() => timerFlag = true, 1000 / 60)
+
         const event = eventsUnify(e)
 
         const left = options.inner.getBoundingClientRect().left

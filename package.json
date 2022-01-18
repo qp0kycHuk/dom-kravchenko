@@ -23,9 +23,8 @@
   "dependencies": {
     "@fancyapps/ui": "^4.0.17",
     "@popperjs/core": "^2.11.2",
+    "@shopify/draggable": "^1.0.0-beta.8",
     "custom-select": "^1.1.15",
-    "dragula": "^3.7.3",
-    "smooth-dnd": "^0.12.1",
     "swiper": "^7.4.1",
     "tippy.js": "^6.3.7"
   }
