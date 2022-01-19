@@ -9,6 +9,10 @@ const changeHandler = (event) => {
 
   if (type === 'image') {
     const target = document.getElementById(targetId)
+    
+    if (target.getAttribute('data-initial') == null) {
+      target.setAttribute('data-initial', target.src)
+    }
 
     const file = input.files[0]
 
@@ -19,7 +23,7 @@ const changeHandler = (event) => {
       }, false);
       reader.readAsDataURL(file);
     } else {
-      target.src = ''
+      target.src = target.getAttribute('data-initial')
     }
   }
 

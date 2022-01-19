@@ -1,16 +1,17 @@
 import { Fancybox } from "@fancyapps/ui";
-
+import ru from "@fancyapps/ui/src/Fancybox/l10n/ru"
 
 
 const init = () => {
   Fancybox.defaults.autoFocus = false
   Fancybox.defaults.placeFocusBack = false
+  Fancybox.defaults.l10n = ru
+  Fancybox.defaults.template.spinner = '<div class="progress progress-circle"> </div>'
 
   Fancybox.bind('[data-fancybox-modal]', {
-
     dragToClose: false,
     mainClass: 'fancybox-custom-modal',
-
+    
   })
 
 

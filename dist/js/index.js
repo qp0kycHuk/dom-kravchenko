@@ -20,6 +20,38 @@ const t=t=>"object"==typeof t&&null!==t&&t.constructor===Object&&"[object Object
 
 /***/ }),
 
+/***/ "./node_modules/@fancyapps/ui/src/Fancybox/l10n/ru.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@fancyapps/ui/src/Fancybox/l10n/ru.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  CLOSE: "Закрыть",
+  NEXT: "Дальше",
+  PREV: "Назад",
+  MODAL: "Вы можете закрыть данное окно, нажав клавишу ESC",
+  ERROR: "Что-то пошло не так. Пожалуйста, повторите попытку позже",
+  IMAGE_ERROR: "Изображение не найдено",
+  ELEMENT_NOT_FOUND: "HTML элемент не найден",
+  AJAX_NOT_FOUND: "Ошибка загрузки AJAX : Не найдено",
+  AJAX_FORBIDDEN: "Ошибка загрузки AJAX : Запрещено",
+  IFRAME_ERROR: "Ошибка загрузки страницы",
+  TOGGLE_ZOOM: "Переключить уровень масштаба",
+  TOGGLE_THUMBS: "Переключить эскиз",
+  TOGGLE_SLIDESHOW: "Переключить презентацию",
+  TOGGLE_FULLSCREEN: "Переключить режим полного экрана",
+  DOWNLOAD: "Скачать",
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/@popperjs/core/lib/createPopper.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@popperjs/core/lib/createPopper.js ***!
@@ -10216,6 +10248,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fancyapps/ui */ "./node_modules/@fancyapps/ui/dist/fancybox.esm.js");
+/* harmony import */ var _fancyapps_ui_src_Fancybox_l10n_ru__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fancyapps/ui/src/Fancybox/l10n/ru */ "./node_modules/@fancyapps/ui/src/Fancybox/l10n/ru.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -10224,9 +10257,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var init = function init() {
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.autoFocus = false;
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.placeFocusBack = false;
+  _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.l10n = _fancyapps_ui_src_Fancybox_l10n_ru__WEBPACK_IMPORTED_MODULE_1__["default"];
+  _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.template.spinner = '<div class="progress progress-circle"> </div>';
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox-modal]', {
     dragToClose: false,
     mainClass: 'fancybox-custom-modal'
@@ -10268,6 +10304,11 @@ var changeHandler = function changeHandler(event) {
 
   if (type === 'image') {
     var target = document.getElementById(targetId);
+
+    if (target.getAttribute('data-initial') == null) {
+      target.setAttribute('data-initial', target.src);
+    }
+
     var file = input.files[0];
 
     if (file) {
@@ -10277,7 +10318,7 @@ var changeHandler = function changeHandler(event) {
       }, false);
       reader.readAsDataURL(file);
     } else {
-      target.src = '';
+      target.src = target.getAttribute('data-initial');
     }
   }
 };

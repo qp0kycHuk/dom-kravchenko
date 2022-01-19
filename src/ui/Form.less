@@ -76,6 +76,7 @@
 	}
 
 	&-input {
+		outline : none !important;
 		display : flex;
 		height  : 40px;
 		position: relative;
@@ -135,8 +136,10 @@
 			opacity: 1;
 		}
 
+		&[type="date"]::-webkit-calendar-picker-indicator,
 		&[type="time"]::-webkit-calendar-picker-indicator {
 			background: none;
+			pointer-events: none;
 		}
 
 
@@ -159,8 +162,8 @@
 
 
 		input& {
-			width      : 100px;
-			line-height: 40px;
+			width         : 100px;
+			// line-height: 40px;
 		}
 
 		textarea& {
@@ -379,7 +382,7 @@
 
 		&-field:hover &-checkbox-target,
 		&-field:hover &-radio-target {
-			box-shadow: 0 0 0 8px var(--color-primary-10);
+			box-shadow: 0 0 0 5px var(--color-primary-10);
 		}
 	}
 

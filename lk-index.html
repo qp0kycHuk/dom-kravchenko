@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="dist/css/ui-core.css">
 	<link rel="stylesheet" href="dist/css/frontend--fonts.css">
 	<link rel="stylesheet" href="dist/css/frontend--style.css">
-	
+
 	<script src="dist/js/index.js"></script>
 
 
@@ -104,14 +104,15 @@
 
 				<div class="card-content developer-detail-top-content pt-8 pb-8">
 					<div class="developer-detail-top-avatar">
-						<img src="dist/img/sempl/developer-detail-avatar.png" alt="">
+						<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
 					</div>
 
 					<div class="developer-detail-info">
 						<div class="text-h6 mb-1">Константин Москалевский</div>
 						<div class="text-body-2 text--fade">Менеджер, Romex Group</div>
 					</div>
-					<button class="btn btn--primary btn--light ml-auto">
+					<button class="btn btn--primary btn--light ml-auto" data-fancybox-modal data-type="ajax"
+						data-src="dialog-profile-edit.html">
 						<svg class="icon mr-2">
 							<use xlink:href="dist/img/icons.svg#chat" />
 						</svg>
@@ -122,13 +123,15 @@
 		</section>
 
 		<section class="content">
-			<div class=" lk-index-notification flex flex-align-center p-4 pl-7">
-				<svg class="icon mr-2" style="color: #88FF50;">
-					<use xlink:href="dist/img/icons.svg#gal-ochka-1" />
-				</svg>
-				<div class="text-body-1 text--demibold mr-5">26 заявок ожидают обработки</div>
-				<div class="text-body-2 fade-60 mr-5">Обновлено 05.10.2021</div>
-				<button class="btn btn--primary btn--white-bg ml-auto">Получить заказ</button>
+			<div class=" lk-index-notification d-lg-flex flex-align-center p-4 pl-7">
+				<div class="flex flex-align-center">
+					<svg class="icon mr-2" style="color: #88FF50;">
+						<use xlink:href="dist/img/icons.svg#gal-ochka-1" />
+					</svg>
+					<div class="text-body-1 text--demibold mr-5">26 заявок ожидают обработки</div>
+				</div>
+				<div class="text-body-2 fade-60 mr-lg-5 mt-lg-0 mt-3">Обновлено 05.10.2021</div>
+				<button class="btn btn--primary btn--white-bg ml-lg-auto mt-lg-0 mt-3">Получить заказ</button>
 			</div>
 
 		</section>
@@ -461,7 +464,7 @@
 			</div>
 		</section>
 
-
+		<!-- Лента продаж -->
 		<section class="content">
 			<div class="text-subtitle-2 text-md-h6 mb-6">Лента продаж</div>
 			<div class="card p-8">
