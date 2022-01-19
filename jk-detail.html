@@ -1345,7 +1345,7 @@
 		</script>
 		<script>
 			tippy('.selection-item-flat[data-id]', {
-				content: 'loading',
+				content: '<div class="progress progress-circle color-icon text-small-1"> </div>',
 				theme: 'flat',
 				allowHTML: true,
 				interactive: true,
@@ -2508,7 +2508,7 @@
 		</section>
 		<script>
 			tippy('.chart-col[data-tooltip]', {
-				content: 'loading',
+				content: '<div class="progress progress-circle color-icon text-small-1"> </div>',
 				theme: 'chart-col',
 				allowHTML: true,
 				placement: 'right-start',
@@ -2532,6 +2532,7 @@
 							instance._isLoad = true
 							instance._error = null
 							instance.setContent(result)
+
 						})
 						.catch((error) => {
 							instance._error = error;
