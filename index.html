@@ -31,7 +31,7 @@
 		<a href="/" class="header-logo btn btn--link btn--primary">
 			<img src="dist/img/logo.png" alt="">
 		</a>
-		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form"
+		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-type="ajax" data-src="dialog-filter.html"
 			data-slug="filter">
 			<svg class="icon color-icon">
 				<use xlink:href="dist/img/icons.svg#filter" />
@@ -53,7 +53,7 @@
 	<div class="header-user-toltip" id="header-user-toltip" style="display: none;">
 		<div class="text-body-1 text--demibold px-2">Кравченко Александр</div>
 		<div class="text-body-1 mt-1 px-2">8 918 000 00 00</div>
-		<button class="btn btn--primary btn--light w-100 mt-5">Редактировать</button>
+		<button class="btn btn--primary btn--light w-100 mt-5" data-fancybox-modal data-type="ajax" data-src="dialog-profile.html">Редактировать</button>
 		<button class="btn btn--red btn--fill w-100 mt-2">Выйти</button>
 	</div>
 	<script>
@@ -214,12 +214,13 @@
 						</div>
 
 						<div class="filter-form-btns">
-							<button class="filter-form-btn btn btn--primary">Расширенный поиск</button>
+							<button class="filter-form-btn btn btn--primary" data-fancybox-modal data-type="ajax" data-src="dialog-filter.html">Расширенный поиск</button>
 							<button class="filter-form-btn btn btn--primary btn--fill">Найти</button>
 						</div>
+	
 					</div>
 				</div>
-				<button class="filter-btn btn btn--primary btn--white-bg d-md-none" data-fancybox-modal data-src="#filter-form"
+				<button class="filter-btn btn btn--primary btn--white-bg d-md-none" data-fancybox-modal data-type="ajax" data-src="dialog-filter.html"
 					data-slug="filter">
 					<svg class="icon mr-2 color-icon">
 						<use xlink:href="dist/img/icons.svg#filter" />

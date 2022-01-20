@@ -584,10 +584,10 @@ body {
 		@media (max-width:@md) {
 
 
-			padding     : 22px;
-			width       : 375px;
-			max-width   : 100%;
-			// margin   : 0 auto;
+			padding  : 22px;
+			width    : 375px;
+			max-width: 100%;
+			margin   : 0 auto;
 
 		}
 
@@ -601,16 +601,24 @@ body {
 
 		&-dialog {
 
-			@media (max-width:@md) {
-				display: none;
-			}
 
 			@media (max-width:@sm) {
-				width      : 100%;
-				height     : 100%;
+				width         : 100%;
+				height        : 100%;
 				// overflow: auto;
-				margin-top : 60px;
+				// margin-top : 60px;
+				padding-top   : 60px;
 			}
+		}
+	}
+
+	& &-form-dialog {
+		@media (min-width:@md) {
+			display: block !important;
+		}
+
+		@media (max-width:@md) {
+			display: none;
 		}
 	}
 
@@ -618,6 +626,21 @@ body {
 		display              : grid;
 		grid-template-columns: 26fr 26fr 38fr;
 		grid-gap             : 16px 32px;
+
+		@media(max-width:@lg) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width:@md) {
+			grid-template-columns: 1fr;
+		}
+
+	}
+
+	&-checklist {
+		display              : grid;
+		grid-gap             : 32px 12px;
+		grid-template-columns: repeat(5, 1fr);
 
 		@media(max-width:@lg) {
 			grid-template-columns: 1fr 1fr;
@@ -2461,20 +2484,29 @@ body {
 
 .dialog {
 	&-large {
-		width: var(--section-width);
+		width    : var(--section-width);
+		max-width: 100%;
 
-		@media(max-width:@md) {
-			max-width: 100%;
-			width    : 100%;
+		@media (max-width:@sm) {
+			width: 100%;
 		}
+
+		@media(max-width:@md) {}
 	}
 
 	&-small {
-		width: 338px;
+		width    : 338px;
+		max-width: 100%;
 	}
 
 	&-middle {
-		width: 620px;
+		width    : 620px;
+		max-width: 100%;
+
+		@media (max-width:@sm) {
+			width: 100%;
+		}
+
 	}
 }
 

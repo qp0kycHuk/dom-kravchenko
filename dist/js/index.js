@@ -10259,6 +10259,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var init = function init() {
+  _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.trapFocus = false;
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.autoFocus = false;
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.placeFocusBack = false;
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.defaults.l10n = _fancyapps_ui_src_Fancybox_l10n_ru__WEBPACK_IMPORTED_MODULE_1__["default"];
@@ -10277,6 +10278,8 @@ var init = function init() {
       mainClass: 'fancybox-custom-modal'
     }, options));
   };
+
+  window.Fancybox = _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox;
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
