@@ -139,11 +139,12 @@ function clickHandler(event) {
 }
 
 const init = () => {
-	if (!!document.body) {
-		tabInit();
-	} else {
-		window.addEventListener('DOMContentLoaded', () => { tabInit(); width = document.body.clientWidth })
-	}
+
+	tabInit();
+
+
+	document.removeEventListener('click', clickHandler)
+	window.removeEventListener('resize', resizeHandler);
 	document.addEventListener('click', clickHandler)
 	window.addEventListener('resize', resizeHandler);
 

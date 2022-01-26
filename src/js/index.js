@@ -2,6 +2,7 @@ import loadFile from "./load-file";
 import showPass from "./show-pass";
 import fancybox from "./fancybox";
 import tippy from 'tippy.js';
+import InstantClick from 'instantclick';
 import customSelect from "./custom-select";
 import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade } from 'swiper';
 import tab from './ui--tab';
@@ -16,13 +17,22 @@ window.draggable = { Sortable, Plugins }
 Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade]);
 window.Swiper = Swiper
 
-tab.init();
-toggle.init();
+
 fancybox.init();
 showPass.init();
 loadFile.init();
+InstantClick.init()
 
-window.addEventListener('DOMContentLoaded', () => {
+function loadHandler(isInitialLoad) {
+  if (isInitialLoad) {
+    window.addEventListener('DOMContentLoaded', () => loadHandler(false))
+    return
+  }
+
   customSelect.init()
   rangeSlider.init()
-})
+  tab.init();
+  toggle.init();
+}
+
+InstantClick.on('change', loadHandler)

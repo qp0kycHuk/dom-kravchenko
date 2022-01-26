@@ -166,11 +166,10 @@ function onClick(event) {
 
 
 const init = () => {
-	if (!!document.body) {
-		toggleInit();
-	} else {
-		window.addEventListener('load', () => toggleInit())
-	}
+
+	toggleInit();
+
+	document.removeEventListener('click', onClick);
 	document.addEventListener('click', onClick);
 
 }
