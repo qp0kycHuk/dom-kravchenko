@@ -18,21 +18,17 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFad
 window.Swiper = Swiper
 
 
-fancybox.init();
-showPass.init();
-loadFile.init();
-InstantClick.init()
 
-function loadHandler(isInitialLoad) {
-  if (isInitialLoad) {
-    window.addEventListener('DOMContentLoaded', () => loadHandler(false))
-    return
-  }
+function loadHandler() {
 
+  fancybox.init();
+  showPass.init();
+  loadFile.init();
   customSelect.init()
   rangeSlider.init()
   tab.init();
   toggle.init();
 }
 
-InstantClick.on('change', loadHandler)
+window.addEventListener('DOMContentLoaded', () => loadHandler(false))
+

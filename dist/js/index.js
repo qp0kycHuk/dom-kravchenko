@@ -27914,26 +27914,20 @@ window.draggable = {
 };
 swiper__WEBPACK_IMPORTED_MODULE_5__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_5__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_5__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_5__.Scrollbar, swiper__WEBPACK_IMPORTED_MODULE_5__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_5__.Grid, swiper__WEBPACK_IMPORTED_MODULE_5__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_5__.EffectFade]);
 window.Swiper = swiper__WEBPACK_IMPORTED_MODULE_5__["default"];
-_fancybox__WEBPACK_IMPORTED_MODULE_2__["default"].init();
-_show_pass__WEBPACK_IMPORTED_MODULE_1__["default"].init();
-_load_file__WEBPACK_IMPORTED_MODULE_0__["default"].init();
-instantclick__WEBPACK_IMPORTED_MODULE_3___default().init();
 
-function loadHandler(isInitialLoad) {
-  if (isInitialLoad) {
-    window.addEventListener('DOMContentLoaded', function () {
-      return loadHandler(false);
-    });
-    return;
-  }
-
+function loadHandler() {
+  _fancybox__WEBPACK_IMPORTED_MODULE_2__["default"].init();
+  _show_pass__WEBPACK_IMPORTED_MODULE_1__["default"].init();
+  _load_file__WEBPACK_IMPORTED_MODULE_0__["default"].init();
   _custom_select__WEBPACK_IMPORTED_MODULE_4__["default"].init();
   _range_slider__WEBPACK_IMPORTED_MODULE_7__["default"].init();
   _ui_tab__WEBPACK_IMPORTED_MODULE_6__["default"].init();
   _ui_toggle__WEBPACK_IMPORTED_MODULE_8__["default"].init();
 }
 
-instantclick__WEBPACK_IMPORTED_MODULE_3___default().on('change', loadHandler);
+window.addEventListener('DOMContentLoaded', function () {
+  return loadHandler(false);
+});
 })();
 
 /******/ })()
