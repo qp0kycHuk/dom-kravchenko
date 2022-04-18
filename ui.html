@@ -6,13 +6,40 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="assets/dist/css/frontend--fonts.css">
+	<link rel="stylesheet" href="assets/static/css/frontend--fonts.css">
 	<link rel="stylesheet" href="assets/dist/style.css">
 	<script src="assets/dist/index.js"></script>
 
 
 
 	<title>UI Kit </title>
+
+
+
+	<style>
+		.example-cover {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.example-btns {
+			min-width: 300px;
+			width: 300px;
+			padding: 16px;
+			position: sticky;
+			top: 0;
+		}
+
+		.example-content {
+			width: 100%;
+		}
+
+		.code {
+			padding: 10px;
+			background: #333;
+			color: #fff;
+		}
+	</style>
 </head>
 
 <body>
@@ -362,7 +389,7 @@
 									</div>
 								</label>
 							</div>
-				
+
 
 						</div>
 
@@ -370,18 +397,31 @@
 
 						<div class="text-body-0 mb-10 mt-10 code">
 							<!-- &nbsp;&nbsp; -->
-							&lt;<span class="color-primary">label</span> class=<span class="color-red">"form-field form-select"</span>&gt; <br>
-							&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span class="color-red">"form-label"</span>&gt;Обычное поле&lt;<span class="color-primary">/div</span>&gt; <br>
-							&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span class="color-red">"form-input-cover"</span>&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span class="color-red">"form-input p-0"</span>&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">select</span> data-prefix=<span class="color-red">"Вариант: "</span> data-custom-select&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span class="color-red">""</span> disabled hidden selected&gt;Выберите&lt;<span class="color-primary">/option</span>&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span class="color-red">"1"</span>&gt; 1&lt;<span class="color-primary">/option</span>&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span class="color-red">"2"</span>&gt; 2&lt;<span class="color-primary">/option</span>&gt; <br>
+							&lt;<span class="color-primary">label</span> class=<span class="color-red">"form-field
+								form-select"</span>&gt; <br>
+							&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-label"</span>&gt;Обычное поле&lt;<span class="color-primary">/div</span>&gt;
+							<br>
+							&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-input-cover"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-input p-0"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">select</span> data-prefix=<span
+								class="color-red">"Вариант: "</span> data-custom-select&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span
+								class="color-red">""</span> disabled hidden selected&gt;Выберите&lt;<span
+								class="color-primary">/option</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span
+								class="color-red">"1"</span>&gt; 1&lt;<span class="color-primary">/option</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span
+								class="color-red">"2"</span>&gt; 2&lt;<span class="color-primary">/option</span>&gt; <br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/select</span>&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span class="color-red">"form-select-icon"</span>&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">svg</span> class=<span class="color-red">"icon"</span>&gt; <br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">use</span> xlink:href=<span class="color-red">"assets/dist/img/icons.svg#to-right"</span> /&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-select-icon"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">svg</span> class=<span
+								class="color-red">"icon"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">use</span>
+							xlink:href=<span class="color-red">"assets/dist/img/icons.svg#to-right"</span> /&gt; <br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/svg</span>&gt; <br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/div</span>&gt; <br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/div</span>&gt; <br>
@@ -905,7 +945,8 @@
 							<b>.card</b> - Основной класс <br>
 							<b>.card-action</b> - Добавляет эффект при наведении (затемнение) <br>
 							<b>.waved</b> - Добавляет эффект при клике (волна) <br>
-							<b>.hover-link-wrapper</b> - Добавляет эффект наведении для элементов <b>.hover-link</b> внутри (подчеркивание) <br>
+							<b>.hover-link-wrapper</b> - Добавляет эффект наведении для элементов <b>.hover-link</b> внутри
+							(подчеркивание) <br>
 
 
 						</div>
@@ -922,7 +963,7 @@
 										<div class="card-messages">
 											<div class="card-message">
 												<div class="card-message-img">
-													<img src="assets/dist/img/sempl/lighting.png" alt="" class="icon">
+													<img src="assets/static/img/sempl/lighting.png" alt="" class="icon">
 												</div>
 												<div class="text-small text--demibold">Успей купить</div>
 											</div>
@@ -991,7 +1032,7 @@
 										<div class="news-card-info mb-lg-4">
 											<div class="news-card-brand brand-min d-lg-flex d-none">
 												<div class="brand-min-img">
-													<img src="assets/dist/img/sempl/brand-3.png" alt="">
+													<img src="assets/static/img/sempl/brand-3.png" alt="">
 												</div>
 												<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
 
@@ -1105,7 +1146,7 @@
 							<div class="grid-col-6 grid-col-lg-4 -copy-child-">
 								<div class="plan-card card">
 									<div class="plan-card-img">
-										<img src="assets/dist/img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1148,7 +1189,7 @@
 									<div class="card-top d-flex flex-align-center">
 										<div class="plan-card-brand brand-min">
 											<div class="brand-min-img">
-												<img src="assets/dist/img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="brand-min-text">
 												<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон Красная пл...</div>
@@ -1162,10 +1203,10 @@
 												<use xlink:href="assets/dist/img/utils.svg#heart" />
 											</svg>
 										</button>
-										
+
 									</div>
 									<div class="plan-card-img ">
-										<img src="assets/dist/img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1175,7 +1216,7 @@
 										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
 										<div class="plan-card-info d-md-flex d-none mt-2">
-											<img src="assets/dist/img/sempl/price-top.png" alt="" class="mr-2">
+											<img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2">
 											<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 											<span class="text-small text--fade flex-self-end">Обновлено 06.10.2021</span>
 										</div>
@@ -1207,7 +1248,7 @@
 									<div class="card-top d-flex flex-align-center">
 										<div class="plan-card-brand brand-min">
 											<div class="brand-min-img">
-												<img src="assets/dist/img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="brand-min-text">
 												<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон Красная пл...</div>
@@ -1224,7 +1265,7 @@
 										</button>
 									</div>
 									<div class="plan-card-img ">
-										<img src="assets/dist/img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1234,7 +1275,7 @@
 										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
 										<div class="plan-card-info d-md-flex d-none mt-2">
-											<img src="assets/dist/img/sempl/price-top.png" alt="" class="mr-2">
+											<img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2">
 											<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 											<button class="btn btn--link btn--primary">Отслеживать</button>
 										</div>
@@ -1266,7 +1307,7 @@
 									<div class="card-top d-flex flex-align-center">
 										<div class="plan-card-brand brand-min">
 											<div class="brand-min-img">
-												<img src="assets/dist/img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="brand-min-text">
 												<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон Красная пл...</div>
@@ -1283,7 +1324,7 @@
 										</button>
 									</div>
 									<div class="plan-card-img ">
-										<img src="assets/dist/img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1293,7 +1334,7 @@
 										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
 										<div class="plan-card-info d-md-flex d-none mt-2">
-											<img src="assets/dist/img/sempl/price-top.png" alt="" class="mr-2">
+											<img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2">
 											<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 											<div class="text-body-2 text--demibold d-flex flex-align-center color-icon">
 												Отслеживаемое
@@ -1417,7 +1458,7 @@
 											<div class="card-messages">
 												<div class="card-message">
 													<div class="card-message-img">
-														<img src="assets/dist/img/sempl/flag.png" alt="" class="icon">
+														<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 													</div>
 													<div class="text-small text--demibold">Старт продаж</div>
 												</div>
@@ -1474,7 +1515,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1486,7 +1527,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1498,7 +1539,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1510,7 +1551,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1522,7 +1563,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1534,7 +1575,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1544,7 +1585,7 @@
 														</div>
 													</div>
 												</div>
-												
+
 												<button class="btn btn-small btn-fab btn--white-bg jk-row-plans-next">
 													<svg class="icon">
 														<use xlink:href="assets/dist/img/icons.svg#to-right" />
@@ -1582,7 +1623,7 @@
 									<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
 									<div class="jk-row-brand brand-min">
 										<div class="brand-min-img">
-											<img src="assets/dist/img/sempl/brand-1.png" alt="">
+											<img src="assets/static/img/sempl/brand-1.png" alt="">
 										</div>
 										<div class="text-body-2">ЮгСтройИнвест</div>
 
@@ -1613,7 +1654,7 @@
 											<div class="card-messages">
 												<div class="card-message">
 													<div class="card-message-img">
-														<img src="assets/dist/img/sempl/fire.png" alt="" class="icon">
+														<img src="assets/static/img/sempl/fire.png" alt="" class="icon">
 													</div>
 													<div class="text-small text--demibold">Высокий спрос</div>
 												</div>
@@ -1670,7 +1711,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1682,7 +1723,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1694,7 +1735,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1706,7 +1747,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1754,7 +1795,7 @@
 									<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
 									<div class="jk-row-brand brand-min">
 										<div class="brand-min-img">
-											<img src="assets/dist/img/sempl/brand-2.png" alt="">
+											<img src="assets/static/img/sempl/brand-2.png" alt="">
 										</div>
 										<div class="text-body-2">Romex Development</div>
 
@@ -1785,7 +1826,7 @@
 											<div class="card-messages">
 												<div class="card-message">
 													<div class="card-message-img">
-														<img src="assets/dist/img/sempl/lighting.png" alt="" class="icon">
+														<img src="assets/static/img/sempl/lighting.png" alt="" class="icon">
 													</div>
 													<div class="text-small text--demibold">Успей купить</div>
 												</div>
@@ -1843,7 +1884,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1855,7 +1896,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1867,7 +1908,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1879,7 +1920,7 @@
 													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
 														<div class="plan-min card-action waved">
 															<div class="plan-min-img">
-																<img src="assets/dist/img/sempl/plan-min.png" alt="">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
 															</div>
 															<div class="plan-min-content">
 																<div class="plan-min-count text-small">1-комнатные</div>
@@ -1927,7 +1968,7 @@
 									<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
 									<div class="jk-row-brand brand-min">
 										<div class="brand-min-img">
-											<img src="assets/dist/img/sempl/brand-3.png" alt="">
+											<img src="assets/static/img/sempl/brand-3.png" alt="">
 										</div>
 										<div class="text-body-2">ЮгСтройИнвест</div>
 
@@ -2014,101 +2055,213 @@
 						</div>
 
 						<div class="slider slider-test-1">
-							<div class="swiper grid-wrap grid-spacing-4">
+							<div class="swiper grid-wrap grid-spacing-4 pb-3">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5 progress-container bg-l2">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+											<div class="card-img bg-l2 progress-container">
 												<div class="progress progress-circle color-icon"></div>
-												<img data-src="https://picsum.photos/id/367/600/400" alt="" class="swiper-lazy">
-											</div>
+												<img data-src="https://picsum.photos/600/400?random=191" alt="" class="swiper-lazy">
 
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+												<div class="card-top-control flex bg-black-40 p-2">
+													<div class="color-white">
+														.card-top-control
+														<div class="fade-60 text-small-1">11.03.2022</div>
+													</div>
+													<div class="btn btn--primary btn-small btn--fill ml-auto">Button</div>
 												</div>
-
 											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5 progress-container bg-l2">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
 												<div class="progress progress-circle color-icon"></div>
-												<img data-src="https://picsum.photos/id/367/600/400" alt="" class="swiper-lazy">
-											</div>
-
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+												<img data-src="https://picsum.photos/600/400?random=192" alt="" class="swiper-lazy">
+												<div class="card-top-control flex bg-black-40 p-2">
+													<div class="color-white">
+														.card-top-control
+														<div class="fade-60 text-small-1">11.03.2022</div>
+													</div>
+													<div class="btn btn--primary btn-small btn--fill ml-auto">Button</div>
 												</div>
-
 											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5 progress-container bg-l2">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
 												<div class="progress progress-circle color-icon"></div>
-												<img data-src="https://picsum.photos/id/367/600/400" alt="" class="swiper-lazy">
-											</div>
+												<img data-src="https://picsum.photos/600/400?random=193" alt="" class="swiper-lazy">
 
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+												<div class="card-bottom-control flex bg-black-40 p-2">
+													<div class="color-white">
+														.card-bottom-control
+														<div class="fade-60 text-small-1">11.03.2022</div>
+													</div>
+													<div class="btn btn--primary btn-small btn--fill ml-auto">Button</div>
 												</div>
-
 											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5 progress-container bg-l2">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+											<div class="card-img bg-l2 progress-container">
 												<div class="progress progress-circle color-icon"></div>
-												<img data-src="https://picsum.photos/id/367/600/400" alt="" class="swiper-lazy">
+												<img data-src="https://picsum.photos/600/400?random=194" alt="" class="swiper-lazy">
 											</div>
-
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
 												</div>
-
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
 											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5 progress-container bg-l2">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+											<div class="card-img bg-l2 progress-container">
 												<div class="progress progress-circle color-icon"></div>
-												<img data-src="https://picsum.photos/id/367/600/400" alt="" class="swiper-lazy">
+												<img data-src="https://picsum.photos/600/400?random=195" alt="" class="swiper-lazy">
 											</div>
-
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
 												</div>
-
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
 											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=196" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=197" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=198" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=199" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=1901" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=1902" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 								</div>
@@ -2116,12 +2269,12 @@
 
 							<button class="btn btn-large btn-fab btn--white-bg slider-nav slider-prev">
 								<svg class="icon">
-									<use xlink:href="assets/dist/img/icons.svg#to-left" />
+									<use xlink:href="./img/icons.svg#to-left" />
 								</svg>
 							</button>
 							<button class="btn btn-large btn-fab btn--white-bg slider-nav slider-next">
 								<svg class="icon">
-									<use xlink:href="assets/dist/img/icons.svg#to-right" />
+									<use xlink:href="./img/icons.svg#to-right" />
 								</svg>
 							</button>
 
@@ -2894,6 +3047,22 @@
 								<div class="progress progress-circle color-red"></div>
 							</div>
 						</div>
+
+						<h1 class="text-h4 mb-5 mt-5">In container</h1>
+						<div class="grid">
+							<div class="grid-col-3">
+								<div class="p-10 progress-container bg-l3">
+									<div class="progress progress-circle color-icon"></div>
+								</div>
+							</div>
+						</div>
+
+						<h1 class="text-h4 mb-5 mt-10">Progress-line</h1>
+						<div class="progress progress-line bg-l3 mt-5 color-primary"></div>
+						<div class="progress progress-line bg-l3 mt-5 color-green"></div>
+						<div class="progress progress-line bg-l3 mt-5 color-red"></div>
+						<div class="progress progress-line bg-l3 mt-5 color-icon"></div>
+
 					</section>
 				</div>
 			</div>
