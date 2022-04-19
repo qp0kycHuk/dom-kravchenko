@@ -1,8 +1,13 @@
 // out:false
 
 
-.link-hover {
+.hover-link {
   cursor: pointer;
+
+  &:focus {
+    text-decoration: underline;
+
+  }
 
   @media(hover) {
     &:hover {
@@ -11,12 +16,18 @@
   }
 }
 
-.link-hover-wrapper {
+.hover-link-wrapper {
   cursor: pointer;
+
+  &:focus {
+    .hover-link {
+      text-decoration: underline;
+    }
+  }
 
   @media(hover) {
     &:hover {
-      .link-hover {
+      .hover-link {
         text-decoration: underline;
       }
 

@@ -3,23 +3,23 @@
 
 .bd {
   &-right {
-    border-right: 1px solid #E2E8F0;
+    border-right: 1px solid var(--color-text-10);
   }
 
   &-left {
-    border-left: 1px solid #E2E8F0;
+    border-left: 1px solid var(--color-text-10);
   }
 
   &-top {
-    border-top: 1px solid #E2E8F0;
+    border-top: 1px solid var(--color-text-10);
   }
 
   &-bottom {
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid var(--color-text-10);
   }
 
   &-all {
-    border: 1px solid #E2E8F0;
+    border: 1px solid var(--color-text-10);
   }
 
   &-white {
@@ -61,13 +61,13 @@
 
 
 .brs-1 {
-	border-radius: var(--radius-large);
+  border-radius: var(--radius-large);
 }
 
 .brs-2 {
-	border-radius: var(--radius-middle);
+  border-radius: var(--radius-middle);
 }
 
 .brs-3 {
-	border-radius: var(--radius-small);
+  border-radius: var(--radius-small);
 }
