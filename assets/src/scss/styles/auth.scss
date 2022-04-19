@@ -1,0 +1,163 @@
+// out: false
+
+.auth-page {
+	background:
+		url("../img/sempl/auth-bg.png") no-repeat center / cover,
+		linear-gradient(180deg, rgba(48, 109, 215, 0.7) 0%, rgba(0, 146, 228, 0) 50%),
+		linear-gradient(259.25deg, rgba(235, 171, 218, 0.9) 0%, rgba(148, 134, 206, 0) 33.34%),
+		linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
+		linear-gradient(180deg, #4DA1ED 0%, #306CD7 100%);
+	padding-top: 92px;
+	flex-grow  : 1;
+	position   : relative;
+
+	@media(max-width:$md) {
+		background : var(--bg3);
+		padding-top: 20px;
+	}
+
+	&-form {
+		width        : 338px;
+		margin-top   : 60px;
+		margin-left  : auto;
+		margin-right : auto;
+		border-radius: var(--radius-large);
+		background   : var(--bg3);
+
+		padding : 32px 40px 30px;
+		position: relative;
+		z-index : 1;
+
+
+		@media(max-width:$md) {
+			background   : none;
+			border-radius: 0;
+			width        : 400px;
+			max-width    : 100%;
+			margin-top   : 0;
+			padding      : 0;
+		}
+	}
+
+	&-info {
+		position: relative;
+		z-index : 1;
+
+		@media(max-width:$md) {
+			display: none;
+		}
+	}
+
+	&-reviews {
+		position: absolute;
+		left    : 0;
+		top     : 0;
+		width   : 100%;
+		height  : 100%;
+		overflow: hidden;
+
+		@media(max-width:$md) {
+			display: none;
+		}
+	}
+
+	&-review {
+		background   : rgba(255, 255, 255, 0.05);
+		border-radius: 16px;
+		padding      : 24px;
+		width        : 360px;
+
+		position: absolute;
+
+		&-1 {
+			top  : 157px;
+			right: calc(50% + 392px + 28px);
+		}
+
+		&-2 {
+			top  : 485px;
+			right: calc(50% + 344px + 28px);
+		}
+
+		&-3 {
+			top  : 812px;
+			right: calc(50% + 392px + 28px);
+		}
+
+		&-4 {
+			top : 157px;
+			left: calc(50% + 384px + 28px);
+		}
+
+		&-5 {
+			top : 485px;
+			left: calc(50% + 336px + 28px);
+		}
+
+		&-6 {
+			top : 812px;
+			left: calc(50% + 384px + 28px);
+		}
+
+
+		@media(max-width:1480px) {
+			&-1 {
+				right: calc(50% + 292px + 28px);
+			}
+
+			&-2 {
+				right: calc(50% + 244px + 28px);
+			}
+
+			&-3 {
+				right: calc(50% + 292px + 28px);
+			}
+
+			&-4 {
+				left: calc(50% + 284px + 28px);
+			}
+
+			&-5 {
+				left: calc(50% + 236px + 28px);
+			}
+
+			&-6 {
+				left: calc(50% + 284px + 28px);
+			}
+
+		}
+
+		@media(max-width:1380px) {
+			&-1 {
+				right: calc(50% + 192px + 28px);
+			}
+
+			&-2 {
+				right: calc(50% + 144px + 28px);
+			}
+
+			&-3 {
+				right: calc(50% + 192px + 28px);
+			}
+
+			&-4 {
+				left: calc(50% + 184px + 28px);
+			}
+
+			&-5 {
+				left: calc(50% + 136px + 28px);
+			}
+
+			&-6 {
+				left: calc(50% + 184px + 28px);
+			}
+
+		}
+	}
+}
+
+.header {
+	@media(max-width:$md) {
+		display: none;
+	}
+}

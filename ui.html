@@ -6,27 +6,40 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="stylesheet" href="assets/static/css/frontend--fonts.css">
+	<link rel="stylesheet" href="assets/dist/style.css">
+	<script src="assets/dist/index.js"></script>
 
-
-	<link rel="stylesheet" href="source/swiper-bundle.min.css">
-	<link rel="stylesheet" href="source/swiper-custom.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
-
-	<script src="source/swiper-bundle.min.js"></script>
-
-	<link rel="stylesheet" href="css/ui-reset.css">
-	<link rel="stylesheet" href="css/ui-core.css">
-	<link rel="stylesheet" href="css/frontend--fonts.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
-
-
-	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
-
-	<link rel="stylesheet" href="css/ui-example.css">
 
 
 	<title>UI Kit </title>
+
+
+
+	<style>
+		.example-cover {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.example-btns {
+			min-width: 300px;
+			width: 300px;
+			padding: 16px;
+			position: sticky;
+			top: 0;
+		}
+
+		.example-content {
+			width: 100%;
+		}
+
+		.code {
+			padding: 10px;
+			background: #333;
+			color: #fff;
+		}
+	</style>
 </head>
 
 <body>
@@ -42,12 +55,13 @@
 			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="7">Padding,
 				Margin</button>
 			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="8">Icon</button>
+			<button class="btn btn--primary btn--white-bg btn-active--fill mb-2 w-100" data-tab-link="9">Progress</button>
 		</div>
 		<div class="example-content px-4">
 
 			<div class="tab-content-cover">
 				<!-- Типография -->
-				<div class="tab-content tab-active" data-tab-content="1">
+				<div class="tab-content" data-tab-content="1">
 					<section class="text">
 						<h1 class="text-h1 mb-10">Типография</h1>
 
@@ -154,7 +168,7 @@
 							<div class="text-h6 color-primary flex">
 								.color-primary
 								<svg class="icon ml-2">
-									<use xlink:href="img/icons.svg#chat" />
+									<use xlink:href="assets/static/img/icons.svg#chat" />
 								</svg>
 							</div>
 						</div>
@@ -162,7 +176,7 @@
 							<div class="text-h6 color-red flex">
 								.color-red
 								<svg class="icon ml-2">
-									<use xlink:href="img/icons.svg#chat" />
+									<use xlink:href="assets/static/img/icons.svg#chat" />
 								</svg>
 							</div>
 						</div>
@@ -170,7 +184,7 @@
 							<div class="text-h6 color-yellow flex">
 								.color-yellow
 								<svg class="icon ml-2">
-									<use xlink:href="img/icons.svg#chat" />
+									<use xlink:href="assets/static/img/icons.svg#chat" />
 								</svg>
 							</div>
 						</div>
@@ -178,7 +192,7 @@
 							<div class="text-h6 color-green flex">
 								.color-green
 								<svg class="icon ml-2">
-									<use xlink:href="img/icons.svg#chat" />
+									<use xlink:href="assets/static/img/icons.svg#chat" />
 								</svg>
 							</div>
 						</div>
@@ -186,7 +200,7 @@
 							<div class="text-h6 color-icon flex">
 								.color-icon
 								<svg class="icon ml-2">
-									<use xlink:href="img/icons.svg#chat" />
+									<use xlink:href="assets/static/img/icons.svg#chat" />
 								</svg>
 							</div>
 						</div>
@@ -194,7 +208,7 @@
 							<div class="text-h6 color-text flex">
 								.color-text
 								<svg class="icon ml-2">
-									<use xlink:href="img/icons.svg#chat" />
+									<use xlink:href="assets/static/img/icons.svg#chat" />
 								</svg>
 							</div>
 						</div>
@@ -202,7 +216,7 @@
 							<div class="text-h6 color-white flex">
 								.color-white
 								<svg class="icon ml-2">
-									<use xlink:href="img/icons.svg#chat" />
+									<use xlink:href="assets/static/img/icons.svg#chat" />
 								</svg>
 							</div>
 						</div>
@@ -212,6 +226,9 @@
 				<div class="tab-content" data-tab-content="2">
 					<section class="form">
 						<h1 class="text-h1 mb-10">Form</h1>
+
+
+
 
 						<h1 class="text-h4 mb-8">Input</h1>
 
@@ -234,7 +251,7 @@
 						<div class="grid grid-align-center mb-10">
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
-									<div class="form-label">Обычное поле</div>
+									<div class="text-body-2 mb-2">Обычное поле</div>
 									<div class="form-input-cover">
 										<input type="text" class="form-input" placeholder="Заполните поле">
 									</div>
@@ -243,7 +260,7 @@
 
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
-									<div class="form-label">Выделенное поле</div>
+									<div class="text-body-2 mb-2">Выделенное поле</div>
 									<div class="form-input-cover">
 										<input type="text" class="form-input active" placeholder="Заполните поле">
 									</div>
@@ -251,7 +268,7 @@
 							</div>
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
-									<div class="form-label">Поле с ошибкой</div>
+									<div class="text-body-2 mb-2">Поле с ошибкой</div>
 									<div class="form-input-cover">
 										<input type="text" class="form-input error" placeholder="Заполните поле">
 									</div>
@@ -259,7 +276,7 @@
 							</div>
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field">
-									<div class="form-label">Не активное</div>
+									<div class="text-body-2 mb-2">Не активное</div>
 									<div class="form-input-cover">
 										<input type="text" class="form-input" disabled placeholder="Заполните поле">
 									</div>
@@ -269,7 +286,7 @@
 						<div class="grid grid-align-center mb-10">
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
-									<div class="form-label">Обычное поле</div>
+									<div class="text-body-2 mb-2">Обычное поле</div>
 
 									<div class="form-input-cover">
 										<input type="text" class="form-input" placeholder="От">
@@ -280,7 +297,7 @@
 							</div>
 							<div class="grid-col-lg-3 -copy-child-">
 								<label class="form-field ">
-									<div class="form-label">Обычное поле</div>
+									<div class="text-body-2 mb-2">Обычное поле</div>
 
 									<div class="form-input-cover">
 										<input type="text" class="form-input error" placeholder="От">
@@ -293,7 +310,7 @@
 							<div class="grid-col-lg-3 -copy-child-">
 
 								<div class="form-field">
-									<div class="form-label">Обычное поле</div>
+									<div class="text-body-2 mb-2">Обычное поле</div>
 
 									<div class="form-input-cover">
 										<label class="form-input-cover  ">
@@ -311,7 +328,7 @@
 
 							<div class="grid-col-lg-3 -copy-child-">
 								<div class="form-field">
-									<div class="form-label">Обычное поле</div>
+									<div class="text-body-2 mb-2">Обычное поле</div>
 									<div class="form-input-cover">
 										<label class="form-input-cover">
 											<input type="checkbox" class="form-input-checkbox" id="321">
@@ -330,31 +347,19 @@
 									<div class="form-input-group">
 										<label class="form-input-cover  ">
 											<input type="radio" class="form-input-checkbox" name="test-2">
-											<div class="form-input form-input-target">
-												Студия
-
-											</div>
+											<div class="form-input form-input-target"> Студия </div>
 										</label>
 										<label class="form-input-cover  ">
 											<input type="radio" class="form-input-checkbox" name="test-2">
-											<div class="form-input form-input-target">
-												1
-
-											</div>
+											<div class="form-input form-input-target"> 1 </div>
 										</label>
 										<label class="form-input-cover  ">
 											<input type="radio" class="form-input-checkbox" name="test-2">
-											<div class="form-input form-input-target">
-												2
-
-											</div>
+											<div class="form-input form-input-target"> 2 </div>
 										</label>
 										<label class="form-input-cover  ">
 											<input type="radio" class="form-input-checkbox" name="test-2">
-											<div class="form-input form-input-target">
-												3
-
-											</div>
+											<div class="form-input form-input-target"> 3 </div>
 										</label>
 
 									</div>
@@ -367,34 +372,99 @@
 						<div class="grid grid-align-center mb-10">
 							<div class="grid-col-lg-4 -copy-child-">
 								<label class="form-field form-select">
-									<div class="form-label">Обычное поле</div>
+									<div class="text-body-2 mb-2">Обычное поле</div>
 									<div class="form-input-cover">
+
 										<select class="form-input">
-											<option value="" disabled hidden selected>Выберите вариант</option>
-											<option value="1">Вариант 1</option>
-											<option value="2">Вариант 2</option>
+											<option value="" disabled hidden selected>Выберите</option>
+											<option value="1"> 1</option>
+											<option value="2"> 2</option>
 										</select>
 										<div class="form-select-icon">
 											<svg class="icon">
-												<use xlink:href="img/icons.svg#to-right" />
+												<use xlink:href="assets/static/img/icons.svg#to-right" />
 											</svg>
+										</div>
+
+									</div>
+								</label>
+							</div>
+
+
+						</div>
+
+						<h1 class="text-h4 mb-8">custom Select</h1>
+
+						<div class="text-body-0 mb-10 mt-10 code">
+							<!-- &nbsp;&nbsp; -->
+							&lt;<span class="color-primary">label</span> class=<span class="color-red">"form-field
+								form-select"</span>&gt; <br>
+							&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-label"</span>&gt;Обычное поле&lt;<span class="color-primary">/div</span>&gt;
+							<br>
+							&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-input-cover"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-input p-0"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">select</span> data-prefix=<span
+								class="color-red">"Вариант: "</span> data-custom-select&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span
+								class="color-red">""</span> disabled hidden selected&gt;Выберите&lt;<span
+								class="color-primary">/option</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span
+								class="color-red">"1"</span>&gt; 1&lt;<span class="color-primary">/option</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">option</span> value=<span
+								class="color-red">"2"</span>&gt; 2&lt;<span class="color-primary">/option</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/select</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">div</span> class=<span
+								class="color-red">"form-select-icon"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">svg</span> class=<span
+								class="color-red">"icon"</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">use</span>
+							xlink:href=<span class="color-red">"assets/static/img/icons.svg#to-right"</span> /&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/svg</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/div</span>&gt; <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color-primary">/div</span>&gt; <br>
+							&nbsp;&nbsp;&lt;<span class="color-primary">/div</span>&gt; <br>
+							&lt;<span class="color-primary">/label</span>&gt; <br>
+
+						</div>
+
+						<div class="grid grid-align-center mb-10">
+							<div class="grid-col-lg-4">
+								<label class="form-field form-select">
+									<div class="text-body-2 mb-2">Обычное поле</div>
+									<div class="form-input-cover">
+										<div class="form-input p-0">
+											<select data-custom-select>
+												<option value="" disabled hidden selected>Выберите</option>
+												<option value="1"> 1</option>
+												<option value="2"> 2</option>
+											</select>
+											<div class="form-select-icon">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#to-right" />
+												</svg>
+											</div>
 										</div>
 									</div>
 								</label>
 							</div>
-							<div class="grid-col-lg-4 -copy-child-">
+							<div class="grid-col-lg-4">
 								<label class="form-field form-select">
-									<div class="form-label">Обычное поле</div>
+									<div class="text-body-2 mb-2">Обычное поле</div>
 									<div class="form-input-cover">
-										<select class="form-input">
-											<option value="" disabled hidden selected>Выберите вариант</option>
-											<option value="1">Вариант 1</option>
-											<option value="2">Вариант 2</option>
-										</select>
-										<div class="form-select-icon">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#to-right" />
-											</svg>
+										<div class="form-input p-0">
+											<select data-prefix="Вариант: " data-custom-select>
+												<option value="" disabled hidden selected>Выберите</option>
+												<option value="1"> 1</option>
+												<option value="2"> 2</option>
+											</select>
+											<div class="form-select-icon">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#to-right" />
+												</svg>
+											</div>
 										</div>
 									</div>
 								</label>
@@ -406,30 +476,33 @@
 						<h1 class="text-h4 mb-8">Range</h1>
 						<div class="grid grid-align-center mb-10">
 							<div class="grid-col-lg-6 -copy-child-">
-								<label class="form-field form-range form-range-double">
-									<div class="form-label">Обычное поле</div>
+								<label class="form-field form-range-double">
+									<div class="text-body-2 mb-2">Обычное поле</div>
 									<div class="form-input-cover">
 										<div class="form-input">
 											<span class="form-range-from"></span> мм - <span class="form-range-to"></span> мм
-											<input type="text" class="form-range-from-input" hidden>
-											<input type="text" class="form-range-to-input" hidden>
-											<input type="text" class="-range-slider-" data-type="double" data-min="200" data-max="1000"
-												data-from="300" data-to="750">
+
+											<div class="form-range range" data-type="double" data-max="100" data-min="0" data-to="76">
+												<input type="text" class="range-input-from" hidden>
+												<input type="text" class="range-input-to" hidden>
+												<div class="range-inner"></div>
+											</div>
 										</div>
 									</div>
 								</label>
 							</div>
 							<div class="grid-col-lg-6 -copy-child-">
-								<label class="form-field form-range form-range-single">
-									<div class="form-label">Обычное поле</div>
+								<label class="form-field form-range-double">
+									<div class="text-body-2 mb-2">Обычное поле</div>
 									<div class="form-input-cover">
-										<div class="form-input d-flex">
-											<span class="form-range-from"></span>
-											<span class="text-body-2 text--fade ml-auto ">₽</span>
-											<input type="text" class="form-range-from-input" hidden>
-											<input type="text" class="form-range-to-input" hidden>
-											<input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="10000000"
-												data-from="3900000">
+										<div class="form-input">
+											<span class="form-range-to"></span> мм
+
+											<div class="form-range range" data-type="single" data-max="100" data-min="0" data-to="76">
+												<input type="text" class="range-input-from" hidden>
+												<input type="text" class="range-input-to" hidden>
+												<div class="range-inner"></div>
+											</div>
 										</div>
 									</div>
 								</label>
@@ -444,10 +517,10 @@
 									<input type="checkbox" class="form-input-checkbox">
 									<div class="form-checkbox-target">
 										<svg class="icon">
-											<use xlink:href="img/icons.svg#gal-ochka" />
+											<use xlink:href="assets/static/img/icons.svg#gal-ochka" />
 										</svg>
 									</div>
-									<div class="form-label"> Выберите вариант </div>
+									<div class="text-body-2 ml-2"> Выберите вариант </div>
 
 								</label>
 							</div>
@@ -456,7 +529,7 @@
 
 									<input type="checkbox" class="form-input-checkbox">
 									<div class="form-radio-target"> </div>
-									<div class="form-label"> Выберите вариант </div>
+									<div class="text-body-2 ml-2"> Выберите вариант </div>
 
 								</label>
 							</div>
@@ -464,7 +537,7 @@
 								<label class="form-field form-checkbox">
 									<input type="checkbox" class="form-input-checkbox">
 									<div class="form-toggle-target"> </div>
-									<div class="form-label"> Выберите вариант </div>
+									<div class="text-body-2 ml-2"> Выберите вариант </div>
 								</label>
 							</div>
 
@@ -477,10 +550,10 @@
 									<input type="checkbox" class="form-input-checkbox " disabled>
 									<div class="form-checkbox-target">
 										<svg class="icon">
-											<use xlink:href="img/icons.svg#gal-ochka" />
+											<use xlink:href="assets/static/img/icons.svg#gal-ochka" />
 										</svg>
 									</div>
-									<div class="form-label"> Выберите вариант </div>
+									<div class="text-body-2 ml-2"> Выберите вариант </div>
 
 								</label>
 							</div>
@@ -489,7 +562,7 @@
 
 									<input type="checkbox" class="form-input-checkbox" disabled>
 									<div class="form-radio-target"> </div>
-									<div class="form-label"> Выберите вариант </div>
+									<div class="text-body-2 ml-2"> Выберите вариант </div>
 
 								</label>
 							</div>
@@ -498,7 +571,7 @@
 
 									<input type="checkbox" class="form-input-checkbox" disabled>
 									<div class="form-toggle-target"> </div>
-									<div class="form-label"> Выберите вариант </div>
+									<div class="text-body-2 ml-2"> Выберите вариант </div>
 
 								</label>
 							</div>
@@ -508,7 +581,7 @@
 					</section>
 				</div>
 				<!-- Buttons -->
-				<div class="tab-content" data-tab-content="3">
+				<div class="tab-content " data-tab-content="3">
 					<section class="buttons">
 						<h1 class="text-h1 mb-10">Buttons</h1>
 						<div class="text-body-0 mb-10 mt-10 code">
@@ -534,54 +607,54 @@
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button class="btn btn--primary btn--fill btn-icon">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn--contur btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn--light btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn--white-bg btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button class="btn btn--primary btn--fill btn-fab">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn--contur btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn--light btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn--white-bg btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--primary btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
@@ -603,54 +676,54 @@
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button class="btn btn--red btn--fill btn-icon">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn--contur btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn--light btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn--white-bg btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button class="btn btn--red btn--fill btn-fab">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn--contur btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn--light btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn--white-bg btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--red btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
@@ -672,54 +745,54 @@
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button class="btn btn--green btn--fill btn-icon">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn--contur btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn--light btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn--white-bg btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button class="btn btn--green btn--fill btn-fab">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn--contur btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn--light btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn--white-bg btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 								<button class="btn btn--green btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
@@ -728,72 +801,72 @@
 							</div>
 
 						</div>
-						<h5 class="text-h6 mb-3">btn--color-icon</h5>
+						<h5 class="text-h6 mb-3">btn--icon</h5>
 						<div class="grid mb-10">
 							<div class="grid-col-lg-12 -copy-child- d-lg-flex flex-align-center">
-								<button class="btn btn--color-icon btn--fill flex-grow">btn--fill</button>
-								<button class="btn btn--color-icon btn--contur flex-grow ml-2">btn--contur</button>
-								<button class="btn btn--color-icon btn--light flex-grow ml-2">btn--light</button>
-								<button class="btn btn--color-icon btn--white-bg flex-grow ml-2">btn--white-bg</button>
-								<button class="btn btn--color-icon flex-grow ml-2">btn</button>
+								<button class="btn btn--icon btn--fill flex-grow">btn--fill</button>
+								<button class="btn btn--icon btn--contur flex-grow ml-2">btn--contur</button>
+								<button class="btn btn--icon btn--light flex-grow ml-2">btn--light</button>
+								<button class="btn btn--icon btn--white-bg flex-grow ml-2">btn--white-bg</button>
+								<button class="btn btn--icon flex-grow ml-2">btn</button>
 
 							</div>
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
-								<button class="btn btn--color-icon btn--fill btn-icon">
+								<button class="btn btn--icon btn--fill btn-icon">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn--contur btn-icon ml-1">
+								<button class="btn btn--icon btn--contur btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn--light btn-icon ml-1">
+								<button class="btn btn--icon btn--light btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn--white-bg btn-icon ml-1">
+								<button class="btn btn--icon btn--white-bg btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn-icon ml-1">
+								<button class="btn btn--icon btn-icon ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
-								<button class="btn btn--color-icon btn--fill btn-fab">
+								<button class="btn btn--icon btn--fill btn-fab">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn--contur btn-fab ml-1">
+								<button class="btn btn--icon btn--contur btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn--light btn-fab ml-1">
+								<button class="btn btn--icon btn--light btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn--white-bg btn-fab ml-1">
+								<button class="btn btn--icon btn--white-bg btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
-								<button class="btn btn--color-icon btn-fab ml-1">
+								<button class="btn btn--icon btn-fab ml-1">
 									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 								</button>
 							</div>
 							<div class="grid-col-2 -copy-child- flex flex-align-center">
-								<button class="btn btn--color-icon btn--link">btn--link</button>
+								<button class="btn btn--icon btn--link">btn--link</button>
 							</div>
 
 						</div>
@@ -801,69 +874,61 @@
 						<h5 class="text-h6 mb-3">button disabled</h5>
 						<div class="grid ">
 							<div class="grid-col-lg-12 -copy-child- d-lg-flex flex-align-center">
-								<button disabled class="btn btn--primary btn--fill flex-grow">btn--fill</button>
-								<button disabled class="btn btn--primary btn--contur flex-grow ml-2">btn--contur</button>
-								<button disabled class="btn btn--primary btn--light flex-grow ml-2">btn--light</button>
-								<button disabled class="btn btn--primary btn--white-bg flex-grow ml-2">btn--white-bg</button>
-								<button disabled class="btn btn--primary flex-grow ml-2">btn</button>
+								<button disabled class="btn btn--primary btn--fill flex-grow">
+									<div class="progress progress-circle text-body-2"></div>
+								</button>
+								<button disabled class="btn btn--primary btn--contur flex-grow ml-2">
+									<div class="progress progress-circle text-body-2"></div>
+								</button>
+								<button disabled class="btn btn--primary btn--light flex-grow ml-2">
+									<div class="progress progress-circle text-body-2"></div>
+								</button>
+								<button disabled class="btn btn--primary btn--white-bg flex-grow ml-2">
+									<div class="progress progress-circle text-body-2"></div>
+								</button>
+								<button disabled class="btn btn--primary flex-grow ml-2">
+									<div class="progress progress-circle text-body-2"></div>
+								</button>
 
 							</div>
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button disabled class="btn btn--primary btn--fill btn-icon">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn--contur btn-icon ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn--light btn-icon ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn--white-bg btn-icon ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn-icon ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 							</div>
 							<div class="grid-col-lg-3 -copy-child- flex flex-align-center">
 								<button disabled class="btn btn--primary btn--fill btn-fab">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn--contur btn-fab ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn--light btn-fab ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn--white-bg btn-fab ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 								<button disabled class="btn btn--primary btn-fab ml-1">
-									<svg class="icon">
-										<use xlink:href="img/icons.svg#chat" />
-									</svg>
+									<div class="progress progress-circle text-body-2"></div>
 								</button>
 							</div>
 							<div class="grid-col-2 -copy-child- flex flex-align-center">
-								<button disabled class="btn btn--primary btn--link">btn--link</button>
+								<button disabled class="btn btn--primary btn--link">
+									<div class="progress progress-circle text-body-2"></div>
+								</button>
 							</div>
 
 						</div>
@@ -871,42 +936,56 @@
 					</section>
 				</div>
 				<!-- Cards -->
-				<div class="tab-content" data-tab-content="4">
+				<div class="tab-content tab-active" data-tab-content="4">
 					<section class="cards">
 						<h1 class="text-h4 mb-8">Card</h1>
+
+						<div class="text-body-2 lh-1-5 mb-10">
+							<b>.card</b> - Основной класс <br>
+							<b>.card-action</b> - Добавляет эффект при наведении (затемнение) <br>
+							<b>.waved</b> - Добавляет эффект при клике (волна) <br>
+							<b>.hover-link-wrapper</b> - Добавляет эффект наведении для элементов <b>.hover-link</b> внутри
+							(подчеркивание) <br>
+
+
+						</div>
+
+
 						<div class="grid grid-spacing-6 mb-8">
-							<div class="grid-col-md-6">
-								<div class="card">
-									<div class="card-img">
-										<img src="https://picsum.photos/id/1067/600/400" alt="">
+							<div class="grid-col-md-6 -copy-child-">
+								<a href="javascript:;" class="card card-action waved hover-link-wrapper">
+									<div class="card-img progress-container">
+										<div class="progress progress-circle color-icon"></div>
+										<img src="https://picsum.photos/600/400?random=91" alt="">
 									</div>
 									<div class="card-control">
 										<div class="card-messages">
 											<div class="card-message">
 												<div class="card-message-img">
-													<img src="img/sempl/lighting.png" alt="" class="icon">
+													<img src="assets/static/img/sempl/lighting.png" alt="" class="icon">
 												</div>
 												<div class="text-small text--demibold">Успей купить</div>
 											</div>
 										</div>
 
 										<div class="ml-auto card-likes">
-											<div class="card-like card-like-bg">
+											<button class="btn btn--primary btn-fab card-like card-like-bg ">
 												<svg class="icon">
-													<use xlink:href="img/icons.svg#share" />
+													<use xlink:href="assets/static/img/icons.svg#share" />
 												</svg>
-											</div>
-											<div class="card-like card-like-bg">
+											</button>
+											<button class="btn btn--red btn-fab card-like card-like-bg">
 												<svg class="icon">
-													<use xlink:href="img/utils.svg#heart" />
+													<use xlink:href="assets/static/img/utils.svg#heart" />
 												</svg>
-											</div>
+											</button>
 										</div>
 
 									</div>
 
 									<div class="card-content">
-										<div class="text-body-1 text--demibold mb-2">Мы строим новую коробку, такую же как и в прошлый раз!
+										<div class="text-body-1 text--demibold mb-2 hover-link">
+											Мы строим новую коробку, такую же как и в прошлый раз!
 										</div>
 										<div class="text-body-2 text--fade lh-1-5">
 											ЖК комфорт класса «Стрижи» — сочетание современных архитектурных решений, ландшафтного дизайна,
@@ -914,16 +993,17 @@
 										</div>
 
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 
 						<h1 class="text-h4 mb-8">Новости застройщиков</h1>
 						<div class="grid grid-spacing-6 mb-8">
-							<div class="grid-col-8 grid-col-lg-6">
+							<div class="grid-col-8 grid-col-lg-6 -copy-child-">
 								<div class="news-card card">
-									<div class="card-img">
-										<img src="https://picsum.photos/id/1063/600/400" alt="">
+									<div class="card-img progress-container">
+										<div class="progress progress-circle color-icon"></div>
+										<img src="https://picsum.photos/600/400?random=92" alt="">
 									</div>
 									<div class="card-control">
 										<div class="card-messages d-lg-none">
@@ -933,16 +1013,16 @@
 										</div>
 
 										<div class="ml-auto card-likes d-lg-flex d-none">
-											<div class="card-like card-like-bg">
+											<button class="btn btn--primary btn-fab card-like card-like-bg ">
 												<svg class="icon">
-													<use xlink:href="img/icons.svg#share" />
+													<use xlink:href="assets/static/img/icons.svg#share" />
 												</svg>
-											</div>
-											<div class="card-like card-like-bg">
+											</button>
+											<button class="btn btn--red btn-fab card-like card-like-bg">
 												<svg class="icon">
-													<use xlink:href="img/utils.svg#heart" />
+													<use xlink:href="assets/static/img/utils.svg#heart" />
 												</svg>
-											</div>
+											</button>
 										</div>
 
 									</div>
@@ -951,7 +1031,7 @@
 										<div class="news-card-info mb-lg-4">
 											<div class="news-card-brand brand-min d-lg-flex d-none">
 												<div class="brand-min-img">
-													<img src="img/sempl/brand-3.png" alt="">
+													<img src="assets/static/img/sempl/brand-3.png" alt="">
 												</div>
 												<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
 
@@ -971,7 +1051,7 @@
 
 											<div class="ml-auto d-lg-flex d-none flex-align-center">
 												<svg class="icon text-body-1 color-icon mr-2">
-													<use xlink:href="img/icons.svg#eye" />
+													<use xlink:href="assets/static/img/icons.svg#eye" />
 												</svg>
 												<div class="text-body-2 color-icon">123</div>
 											</div>
@@ -983,38 +1063,40 @@
 
 						<h1 class="text-h4 mb-8">Популярные районы</h1>
 						<div class="grid grid-spacing-8 mb-8">
-							<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-								<div class="card">
-									<div class="card-img">
+							<div class="grid-col-6 grid-col-md-4 grid-col-lg-3 -copy-child-">
+								<a href="javascript:;" class="card card-action waved hover-link-wrapper">
+									<div class="card-img progress-container">
+										<div class="progress progress-circle color-icon"></div>
 										<img src="https://picsum.photos/id/1063/600/400" alt="">
 									</div>
 
 
 									<div class="card-content pt-3 px-6">
 
-										<div class="text-body-1 text--demibold ">Юбилейный</div>
+										<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 										<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
 
 
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 
 						<h1 class="text-h4 mb-8">Карточка жилого комплекса</h1>
 						<div class="grid grid-spacing-5 mb-5">
-							<div class="grid-col-6 grid-col-lg-3">
+							<div class="grid-col-6 grid-col-lg-3 -copy-child-">
 								<div class="jk-card card">
-									<div class="card-img">
+									<div class="card-img progress-container">
+										<div class="progress progress-circle color-icon"></div>
 										<img src="https://picsum.photos/id/1063/600/400" alt="">
 									</div>
 									<div class="card-control">
 										<div class="ml-auto card-likes">
-											<div class="card-like card-like-bg">
+											<button class="btn btn--red btn-fab card-like card-like-bg">
 												<svg class="icon">
-													<use xlink:href="img/utils.svg#heart" />
+													<use xlink:href="assets/static/img/utils.svg#heart" />
 												</svg>
-											</div>
+											</button>
 										</div>
 
 									</div>
@@ -1060,10 +1142,10 @@
 
 						<h1 class="text-h4 mb-8">Планировки карточка</h1>
 						<div class="grid grid-spacing-5 mb-5">
-							<div class="grid-col-6 grid-col-lg-4">
+							<div class="grid-col-6 grid-col-lg-4 -copy-child-">
 								<div class="plan-card card">
 									<div class="plan-card-img">
-										<img src="img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1100,13 +1182,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="grid-col-6 grid-col-lg-4">
+							<div class="grid-col-6 grid-col-lg-4 -copy-child-">
 
 								<div class="plan-card card">
 									<div class="card-top d-flex flex-align-center">
 										<div class="plan-card-brand brand-min">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="brand-min-text">
 												<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон Красная пл...</div>
@@ -1115,15 +1197,15 @@
 											</div>
 
 										</div>
-
-										<div class="card-like ml-auto active">
+										<button class="btn btn--red btn-fab card-like active ml-auto">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart" />
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
+
 									</div>
 									<div class="plan-card-img ">
-										<img src="img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1133,7 +1215,7 @@
 										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
 										<div class="plan-card-info d-md-flex d-none mt-2">
-											<img src="img/sempl/price-top.png" alt="" class="mr-2">
+											<img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2">
 											<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 											<span class="text-small text--fade flex-self-end">Обновлено 06.10.2021</span>
 										</div>
@@ -1160,12 +1242,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="grid-col-6 grid-col-lg-4">
+							<div class="grid-col-6 grid-col-lg-4 -copy-child-">
 								<div class="plan-card card h-100">
 									<div class="card-top d-flex flex-align-center">
 										<div class="plan-card-brand brand-min">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="brand-min-text">
 												<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон Красная пл...</div>
@@ -1175,14 +1257,14 @@
 
 										</div>
 
-										<div class="card-like ml-auto active">
+										<button class="btn btn--red btn-fab card-like ml-auto">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart" />
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 									<div class="plan-card-img ">
-										<img src="img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1192,7 +1274,7 @@
 										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
 										<div class="plan-card-info d-md-flex d-none mt-2">
-											<img src="img/sempl/price-top.png" alt="" class="mr-2">
+											<img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2">
 											<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 											<button class="btn btn--link btn--primary">Отслеживать</button>
 										</div>
@@ -1219,12 +1301,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="grid-col-6 grid-col-lg-4">
+							<div class="grid-col-6 grid-col-lg-4 -copy-child-">
 								<div class="plan-card card h-100">
 									<div class="card-top d-flex flex-align-center">
 										<div class="plan-card-brand brand-min">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="brand-min-text">
 												<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон Красная пл...</div>
@@ -1234,14 +1316,14 @@
 
 										</div>
 
-										<div class="card-like ml-auto active">
+										<button class="btn btn--red btn-fab card-like active ml-auto">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart" />
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 									<div class="plan-card-img ">
-										<img src="img/sempl/plan.png" alt="">
+										<img src="assets/static/img/sempl/plan.png" alt="">
 									</div>
 
 
@@ -1251,12 +1333,12 @@
 										<div class="text-md-h6 text-body-2 text--demibold">От 4 800 000 ₽</div>
 
 										<div class="plan-card-info d-md-flex d-none mt-2">
-											<img src="img/sempl/price-top.png" alt="" class="mr-2">
+											<img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2">
 											<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 											<div class="text-body-2 text--demibold d-flex flex-align-center color-icon">
 												Отслеживаемое
 												<svg class="icon color-primary ml-2">
-													<use xlink:href="img/icons.svg#gal-ochka" />
+													<use xlink:href="assets/static/img/icons.svg#gal-ochka" />
 												</svg>
 											</div>
 										</div>
@@ -1288,9 +1370,10 @@
 
 						<h1 class="text-h4 mb-8">Акции и новости</h1>
 						<div class="grid grid-spacing-4 mb-8">
-							<div class="grid-col-md-6 grid-col-lg-4">
+							<div class="grid-col-md-6 grid-col-lg-4 -copy-child-">
 								<div class="card h-100">
-									<div class="card-img">
+									<div class="card-img progress-container">
+										<div class="progress progress-circle color-icon"></div>
 										<img src="https://picsum.photos/id/363/600/400" alt="">
 									</div>
 
@@ -1310,9 +1393,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="grid-col-md-6 grid-col-lg-4">
+							<div class="grid-col-md-6 grid-col-lg-4 -copy-child-">
 								<div class="card h-100">
-									<div class="card-img">
+									<div class="card-img progress-container">
+										<div class="progress progress-circle color-icon"></div>
 										<img src="https://picsum.photos/id/362/600/400" alt="">
 									</div>
 
@@ -1336,9 +1420,10 @@
 
 						<h1 class="text-h4 mb-8">Особенности дома</h1>
 						<div class="grid grid-spacing-4 mb-8">
-							<div class="grid-col-6 grid-col-lg-4">
+							<div class="grid-col-6 grid-col-lg-4 -copy-child-">
 								<div class="card h-100">
-									<div class="card-img pb-5">
+									<div class="card-img pb-5 progress-container">
+										<div class="progress progress-circle color-icon"></div>
 										<img src="https://picsum.photos/id/367/600/400" alt="">
 									</div>
 
@@ -1359,504 +1444,544 @@
 
 					<section class="cards">
 						<h1 class="text-h4 mb-8">Карточка жилого комплекса - большая</h1>
-						<div class="jk-row mb-4">
-							<div class="jk-row-content card">
-								<div class="jk-row-preview">
-									<div class="jk-row-preview-img">
-										<img src="https://picsum.photos/600/400?random=31" alt="">
-									</div>
-									<div class="card-control">
+						<div class="mb-4 -copy-child-">
+							<div class="jk-row ">
+								<div class="jk-row-content card">
+									<div class="jk-row-preview">
+										<div class="jk-row-preview-img progress-container">
+											<div class="progress progress-circle color-icon"></div>
+											<img src="https://picsum.photos/600/400?random=31" alt="">
+										</div>
+										<div class="card-control">
 
-										<div class="card-messages">
-											<div class="card-message">
-												<div class="card-message-img">
-													<img src="img/sempl/flag.png" alt="" class="icon">
+											<div class="card-messages">
+												<div class="card-message">
+													<div class="card-message-img">
+														<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
+													</div>
+													<div class="text-small text--demibold">Старт продаж</div>
 												</div>
-												<div class="text-small text--demibold">Старт продаж</div>
-											</div>
-										</div>
-
-										<div class="jk-row-preview-likes card-likes ml-auto">
-											<div class="card-like card-like-bg d-md-none">
-												<svg class="icon">
-													<use xlink:href="img/utils.svg#chart" />
-												</svg>
-											</div>
-											<div class="card-like card-like-bg">
-												<svg class="icon">
-													<use xlink:href="img/utils.svg#heart" />
-												</svg>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="jk-row-inner">
-									<div class="jk-row-info">
-										<div class="jk-row-info-data mb-4 mb-md-0">
-											<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
-											<div class="jk-row-info-map">
-												<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
-												<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
 											</div>
 
-											<div class="jk-row-complete flex flex-align-center mt-4">
-												<svg class="icon text-body-2 color-icon mr-2">
-													<use xlink:href="img/icons.svg#key" />
-												</svg>
-												<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
-														class="text--fade text--regular">есть сданные</span></span>
-											</div>
-										</div>
-										<div class="jk-row-info-statistic">
-											<div class="jk-row-info-count mb-1 text-small text--demibold color-red">Осталось: 10 квартир</div>
-
-											<div class="jk-row-info-view d-none d-md-flex flex-align-center">
-												<svg class="icon text-body-2 color-icon mr-1">
-													<use xlink:href="img/icons.svg#eye" />
-												</svg>
-												<div class="text-small text--fade">Интересуются: 10 человек</div>
-
+											<div class="jk-row-preview-likes card-likes ml-auto">
+												<button class="btn btn--primary btn-fab card-like card-like-bg d-md-none">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/utils.svg#chart" />
+													</svg>
+												</button>
+												<button class="btn btn--red btn-fab card-like card-like-bg">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/utils.svg#heart" />
+													</svg>
+												</button>
 											</div>
 										</div>
 									</div>
-									<div class="jk-row-plans mt-4 mt-mg-6">
-										<div class="swiper grid-wrap grid-spacing-2">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
+									<div class="jk-row-inner">
+										<div class="jk-row-info">
+											<div class="jk-row-info-data mb-4 mb-md-0">
+												<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+												<div class="jk-row-info-map">
+													<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+													<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На
+														карте</button>
 												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
+
+												<div class="jk-row-complete flex flex-align-center mt-4">
+													<svg class="icon text-body-2 color-icon mr-2">
+														<use xlink:href="assets/static/img/icons.svg#key" />
+													</svg>
+													<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+															class="text--fade text--regular">есть сданные</span></span>
 												</div>
 											</div>
+											<div class="jk-row-info-statistic">
+												<div class="jk-row-info-count mb-1 text-small text--demibold color-red">Осталось: 10 квартир
+												</div>
 
-											<button class="slider-btn jk-row-plans-next">
+												<div class="jk-row-info-view d-none d-md-flex flex-align-center">
+													<svg class="icon text-body-2 color-icon mr-1">
+														<use xlink:href="assets/static/img/icons.svg#eye" />
+													</svg>
+													<div class="text-small text--fade">Интересуются: 10 человек</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="jk-row-plans mt-4 mt-mg-6">
+											<div class="swiper grid-wrap grid-spacing-2">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<button class="btn btn-small btn-fab btn--white-bg jk-row-plans-next">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/icons.svg#to-right" />
+													</svg>
+												</button>
+											</div>
+
+										</div>
+										<div class="jk-row-control mt-6">
+											<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+											<button class="btn btn--icon btn-icon ml-1">
 												<svg class="icon">
-													<use xlink:href="img/icons.svg#to-right" />
+													<use xlink:href="assets/static/img/icons.svg#chat" />
 												</svg>
 											</button>
+											<button class="btn btn--icon btn-icon ml-1">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#chart" />
+												</svg>
+											</button>
+
 										</div>
-
-									</div>
-									<div class="jk-row-control mt-6">
-										<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
-										<button class="btn btn--color-icon btn-icon ml-1">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#chat" />
+										<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+											<svg class="icon text-body-2 fade-40">
+												<use xlink:href="assets/static/img/icons.svg#to-left-double" />
 											</svg>
-										</button>
-										<button class="btn btn--color-icon btn-icon ml-1">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#chart" />
+											<div class="text-body-2 text--fade">листайте планировки</div>
+											<svg class="icon text-body-2 fade-40">
+												<use xlink:href="assets/static/img/icons.svg#to-right-double" />
 											</svg>
-										</button>
+										</div>
+									</div>
+								</div>
+								<div class="jk-row-aside card">
+									<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+									<div class="jk-row-brand brand-min">
+										<div class="brand-min-img">
+											<img src="assets/static/img/sempl/brand-1.png" alt="">
+										</div>
+										<div class="text-body-2">ЮгСтройИнвест</div>
 
 									</div>
-									<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
-										<svg class="icon text-body-2 fade-40">
-											<use xlink:href="img/icons.svg#to-left-double" />
-										</svg>
-										<div class="text-body-2 text--fade">листайте планировки</div>
-										<svg class="icon text-body-2 fade-40">
-											<use xlink:href="img/icons.svg#to-right-double" />
-										</svg>
+									<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт
 									</div>
-								</div>
-							</div>
-							<div class="jk-row-aside card">
-								<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
-								<div class="jk-row-brand brand-min">
-									<div class="brand-min-img">
-										<img src="img/sempl/brand-1.png" alt="">
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102
 									</div>
-									<div class="text-body-2">ЮгСтройИнвест</div>
-
-								</div>
-								<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102
-								</div>
-								<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span>
-									Монолитно-кирпич.</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19
-								</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая
+									<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span>
+										Монолитно-кирпич.</div>
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19
+									</div>
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="jk-row mb-4">
-							<div class="jk-row-content card">
-								<div class="jk-row-preview">
-									<div class="jk-row-preview-img">
-										<img src="https://picsum.photos/600/400?random=32" alt="">
-									</div>
-									<div class="card-control">
+						<div class="mb-4 -copy-child-">
+							<div class="jk-row">
+								<div class="jk-row-content card">
+									<div class="jk-row-preview">
+										<div class="jk-row-preview-img progress-container">
+											<div class="progress progress-circle color-icon"></div>
+											<img src="https://picsum.photos/600/400?random=32" alt="">
+										</div>
+										<div class="card-control">
 
-										<div class="card-messages">
-											<div class="card-message">
-												<div class="card-message-img">
-													<img src="img/sempl/fire.png" alt="" class="icon">
+											<div class="card-messages">
+												<div class="card-message">
+													<div class="card-message-img">
+														<img src="assets/static/img/sempl/fire.png" alt="" class="icon">
+													</div>
+													<div class="text-small text--demibold">Высокий спрос</div>
 												</div>
-												<div class="text-small text--demibold">Высокий спрос</div>
-											</div>
-										</div>
-
-										<div class="jk-row-preview-likes card-likes ml-auto">
-											<div class="card-like card-like-bg d-md-none">
-												<svg class="icon">
-													<use xlink:href="img/utils.svg#chart" />
-												</svg>
-											</div>
-											<div class="card-like card-like-bg">
-												<svg class="icon">
-													<use xlink:href="img/utils.svg#heart" />
-												</svg>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="jk-row-inner">
-									<div class="jk-row-info">
-										<div class="jk-row-info-data mb-4 mb-md-0">
-											<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
-											<div class="jk-row-info-map">
-												<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
-												<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
 											</div>
 
-											<div class="jk-row-complete flex flex-align-center mt-4">
-												<svg class="icon text-body-2 color-icon mr-2">
-													<use xlink:href="img/icons.svg#key" />
-												</svg>
-												<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
-														class="text--fade text--regular">есть сданные</span></span>
-											</div>
-										</div>
-										<div class="jk-row-info-statistic">
-											<div class="jk-row-info-count mb-1 text-small text--demibold color-yellow">Осталось: 40 домов
-											</div>
-
-											<div class="jk-row-info-view d-none d-md-flex flex-align-center">
-												<svg class="icon text-body-2 color-icon mr-1">
-													<use xlink:href="img/icons.svg#eye" />
-												</svg>
-												<div class="text-small text--fade">Интересуются: 10 человек</div>
-
+											<div class="jk-row-preview-likes card-likes ml-auto">
+												<button class="btn btn--primary btn-fab card-like card-like-bg d-md-none">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/utils.svg#chart" />
+													</svg>
+												</button>
+												<button class="btn btn--red btn-fab card-like card-like-bg">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/utils.svg#heart" />
+													</svg>
+												</button>
 											</div>
 										</div>
 									</div>
-									<div class="jk-row-plans mt-4 mt-mg-6">
-										<div class="swiper grid-wrap grid-spacing-2">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
+									<div class="jk-row-inner">
+										<div class="jk-row-info">
+											<div class="jk-row-info-data mb-4 mb-md-0">
+												<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+												<div class="jk-row-info-map">
+													<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+													<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На
+														карте</button>
 												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
+
+												<div class="jk-row-complete flex flex-align-center mt-4">
+													<svg class="icon text-body-2 color-icon mr-2">
+														<use xlink:href="assets/static/img/icons.svg#key" />
+													</svg>
+													<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+															class="text--fade text--regular">есть сданные</span></span>
 												</div>
 											</div>
+											<div class="jk-row-info-statistic">
+												<div class="jk-row-info-count mb-1 text-small text--demibold color-yellow">Осталось: 40 домов
+												</div>
 
-											<button class="slider-btn jk-row-plans-next">
+												<div class="jk-row-info-view d-none d-md-flex flex-align-center">
+													<svg class="icon text-body-2 color-icon mr-1">
+														<use xlink:href="assets/static/img/icons.svg#eye" />
+													</svg>
+													<div class="text-small text--fade">Интересуются: 10 человек</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="jk-row-plans mt-4 mt-mg-6">
+											<div class="swiper grid-wrap grid-spacing-2">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<button class="btn btn-small btn-fab btn--white-bg jk-row-plans-next">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/icons.svg#to-right" />
+													</svg>
+												</button>
+											</div>
+
+										</div>
+										<div class="jk-row-control mt-6">
+											<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+											<button class="btn btn--icon btn-icon ml-1">
 												<svg class="icon">
-													<use xlink:href="img/icons.svg#to-right" />
+													<use xlink:href="assets/static/img/icons.svg#chat" />
 												</svg>
 											</button>
+											<button class="btn btn--icon btn-icon ml-1">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#chart" />
+												</svg>
+											</button>
+
 										</div>
-
-									</div>
-									<div class="jk-row-control mt-6">
-										<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
-										<button class="btn btn--color-icon btn-icon ml-1">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#chat" />
+										<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+											<svg class="icon text-body-2 fade-40">
+												<use xlink:href="assets/static/img/icons.svg#to-left-double" />
 											</svg>
-										</button>
-										<button class="btn btn--color-icon btn-icon ml-1">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#chart" />
+											<div class="text-body-2 text--fade">листайте планировки</div>
+											<svg class="icon text-body-2 fade-40">
+												<use xlink:href="assets/static/img/icons.svg#to-right-double" />
 											</svg>
-										</button>
+										</div>
+									</div>
+								</div>
+								<div class="jk-row-aside card">
+									<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+									<div class="jk-row-brand brand-min">
+										<div class="brand-min-img">
+											<img src="assets/static/img/sempl/brand-2.png" alt="">
+										</div>
+										<div class="text-body-2">Romex Development</div>
 
 									</div>
-									<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
-										<svg class="icon text-body-2 fade-40">
-											<use xlink:href="img/icons.svg#to-left-double" />
-										</svg>
-										<div class="text-body-2 text--fade">листайте планировки</div>
-										<svg class="icon text-body-2 fade-40">
-											<use xlink:href="img/icons.svg#to-right-double" />
-										</svg>
+									<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт
 									</div>
-								</div>
-							</div>
-							<div class="jk-row-aside card">
-								<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
-								<div class="jk-row-brand brand-min">
-									<div class="brand-min-img">
-										<img src="img/sempl/brand-2.png" alt="">
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102
 									</div>
-									<div class="text-body-2">Romex Development</div>
-
-								</div>
-								<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102
-								</div>
-								<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span>
-									Монолитно-кирпич.</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19
-								</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая
+									<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span>
+										Монолитно-кирпич.</div>
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19
+									</div>
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="jk-row mb-4">
-							<div class="jk-row-content card">
-								<div class="jk-row-preview">
-									<div class="jk-row-preview-img">
-										<img src="https://picsum.photos/600/400?random=33" alt="">
-									</div>
-									<div class="card-control">
+						<div class="mb-4 -copy-child-">
+							<div class="jk-row">
+								<div class="jk-row-content card">
+									<div class="jk-row-preview">
+										<div class="jk-row-preview-img progress-container">
+											<div class="progress progress-circle color-icon"></div>
+											<img src="https://picsum.photos/600/400?random=33" alt="">
+										</div>
+										<div class="card-control">
 
-										<div class="card-messages">
-											<div class="card-message">
-												<div class="card-message-img">
-													<img src="img/sempl/lighting.png" alt="" class="icon">
+											<div class="card-messages">
+												<div class="card-message">
+													<div class="card-message-img">
+														<img src="assets/static/img/sempl/lighting.png" alt="" class="icon">
+													</div>
+													<div class="text-small text--demibold">Успей купить</div>
 												</div>
-												<div class="text-small text--demibold">Успей купить</div>
-											</div>
-										</div>
-
-										<div class="jk-row-preview-likes card-likes ml-auto">
-											<div class="card-like card-like-bg d-md-none">
-												<svg class="icon">
-													<use xlink:href="img/utils.svg#chart" />
-												</svg>
-											</div>
-											<div class="card-like card-like-bg">
-												<svg class="icon">
-													<use xlink:href="img/utils.svg#heart" />
-												</svg>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="jk-row-inner">
-									<div class="jk-row-info">
-										<div class="jk-row-info-data mb-4 mb-md-0">
-											<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
-											<div class="jk-row-info-map">
-												<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
-												<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На карте</button>
 											</div>
 
-											<div class="jk-row-complete flex flex-align-center mt-4">
-												<svg class="icon text-body-2 color-icon mr-2">
-													<use xlink:href="img/icons.svg#key" />
-												</svg>
-												<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
-														class="text--fade text--regular">есть сданные</span></span>
-											</div>
-										</div>
-										<div class="jk-row-info-statistic">
-
-											<div class="jk-row-info-count mb-1 text-small text--demibold color-green">Продано уже 5% квартир
-											</div>
-
-											<div class="jk-row-info-view d-none d-md-flex flex-align-center">
-												<svg class="icon text-body-2 color-icon mr-1">
-													<use xlink:href="img/icons.svg#eye" />
-												</svg>
-												<div class="text-small text--fade">Интересуются: 10 человек</div>
-
+											<div class="jk-row-preview-likes card-likes ml-auto">
+												<button class="btn btn--primary btn-fab card-like card-like-bg d-md-none">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/utils.svg#chart" />
+													</svg>
+												</button>
+												<button class="btn btn--red btn-fab card-like card-like-bg">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/utils.svg#heart" />
+													</svg>
+												</button>
 											</div>
 										</div>
 									</div>
-									<div class="jk-row-plans mt-4 mt-mg-6">
-										<div class="swiper grid-wrap grid-spacing-2">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
+									<div class="jk-row-inner">
+										<div class="jk-row-info">
+											<div class="jk-row-info-data mb-4 mb-md-0">
+												<div class="jk-row-info-title text-body-1 text--demibold">ЖК «Novella (Новелла)»</div>
+												<div class="jk-row-info-map">
+													<span class="text-body-2 text--fade ">ул. Джержинского, ЮМР</span>
+													<button class="btn btn--primary btn--link text-body-2 d-none d-md-inline-flex">На
+														карте</button>
 												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-													<div class="plan-min">
-														<div class="plan-min-img">
-															<img src="img/sempl/plan-min.png" alt="">
-														</div>
-														<div class="plan-min-content">
-															<div class="plan-min-count text-small">1-комнатные</div>
-															<div class="plan-min-size text-small">от 48,5 м2</div>
-															<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
-														</div>
-													</div>
+
+												<div class="jk-row-complete flex flex-align-center mt-4">
+													<svg class="icon text-body-2 color-icon mr-2">
+														<use xlink:href="assets/static/img/icons.svg#key" />
+													</svg>
+													<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
+															class="text--fade text--regular">есть сданные</span></span>
 												</div>
 											</div>
+											<div class="jk-row-info-statistic">
 
-											<button class="slider-btn jk-row-plans-next">
+												<div class="jk-row-info-count mb-1 text-small text--demibold color-green">Продано уже 5% квартир
+												</div>
+
+												<div class="jk-row-info-view d-none d-md-flex flex-align-center">
+													<svg class="icon text-body-2 color-icon mr-1">
+														<use xlink:href="assets/static/img/icons.svg#eye" />
+													</svg>
+													<div class="text-small text--fade">Интересуются: 10 человек</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="jk-row-plans mt-4 mt-mg-6">
+											<div class="swiper grid-wrap grid-spacing-2">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+													<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
+														<div class="plan-min card-action waved">
+															<div class="plan-min-img">
+																<img src="assets/static/img/sempl/plan-min.png" alt="">
+															</div>
+															<div class="plan-min-content">
+																<div class="plan-min-count text-small">1-комнатные</div>
+																<div class="plan-min-size text-small">от 48,5 м2</div>
+																<div class="plan-min-cost mt-1 text-body-2 text--demibold">От 2,2 млн ₽</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<button class="btn btn-small btn-fab btn--white-bg jk-row-plans-next">
+													<svg class="icon">
+														<use xlink:href="assets/static/img/icons.svg#to-right" />
+													</svg>
+												</button>
+											</div>
+
+										</div>
+										<div class="jk-row-control mt-6">
+											<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
+											<button class="btn btn--icon btn-icon ml-1">
 												<svg class="icon">
-													<use xlink:href="img/icons.svg#to-right" />
+													<use xlink:href="assets/static/img/icons.svg#chat" />
 												</svg>
 											</button>
+											<button class="btn btn--icon btn-icon ml-1">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#chart" />
+												</svg>
+											</button>
+
 										</div>
-
-									</div>
-									<div class="jk-row-control mt-6">
-										<button class="jk-row-btn btn btn--primary btn--light">Подробнее</button>
-										<button class="btn btn--color-icon btn-icon ml-1">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#chat" />
+										<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
+											<svg class="icon text-body-2 fade-40">
+												<use xlink:href="assets/static/img/icons.svg#to-left-double" />
 											</svg>
-										</button>
-										<button class="btn btn--color-icon btn-icon ml-1">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#chart" />
+											<div class="text-body-2 text--fade">листайте планировки</div>
+											<svg class="icon text-body-2 fade-40">
+												<use xlink:href="assets/static/img/icons.svg#to-right-double" />
 											</svg>
-										</button>
+										</div>
+									</div>
+								</div>
+								<div class="jk-row-aside card">
+									<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
+									<div class="jk-row-brand brand-min">
+										<div class="brand-min-img">
+											<img src="assets/static/img/sempl/brand-3.png" alt="">
+										</div>
+										<div class="text-body-2">ЮгСтройИнвест</div>
 
 									</div>
-									<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
-										<svg class="icon text-body-2 fade-40">
-											<use xlink:href="img/icons.svg#to-left-double" />
-										</svg>
-										<div class="text-body-2 text--fade">листайте планировки</div>
-										<svg class="icon text-body-2 fade-40">
-											<use xlink:href="img/icons.svg#to-right-double" />
-										</svg>
+									<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт
 									</div>
-								</div>
-							</div>
-							<div class="jk-row-aside card">
-								<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
-								<div class="jk-row-brand brand-min">
-									<div class="brand-min-img">
-										<img src="img/sempl/brand-3.png" alt="">
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102
 									</div>
-									<div class="text-body-2">ЮгСтройИнвест</div>
-
-								</div>
-								<div class="jk-row-aside-prop text-body-2 mt-4"><span class="text--demibold">Класс:</span> Комфорт</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Всего квартир:</span> 4102
-								</div>
-								<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span>
-									Монолитно-кирпич.</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19
-								</div>
-								<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая
+									<div class="jk-row-aside-prop text-body-2 mt-2"><span class="text--demibold">Тип:</span>
+										Монолитно-кирпич.</div>
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Этажность:</span> от 11 до 19
+									</div>
+									<div class="jk-row-aside-prop text-body-2 "><span class="text--demibold">Отделка:</span> Предчистовая
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1929,109 +2054,226 @@
 						</div>
 
 						<div class="slider slider-test-1">
-							<div class="swiper grid-wrap grid-spacing-4">
+							<div class="swiper grid-wrap grid-spacing-4 pb-3">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5">
-												<img src="https://picsum.photos/id/367/600/400" alt="">
-											</div>
+										<div class="card card-action h-100 link-hover-wrapper waved">
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=191" alt="" class="swiper-lazy">
 
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+												<div class="card-top-control flex bg-black-40 p-2">
+													<div class="color-white">
+														.card-top-control
+														<div class="fade-60 text-small-1">11.03.2022</div>
+													</div>
+													<div class="btn btn--primary btn-small btn--fill ml-auto">Button</div>
 												</div>
-
 											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5">
-												<img src="https://picsum.photos/id/367/600/400" alt="">
-											</div>
+										<div class="card card-action h-100 link-hover-wrapper waved">
 
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=192" alt="" class="swiper-lazy">
+												<div class="card-top-control flex bg-black-40 p-2">
+													<div class="color-white">
+														.card-top-control
+														<div class="fade-60 text-small-1">11.03.2022</div>
+													</div>
+													<div class="btn btn--primary btn-small btn--fill ml-auto">Button</div>
 												</div>
-
 											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5">
-												<img src="https://picsum.photos/id/367/600/400" alt="">
-											</div>
+										<div class="card card-action h-100 link-hover-wrapper waved">
 
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=193" alt="" class="swiper-lazy">
+
+												<div class="card-bottom-control flex bg-black-40 p-2">
+													<div class="color-white">
+														.card-bottom-control
+														<div class="fade-60 text-small-1">11.03.2022</div>
+													</div>
+													<div class="btn btn--primary btn-small btn--fill ml-auto">Button</div>
 												</div>
-
 											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5">
-												<img src="https://picsum.photos/id/367/600/400" alt="">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=194" alt="" class="swiper-lazy">
 											</div>
-
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
 												</div>
-
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
 											</div>
+
 										</div>
 									</div>
 									<div class="swiper-slide grid-col-4">
-										<div class="card h-100">
-											<div class="card-img pb-5">
-												<img src="https://picsum.photos/id/367/600/400" alt="">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=195" alt="" class="swiper-lazy">
 											</div>
-
-											<div class="card-content pt-6 pb-7 ">
-												<div class="text-body-1 text--demibold mb-3">Безопасная среда</div>
-												<div class="text-body-2 fade-80">
-													Готовые объекты социальной и спортивной инфраструктуры города: центры детского творчества,
-													ледовый
-													каток,
-													церковь, концертный зал.
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
 												</div>
-
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
 											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=196" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=197" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=198" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=199" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=1901" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide grid-col-4">
+										<div class="card card-action h-100 link-hover-wrapper waved">
+
+											<div class="card-img bg-l2 progress-container">
+												<div class="progress progress-circle color-icon"></div>
+												<img data-src="https://picsum.photos/600/400?random=1902" alt="" class="swiper-lazy">
+											</div>
+											<div class="card-content">
+												<div class="text--medium mb-2 link-hover">.card-content</div>
+												<div class="text-body-2">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus ea magnam
+												</div>
+												<button class="btn btn--primary btn--fill mt-3 w-100">Button</button>
+											</div>
+
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<button class="slider-btn slider-prev">
+							<button class="btn btn-large btn-fab btn--white-bg slider-nav slider-prev">
 								<svg class="icon">
-									<use xlink:href="img/icons.svg#to-left" />
+									<use xlink:href="./img/icons.svg#to-left" />
 								</svg>
 							</button>
-							<button class="slider-btn slider-next">
+							<button class="btn btn-large btn-fab btn--white-bg slider-nav slider-next">
 								<svg class="icon">
-									<use xlink:href="img/icons.svg#to-right" />
+									<use xlink:href="./img/icons.svg#to-right" />
 								</svg>
 							</button>
 
@@ -2043,6 +2285,7 @@
 						new Swiper('.slider-test-1 .swiper', {
 							slidesPerView: 'auto',
 							watchSlidesProgress: true,
+							lazy: true,
 							navigation: {
 								nextEl: '.slider-test-1 .slider-next',
 								prevEl: '.slider-test-1 .slider-prev'
@@ -2220,7 +2463,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#arrow-left" />
+										<use xlink:href="assets/static/img/icons.svg#arrow-left" />
 									</svg>
 									arrow-left
 								</div>
@@ -2229,25 +2472,52 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#badge-contur" />
+										<use xlink:href="assets/static/img/icons.svg#badge-contur" />
 									</svg>
 									badge-contur
+								</div>
+							</div>
+							<!-- bag -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#bag" />
+									</svg>
+									bag
 								</div>
 							</div>
 							<!-- balcony-glazing -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#balcony-glazing" />
+										<use xlink:href="assets/static/img/icons.svg#balcony-glazing" />
 									</svg>
 									balcony-glazing
+								</div>
+							</div>
+							<!-- book -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#book-contur" />
+									</svg>
+									book-contur
+								</div>
+							</div>
+							<!-- calendar -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#calendar" />
+									</svg>
+									calendar
 								</div>
 							</div>
 							<!-- chart -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#chart" />
+										<use xlink:href="assets/static/img/icons.svg#chart" />
 									</svg>
 									chart
 								</div>
@@ -2256,7 +2526,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#chart-contur" />
+										<use xlink:href="assets/static/img/icons.svg#chart-contur" />
 									</svg>
 									chart-contur
 								</div>
@@ -2265,7 +2535,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 									chat
 								</div>
@@ -2274,7 +2544,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#chat-contur" />
+										<use xlink:href="assets/static/img/icons.svg#chat-contur" />
 									</svg>
 									chat-contur
 								</div>
@@ -2283,16 +2553,25 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#check" />
+										<use xlink:href="assets/static/img/icons.svg#check" />
 									</svg>
 									check
+								</div>
+							</div>
+							<!-- clipboard-list -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#clipboard-list" />
+									</svg>
+									clipboard-list
 								</div>
 							</div>
 							<!-- compas -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#compas" />
+										<use xlink:href="assets/static/img/icons.svg#compas" />
 									</svg>
 									compas
 								</div>
@@ -2301,7 +2580,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#concierge" />
+										<use xlink:href="assets/static/img/icons.svg#concierge" />
 									</svg>
 									concierge
 								</div>
@@ -2310,7 +2589,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#cross" />
+										<use xlink:href="assets/static/img/icons.svg#cross" />
 									</svg>
 									cross
 								</div>
@@ -2319,7 +2598,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#doc" />
+										<use xlink:href="assets/static/img/icons.svg#doc" />
 									</svg>
 									doc
 								</div>
@@ -2328,7 +2607,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#doc-contur" />
+										<use xlink:href="assets/static/img/icons.svg#doc-contur" />
 									</svg>
 									doc-contur
 								</div>
@@ -2337,16 +2616,25 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#door" />
+										<use xlink:href="assets/static/img/icons.svg#door" />
 									</svg>
 									door
+								</div>
+							</div>
+							<!-- edit -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#edit" />
+									</svg>
+									edit
 								</div>
 							</div>
 							<!-- emoji-smile -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#emoji-smile" />
+										<use xlink:href="assets/static/img/icons.svg#emoji-smile" />
 									</svg>
 									emoji-smile
 								</div>
@@ -2355,7 +2643,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#eye" />
+										<use xlink:href="assets/static/img/icons.svg#eye" />
 									</svg>
 									eye
 								</div>
@@ -2364,7 +2652,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#eye-contur" />
+										<use xlink:href="assets/static/img/icons.svg#eye-contur" />
 									</svg>
 									eye-contur
 								</div>
@@ -2373,7 +2661,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#filter" />
+										<use xlink:href="assets/static/img/icons.svg#filter" />
 									</svg>
 									filter
 								</div>
@@ -2382,7 +2670,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#gal-ochka" />
+										<use xlink:href="assets/static/img/icons.svg#gal-ochka" />
 									</svg>
 									gal-ochka
 								</div>
@@ -2390,7 +2678,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#gal-ochka-1" />
+										<use xlink:href="assets/static/img/icons.svg#gal-ochka-1" />
 									</svg>
 									gal-ochka-1
 								</div>
@@ -2399,7 +2687,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#glazing" />
+										<use xlink:href="assets/static/img/icons.svg#glazing" />
 									</svg>
 									glazing
 								</div>
@@ -2408,7 +2696,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#heart" />
+										<use xlink:href="assets/static/img/icons.svg#heart" />
 									</svg>
 									heart
 								</div>
@@ -2417,16 +2705,25 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#heart-contur" />
+										<use xlink:href="assets/static/img/icons.svg#heart-contur" />
 									</svg>
 									heart-contur
+								</div>
+							</div>
+							<!-- home-contur -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#home-contur" />
+									</svg>
+									home-contur
 								</div>
 							</div>
 							<!-- house-1 -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#house-1" />
+										<use xlink:href="assets/static/img/icons.svg#house-1" />
 									</svg>
 									house-1
 								</div>
@@ -2435,7 +2732,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#i" />
+										<use xlink:href="assets/static/img/icons.svg#i" />
 									</svg>
 									i
 								</div>
@@ -2444,7 +2741,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#key" />
+										<use xlink:href="assets/static/img/icons.svg#key" />
 									</svg>
 									key
 								</div>
@@ -2453,7 +2750,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#lift" />
+										<use xlink:href="assets/static/img/icons.svg#lift" />
 									</svg>
 									lift
 								</div>
@@ -2462,16 +2759,52 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#lift-1" />
+										<use xlink:href="assets/static/img/icons.svg#lift-1" />
 									</svg>
 									lift-1
+								</div>
+							</div>
+							<!-- link -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#link" />
+									</svg>
+									link
+								</div>
+							</div>
+							<!-- lock -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#lock" />
+									</svg>
+									lock
+								</div>
+							</div>
+							<!-- menu -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#menu" />
+									</svg>
+									menu
+								</div>
+							</div>
+							<!-- minus -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#minus" />
+									</svg>
+									minus
 								</div>
 							</div>
 							<!-- no-stonks -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#no-stonks" />
+										<use xlink:href="assets/static/img/icons.svg#no-stonks" />
 									</svg>
 									no-stonks
 								</div>
@@ -2480,7 +2813,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#note" />
+										<use xlink:href="assets/static/img/icons.svg#note" />
 									</svg>
 									note
 								</div>
@@ -2489,7 +2822,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#note-contur" />
+										<use xlink:href="assets/static/img/icons.svg#note-contur" />
 									</svg>
 									note-contur
 								</div>
@@ -2498,7 +2831,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#paperclip" />
+										<use xlink:href="assets/static/img/icons.svg#paperclip" />
 									</svg>
 									paperclip
 								</div>
@@ -2507,25 +2840,43 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#parking" />
+										<use xlink:href="assets/static/img/icons.svg#parking" />
 									</svg>
 									parking
+								</div>
+							</div>
+							<!-- pause -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#pause" />
+									</svg>
+									pause
 								</div>
 							</div>
 							<!-- play -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#play" />
+										<use xlink:href="assets/static/img/icons.svg#play" />
 									</svg>
 									play
+								</div>
+							</div>
+							<!-- plus -->
+							<div class="grid-col-2">
+								<div class="text--center">
+									<svg class="icon mb-2 mx-auto text-subtitle-1">
+										<use xlink:href="assets/static/img/icons.svg#plus" />
+									</svg>
+									plus
 								</div>
 							</div>
 							<!-- search -->
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#search" />
+										<use xlink:href="assets/static/img/icons.svg#search" />
 									</svg>
 									search
 								</div>
@@ -2534,7 +2885,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#search-1" />
+										<use xlink:href="assets/static/img/icons.svg#search-1" />
 									</svg>
 									search-1
 								</div>
@@ -2543,7 +2894,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#settings" />
+										<use xlink:href="assets/static/img/icons.svg#settings" />
 									</svg>
 									settings
 								</div>
@@ -2552,7 +2903,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#send" />
+										<use xlink:href="assets/static/img/icons.svg#send" />
 									</svg>
 									send
 								</div>
@@ -2561,7 +2912,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#share" />
+										<use xlink:href="assets/static/img/icons.svg#share" />
 									</svg>
 									share
 								</div>
@@ -2570,7 +2921,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#star" />
+										<use xlink:href="assets/static/img/icons.svg#star" />
 									</svg>
 									star
 								</div>
@@ -2579,7 +2930,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#status-read" />
+										<use xlink:href="assets/static/img/icons.svg#status-read" />
 									</svg>
 									status-read
 								</div>
@@ -2588,7 +2939,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#to-right" />
+										<use xlink:href="assets/static/img/icons.svg#to-right" />
 									</svg>
 									to-right
 								</div>
@@ -2597,7 +2948,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#to-right-double" />
+										<use xlink:href="assets/static/img/icons.svg#to-right-double" />
 									</svg>
 									to-right-double
 								</div>
@@ -2606,7 +2957,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#to-left" />
+										<use xlink:href="assets/static/img/icons.svg#to-left" />
 									</svg>
 									to-left
 								</div>
@@ -2615,7 +2966,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#to-left-double" />
+										<use xlink:href="assets/static/img/icons.svg#to-left-double" />
 									</svg>
 									to-left-double
 								</div>
@@ -2624,7 +2975,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#to-down" />
+										<use xlink:href="assets/static/img/icons.svg#to-down" />
 									</svg>
 									to-down
 								</div>
@@ -2633,7 +2984,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#triangle-left" />
+										<use xlink:href="assets/static/img/icons.svg#triangle-left" />
 									</svg>
 									triangle-left
 								</div>
@@ -2642,7 +2993,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#triangle-right" />
+										<use xlink:href="assets/static/img/icons.svg#triangle-right" />
 									</svg>
 									triangle-right
 								</div>
@@ -2651,7 +3002,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#user" />
+										<use xlink:href="assets/static/img/icons.svg#user" />
 									</svg>
 									user
 								</div>
@@ -2660,7 +3011,7 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#wheelchair" />
+										<use xlink:href="assets/static/img/icons.svg#wheelchair" />
 									</svg>
 									wheelchair
 								</div>
@@ -2669,12 +3020,48 @@
 							<div class="grid-col-2">
 								<div class="text--center">
 									<svg class="icon mb-2 mx-auto text-subtitle-1">
-										<use xlink:href="img/icons.svg#window" />
+										<use xlink:href="assets/static/img/icons.svg#window" />
 									</svg>
 									window
 								</div>
 							</div>
 						</div>
+					</section>
+				</div>
+				<!-- Progress -->
+				<div class="tab-content" data-tab-content="9">
+					<section>
+						<h1 class="text-h1 mb-10">Progress</h1>
+						<div class="grid grid-spacing-2">
+							<div class="grid-col-1 -copy-child-">
+								<div class="progress progress-circle"> </div>
+							</div>
+							<div class="grid-col-1 -copy-child-">
+								<div class="progress progress-circle color-primary"> </div>
+							</div>
+							<div class="grid-col-1 -copy-child-">
+								<div class="progress progress-circle color-green"> </div>
+							</div>
+							<div class="grid-col-1 -copy-child-">
+								<div class="progress progress-circle color-red"></div>
+							</div>
+						</div>
+
+						<h1 class="text-h4 mb-5 mt-5">In container</h1>
+						<div class="grid">
+							<div class="grid-col-3">
+								<div class="p-10 progress-container bg-l3">
+									<div class="progress progress-circle color-icon"></div>
+								</div>
+							</div>
+						</div>
+
+						<h1 class="text-h4 mb-5 mt-10">Progress-line</h1>
+						<div class="progress progress-line bg-l3 mt-5 color-primary"></div>
+						<div class="progress progress-line bg-l3 mt-5 color-green"></div>
+						<div class="progress progress-line bg-l3 mt-5 color-red"></div>
+						<div class="progress progress-line bg-l3 mt-5 color-icon"></div>
+
 					</section>
 				</div>
 			</div>
@@ -2686,54 +3073,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<div class="py-10"></div>
 	<div class="py-10"></div>
 	<div class="py-10"></div>
@@ -2741,15 +3080,6 @@
 
 
 
-
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/ion.rangeSlider.min.js"></script>
-	<script src="source/ion.rangeSlider.custom.js"></script>
-
-	<link rel="stylesheet" href="ui/copy-element.css">
-	<script src="ui/copy-element.js"></script>
-	<script src="source/ui--tab.js"></script>
-	<!-- <script src="js/ion.rangeSlider.custom.js"></script> -->
 </body>
 
 </html>

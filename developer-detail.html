@@ -7,24 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<link rel="stylesheet" href="source/fancybox.css">
-	<link rel="stylesheet" href="source/fancybox.custom.css">
-	<link rel="stylesheet" href="source/swiper-bundle.min.css">
-	<link rel="stylesheet" href="source/swiper-custom.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
-
-	<script src="source/swiper-bundle.min.js"></script>
-
-	<link rel="stylesheet" href="css/ui-reset.css">
-	<link rel="stylesheet" href="css/ui-core.css">
-	<link rel="stylesheet" href="css/frontend--fonts.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
-
-
-	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
-
-	<link rel="stylesheet" href="css/developer-detail.css">
+	<link rel="stylesheet" href="assets/static/css/frontend--fonts.css">
+	<link rel="stylesheet" href="assets/dist/style.css">
+	<script src="assets/dist/index.js"></script>
 
 
 	<title>Карточка застройщика </title>
@@ -34,70 +19,70 @@
 	<header class="header header--detail">
 		<div class="header-user  d-md-none">
 			<div class="header-user-btn-img">
-				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
 			</div>
 		</div>
 		<div class="header-logo">
-			<img src="img/logo.png" alt="">
+			<img src="assets/static/img/logo.png" alt="">
 		</div>
 		<button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
 			<svg class="icon color-icon">
-				<use xlink:href="img/icons.svg#filter" />
+				<use xlink:href="assets/static/img/icons.svg#filter" />
 			</svg>
 		</button>
 		<div class="header-user ml-auto d-md-block d-none">
-			<div class="header-user-btn">
+			<div class="header-user-btn btn btn--white-bg">
 				<div class="header-user-btn-arrow">
 					<svg class="icon">
-						<use xlink:href="img/icons.svg#to-down" />
+						<use xlink:href="assets/static/img/icons.svg#to-down" />
 					</svg>
 				</div>
 				<div class="header-user-btn-img">
-					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+					<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<div class="nav">
-		<a href="/" class="nav-item active">
+		<a href="/" class="btn btn--primary nav-item active waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#search" />
+					<use xlink:href="assets/static/img/icons.svg#search" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Поиск</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="/" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#note-contur" />
+					<use xlink:href="assets/static/img/icons.svg#note-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">События</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="/" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#chat-contur" />
+					<use xlink:href="assets/static/img/icons.svg#chat-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Чат</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="/" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<div class="nav-item-icon">
 					<svg class="icon">
-						<use xlink:href="img/icons.svg#chart-contur" />
+						<use xlink:href="assets/static/img/icons.svg#chart-contur" />
 					</svg>
 				</div>
 			</div>
 			<div class="nav-item-text">Сравнить</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="/" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#heart-contur" />
+					<use xlink:href="assets/static/img/icons.svg#heart-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Нравится</div>
@@ -108,22 +93,23 @@
 
 		<section class="developer-detail-top pb-2">
 			<div class="developer-detail-top-inner  card">
-				<div class="card-img developer-detail-top-img">
+				<div class="card-img developer-detail-top-img progress-container">
+					<div class="progress progress-circle color-icon"></div>
 					<img src="https://images6.alphacoders.com/656/thumb-1920-656029.png" alt="">
 				</div>
 				<div class="card-control d-md-none">
 					<div class=" card-likes">
 						<div class="card-like card-like-bg">
 							<svg class="icon">
-								<use xlink:href="img/icons.svg#arrow-left" />
+								<use xlink:href="assets/static/img/icons.svg#arrow-left" />
 							</svg>
 						</div>
 					</div>
 
 				</div>
 				<div class="card-content developer-detail-top-content">
-					<div class="developer-detail-top-avatar">
-						<img src="img/sempl/developer-detail-avatar.png" alt="">
+					<div class="developer-detail-top-avatar image--scale-down">
+						<img src="assets/static/img/sempl/developer-detail-avatar.png" alt="">
 					</div>
 
 					<div class="developer-detail-info">
@@ -133,7 +119,7 @@
 					<div class="developer-detail-manager mt-6 mt-lg-0">
 						<div class="developer-detail-manager-user">
 							<div class="developer-detail-manager-user-img">
-								<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+								<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
 							</div>
 							<div class="developer-detail-manager-user-content">
 								<div class="text-body-2 text--demibold">Константинов Александр</div>
@@ -142,7 +128,7 @@
 						</div>
 						<button class="btn developer-detail-manager-btn btn--primary btn--fill">
 							<svg class="icon mr-2 text-body-1">
-								<use xlink:href="img/icons.svg#chat" />
+								<use xlink:href="assets/static/img/icons.svg#chat" />
 							</svg>
 							Написать менеджеру
 						</button>
@@ -151,6 +137,7 @@
 			</div>
 		</section>
 
+		<!-- О компании -->
 		<section class="developer-detail-about pt-2">
 			<div class="developer-detail-about-inner card-md">
 				<div class="card-content developer-detail-about-content mb-4 mb-md-0 px-md-8 py-md-6 pb-md-10">
@@ -175,7 +162,7 @@
 							<div class="card-top developer-detail-about-prop-top">
 								<div class="text-body-1 text--demibold">1 место</div>
 								<div class="developer-detail-about-prop-logo">
-									<img src="img/sempl/developer-detail-avatar.png" alt="">
+									<img src="assets/static/img/sempl/developer-detail-avatar.png" alt="">
 								</div>
 							</div>
 							<div class="card-content pt-3 pb-5">
@@ -192,7 +179,7 @@
 							<div class="card-top developer-detail-about-prop-top">
 								<div class="text-body-1 text--demibold">Более 6000</div>
 								<div class="developer-detail-about-prop-logo">
-									<img src="img/sempl/developer-detail-avatar.png" alt="">
+									<img src="assets/static/img/sempl/developer-detail-avatar.png" alt="">
 								</div>
 							</div>
 							<div class="card-content pt-3 pb-5">
@@ -208,7 +195,7 @@
 							<div class="card-top developer-detail-about-prop-top">
 								<div class="text-body-1 text--demibold">27 домов</div>
 								<div class="developer-detail-about-prop-logo">
-									<img src="img/sempl/developer-detail-avatar.png" alt="">
+									<img src="assets/static/img/sempl/developer-detail-avatar.png" alt="">
 								</div>
 							</div>
 							<div class="card-content pt-3 pb-5">
@@ -223,7 +210,7 @@
 							<div class="card-top developer-detail-about-prop-top">
 								<div class="text-body-1 text--demibold">1,5 млн м2</div>
 								<div class="developer-detail-about-prop-logo">
-									<img src="img/sempl/developer-detail-avatar.png" alt="">
+									<img src="assets/static/img/sempl/developer-detail-avatar.png" alt="">
 								</div>
 							</div>
 							<div class="card-content pt-3 pb-5">
@@ -242,25 +229,27 @@
 
 		<section class="buner">
 			<a class="buner-link">
-				<img src="img/sempl/buner.png" alt="">
+				<img src="assets/static/img/sempl/buner.png" alt="">
 			</a>
 		</section>
 
+		<!-- Строящиеся объекты -->
 		<section class="content">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Строящиеся объекты</div>
 			<div class="grid grid-spacing-2 grid-spacing-md-5">
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
-						<div class="card-img">
+						<div class="card-img progress-container">
+							<div class="progress progress-circle color-icon"></div>
 							<img src="https://picsum.photos/id/1063/600/400" alt="">
 						</div>
 						<div class="card-control">
 							<div class="ml-auto card-likes">
-								<div class="card-like card-like-bg">
+								<button class="btn btn--red btn-fab card-like card-like-bg">
 									<svg class="icon">
-										<use xlink:href="img/utils.svg#heart" />
+										<use xlink:href="assets/static/img/utils.svg#heart" />
 									</svg>
-								</div>
+								</button>
 							</div>
 
 						</div>
@@ -304,16 +293,17 @@
 				</div>
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
-						<div class="card-img">
+						<div class="card-img progress-container">
+							<div class="progress progress-circle color-icon"></div>
 							<img src="https://picsum.photos/id/1063/600/400" alt="">
 						</div>
 						<div class="card-control">
 							<div class="ml-auto card-likes">
-								<div class="card-like card-like-bg">
+								<button class="btn btn--red btn-fab card-like card-like-bg">
 									<svg class="icon">
-										<use xlink:href="img/utils.svg#heart" />
+										<use xlink:href="assets/static/img/utils.svg#heart" />
 									</svg>
-								</div>
+								</button>
 							</div>
 
 						</div>
@@ -357,16 +347,17 @@
 				</div>
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
-						<div class="card-img">
+						<div class="card-img progress-container">
+							<div class="progress progress-circle color-icon"></div>
 							<img src="https://picsum.photos/id/1063/600/400" alt="">
 						</div>
 						<div class="card-control">
 							<div class="ml-auto card-likes">
-								<div class="card-like card-like-bg">
+								<button class="btn btn--red btn-fab card-like card-like-bg">
 									<svg class="icon">
-										<use xlink:href="img/utils.svg#heart" />
+										<use xlink:href="assets/static/img/utils.svg#heart" />
 									</svg>
-								</div>
+								</button>
 							</div>
 
 						</div>
@@ -410,16 +401,17 @@
 				</div>
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
-						<div class="card-img">
+						<div class="card-img progress-container">
+							<div class="progress progress-circle color-icon"></div>
 							<img src="https://picsum.photos/id/1063/600/400" alt="">
 						</div>
 						<div class="card-control">
 							<div class="ml-auto card-likes">
-								<div class="card-like card-like-bg">
+								<button class="btn btn--red btn-fab card-like card-like-bg">
 									<svg class="icon">
-										<use xlink:href="img/utils.svg#heart" />
+										<use xlink:href="assets/static/img/utils.svg#heart" />
 									</svg>
-								</div>
+								</button>
 							</div>
 
 						</div>
@@ -464,21 +456,23 @@
 			</div>
 		</section>
 
+		<!-- Готовые объекты -->
 		<section class="content">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Готовые объекты</div>
 			<div class="grid grid-spacing-2 grid-spacing-md-5">
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
-						<div class="card-img">
+						<div class="card-img progress-container">
+							<div class="progress progress-circle color-icon"></div>
 							<img src="https://picsum.photos/id/1063/600/400" alt="">
 						</div>
 						<div class="card-control">
 							<div class="ml-auto card-likes">
-								<div class="card-like card-like-bg">
+								<button class="btn btn--red btn-fab card-like card-like-bg">
 									<svg class="icon">
-										<use xlink:href="img/utils.svg#heart" />
+										<use xlink:href="assets/static/img/utils.svg#heart" />
 									</svg>
-								</div>
+								</button>
 							</div>
 
 						</div>
@@ -522,16 +516,17 @@
 				</div>
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
-						<div class="card-img">
+						<div class="card-img progress-container">
+							<div class="progress progress-circle color-icon"></div>
 							<img src="https://picsum.photos/id/1063/600/400" alt="">
 						</div>
 						<div class="card-control">
 							<div class="ml-auto card-likes">
-								<div class="card-like card-like-bg">
+								<button class="btn btn--red btn-fab card-like card-like-bg">
 									<svg class="icon">
-										<use xlink:href="img/utils.svg#heart" />
+										<use xlink:href="assets/static/img/utils.svg#heart" />
 									</svg>
-								</div>
+								</button>
 							</div>
 
 						</div>
@@ -575,16 +570,17 @@
 				</div>
 				<div class="grid-col-6 grid-col-lg-3">
 					<div class="jk-card card">
-						<div class="card-img">
+						<div class="card-img progress-container">
+							<div class="progress progress-circle color-icon"></div>
 							<img src="https://picsum.photos/id/1063/600/400" alt="">
 						</div>
 						<div class="card-control">
 							<div class="ml-auto card-likes">
-								<div class="card-like card-like-bg">
+								<button class="btn btn--red btn-fab card-like card-like-bg">
 									<svg class="icon">
-										<use xlink:href="img/utils.svg#heart" />
+										<use xlink:href="assets/static/img/utils.svg#heart" />
 									</svg>
-								</div>
+								</button>
 							</div>
 
 						</div>
@@ -629,6 +625,7 @@
 			</div>
 		</section>
 
+		<!-- Готовые и строящиеся объекты на карте -->
 		<section class="jk-map">
 			<div class="text-subtitle-2 text-md-h6 mb-6 mb-md-8">Готовые и строящиеся объекты на карте</div>
 			<div class="jk-map-inner">
@@ -663,12 +660,6 @@
 	</div>
 
 
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/ion.rangeSlider.min.js"></script>
-	<script src="source/ion.rangeSlider.custom.js"></script>
-
-	<script src="source/fancybox.umd.js"></script>
-	<script src="source/fancybox.custom.js"></script>
 
 </body>
 

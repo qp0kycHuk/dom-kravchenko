@@ -7,29 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<link rel="stylesheet" href="source/fancybox.css">
-	<link rel="stylesheet" href="source/fancybox.custom.css">
-	<link rel="stylesheet" href="source/swiper-bundle.min.css">
-	<link rel="stylesheet" href="source/swiper-custom.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
-	<link rel="stylesheet" href="source/tippy.custom.css">
 
+	<link rel="stylesheet" href="assets/static/css/frontend--fonts.css">
+	<link rel="stylesheet" href="assets/dist/style.css">
+	<script src="assets/dist/index.js"></script>
 
-	<script src="source/swiper-bundle.min.js"></script>
-
-	<link rel="stylesheet" href="css/ui-reset.css">
-	<link rel="stylesheet" href="css/ui-core.css">
-	<link rel="stylesheet" href="css/frontend--fonts.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
-
-
-	<!-- <script src="source/jquery-3.5.0.min.js"></script> -->
-
-	<!-- tooltips -->
-	<script src="source/popper.min.js"></script>
-	<script src="source/tippy-bundle.umd.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
 
 	<title>Главный </title>
 </head>
@@ -39,34 +21,36 @@
 	<header class="header">
 		<div class="header-user  d-md-none">
 			<div class="header-user-btn-img">
-				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
 			</div>
 		</div>
 		<a href="/" class="header-logo btn btn--link btn--primary">
-			<img src="img/logo.png" alt="">
+			<img src="assets/static/img/logo.png" alt="">
 		</a>
-		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-type="ajax"
+			data-src="dialog-filter.html" data-slug="filter">
 			<svg class="icon color-icon">
-				<use xlink:href="img/icons.svg#filter" />
+				<use xlink:href="assets/static/img/icons.svg#filter" />
 			</svg>
 		</button>
 		<div class="header-user ml-auto d-md-block d-none -header-user-tooltiped-">
-			<div class="header-user-btn">
+			<button class="header-user-btn btn btn--white-bg">
 				<div class="header-user-btn-arrow">
 					<svg class="icon">
-						<use xlink:href="img/icons.svg#to-down" />
+						<use xlink:href="assets/static/img/icons.svg#to-down" />
 					</svg>
 				</div>
 				<div class="header-user-btn-img">
-					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+					<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
 				</div>
-			</div>
+			</button>
 		</div>
 	</header>
 	<div class="header-user-toltip" id="header-user-toltip" style="display: none;">
 		<div class="text-body-1 text--demibold px-2">Кравченко Александр</div>
 		<div class="text-body-1 mt-1 px-2">8 918 000 00 00</div>
-		<button class="btn btn--primary btn--light w-100 mt-5">Редактировать</button>
+		<button class="btn btn--primary btn--light w-100 mt-5" data-fancybox-modal data-type="ajax"
+			data-src="dialog-profile.html">Редактировать</button>
 		<button class="btn btn--red btn--fill w-100 mt-2">Выйти</button>
 	</div>
 	<script>
@@ -86,44 +70,44 @@
 	</script>
 
 	<div class="nav">
-		<a href="/" class="nav-item active">
+		<a href="/" class="btn btn--primary nav-item waved active">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#search" />
+					<use xlink:href="assets/static/img/icons.svg#search" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Поиск</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="/" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#note-contur" />
+					<use xlink:href="assets/static/img/icons.svg#note-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">События</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="chat.html" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#chat-contur" />
+					<use xlink:href="assets/static/img/icons.svg#chat-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Чат</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="compare.html" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<div class="nav-item-icon">
 					<svg class="icon">
-						<use xlink:href="img/icons.svg#chart-contur" />
+						<use xlink:href="assets/static/img/icons.svg#chart-contur" />
 					</svg>
 				</div>
 			</div>
 			<div class="nav-item-text">Сравнить</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="favorites.html" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#heart-contur" />
+					<use xlink:href="assets/static/img/icons.svg#heart-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Нравится</div>
@@ -179,7 +163,7 @@
 									</select>
 									<div class="form-select-icon">
 										<svg class="icon">
-											<use xlink:href="img/icons.svg#to-right"></use>
+											<use xlink:href="assets/static/img/icons.svg#to-right"></use>
 										</svg>
 									</div>
 								</div>
@@ -227,14 +211,17 @@
 						</div>
 
 						<div class="filter-form-btns">
-							<button class="filter-form-btn btn btn--primary">Расширенный поиск</button>
+							<button class="filter-form-btn btn btn--primary" data-fancybox-modal data-type="ajax"
+								data-src="dialog-filter.html">Расширенный поиск</button>
 							<button class="filter-form-btn btn btn--primary btn--fill">Найти</button>
 						</div>
+
 					</div>
 				</div>
-				<button class="filter-btn btn btn--primary btn--white-bg d-md-none" data-fancybox-modal data-src="#filter-form">
+				<button class="filter-btn btn btn--primary btn--white-bg d-md-none" data-fancybox-modal data-type="ajax"
+					data-src="dialog-filter.html" data-slug="filter">
 					<svg class="icon mr-2 color-icon">
-						<use xlink:href="img/icons.svg#filter" />
+						<use xlink:href="assets/static/img/icons.svg#filter" />
 					</svg>
 					<span class="color-text"> Начать поиск квартиры или дома</span>
 				</button>
@@ -243,14 +230,16 @@
 
 		<!-- modal test -->
 		<section>
-			<button class="btn btn--red btn--fill " data-fancybox-modal data-type="ajax" data-src="dialog-profile.html">
+			<button class="btn btn--red btn--fill " data-fancybox-modal data-type="ajax" data-src="dialog-success.html">
+				-=:
 				<svg class="icon mr-2">
-					<use xlink:href="img/icons.svg#star" />
+					<use xlink:href="assets/static/img/icons.svg#star" />
 				</svg>
 				Открыть модалку
 				<svg class="icon ml-2">
-					<use xlink:href="img/icons.svg#star" />
+					<use xlink:href="assets/static/img/icons.svg#star" />
 				</svg>
+				:=-
 			</button>
 		</section>
 
@@ -259,78 +248,86 @@
 			<div class="slider groups-slider">
 				<div class="swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						</a>
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						</a>
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						</a>
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						</a>
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						</a>
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						</a>
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
-						<div class="swiper-slide groups-item">
-							<div class="groups-item-img">
+						</a>
+						<a href="javascript:;" class="swiper-slide groups-item hover-link-wrapper">
+							<div class="groups-item-img progress-container">
+								<div class="progress progress-circle text-small color-icon"></div>
 								<img src="https://picsum.photos/id/1060/600/400" alt="">
 							</div>
 							<div class="groups-item-content">
-								<div class="text-body-2 text--demibold mb-1">Бюджетные однушки</div>
+								<div class="text-body-2 text--demibold mb-1 hover-link">Бюджетные однушки</div>
 								<div class="text-body-2 text--fade">12 предложений</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -363,7 +360,8 @@
 				<div class="jk-row mb-4">
 					<div class="jk-row-content card">
 						<div class="jk-row-preview">
-							<div class="jk-row-preview-img">
+							<div class="jk-row-preview-img progress-container">
+								<div class="progress progress-circle color-icon"></div>
 								<img src="https://picsum.photos/600/400?random=61" alt="">
 							</div>
 							<div class="card-control">
@@ -371,23 +369,23 @@
 								<div class="card-messages">
 									<div class="card-message">
 										<div class="card-message-img">
-											<img src="img/sempl/flag.png" alt="" class="icon">
+											<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 										</div>
 										<div class="text-small text--demibold">Старт продаж</div>
 									</div>
 								</div>
 
 								<div class="jk-row-preview-likes card-likes ml-auto">
-									<div class="card-like card-like-bg ">
+									<button class="btn btn--primary btn-fab card-like card-like-bg ">
 										<svg class="icon">
-											<use xlink:href="img/utils.svg#chart" />
+											<use xlink:href="assets/static/img/utils.svg#chart" />
 										</svg>
-									</div>
-									<div class="card-like card-like-bg">
+									</button>
+									<button class="btn btn--red btn-fab card-like card-like-bg">
 										<svg class="icon">
-											<use xlink:href="img/utils.svg#heart" />
+											<use xlink:href="assets/static/img/utils.svg#heart" />
 										</svg>
-									</div>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -402,7 +400,7 @@
 
 									<div class="jk-row-complete flex flex-align-center mt-4">
 										<svg class="icon text-body-2 color-icon mr-2">
-											<use xlink:href="img/icons.svg#key" />
+											<use xlink:href="assets/static/img/icons.svg#key" />
 										</svg>
 										<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
 												class="text--fade text--regular">есть сданные</span></span>
@@ -413,7 +411,7 @@
 
 									<div class="jk-row-info-view d-none d-md-flex flex-align-center">
 										<svg class="icon text-body-2 color-icon mr-1">
-											<use xlink:href="img/icons.svg#eye" />
+											<use xlink:href="assets/static/img/icons.svg#eye" />
 										</svg>
 										<div class="text-small text--fade">Интересуются: 10 человек</div>
 
@@ -424,9 +422,9 @@
 								<div class="swiper grid-wrap grid-spacing-2">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -436,9 +434,9 @@
 											</div>
 										</div>
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -450,9 +448,9 @@
 
 									</div>
 
-									<button class="slider-btn jk-row-plans-next">
+									<button class="btn btn-small btn-fab btn--white-bg jk-row-plans-next">
 										<svg class="icon">
-											<use xlink:href="img/icons.svg#to-right" />
+											<use xlink:href="assets/static/img/icons.svg#to-right" />
 										</svg>
 									</button>
 								</div>
@@ -461,7 +459,7 @@
 							<div class="jk-row-control mt-6">
 								<button class="jk-row-btn btn btn--primary btn--light">
 									<svg class="icon mr-2">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 									Написать застройщику
 								</button>
@@ -469,11 +467,11 @@
 							</div>
 							<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
 								<svg class="icon text-body-2 fade-40">
-									<use xlink:href="img/icons.svg#to-left-double" />
+									<use xlink:href="assets/static/img/icons.svg#to-left-double" />
 								</svg>
 								<div class="text-body-2 text--fade">листайте планировки</div>
 								<svg class="icon text-body-2 fade-40">
-									<use xlink:href="img/icons.svg#to-right-double" />
+									<use xlink:href="assets/static/img/icons.svg#to-right-double" />
 								</svg>
 							</div>
 						</div>
@@ -482,7 +480,7 @@
 						<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
 						<div class="jk-row-brand brand-min">
 							<div class="brand-min-img">
-								<img src="img/sempl/brand-1.png" alt="">
+								<img src="assets/static/img/sempl/brand-1.png" alt="">
 							</div>
 							<div class="text-body-2">ЮгСтройИнвест</div>
 
@@ -498,7 +496,8 @@
 				<div class="jk-row mb-4">
 					<div class="jk-row-content card">
 						<div class="jk-row-preview">
-							<div class="jk-row-preview-img">
+							<div class="jk-row-preview-img progress-container">
+								<div class="progress progress-circle color-icon"></div>
 								<img src="https://picsum.photos/600/400?random=62" alt="">
 							</div>
 							<div class="card-control">
@@ -506,23 +505,23 @@
 								<div class="card-messages">
 									<div class="card-message">
 										<div class="card-message-img">
-											<img src="img/sempl/fire.png" alt="" class="icon">
+											<img src="assets/static/img/sempl/fire.png" alt="" class="icon">
 										</div>
 										<div class="text-small text--demibold">Высокий спрос</div>
 									</div>
 								</div>
 
 								<div class="jk-row-preview-likes card-likes ml-auto">
-									<div class="card-like card-like-bg">
+									<button class="btn btn--primary btn-fab card-like card-like-bg ">
 										<svg class="icon">
-											<use xlink:href="img/utils.svg#chart" />
+											<use xlink:href="assets/static/img/utils.svg#chart" />
 										</svg>
-									</div>
-									<div class="card-like card-like-bg">
+									</button>
+									<button class="btn btn--red btn-fab card-like card-like-bg">
 										<svg class="icon">
-											<use xlink:href="img/utils.svg#heart" />
+											<use xlink:href="assets/static/img/utils.svg#heart" />
 										</svg>
-									</div>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -537,7 +536,7 @@
 
 									<div class="jk-row-complete flex flex-align-center mt-4">
 										<svg class="icon text-body-2 color-icon mr-2">
-											<use xlink:href="img/icons.svg#key" />
+											<use xlink:href="assets/static/img/icons.svg#key" />
 										</svg>
 										<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
 												class="text--fade text--regular">есть сданные</span></span>
@@ -548,7 +547,7 @@
 
 									<div class="jk-row-info-view d-none d-md-flex flex-align-center">
 										<svg class="icon text-body-2 color-icon mr-1">
-											<use xlink:href="img/icons.svg#eye" />
+											<use xlink:href="assets/static/img/icons.svg#eye" />
 										</svg>
 										<div class="text-small text--fade">Интересуются: 10 человек</div>
 
@@ -559,9 +558,9 @@
 								<div class="swiper grid-wrap grid-spacing-2">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -571,9 +570,9 @@
 											</div>
 										</div>
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -583,9 +582,9 @@
 											</div>
 										</div>
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -595,9 +594,9 @@
 											</div>
 										</div>
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -608,9 +607,9 @@
 										</div>
 									</div>
 
-									<button class="slider-btn jk-row-plans-next">
+									<button class="btn btn-small btn-fab btn--white-bg jk-row-plans-next">
 										<svg class="icon">
-											<use xlink:href="img/icons.svg#to-right" />
+											<use xlink:href="assets/static/img/icons.svg#to-right" />
 										</svg>
 									</button>
 								</div>
@@ -619,7 +618,7 @@
 							<div class="jk-row-control mt-6">
 								<button class="jk-row-btn btn btn--primary btn--light">
 									<svg class="icon mr-2">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 									Написать застройщику
 								</button>
@@ -627,11 +626,11 @@
 							</div>
 							<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
 								<svg class="icon text-body-2 fade-40">
-									<use xlink:href="img/icons.svg#to-left-double" />
+									<use xlink:href="assets/static/img/icons.svg#to-left-double" />
 								</svg>
 								<div class="text-body-2 text--fade">листайте планировки</div>
 								<svg class="icon text-body-2 fade-40">
-									<use xlink:href="img/icons.svg#to-right-double" />
+									<use xlink:href="assets/static/img/icons.svg#to-right-double" />
 								</svg>
 							</div>
 						</div>
@@ -640,7 +639,7 @@
 						<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
 						<div class="jk-row-brand brand-min">
 							<div class="brand-min-img">
-								<img src="img/sempl/brand-2.png" alt="">
+								<img src="assets/static/img/sempl/brand-2.png" alt="">
 							</div>
 							<div class="text-body-2">Romex Development</div>
 
@@ -656,7 +655,8 @@
 				<div class="jk-row ">
 					<div class="jk-row-content card">
 						<div class="jk-row-preview">
-							<div class="jk-row-preview-img">
+							<div class="jk-row-preview-img progress-container">
+								<div class="progress progress-circle color-icon"></div>
 								<img src="https://picsum.photos/600/400?random=63" alt="">
 							</div>
 							<div class="card-control">
@@ -664,23 +664,23 @@
 								<div class="card-messages">
 									<div class="card-message">
 										<div class="card-message-img">
-											<img src="img/sempl/lighting.png" alt="" class="icon">
+											<img src="assets/static/img/sempl/lighting.png" alt="" class="icon">
 										</div>
 										<div class="text-small text--demibold">Успей купить</div>
 									</div>
 								</div>
 
 								<div class="jk-row-preview-likes card-likes ml-auto">
-									<div class="card-like card-like-bg active">
+									<button class="btn btn--primary btn-fab card-like card-like-bg active">
 										<svg class="icon">
-											<use xlink:href="img/utils.svg#chart" />
+											<use xlink:href="assets/static/img/utils.svg#chart" />
 										</svg>
-									</div>
-									<div class="card-like card-like-bg active">
+									</button>
+									<button class="btn btn--red btn-fab card-like card-like-bg active">
 										<svg class="icon">
-											<use xlink:href="img/utils.svg#heart" />
+											<use xlink:href="assets/static/img/utils.svg#heart" />
 										</svg>
-									</div>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -695,7 +695,7 @@
 
 									<div class="jk-row-complete flex flex-align-center mt-4">
 										<svg class="icon text-body-2 color-icon mr-2">
-											<use xlink:href="img/icons.svg#key" />
+											<use xlink:href="assets/static/img/icons.svg#key" />
 										</svg>
 										<span class="text-body-2 text--demibold">Сдача в III кв. 2025, <span
 												class="text--fade text--regular">есть сданные</span></span>
@@ -707,7 +707,7 @@
 
 									<div class="jk-row-info-view d-none d-md-flex flex-align-center">
 										<svg class="icon text-body-2 color-icon mr-1">
-											<use xlink:href="img/icons.svg#eye" />
+											<use xlink:href="assets/static/img/icons.svg#eye" />
 										</svg>
 										<div class="text-small text--fade">Интересуются: 10 человек</div>
 
@@ -718,9 +718,9 @@
 								<div class="swiper grid-wrap grid-spacing-2">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -730,9 +730,9 @@
 											</div>
 										</div>
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -742,9 +742,9 @@
 											</div>
 										</div>
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -754,9 +754,9 @@
 											</div>
 										</div>
 										<div class="swiper-slide grid-col-8 grid-col-md-6 grid-col-lg-4">
-											<div class="plan-min">
+											<div class="plan-min card-action waved">
 												<div class="plan-min-img">
-													<img src="img/sempl/plan-min.png" alt="">
+													<img src="assets/static/img/sempl/plan-min.png" alt="">
 												</div>
 												<div class="plan-min-content">
 													<div class="plan-min-count text-small">1-комнатные</div>
@@ -767,9 +767,9 @@
 										</div>
 									</div>
 
-									<button class="slider-btn jk-row-plans-next">
+									<button class="btn btn-small btn-fab btn--white-bg jk-row-plans-next">
 										<svg class="icon">
-											<use xlink:href="img/icons.svg#to-right" />
+											<use xlink:href="assets/static/img/icons.svg#to-right" />
 										</svg>
 									</button>
 								</div>
@@ -778,7 +778,7 @@
 							<div class="jk-row-control mt-6">
 								<button class="jk-row-btn btn btn--primary btn--light">
 									<svg class="icon mr-2">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 									Написать застройщику
 								</button>
@@ -786,11 +786,11 @@
 							</div>
 							<div class="jk-row-sign mt-3 flex d-md-none flex-align-center flex-justify-between">
 								<svg class="icon text-body-2 fade-40">
-									<use xlink:href="img/icons.svg#to-left-double" />
+									<use xlink:href="assets/static/img/icons.svg#to-left-double" />
 								</svg>
 								<div class="text-body-2 text--fade">листайте планировки</div>
 								<svg class="icon text-body-2 fade-40">
-									<use xlink:href="img/icons.svg#to-right-double" />
+									<use xlink:href="assets/static/img/icons.svg#to-right-double" />
 								</svg>
 							</div>
 						</div>
@@ -799,7 +799,7 @@
 						<div class="jk-row-aside-title mb-5 text-body-1 text--demibold">Характеристики</div>
 						<div class="jk-row-brand brand-min">
 							<div class="brand-min-img">
-								<img src="img/sempl/brand-3.png" alt="">
+								<img src="assets/static/img/sempl/brand-3.png" alt="">
 							</div>
 							<div class="text-body-2">ЮгСтройИнвест</div>
 
@@ -833,7 +833,8 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card h-100">
-								<div class="card-img">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=1" alt="">
 								</div>
 								<div class="card-control">
@@ -844,16 +845,16 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg" data-share="url">
+										<button class="btn btn--primary btn-fab card-like card-like-bg ">
 											<svg class="icon">
-												<use xlink:href="img/icons.svg#share" />
+												<use xlink:href="assets/static/img/utils.svg#chart" />
 											</svg>
-										</div>
-										<div class="card-like card-like-bg">
+										</button>
+										<button class="btn btn--red btn-fab card-like card-like-bg">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart" />
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 
 								</div>
@@ -862,7 +863,7 @@
 									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
 
@@ -872,7 +873,7 @@
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
-												<use xlink:href="img/icons.svg#eye" />
+												<use xlink:href="assets/static/img/icons.svg#eye" />
 											</svg>
 											<div class="text-body-2 color-icon">123</div>
 										</div>
@@ -890,7 +891,8 @@
 						</div>
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
-								<div class="card-img">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=2" alt="">
 								</div>
 								<div class="card-control">
@@ -901,16 +903,16 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg" data-share="url">
+										<button class="btn btn--primary btn-fab card-like card-like-bg ">
 											<svg class="icon">
-												<use xlink:href="img/icons.svg#share" />
+												<use xlink:href="assets/static/img/utils.svg#chart" />
 											</svg>
-										</div>
-										<div class="card-like card-like-bg">
+										</button>
+										<button class="btn btn--red btn-fab card-like card-like-bg">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart" />
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 
 								</div>
@@ -919,7 +921,7 @@
 									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
 
@@ -929,7 +931,7 @@
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
-												<use xlink:href="img/icons.svg#eye" />
+												<use xlink:href="assets/static/img/icons.svg#eye" />
 											</svg>
 											<div class="text-body-2 color-icon">123</div>
 										</div>
@@ -947,7 +949,8 @@
 						</div>
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
-								<div class="card-img">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=3" alt="">
 								</div>
 								<div class="card-control">
@@ -958,16 +961,16 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg" data-share="url">
+										<button class="btn btn--primary btn-fab card-like card-like-bg ">
 											<svg class="icon">
-												<use xlink:href="img/icons.svg#share" />
+												<use xlink:href="assets/static/img/utils.svg#chart" />
 											</svg>
-										</div>
-										<div class="card-like card-like-bg">
+										</button>
+										<button class="btn btn--red btn-fab card-like card-like-bg">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart" />
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 
 								</div>
@@ -976,7 +979,7 @@
 									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
 
@@ -986,7 +989,7 @@
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
-												<use xlink:href="img/icons.svg#eye" />
+												<use xlink:href="assets/static/img/icons.svg#eye" />
 											</svg>
 											<div class="text-body-2 color-icon">123</div>
 										</div>
@@ -1004,7 +1007,8 @@
 						</div>
 						<div class="swiper-slide grid-col-9 grid-col-md-6">
 							<div class="news-card card">
-								<div class="card-img">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=4" alt="">
 								</div>
 								<div class="card-control">
@@ -1015,16 +1019,16 @@
 									</div>
 
 									<div class="ml-auto card-likes d-lg-flex d-none">
-										<div class="card-like card-like-bg" data-share="url">
+										<button class="btn btn--primary btn-fab card-like card-like-bg ">
 											<svg class="icon">
-												<use xlink:href="img/icons.svg#share" />
+												<use xlink:href="assets/static/img/utils.svg#chart" />
 											</svg>
-										</div>
-										<div class="card-like card-like-bg">
+										</button>
+										<button class="btn btn--red btn-fab card-like card-like-bg">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart" />
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 
 								</div>
@@ -1033,7 +1037,7 @@
 									<div class="news-card-info mb-lg-4 w-100">
 										<div class="news-card-brand brand-min d-lg-flex d-none">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="text-body-2 fade-80">ЮгСтройИнвест</div>
 
@@ -1043,7 +1047,7 @@
 
 										<div class="ml-auto d-lg-flex d-none flex-align-center">
 											<svg class="icon text-body-1 color-icon mr-2">
-												<use xlink:href="img/icons.svg#eye" />
+												<use xlink:href="assets/static/img/icons.svg#eye" />
 											</svg>
 											<div class="text-body-2 color-icon">123</div>
 										</div>
@@ -1073,16 +1077,16 @@
 		<div class="share-tooltip" style="display:none">
 			<div class="d-flex flex-justify-between mb-5">
 				<a href="" target="_blank">
-					<img src="img/sempl/vk.png" alt="">
+					<img src="assets/static/img/sempl/vk.png" alt="">
 				</a>
 				<a href="" target="_blank">
-					<img src="img/sempl/facebook.png" alt="">
+					<img src="assets/static/img/sempl/facebook.png" alt="">
 				</a>
 				<a href="" target="_blank">
-					<img src="img/sempl/ok.png" alt="">
+					<img src="assets/static/img/sempl/ok.png" alt="">
 				</a>
 				<a href="" target="_blank">
-					<img src="img/sempl/twitter.png" alt="">
+					<img src="assets/static/img/sempl/twitter.png" alt="">
 				</a>
 			</div>
 			<label class="form-field">
@@ -1123,7 +1127,7 @@
 									<div class="flex flex-align-center w-100">
 										<div class="brand-min">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="">
 												<div class="text-body-1 text--demibold">Александр Кравченко</div>
@@ -1131,20 +1135,20 @@
 													<div class="text-body-2 fade-60 mr-1 lh-1">7 сентября</div>
 													<div class="d-flex">
 														<svg class="icon color-yellow text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 														<svg class="icon color-yellow  ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 														<svg class="icon color-yellow  ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 
-														<svg class="icon color-light ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+														<svg class="icon fade-60 ml-1 text-small">
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
-														<svg class="icon color-light ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+														<svg class="icon fade-60 ml-1 text-small">
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 
 													</div>
@@ -1155,20 +1159,20 @@
 											<div class="text-body-2 fade-60 mr-5 lh-1">7 сентября</div>
 											<div class="d-flex">
 												<svg class="icon color-yellow">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 												<svg class="icon color-yellow  ml-1">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 												<svg class="icon color-yellow  ml-1">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 
-												<svg class="icon color-light ml-1">
-													<use xlink:href="img/icons.svg#star" />
+												<svg class="icon fade-60 ml-1">
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
-												<svg class="icon color-light ml-1">
-													<use xlink:href="img/icons.svg#star" />
+												<svg class="icon fade-60 ml-1">
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 
 											</div>
@@ -1191,7 +1195,7 @@
 									<div class="flex flex-align-center w-100">
 										<div class="brand-min">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="">
 												<div class="text-body-1 text--demibold">Александр Кравченко</div>
@@ -1199,20 +1203,20 @@
 													<div class="text-body-2 fade-60 mr-1 lh-1">7 сентября</div>
 													<div class="d-flex">
 														<svg class="icon color-yellow text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 														<svg class="icon color-yellow  ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 														<svg class="icon color-yellow  ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 
-														<svg class="icon color-light ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+														<svg class="icon fade-60 ml-1 text-small">
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
-														<svg class="icon color-light ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+														<svg class="icon fade-60 ml-1 text-small">
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 
 													</div>
@@ -1223,20 +1227,20 @@
 											<div class="text-body-2 fade-60 mr-5 lh-1">7 сентября</div>
 											<div class="d-flex">
 												<svg class="icon color-yellow">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 												<svg class="icon color-yellow  ml-1">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 												<svg class="icon color-yellow  ml-1">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 
-												<svg class="icon color-light ml-1">
-													<use xlink:href="img/icons.svg#star" />
+												<svg class="icon fade-60 ml-1">
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
-												<svg class="icon color-light ml-1">
-													<use xlink:href="img/icons.svg#star" />
+												<svg class="icon fade-60 ml-1">
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 
 											</div>
@@ -1259,7 +1263,7 @@
 									<div class="flex flex-align-center w-100">
 										<div class="brand-min">
 											<div class="brand-min-img">
-												<img src="img/sempl/brand-3.png" alt="">
+												<img src="assets/static/img/sempl/brand-3.png" alt="">
 											</div>
 											<div class="">
 												<div class="text-body-1 text--demibold">Александр Кравченко</div>
@@ -1267,20 +1271,20 @@
 													<div class="text-body-2 fade-60 mr-1 lh-1">7 сентября</div>
 													<div class="d-flex">
 														<svg class="icon color-yellow text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 														<svg class="icon color-yellow  ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 														<svg class="icon color-yellow  ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 
-														<svg class="icon color-light ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+														<svg class="icon fade-60 ml-1 text-small">
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
-														<svg class="icon color-light ml-1 text-small">
-															<use xlink:href="img/icons.svg#star" />
+														<svg class="icon fade-60 ml-1 text-small">
+															<use xlink:href="assets/static/img/icons.svg#star" />
 														</svg>
 
 													</div>
@@ -1291,20 +1295,20 @@
 											<div class="text-body-2 fade-60 mr-5 lh-1">7 сентября</div>
 											<div class="d-flex">
 												<svg class="icon color-yellow">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 												<svg class="icon color-yellow  ml-1">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 												<svg class="icon color-yellow  ml-1">
-													<use xlink:href="img/icons.svg#star" />
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 
-												<svg class="icon color-light ml-1">
-													<use xlink:href="img/icons.svg#star" />
+												<svg class="icon fade-60 ml-1">
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
-												<svg class="icon color-light ml-1">
-													<use xlink:href="img/icons.svg#star" />
+												<svg class="icon fade-60 ml-1">
+													<use xlink:href="assets/static/img/icons.svg#star" />
 												</svg>
 
 											</div>
@@ -1344,132 +1348,100 @@
 				<div class="swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=11" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=12" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=13" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=14" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=15" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=16" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=17" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide">
-							<div class="card h-100">
-								<div class="card-img">
+							<a href="javascript:;" class="card card-action h-100 hover-link-wrapper waved">
+								<div class="card-img progress-container">
+									<div class="progress progress-circle color-icon"></div>
 									<img src="https://picsum.photos/600/400?random=18" alt="">
 								</div>
-
-
 								<div class="card-content pt-3 px-6">
-
-									<div class="text-body-1 text--demibold ">Юбилейный</div>
+									<div class="text-body-1 text--demibold hover-link">Юбилейный</div>
 									<div class="text-body-2 text--fade lh-1-5">12 предложений</div>
-
-
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -1502,10 +1474,10 @@
 			<div class="index-about-inner">
 				<div class="index-about-video">
 					<a href="https://www.youtube.com/watch?v=jO_jGcLTYKw&t=1957s" data-fancybox class="index-about-video-preview">
-						<img src="img/sempl/index-video.png" alt="">
+						<img src="assets/static/img/sempl/index-video.png" alt="">
 						<button class="index-about-video-btn">
 							<svg class="icon">
-								<use xlink:href="img/icons.svg#play" />
+								<use xlink:href="assets/static/img/icons.svg#play" />
 							</svg>
 						</button>
 					</a>
@@ -1582,12 +1554,6 @@
 	</div>
 
 
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/ion.rangeSlider.min.js"></script>
-	<script src="source/ion.rangeSlider.custom.js"></script>
-
-	<script src="source/fancybox.umd.js"></script>
-	<script src="source/fancybox.custom.js"></script>
 
 </body>
 

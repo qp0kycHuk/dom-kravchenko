@@ -7,32 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<link rel="stylesheet" href="source/fancybox.css">
-	<link rel="stylesheet" href="source/fancybox.custom.css">
-	<link rel="stylesheet" href="source/swiper-bundle.min.css">
-	<link rel="stylesheet" href="source/swiper-custom.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
-	<link rel="stylesheet" href="source/ion.rangeSlider.custom.css">
-	<link rel="stylesheet" href="source/tippy.custom.css">
-
-	<script src="source/swiper-bundle.min.js"></script>
-
-	<link rel="stylesheet" href="css/ui-reset.css">
-	<link rel="stylesheet" href="css/ui-core.css">
-	<link rel="stylesheet" href="css/frontend--fonts.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
-
-
-
-	<link rel="stylesheet" href="css/jk-detail.css">
-
-
-
-	<!-- tooltips -->
-	<script src="source/popper.min.js"></script>
-	<script src="source/tippy-bundle.umd.js"></script>
-
-	<link rel="stylesheet" href="css/plan-detail.css">
+	<link rel="stylesheet" href="assets/static/css/frontend--fonts.css">
+	<link rel="stylesheet" href="assets/dist/style.css">
+	<script src="assets/dist/index.js"></script>
 
 
 	<title>Нравится</title>
@@ -42,71 +19,67 @@
 	<header class="header ">
 		<div class="header-user  d-md-none">
 			<div class="header-user-btn-img">
-				<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+				<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
 			</div>
 		</div>
 		<div class="header-logo">
-			<img src="img/logo.png" alt="" class="d-none d-md-block">
+			<img src="assets/static/img/logo.png" alt="" class="d-none d-md-block">
 			<div class="text-h6 d-md-none">Нравится</div>
 		</div>
-		<!-- <button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
-			<svg class="icon color-icon">
-				<use xlink:href="img/icons.svg#filter" />
-			</svg>
-		</button> -->
+
 		<div class="header-user ml-auto d-md-block d-none">
-			<div class="header-user-btn">
+			<div class="header-user-btn btn btn--white-bg">
 				<div class="header-user-btn-arrow">
 					<svg class="icon">
-						<use xlink:href="img/icons.svg#to-down" />
+						<use xlink:href="assets/static/img/icons.svg#to-down" />
 					</svg>
 				</div>
 				<div class="header-user-btn-img">
-					<img src="https://pbs.twimg.com/media/Eqfu1o7XAAA4c0n.jpg" alt="">
+					<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<div class="nav">
-		<a href="/" class="nav-item active">
+		<a href="/" class="btn btn--primary nav-item active waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#search" />
+					<use xlink:href="assets/static/img/icons.svg#search" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Поиск</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="/" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#note-contur" />
+					<use xlink:href="assets/static/img/icons.svg#note-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">События</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="chat.html" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#chat-contur" />
+					<use xlink:href="assets/static/img/icons.svg#chat-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Чат</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="compare.html" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<div class="nav-item-icon">
 					<svg class="icon">
-						<use xlink:href="img/icons.svg#chart-contur" />
+						<use xlink:href="assets/static/img/icons.svg#chart-contur" />
 					</svg>
 				</div>
 			</div>
 			<div class="nav-item-text">Сравнить</div>
 		</a>
-		<a href="/" class="nav-item">
+		<a href="favorites.html" class="btn btn--primary nav-item waved">
 			<div class="nav-item-icon">
 				<svg class="icon">
-					<use xlink:href="img/icons.svg#heart-contur" />
+					<use xlink:href="assets/static/img/icons.svg#heart-contur" />
 				</svg>
 			</div>
 			<div class="nav-item-text">Нравится</div>
@@ -139,18 +112,18 @@
 									<div class="card-messages">
 										<div class="card-message">
 											<div class="card-message-img">
-												<img src="img/sempl/flag.png" alt="" class="icon">
+												<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 											</div>
 											<div class="text-small text--demibold">Старт продаж</div>
 										</div>
 									</div>
 
 									<div class="card-likes ml-auto">
-										<div class="card-like card-like-bg">
+										<button class="btn btn--red btn-fab card-like card-like-bg">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart"></use>
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 								</div>
 
@@ -159,7 +132,7 @@
 									<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
 									<div class="flex flex-align-center mt-1">
 										<svg class="icon text-body-2 color-icon mr-1">
-											<use xlink:href="img/icons.svg#eye" />
+											<use xlink:href="assets/static/img/icons.svg#eye" />
 										</svg>
 										<div class="text-small text--fade">Интересуются: 10 человек</div>
 
@@ -181,18 +154,18 @@
 													<div class="card-messages">
 														<div class="card-message">
 															<div class="card-message-img">
-																<img src="img/sempl/flag.png" alt="" class="icon">
+																<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 															</div>
 															<div class="text-small text--demibold">Старт продаж</div>
 														</div>
 													</div>
 
 													<div class="card-likes ml-auto">
-														<div class="card-like card-like-bg">
+														<button class="btn btn--red btn-fab card-like card-like-bg">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart"></use>
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -201,7 +174,7 @@
 													<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
 													<div class="flex flex-align-center mt-1">
 														<svg class="icon text-body-2 color-icon mr-1">
-															<use xlink:href="img/icons.svg#eye" />
+															<use xlink:href="assets/static/img/icons.svg#eye" />
 														</svg>
 														<div class="text-small text--fade">Интересуются: 10 человек</div>
 													</div>
@@ -214,15 +187,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -233,7 +206,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -276,15 +249,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -295,7 +268,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -338,15 +311,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -357,7 +330,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -398,14 +371,14 @@
 										</div>
 									</div>
 
-									<button class="slider-btn  slider-prev d-none d-lg-flex">
+									<button class="btn btn-large btn-fab btn--white-bg slider-nav  slider-prev d-none d-lg-flex">
 										<svg class="icon text-body-0">
-											<use xlink:href="img/icons.svg#to-left" />
+											<use xlink:href="assets/static/img/icons.svg#to-left" />
 										</svg>
 									</button>
-									<button class="slider-btn  slider-next d-none d-lg-flex">
+									<button class="btn btn-large btn-fab btn--white-bg slider-nav  slider-next d-none d-lg-flex">
 										<svg class="icon text-body-0">
-											<use xlink:href="img/icons.svg#to-right" />
+											<use xlink:href="assets/static/img/icons.svg#to-right" />
 										</svg>
 									</button>
 								</div>
@@ -422,18 +395,18 @@
 									<div class="card-messages">
 										<div class="card-message">
 											<div class="card-message-img">
-												<img src="img/sempl/flag.png" alt="" class="icon">
+												<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 											</div>
 											<div class="text-small text--demibold">Старт продаж</div>
 										</div>
 									</div>
 
 									<div class="card-likes ml-auto">
-										<div class="card-like card-like-bg">
+										<button class="btn btn--red btn-fab card-like card-like-bg">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart"></use>
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 								</div>
 
@@ -442,7 +415,7 @@
 									<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
 									<div class="flex flex-align-center mt-1">
 										<svg class="icon text-body-2 color-icon mr-1">
-											<use xlink:href="img/icons.svg#eye" />
+											<use xlink:href="assets/static/img/icons.svg#eye" />
 										</svg>
 										<div class="text-small text--fade">Интересуются: 10 человек</div>
 
@@ -462,18 +435,18 @@
 											<div class="card-messages">
 												<div class="card-message">
 													<div class="card-message-img">
-														<img src="img/sempl/flag.png" alt="" class="icon">
+														<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 													</div>
 													<div class="text-small text--demibold">Старт продаж</div>
 												</div>
 											</div>
 
 											<div class="card-likes ml-auto">
-												<div class="card-like card-like-bg">
+												<button class="btn btn--red btn-fab card-like card-like-bg">
 													<svg class="icon">
-														<use xlink:href="img/utils.svg#heart"></use>
+														<use xlink:href="assets/static/img/utils.svg#heart" />
 													</svg>
-												</div>
+												</button>
 											</div>
 										</div>
 
@@ -482,7 +455,7 @@
 											<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
 											<div class="flex flex-align-center mt-1">
 												<svg class="icon text-body-2 color-icon mr-1">
-													<use xlink:href="img/icons.svg#eye" />
+													<use xlink:href="assets/static/img/icons.svg#eye" />
 												</svg>
 												<div class="text-small text--fade">Интересуются: 10 человек</div>
 
@@ -523,18 +496,18 @@
 									<div class="card-messages">
 										<div class="card-message">
 											<div class="card-message-img">
-												<img src="img/sempl/flag.png" alt="" class="icon">
+												<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 											</div>
 											<div class="text-small text--demibold">Старт продаж</div>
 										</div>
 									</div>
 
 									<div class="card-likes ml-auto">
-										<div class="card-like card-like-bg">
+										<button class="btn btn--red btn-fab card-like card-like-bg">
 											<svg class="icon">
-												<use xlink:href="img/utils.svg#heart"></use>
+												<use xlink:href="assets/static/img/utils.svg#heart" />
 											</svg>
-										</div>
+										</button>
 									</div>
 								</div>
 
@@ -543,7 +516,7 @@
 									<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
 									<div class="flex flex-align-center mt-1">
 										<svg class="icon text-body-2 color-icon mr-1">
-											<use xlink:href="img/icons.svg#eye" />
+											<use xlink:href="assets/static/img/icons.svg#eye" />
 										</svg>
 										<div class="text-small text--fade">Интересуются: 10 человек</div>
 
@@ -565,18 +538,18 @@
 													<div class="card-messages">
 														<div class="card-message">
 															<div class="card-message-img">
-																<img src="img/sempl/flag.png" alt="" class="icon">
+																<img src="assets/static/img/sempl/flag.png" alt="" class="icon">
 															</div>
 															<div class="text-small text--demibold">Старт продаж</div>
 														</div>
 													</div>
 
 													<div class="card-likes ml-auto">
-														<div class="card-like card-like-bg">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart"></use>
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -585,7 +558,7 @@
 													<div class="text-small text--demibold color-yellow">Осталось: 40 квартир</div>
 													<div class="flex flex-align-center mt-1">
 														<svg class="icon text-body-2 color-icon mr-1">
-															<use xlink:href="img/icons.svg#eye" />
+															<use xlink:href="assets/static/img/icons.svg#eye" />
 														</svg>
 														<div class="text-small text--fade">Интересуются: 10 человек</div>
 													</div>
@@ -598,15 +571,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -617,7 +590,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -660,15 +633,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -679,7 +652,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -722,15 +695,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -741,7 +714,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -784,15 +757,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -803,7 +776,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -846,15 +819,15 @@
 											<div class="plan-card card h-100">
 
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 												<div class="card-control">
 													<div class="card-likes ml-auto">
-														<div class="card-like  active">
+														<button class="btn btn--red btn-fab card-like active">
 															<svg class="icon">
-																<use xlink:href="img/utils.svg#heart" />
+																<use xlink:href="assets/static/img/utils.svg#heart" />
 															</svg>
-														</div>
+														</button>
 													</div>
 												</div>
 
@@ -865,7 +838,7 @@
 
 													<div class="plan-card-info d-md-flex d-block mt-2">
 														<div class="d-flex mb-2 mb-md-0">
-															<!-- <img src="img/sempl/price-top.png" alt="" class="mr-2"> -->
+															<!-- <img src="assets/static/img/sempl/price-top.png" alt="" class="mr-2"> -->
 															<span class="text-body-2 mr-2">132 000 ₽/м2 </span>
 														</div>
 														<button class="btn btn--link btn--primary">Отслеживать</button>
@@ -906,14 +879,14 @@
 										</div>
 									</div>
 
-									<button class="slider-btn  slider-prev d-none d-lg-flex">
+									<button class="btn btn-large btn-fab btn--white-bg slider-nav  slider-prev d-none d-lg-flex">
 										<svg class="icon text-body-0">
-											<use xlink:href="img/icons.svg#to-left" />
+											<use xlink:href="assets/static/img/icons.svg#to-left" />
 										</svg>
 									</button>
-									<button class="slider-btn  slider-next d-none d-lg-flex">
+									<button class="btn btn-large btn-fab btn--white-bg slider-nav  slider-next d-none d-lg-flex">
 										<svg class="icon text-body-0">
-											<use xlink:href="img/icons.svg#to-right" />
+											<use xlink:href="assets/static/img/icons.svg#to-right" />
 										</svg>
 									</button>
 								</div>
@@ -935,7 +908,7 @@
 												<div class="card-top d-flex flex-align-center px-2 py-2">
 													<div class="plan-card-brand brand-min">
 														<div class="brand-min-img">
-															<img src="img/sempl/brand-3.png" alt="">
+															<img src="assets/static/img/sempl/brand-3.png" alt="">
 														</div>
 														<div class="brand-min-text">
 															<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон К...</div>
@@ -945,14 +918,14 @@
 
 													</div>
 
-													<div class="card-like ml-auto active">
+													<button class="btn btn--red btn-fab card-like active ml-auto">
 														<svg class="icon">
-															<use xlink:href="img/utils.svg#heart"></use>
+															<use xlink:href="assets/static/img/utils.svg#heart" />
 														</svg>
-													</div>
+													</button>
 												</div>
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 
 												<div class="card-content pb-2 pb-md-3 pt-4 px-3 px-md-3">
@@ -967,7 +940,7 @@
 														<div class="text-body-2 text--demibold d-flex flex-align-center color-icon">
 															Отслеживаемое
 															<svg class="icon color-primary ml-1">
-																<use xlink:href="img/icons.svg#gal-ochka" />
+																<use xlink:href="assets/static/img/icons.svg#gal-ochka" />
 															</svg>
 														</div>
 													</div>
@@ -1325,12 +1298,12 @@
 												<div class="p-3 pt-0 d-lg-block d-none">
 													<div class="favorites-chart-buner">
 														<svg class="icon mr-2 text-subtitle-1 color-white">
-															<use xlink:href="img/icons.svg#no-stonks" />
+															<use xlink:href="assets/static/img/icons.svg#no-stonks" />
 														</svg>
 														<div class="text-body-1 text--demibold color-white">Готовы продадать за 4 600 000 ₽!</div>
 														<button class="btn btn--primary btn--white-bg ml-auto">
 															<svg class="icon mr-2">
-																<use xlink:href="img/icons.svg#chat" />
+																<use xlink:href="assets/static/img/icons.svg#chat" />
 															</svg>
 															Написать менеджеру
 														</button>
@@ -1346,13 +1319,13 @@
 							<div class="favorites-chart-buner d-lg-none mt-4">
 								<div class="d-flex flex-align-center">
 									<svg class="icon mr-2 text-subtitle-md-1 color-white">
-										<use xlink:href="img/icons.svg#no-stonks" />
+										<use xlink:href="assets/static/img/icons.svg#no-stonks" />
 									</svg>
 									<div class="text-body-1 text--demibold color-white">Готовы продадать за 4 600 000 ₽!</div>
 								</div>
 								<button class="btn btn--primary btn--white-bg ml-md-auto mt-4 mt-md-0">
 									<svg class="icon mr-2">
-										<use xlink:href="img/icons.svg#chat" />
+										<use xlink:href="assets/static/img/icons.svg#chat" />
 									</svg>
 									Написать менеджеру
 								</button>
@@ -1369,7 +1342,7 @@
 												<div class="card-top d-flex flex-align-center px-2 py-2">
 													<div class="plan-card-brand brand-min">
 														<div class="brand-min-img">
-															<img src="img/sempl/brand-3.png" alt="">
+															<img src="assets/static/img/sempl/brand-3.png" alt="">
 														</div>
 														<div class="brand-min-text">
 															<div class="text-small text-body-md-2 text--demibold">ЖК «Микрорайон К...</div>
@@ -1379,14 +1352,14 @@
 
 													</div>
 
-													<div class="card-like ml-auto active">
+													<button class="btn btn--red btn-fab card-like active ml-auto">
 														<svg class="icon">
-															<use xlink:href="img/utils.svg#heart"></use>
+															<use xlink:href="assets/static/img/utils.svg#heart" />
 														</svg>
-													</div>
+													</button>
 												</div>
 												<div class="plan-card-img " style="height: 150px;">
-													<img src="img/sempl/plan.png" alt="">
+													<img src="assets/static/img/sempl/plan.png" alt="">
 												</div>
 
 												<div class="card-content pb-2 pb-md-3 pt-4 px-3 px-md-3">
@@ -1401,7 +1374,7 @@
 														<div class="text-body-2 text--demibold d-flex flex-align-center color-icon">
 															Отслеживаемое
 															<svg class="icon color-primary ml-1">
-																<use xlink:href="img/icons.svg#gal-ochka" />
+																<use xlink:href="assets/static/img/icons.svg#gal-ochka" />
 															</svg>
 														</div>
 													</div>
@@ -1780,16 +1753,16 @@
 
 
 										<div class="ml-auto card-likes d-flex">
-											<div class="card-like card-like-bg">
+											<button class="btn btn--primary btn-fab card-like card-like-bg  ">
 												<svg class="icon">
-													<use xlink:href="img/icons.svg#share" />
+													<use xlink:href="assets/static/img/icons.svg#share" />
 												</svg>
-											</div>
-											<div class="card-like  active">
+											</button>
+											<button class="btn btn--red btn-fab card-like  active">
 												<svg class="icon">
-													<use xlink:href="img/utils.svg#heart" />
+													<use xlink:href="assets/static/img/utils.svg#heart" />
 												</svg>
-											</div>
+											</button>
 										</div>
 
 									</div>
@@ -1798,7 +1771,7 @@
 										<div class="news-card-info mb-4 w-100">
 											<div class="news-card-brand brand-min d-flex ">
 												<div class="brand-min-img">
-													<img src="img/sempl/brand-3.png" alt="">
+													<img src="assets/static/img/sempl/brand-3.png" alt="">
 												</div>
 												<div class="text-body-2 fade-80 d-none d-lg-block">ЮгСтройИнвест</div>
 
@@ -1814,7 +1787,7 @@
 
 											<div class="ml-auto d-lg-flex d-none flex-align-center">
 												<svg class="icon text-body-1 color-icon mr-2">
-													<use xlink:href="img/icons.svg#eye" />
+													<use xlink:href="assets/static/img/icons.svg#eye" />
 												</svg>
 												<div class="text-body-2 color-icon">123</div>
 											</div>
@@ -1831,7 +1804,7 @@
 
 											<div class="ml-auto d-flex flex-align-center">
 												<svg class="icon text-body-1 color-icon mr-2">
-													<use xlink:href="img/icons.svg#eye" />
+													<use xlink:href="assets/static/img/icons.svg#eye" />
 												</svg>
 												<div class="text-body-2 color-icon">123</div>
 											</div>
@@ -1860,6 +1833,7 @@
 			tippy('.chart-col[data-tooltip]', {
 				content: 'loading',
 				theme: 'chart-col',
+				animation: 'shift-toward',
 				allowHTML: true,
 				placement: 'right-start',
 				arrow: false,
@@ -1872,9 +1846,7 @@
 				},
 				onShow(instance) {
 					if (instance._isFetching || instance._isLoad) return;
-
 					instance._isFetching = true;
-					console.log(instance);
 
 					fetch('tooltip-chart-col.html')
 						.then((response) => response.text())
@@ -1917,17 +1889,6 @@
 
 
 
-	<script src="source/jquery-3.5.0.min.js"></script>
-
-	<!-- input range -->
-	<script src="source/ion.rangeSlider.min.js"></script>
-	<script src="source/ion.rangeSlider.custom.js"></script>
-
-	<!-- fancybox modals -->
-	<script src="source/fancybox.umd.js"></script>
-	<script src="source/fancybox.custom.js"></script>
-
-	<script src="source/ui--tab.js"></script>
 
 </body>
 

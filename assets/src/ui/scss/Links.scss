@@ -1,0 +1,36 @@
+// out:false
+
+
+.hover-link {
+  cursor: pointer;
+
+  &:focus {
+    text-decoration: underline;
+
+  }
+
+  @media(hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hover-link-wrapper {
+  cursor: pointer;
+
+  &:focus {
+    .hover-link {
+      text-decoration: underline;
+    }
+  }
+
+  @media(hover) {
+    &:hover {
+      .hover-link {
+        text-decoration: underline;
+      }
+
+    }
+  }
+}
