@@ -1,9 +1,9 @@
-import loadFile from './js/load-file';
-import showPass from './js/show-pass';
-import UI from './ui/js/index'
 import { Sortable, Plugins } from '@shopify/draggable';
 import tippy from 'tippy.js';
+import loadFile from './js/load-file';
+import showPass from './js/show-pass';
 import theme from './js/theme';
+import UI from './ui/js/index'
 
 import './ui/ui-reset.scss';
 import './ui/libs.scss';
