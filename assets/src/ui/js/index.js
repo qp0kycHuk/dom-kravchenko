@@ -1,10 +1,10 @@
 import fancybox from "./fancybox";
 import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade, Lazy } from 'swiper';
 import 'swiper/css';
-import tab from './ui--tab';
+import tab from 'npm-kit-tab';
+import toggle from 'npm-kit-toggle';
 import rangeSlider from './range-slider';
-import toggle from './ui--toggle';
-import ripple from './ripple';
+import ripple from 'npm-kit-ripple';
 
 Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, EffectFade, Lazy]);
 Swiper.defaults.touchStartPreventDefault = false
