@@ -11,10 +11,7 @@ import UI from './ui/js/index'
 // import 'filepond/dist/filepond.css';
 // import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 
-import './ui/ui-reset.scss';
-import './ui/libs.scss';
-import './ui/ui-core.scss';
-import './scss/frontend--style.scss';
+
 
 
 window.tippy = tippy

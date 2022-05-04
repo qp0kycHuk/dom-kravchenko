@@ -10468,7 +10468,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var npm_kit_toggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! npm-kit-toggle */ "./node_modules/npm-kit-toggle/index.js");
 /* harmony import */ var _range_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./range-slider */ "./src/ui/js/range-slider.js");
 /* harmony import */ var npm_kit_ripple__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! npm-kit-ripple */ "./node_modules/npm-kit-ripple/index.js");
-/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.min.css");
+/* harmony import */ var npm_kit_ripple_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! npm-kit-ripple/index.css */ "./node_modules/npm-kit-ripple/index.css");
+/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.min.css");
+
 
 
 
@@ -10783,49 +10785,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/scss/frontend--style.scss":
-/*!***************************************!*\
-  !*** ./src/scss/frontend--style.scss ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/ui/libs.scss":
-/*!**************************!*\
-  !*** ./src/ui/libs.scss ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/ui/ui-core.scss":
-/*!*****************************!*\
-  !*** ./src/ui/ui-core.scss ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/ui/ui-reset.scss":
-/*!******************************!*\
-  !*** ./src/ui/ui-reset.scss ***!
-  \******************************/
+/***/ "./node_modules/npm-kit-ripple/index.css":
+/*!***********************************************!*\
+  !*** ./node_modules/npm-kit-ripple/index.css ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -10971,7 +10934,7 @@ function clickHandler(event) {
 
     const remove = () => {
       isRemoved = true
-      setTimeout(() => ripple.parentElement.removeChild(ripple), 500)
+      setTimeout(() => ripple?.parentElement?.removeChild(ripple), 500)
     }
 
     if (isRemoved) return
@@ -26525,15 +26488,11 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shopify_draggable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shopify/draggable */ "./node_modules/@shopify/draggable/lib/draggable.bundle.js");
 /* harmony import */ var _shopify_draggable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_shopify_draggable__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tippy.js */ "./node_modules/tippy.js/dist/tippy.esm.js");
+/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tippy.js */ "./node_modules/tippy.js/dist/tippy.esm.js");
 /* harmony import */ var _js_load_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/load-file */ "./src/js/load-file.js");
 /* harmony import */ var _js_show_pass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/show-pass */ "./src/js/show-pass.js");
 /* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/theme */ "./src/js/theme.js");
 /* harmony import */ var _ui_js_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ui/js/index */ "./src/ui/js/index.js");
-/* harmony import */ var _ui_ui_reset_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ui/ui-reset.scss */ "./src/ui/ui-reset.scss");
-/* harmony import */ var _ui_libs_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui/libs.scss */ "./src/ui/libs.scss");
-/* harmony import */ var _ui_ui_core_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/ui-core.scss */ "./src/ui/ui-core.scss");
-/* harmony import */ var _scss_frontend_style_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./scss/frontend--style.scss */ "./src/scss/frontend--style.scss");
 
 
 
@@ -26545,11 +26504,7 @@ __webpack_require__.r(__webpack_exports__);
 // import 'filepond/dist/filepond.css';
 // import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 
-
-
-
-
-window.tippy = tippy_js__WEBPACK_IMPORTED_MODULE_9__["default"];
+window.tippy = tippy_js__WEBPACK_IMPORTED_MODULE_5__["default"];
 window.draggable = {
   Sortable: _shopify_draggable__WEBPACK_IMPORTED_MODULE_0__.Sortable,
   Plugins: _shopify_draggable__WEBPACK_IMPORTED_MODULE_0__.Plugins
