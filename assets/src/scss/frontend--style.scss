@@ -1331,7 +1331,7 @@ body {
 	&-buner {
 		padding: 22px 32px;
 		background:
-			url("../img/sempl/selection-buner-bg.png") no-repeat right center / cover,
+			url("./img/sempl/selection-buner-bg.png") no-repeat right center / cover,
 			linear-gradient(259.25deg, rgba(235, 171, 218, 0.9) 0%, rgba(148, 134, 206, 0) 33.34%),
 			linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
 			linear-gradient(180deg, #4DA1ED 0%, #306CD7 100%);
@@ -2819,7 +2819,7 @@ body {
 				width      : 10px;
 				height     : 10px;
 				margin-left: 5px;
-				background : url("../img/icons/to-bottom.svg") no-repeat center / contain;
+				background : url("./img/icons/to-bottom.svg") no-repeat center / contain;
 				opacity    : 0.6;
 			}
 		}
@@ -2959,7 +2959,7 @@ body {
 
 
 	&-placeholder {
-		background   : url("../img/sempl/im-jk-placeholder.png") no-repeat right / auto 100%, linear-gradient(var(--color-primary-10), var(--color-primary-10)), var(--bg2);
+		background   : url("./img/sempl/im-jk-placeholder.png") no-repeat right / auto 100%, linear-gradient(var(--color-primary-10), var(--color-primary-10)), var(--bg2);
 		border-radius: 16px;
 		padding      : 24px;
 

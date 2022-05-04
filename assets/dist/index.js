@@ -10798,6 +10798,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/swiper/swiper-bundle.min.css":
 /*!***************************************************!*\
   !*** ./node_modules/swiper/swiper-bundle.min.css ***!
@@ -26488,42 +26501,30 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shopify_draggable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shopify/draggable */ "./node_modules/@shopify/draggable/lib/draggable.bundle.js");
 /* harmony import */ var _shopify_draggable__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_shopify_draggable__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tippy.js */ "./node_modules/tippy.js/dist/tippy.esm.js");
+/* harmony import */ var tippy_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tippy.js */ "./node_modules/tippy.js/dist/tippy.esm.js");
 /* harmony import */ var _js_load_file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/load-file */ "./src/js/load-file.js");
 /* harmony import */ var _js_show_pass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/show-pass */ "./src/js/show-pass.js");
 /* harmony import */ var _js_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/theme */ "./src/js/theme.js");
 /* harmony import */ var _ui_js_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ui/js/index */ "./src/ui/js/index.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 
 
 
 
 
- // import * as FilePond from 'filepond';
-// import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
-// import filePondRU from 'filepond/locale/ru-ru.js';
-// import 'filepond/dist/filepond.css';
-// import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 
-window.tippy = tippy_js__WEBPACK_IMPORTED_MODULE_5__["default"];
+
+window.tippy = tippy_js__WEBPACK_IMPORTED_MODULE_6__["default"];
 window.draggable = {
   Sortable: _shopify_draggable__WEBPACK_IMPORTED_MODULE_0__.Sortable,
   Plugins: _shopify_draggable__WEBPACK_IMPORTED_MODULE_0__.Plugins
-}; // window.FilePond = FilePond
-
+};
 _js_show_pass__WEBPACK_IMPORTED_MODULE_2__["default"].init();
-_js_load_file__WEBPACK_IMPORTED_MODULE_1__["default"].init(); // FilePond.setOptions(filePondRU);
-// FilePond.registerPlugin(FilePondPluginImagePreview);
-// FilePond.registerPlugin(
-//   FilePondPluginImagePreview,
-//   FilePondPluginImageExifOrientation,
-//   FilePondPluginFileValidateSize,
-//   FilePondPluginImageEdit
-// );
-
+_js_load_file__WEBPACK_IMPORTED_MODULE_1__["default"].init();
 _ui_js_index__WEBPACK_IMPORTED_MODULE_4__["default"].init();
 
 function loadHandler() {
-  _js_theme__WEBPACK_IMPORTED_MODULE_3__["default"].init(); // FilePond.create( document.querySelector('[data-load-file]') );
+  _js_theme__WEBPACK_IMPORTED_MODULE_3__["default"].init();
 }
 
 window.addEventListener('DOMContentLoaded', function () {
