@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="assets/static/css/frontend--fonts.css">
+	<link rel="stylesheet" href="assets/dist/style.css">
+	<script src="assets/dist/index.js"></script>
+
+	<title>Пользователь (предложения) </title>
+</head>
+
+<body>
+
+	<header class="header header--detail d-none d-lg-flex">
+		<div class="header-user  d-md-none">
+			<div class="header-user-btn-img">
+				<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
+			</div>
+		</div>
+		<a href="/" class="header-logo btn btn--link btn--primary">
+			<img src="assets/static/img/logo.png" alt="">
+		</a>
+		<button class="header-filter btn btn-icon ml-md-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="assets/static/img/icons.svg#filter" />
+			</svg>
+		</button>
+		<div class="header-user ml-auto d-md-block d-none -header-user-tooltiped-">
+			<div class="header-user-btn btn btn--white-bg">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="assets/static/img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="im-chat-header d-lg-none">
+		<button class="btn btn--primary btn-icon mr-1">
+			<svg class="icon color-text">
+				<use xlink:href="assets/static/img/icons.svg#arrow-left" />
+			</svg>
+		</button>
+		<div class="im-chat-header-user">
+			<div class="im-chat-header-user-img">
+				<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
+			</div>
+			<div class="im-chat-header-user-content">
+				<div class="text-body-1 text--demibold">Менеджер Василиса</div>
+				<div class="text-small color-primary">Онлайн</div>
+			</div>
+		</div>
+		<!-- <div class="im-chat-header-search ml-auto d-none d-md-block">
+			<button class="btn btn--primary btn-icon">
+				<svg class="icon color-icon">
+					<use xlink:href="assets/static/img/icons.svg#search" />
+				</svg>
+			</button>
+		</div> -->
+		<button class="btn btn--primary btn-icon ml-auto">
+			<svg class="icon color-icon">
+				<use xlink:href="assets/static/img/icons.svg#i" />
+			</svg>
+		</button>
+	</div>
+	<div class="header-user-toltip" id="header-user-toltip" style="display: none;">
+		<div class="text-body-1 text--demibold px-2">Кравченко Александр</div>
+		<div class="text-body-1 mt-1 px-2">8 918 000 00 00</div>
+		<button class="btn btn--primary btn--light w-100 mt-5">Редактировать</button>
+		<button class="btn btn--red btn--fill w-100 mt-2">Выйти</button>
+	</div>
+	<script>
+		(() => {
+			const tmp = document.querySelector('#header-user-toltip')
+			tmp.style.display = ''
+			tippy('.-header-user-tooltiped-', {
+				content: tmp,
+				trigger: 'click',
+				theme: 'header-user',
+				animation: 'shift-toward',
+				arrow: false,
+				interactive: true,
+				placement: 'bottom-end'
+			})
+		})();
+	</script>
+
+	<div class="nav">
+		<a href="/" class="btn btn--primary nav-item active waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="/" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="/" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="assets/static/img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="/" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper im-wrapper im-page">
+		<div class="im-wrapper-content">
+			<div class="im-wrapper-inner">
+
+				<div class="im-chat">
+					<div class="im-chat-header d-none d-lg-flex">
+						<!-- <button class="btn btn--primary btn-icon d-md-none mr-1">
+							<svg class="icon color-text">
+								<use xlink:href="assets/static/img/icons.svg#arrow-left" />
+							</svg>
+						</button> -->
+						<div class="im-chat-header-user">
+							<div class="im-chat-header-user-img">
+								<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
+							</div>
+							<div class="im-chat-header-user-content">
+								<div class="text-body-1 text--demibold">Менеджер Василиса</div>
+								<div class="text-small color-primary">Онлайн</div>
+							</div>
+						</div>
+						<div class="im-chat-header-search ml-auto">
+							<button class="btn btn--primary btn-icon">
+								<svg class="icon color-icon">
+									<use xlink:href="assets/static/img/icons.svg#search" />
+								</svg>
+							</button>
+						</div>
+						<!-- <button class="btn btn--primary btn-icon d-md-none ml-auto">
+							<svg class="icon color-icon">
+								<use xlink:href="assets/static/img/icons.svg#i" />
+							</svg>
+						</button> -->
+					</div>
+					<div class="im-chat-messages">
+						<div class="im-chat-message im-chat-message--incoming im-chat-message--large">
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку» с подписью сколько доступно
+								заявок (при нажатии на нее менеджер получает заявкуи
+								отрабатывает ее. Сделано для того, чтобы видеть сколько
+								заявок взял застройщик и кто из менеджеров отработал
+								клиента) 🔥
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--outgoing im-chat-message--small">
+							<div class="im-chat-message-text">
+								Привет 🤤
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-status mr-1">
+									<svg class="icon color-primary">
+										<use xlink:href="assets/static/img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+
+						<div class="im-chat-message im-chat-message--outgoing">
+							<div class="im-chat-message-text">
+								Да, я слышал о Dom.Kravchenko. Хороший,
+								просторный дом.
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-status mr-1">
+									<svg class="icon color-primary">
+										<use xlink:href="assets/static/img/icons.svg#status-read" />
+									</svg>
+								</div>
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+
+
+
+						<div class="im-chat-jk im-chat-message im-chat-message--incoming">
+							<div class="im-chat-jk-header bg-primary color-white">
+								<div class="im-chat-jk-header-img mr-2">
+									<img src="assets/static/img/sempl/brand-3.png" alt="">
+								</div>
+								<div class="im-chat-jk-header-text">
+									<div class="text-small text--demibold">ЖК «Микрорайон Красная площадь»</div>
+									<div class="text-small-1">ул. Конгрессная, 13</div>
+								</div>
+							</div>
+							<div class="im-chat-jk-content">
+								<div class="im-chat-jk-img">
+									<img src="assets/static/img/sempl/plan.png" alt="">
+								</div>
+								<div class="im-chat-jk-info">
+									<div class="text-body-2">3-комнатная квартира</div>
+									<div class="text-body-1 text--demibold">4 800 000 ₽</div>
+									<div class="mb-3"></div>
+									<table class="im-chat-jk-table">
+										<tr>
+											<td class="bd-bottom pb-1 pr-2">
+												<div class="text-small fade-60">Площадь</div>
+											</td>
+											<td class="bd-bottom pb-1 w-100">
+												<div class="text-small text--demibold">53, 2 м2</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="bd-bottom py-1 pr-2">
+												<div class="text-small fade-60">Этаж</div>
+											</td>
+											<td class="bd-bottom py-1 w-100">
+												<div class="text-small text--demibold">7</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="pt-1 pr-2">
+												<div class="text-small fade-60">Сдача</div>
+											</td>
+											<td class="pt-1 w-100">
+												<div class="text-small text--demibold">4 кв.2022</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--outgoing im-chat-message--large">
+							<div class="im-chat-message-image">
+								<a href="https://picsum.photos/600/400?random=1" data-fancybox class="image image--cover">
+									<img src="https://picsum.photos/600/400?random=1" alt="">
+								</a>
+
+							</div>
+							<div class="mb-2"></div>
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку» с подписью сколько доступно
+								заявок (при нажатии на нее менеджер получает заявкуи
+								отрабатывает ее. Сделано для того, чтобы видеть сколько
+								заявок взял застройщик и кто из менеджеров отработал
+								клиента) 🔥
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--incoming im-chat-message--small">
+							<div class="im-chat-message-image">
+								<a href="https://picsum.photos/600/400?random=2" data-fancybox class="image image--cover">
+									<img src="https://picsum.photos/600/400?random=2" alt="">
+								</a>
+
+							</div>
+							<div class="mb-2"></div>
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку»
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+						<div class="im-chat-message im-chat-message--outgoing im-chat-message--large">
+							<div class="im-chat-message-image">
+								<div class="grid grid-spacing-2">
+									<div class="grid-col-6">
+										<a href="https://picsum.photos/600/400?random=3" data-fancybox="message-id-1"
+											class="image image--box image--cover">
+											<img src="https://picsum.photos/600/400?random=3" alt="">
+										</a>
+									</div>
+									<div class="grid-col-6">
+										<a href="https://picsum.photos/600/400?random=4" data-fancybox="message-id-1"
+											class="image image--box image--cover">
+											<img src="https://picsum.photos/600/400?random=4" alt="">
+										</a>
+									</div>
+								</div>
+
+							</div>
+							<div class="mb-2"></div>
+							<div class="im-chat-message-text">
+								Кнопка «получить заявку» с подписью сколько доступно
+								заявок (при нажатии на нее менеджер получает заявкуи
+								отрабатывает ее. Сделано для того, чтобы видеть сколько
+								заявок взял застройщик и кто из менеджеров отработал
+								клиента) 🔥
+
+							</div>
+							<div class="im-chat-message-control flex flex-align-center">
+								<div class="im-chat-message-time text-small fade-60 ">09.08</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="im-chat-form-wrapper">
+						<label class="im-chat-form" for="im-chat-form-input">
+							<button class="btn btn--primary btn-icon mr-1">
+								<svg class="icon color-icon text-body-0">
+									<use xlink:href="assets/static/img/icons.svg#paperclip" />
+								</svg>
+							</button>
+							<textarea class="im-chat-form-input" id="im-chat-form-input"
+								placeholder="Написать сообщение..."></textarea>
+
+							<button class="btn btn--primary btn-icon ml-1">
+								<svg class="icon color-icon text-body-0">
+									<use xlink:href="assets/static/img/icons.svg#emoji-smile" />
+								</svg>
+							</button>
+							<button class="btn btn--primary btn-icon btn--fill ml-1">
+								<svg class="icon text-body-0">
+									<use xlink:href="assets/static/img/icons.svg#send" />
+								</svg>
+							</button>
+						</label>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		new Swiper('.favorites-plan-slider .swiper', {
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.slider-next',
+				prevEl: '.slider-prev'
+			}
+		})
+	</script>
+
+</body>
+
+</html>

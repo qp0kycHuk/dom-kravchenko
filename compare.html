@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="assets/static/css/frontend--fonts.css">
+	<link rel="stylesheet" href="assets/dist/style.css">
+	<script src="assets/dist/index.js"></script>
+
+
+	<title>Сравнение</title>
+</head>
+
+<body>
+	<header class="header ">
+		<div class="header-user  d-md-none">
+			<div class="header-user-btn-img">
+				<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
+			</div>
+		</div>
+		<div class="header-logo">
+			<img src="assets/static/img/logo.png" alt="" class="d-none d-md-block">
+			<div class="text-h6 d-md-none">Сравнение</div>
+		</div>
+		<!-- <button class="header-filter btn btn-icon ml-auto d-md-none" data-fancybox-modal data-src="#filter-form">
+			<svg class="icon color-icon">
+				<use xlink:href="assets/static/img/icons.svg#filter" />
+			</svg>
+		</button> -->
+		<div class="header-user ml-auto d-md-block d-none">
+			<div class="header-user-btn btn btn--white-bg">
+				<div class="header-user-btn-arrow">
+					<svg class="icon">
+						<use xlink:href="assets/static/img/icons.svg#to-down" />
+					</svg>
+				</div>
+				<div class="header-user-btn-img">
+					<img src="http://almode.ru/uploads/posts/2021-04/1618390666_23-p-tatu-shrek-26.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="nav">
+		<a href="/" class="btn btn--primary nav-item active waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#search" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Поиск</div>
+		</a>
+		<a href="/" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#note-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">События</div>
+		</a>
+		<a href="chat.html" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#chat-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Чат</div>
+		</a>
+		<a href="compare.html" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<div class="nav-item-icon">
+					<svg class="icon">
+						<use xlink:href="assets/static/img/icons.svg#chart-contur" />
+					</svg>
+				</div>
+			</div>
+			<div class="nav-item-text">Сравнить</div>
+		</a>
+		<a href="favorites.html" class="btn btn--primary nav-item waved">
+			<div class="nav-item-icon">
+				<svg class="icon">
+					<use xlink:href="assets/static/img/icons.svg#heart-contur" />
+				</svg>
+			</div>
+			<div class="nav-item-text">Нравится</div>
+		</a>
+	</div>
+
+	<div class="content-wrapper">
+		<section class="compare pt-2 pt-md-9" data-tab-cover>
+			<div class="text-h6 mb-9 d-none d-md-block">Сравнение</div>
+
+			<div class="tab-links favorites-tab-links card mb-4">
+				<button class="tab-link" data-tab-link="unique-1">Планировки</button>
+				<button class="tab-link" data-tab-link="unique-2">Объекты</button>
+				<div class="tab-plate" data-tab-plate></div>
+			</div>
+
+			<div class="compare-check d-none d-md-flex mb-5">
+
+				<label class="form-field form-checkbox">
+
+					<input type="checkbox" class="form-input-checkbox">
+					<div class="form-checkbox-target">
+						<svg class="icon">
+							<use xlink:href="assets/static/img/icons.svg#gal-ochka"></use>
+						</svg>
+					</div>
+					<div class="text-body-2 ml-2"> Показать только различия </div>
+
+				</label>
+
+			</div>
+			<div class="compare-check d-md-none mb-5">
+
+
+				<label class="form-field form-checkbox">
+					<div class="form-label">Показывать только различия </div>
+					<input type="checkbox" class="form-input-checkbox">
+					<div class="form-toggle-target ml-auto"> </div>
+				</label>
+			
+
+			</div>
+
+
+			<div class="tab-content-cover">
+				<div class="tab-content" data-tab-link="unique-1">
+					<div class="tab-content-inner">
+						<div class="compare-block card">
+							<div class="compare-aside">
+								<div class="compare-item-img compare-item-cell">
+									<div class="text-body-2 fade-80 mt-auto ">Фото</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Название ЖК</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Количество комнат</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Цена</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Класс</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Площадь</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Литер</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Подъезд</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Этаж</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Номер</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Срок сдачи</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Название ЖК</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Количество комнат</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Цена</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Класс</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Площадь</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Литер</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Подъезд</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Этаж</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Номер</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Срок сдачи</div>
+								</div>
+							</div>
+							<div class="compare-content">
+								<div class="compare-slider">
+									<div class="swiper grid-wrap grid-spacing-0">
+										<div class="swiper-wrapper">
+											<div class="compare-item swiper-slide grid-col-6">
+												<button class="compare-item-remove btn btn--icon btn--link">
+													<svg class="icon text-small color-icon">
+														<use xlink:href="assets/static/img/icons.svg#cross" />
+													</svg>
+												</button>
+												<div class="compare-item-img">
+													<div class="compare-item-img-inner">
+														<img src="assets/static/img/sempl/plan.png" alt="">
+
+													</div>
+													</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+											
+											<div class="compare-item swiper-slide grid-col-6">
+												<button class="compare-item-remove btn btn--icon btn--link">
+													<svg class="icon text-small color-icon">
+														<use xlink:href="assets/static/img/icons.svg#cross" />
+													</svg>
+												</button>
+												<div class="compare-item-img">
+													<div class="compare-item-img-inner">
+														<img src="assets/static/img/sempl/plan.png" alt="">
+
+													</div>
+													</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+											
+											<div class="compare-item swiper-slide grid-col-6">
+												<button class="compare-item-remove btn btn--icon btn--link">
+													<svg class="icon text-small color-icon">
+														<use xlink:href="assets/static/img/icons.svg#cross" />
+													</svg>
+												</button>
+												<div class="compare-item-img">
+													<div class="compare-item-img-inner">
+														<img src="assets/static/img/sempl/plan.png" alt="">
+
+													</div>
+													</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+											
+											<div class="compare-item swiper-slide grid-col-6">
+												<button class="compare-item-remove btn btn--icon btn--link">
+													<svg class="icon text-small color-icon">
+														<use xlink:href="assets/static/img/icons.svg#cross" />
+													</svg>
+												</button>
+												<div class="compare-item-img">
+													<div class="compare-item-img-inner">
+														<img src="assets/static/img/sempl/plan.png" alt="">
+
+													</div>
+													</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+											
+											<div class="compare-item swiper-slide grid-col-6">
+												<button class="compare-item-remove btn btn--icon btn--link">
+													<svg class="icon text-small color-icon">
+														<use xlink:href="assets/static/img/icons.svg#cross" />
+													</svg>
+												</button>
+												<div class="compare-item-img">
+													<div class="compare-item-img-inner">
+														<img src="assets/static/img/sempl/plan.png" alt="">
+
+													</div>
+													</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+											</div>
+											
+
+
+										</div>
+
+										<div class="compare-slider-control">
+											<button class="compare-slider-prev">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#triangle-left" />
+												</svg>
+											</button>
+											<div class="compare-slider-scrollbar swiper-scrollbar"></div>
+											<button class="compare-slider-next">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#triangle-right" />
+												</svg>
+											</button>
+										</div>
+									</div>
+
+								
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" data-tab-link="unique-2">
+					<div class="tab-content-inner">
+						<div class="compare-block card">
+							<div class="compare-aside">
+								<div class="compare-item-img compare-item-cell">
+									<div class="text-body-2 fade-80 mt-auto ">Фото</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Название ЖК</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Количество комнат</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Цена</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Класс</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Площадь</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Литер</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Подъезд</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Этаж</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Номер</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Срок сдачи</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Название ЖК</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Количество комнат</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Цена</div>
+								</div>
+								<div class="compare-item-cell">
+									<div class="text-body-2 fade-80">Класс</div>
+								</div>
+					
+							</div>
+							<div class="compare-content">
+								<div class="compare-slider">
+									<div class="swiper grid-wrap grid-spacing-0">
+										<div class="swiper-wrapper">
+											<div class="compare-item swiper-slide grid-col-6">
+												<button class="compare-item-remove btn btn--icon btn--link">
+													<svg class="icon text-small color-icon">
+														<use xlink:href="assets/static/img/icons.svg#cross" />
+													</svg>
+												</button>
+												<div class="compare-item-img">
+													<div class="compare-item-img-inner image--cover">
+														<img src="https://picsum.photos/600/400/?random=1" alt="">
+
+													</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+
+											</div>
+											<div class="compare-item swiper-slide grid-col-6">
+												<button class="compare-item-remove btn btn--icon btn--link">
+													<svg class="icon text-small color-icon">
+														<use xlink:href="assets/static/img/icons.svg#cross" />
+													</svg>
+												</button>
+												<div class="compare-item-img">
+													<div class="compare-item-img-inner image--cover">
+														<img src="https://picsum.photos/600/400/?random=2" alt="">
+
+													</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">53, 2 м2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">3 из 5</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">6</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">55</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">4 кв. 2022</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">ЖК “Арена”</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">2 900 000 ₽</div>
+												</div>
+												<div class="compare-item-cell">
+													<div class="text-body-2 text--demibold">Комфорт +</div>
+												</div>
+
+											</div>
+							
+
+										</div>
+
+										<div class="compare-slider-control">
+											<button class="compare-slider-prev">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#triangle-left" />
+												</svg>
+											</button>
+											<div class="compare-slider-scrollbar swiper-scrollbar"></div>
+											<button class="compare-slider-next">
+												<svg class="icon">
+													<use xlink:href="assets/static/img/icons.svg#triangle-right" />
+												</svg>
+											</button>
+										</div>
+									</div>
+
+					
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+		<script>
+			new Swiper('.compare-slider .swiper', {
+				slidesPerView: 'auto',
+				watchSlidesProgress: true,
+				navigation: {
+					nextEl: '.compare-slider-next',
+					prevEl: '.compare-slider-prev'
+				},
+				scrollbar: {
+					el: ".compare-slider-scrollbar",
+					draggable: true,
+				},
+			})
+		</script>
+
+		<footer class="footer">
+			<div class="footer-divider mb-6"></div>
+
+			<div class="text-body-2 text--fade">
+				KK.ru — база данных о недвижимости. Использование сайта означает согласие с Пользовательским соглашением и
+				Политикой конфиденциальности KK.ru.
+				Оплачивая лицензионный платеж, вы принимаете Лицензионное соглашение.
+			</div>
+
+			<div class="footer-divider mb-4 mt-6"></div>
+
+			<div class="footer-nav text-body-2 text--fade">
+				<a href="/" class="footer-nav-item">О сервисе</a>
+				<a href="/" class="footer-nav-item">Справочный центр</a>
+				<a href="/" class="footer-nav-item">Юридические документы</a>
+				<a href="/" class="footer-nav-item">Реклама на сайте</a>
+				<div class="footer-copy ml-auto">©2021</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+</body>
+
+</html>
